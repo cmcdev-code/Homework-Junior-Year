@@ -1,0 +1,152 @@
+
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I
+have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt} %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 01}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+    \textbf{Problem 1.} Determine (with brief explanation only; no proof required)
+    whether or not each of the following subsets is a subspace of $\R^3$.
+    \begin{enumerate}[label=\textbf{\alph{*}.}]
+        \item $\left\{(x_1,x_2,x_3) \in \R^3 \: : \: x_1 + 2x_2 + 3x_3 = 0\right\}$
+        \item $\left\{(x_1,x_2,x_3) \in \R^3 \: : \: x_1x_2x_3 = 0\right\}$
+        \item $\left\{(x_1,x_2,x_3) \in \R^3 \: : \: x_1 = x_3\right\}$
+    \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 1
+%===========================================================
+\begin{enumerate}[label=\textbf{\alph{*}.}]
+    \item Yes: This is a subsets as the equation being equal to zero would imply any two added together would be equal to zero and any being multiplied by a scalar would be equal to zero as well.
+    \item No: Consider the two vectors $(1,0,0),(0,1,1)\in \mathbb{R}^3$ both would be in the set but adding them together would give $(1,1,1)$ which is not in the set.
+    \item Yes: As the set would be equal to $\{(x,y,x)\in \mathbb{R}^3\}$ any two added together would be of the form $(a,b,a)+(c,d,c)=(a+c,b+d,a+c)$. As scalar multiplication is distributed the 1st and last elements of any vector would still be equal.
+\end{enumerate}
+\newpage
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+    \textbf{Problem 2.} Let $V$ be an arbitrary $\K$-vector space and $U_1, U_2$ be
+    arbitrary subspaces of $V$. Prove or disprove each of the following.
+    \begin{enumerate}[label=(\alph*)]
+        \item $U_1 \cap U_2$ is a subspace of $V$.
+        \item $U_1 \cup U_2$ is a subspace of $V$.
+    \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 2
+%===========================================================
+\begin{enumerate}[label=(\alph*)]
+    \item
+          \begin{proof}
+              Suppose $V$ is an arbitrary $\mathbb{K}-$vector space and $U_1,U_2$ are arbitrary subspaces of $V$. Consider the set $U_1\cap U_2$ as both subspaces contain the zero vector we have that $\vec{0}\in U_1\cup U_2$. Now $\forall \vec{x},\forall \vec{y}\in U_1 \cap U_2$ we have $\vec{x},\vec{y}\in U_1$ and $\vec{x},\vec{y}\in U_2$ as $U_1$ is a subspace we have $\vec{x}+\vec{y}\in U_1$ by the same reasoning $\vec{x}+\vec{y}\in U_2$ hence $\vec{x}+\vec{y}\in U_1\cap U_2$. Let $\lambda \in \mathbb{K}$ and $\vec{v} \in U_1 \cap U_2$ as $U_1,U_2$ are both subspaces we have $\lambda \vec{x}\in U_1$ and $\lambda \vec{x}\in U_2$ hence $\lambda \vec{x}\in U_1\cap U_2$.
+          \end{proof}
+    \item
+          \begin{proof}[Disproof]
+              Let $V=\mathbb{R}^2$ be a $\mathbb{R}$-vector space. Consider the two sets $U_1=\{(x,0)\in \mathbb{R}^2\}$ and $U_2=\{(0,x)\in \mathbb{R}^2\}$ these are both subspaces of $\mathbb{R}^2$ however $U_1\cup U_2=\{(x,0)\in \mathbb{R}^2 \;\text{or}\; (0,y)\in \mathbb{R}^2\}$. Adding the two vectors $(1,0),(0,1)\in U_1\cup U_2$ we have $(1,0)+(0,1)=(1,1)$ but $(1,1)\not \in \ U_1 \cup U_2$.
+          \end{proof}
+\end{enumerate}
+\newpage
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+    \textbf{Problem 3.} Given two vectors $\mathbf{u}=(x_1,\ldots,x_n)$ and $\
+        \mathbf{v}=(v_1,\ldots,v_n)$ in $\R^n$, recall that the \textit{dot product} is
+    defined as
+    \begin{align*}
+        \mathbf{u}\cdot \mathbf{v}=x_1 y_1 + \cdots + x_n y_n.
+    \end{align*}
+    Let $U$ and $N$ be the following subspaces of $\R^3$:
+    \begin{align*}
+        U & =\left\{ (x,y,x+y) \: : \: x,y \in \R\right\}                                \\
+        N & = \left\{ \mathbf{v} \in \R^3 \: : \: \mathbf{u} \dotp \mathbf{v} = 0 \text{
+            for every } \mathbf{u} \in U \right\}
+    \end{align*}
+    Find the missing vector entry that makes the following statement true (and
+    provide a proof):
+    $$N = \left\{ (x,x,-x) \in \R^3 \: : \: x \in \R \right\}.$$
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 3
+%===========================================================
+\begin{proof}
+    The set should be $N = \left\{ (x,x,-x) \in \R^3 \: : \: x \in \R \right\}.$
+    Let $(x,y,x+y)\in U$ and let $(a,a,-a)\in N$ the $(x,y,x+y)\cdot (a,a,-a)=ax+ay+-a(x+y)=ax+ay+-ax+-ay=0$. Now to show that $N$ is a subspace. We have that $(0,0,0)\in N$. Now let $(x,x,-x),(y,y,-y)\in N$ adding the vectors yields $(x,x,-x)+(y,y,-y)=\big(x+y,x+y,-(x+y)\big)$ as $x+y\in \mathbb{R}$ we get that $\big(x+y,x+y,-(x+y)\in \mathbb{R}\big)$. Let $\lambda \in \mathbb{R}$ and $(x,x,-x)\in N$ as $\lambda x\in \mathbb{R}$ we get $(\lambda x,\lambda x, -\lambda x)\in N$ therefore $N$ is a subspace.
+
+
+\end{proof}
+\newpage
+%===========================================================
+% PROBLEM 4
+%===========================================================
+\begin{tcolorbox}
+    \textbf{Problem 4.}
+    Let $U_1$ and $U_2$ be the following subspaces of $\Q^4$:
+    \begin{align*}
+        U_1 & =\left\{ (x,y,z,y) \: : \: x,y,z \in \Q \right\} \\
+        U_2 & = \left\{ (0,x,0,-x) \: : \: x \in \Q \right\}
+    \end{align*}
+    Prove that $\Q^4 = U_1 \oplus U_2$.
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 4
+%===========================================================
+\begin{proof}
+\end{proof}
+\newpage
+%===========================================================
+% PROBLEM 5
+%===========================================================
+\begin{tcolorbox}
+    \textbf{Problem 5.} Recall that $\Poly_m(\K)$ is the $\K$-vector space of
+    polynomials of degree (at most) $m$ and with coefficients in $\K$.
+    \begin{enumerate}[label=\textbf{\alph*.}]
+        \item Find a list of four distinct, nonzero polynomials that span $\
+                  mathcal{P}_2(\R)$.
+        \item Prove that the polynomials found in part (a) is linearly dependent.
+    \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 5
+%===========================================================
+\begin{enumerate}[label=\textbf{\alph*.}]
+    \item
+    \item
+          \begin{proof}
+          \end{proof}
+\end{enumerate}
+\end{document}
+Annotations
