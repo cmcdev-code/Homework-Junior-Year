@@ -1,0 +1,159 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\ \ \  Introduction to metric spaces and topology }
+
+\subsection*{Hand in Friday, January 26.}
+I consent to having comments, scores, for the assignments sent to me as email attachments. -- Collin McDevitt
+
+\vspace{.15in}
+{\bf At the top of this first submitted work, please state whether or not you consent to having my comments and scores on each of your assignments and tests sent to you as an email attachment.}
+
+\vspace{.15in}
+As always, complete answers include proofs of any assertions you make. You may use without proof well known properties of the real numbers, including what is often called the ``triangle inequality," $|a+b| \le |a| + |b|$ for all real numbers $a$ and $b$ or equivalently $|x-y| \le |x-z| + |z-y|$ for all real numbers of $x$, $y$, and $z$.
+
+\vspace{.15in}
+
+
+\noindent
+\subsection*{1.}  Define
+\[
+    d_M : \mathbb R ^n \times \mathbb R ^n \rightarrow \mathbb R
+\]
+by
+\[
+    d_M ( (u_1, \ldots , u_n) , (v_1, \ldots , v_n )) =\mbox{max} \{|u_i - v_i| : i = 1, \ldots , n \} .
+\]
+Show that $d_M$ satisfies the properties of a metric on $\mathbb R ^ n$. It is often called the max metric.
+\vspace{.15in}
+
+\begin{proof}
+    Let $d_M$ be as defined above and $\vec{u}\in \mathbb{R}^n$. Then for $\vec{u}-\vec{u}=\vec{0}$ therefore we have $d_M(\vec{u},\vec{u})=0$. Let $\vec{u},\vec{v}\in \mathbb{R}^n$ then as $|u_i-v_i|=|v_i-u_i|$ where $i=1,...,n$ we have $\max\{|u_i-v_i|:i=1,...,n\}=\max\{|v_i-u_i|:i=1,...,n\}$ which implies $d_M(\vec{u},\vec{v})=d_M(\vec{v},\vec{u})$. Now let $\vec{u},\vec{v}\in \mathbb{R}^n$ where $\vec{u}\not = \vec{v}$ therefore we have at least one $j=1,...,n$ such that $u_j-v_j\not = 0$ which implies $\max\{|u_i-v_i|:i=1,...,n\}\geq |u_j-v_j|>0$. Now let $\vec{u},\vec{v},\vec{w}\in \mathbb{R}^n$ then we have $d_M(\vec{u},\vec{v})=\max\{|u_i-w_i+w_i-v_i|:i=1,...,n\}\leq \max\{|u_i-w_i|+|w_i-v_i|:i=1,..,n\}\leq \max\{|u_i-w_i|:i=1,...,n\}+\max\{|w_i-v_i|:i=1,...,n\}=d_M(\vec{u},\vec{w})+d_M(\vec{w},\vec{v})$ therefore the four conditions of being a metric are satisfied.
+\end{proof}
+
+
+\noindent
+\subsection*{2.} Let $C([0,1])$ be the set of real-valued continuous functions defined on the unit interval $[0,1]$. Define
+\[
+    d_m : C([0,1]) \times C([0,1]) \rightarrow \mathbb R
+\]
+by
+\[
+    d_m (f,g) = \mbox{max}\{ |f(x)-g(x)| : x\in [0,1]\} .
+\]
+\noindent
+Show that $d_m$ satisfies the properties of a metric on $C([0,1])$.
+
+\vspace{.15in}
+
+\begin{proof}
+    Let $d_m$ be as defined above and $f\in C([0,1])$ then we have $f(x)-f(x)=0$ for all $x\in [0,1]$ which implies $d_m(f,f)=\max\{|f(x)-f(x)|:x\in [0,1]\}=0$. Now suppose that $f,g\in C([0,1])$ where $f\not = g$ then we have that there exists $x_0\in [0,1]$ such that $f(x_0)-g(x_0) \not = 0$ therefore we have $d(f,g)=\max\{|f(x)-g(x)|:x\in [0,1]\}\geq |f(x_0)-g(x_0)|>0$. Let $f,g\in C([0,1])$ as $|f(x_0)-g(x_0)|=|g(x_0)-f(x_0)|$ for all $x_0\in [0,1]$ we have $d_m(f,g)=\max\{|f(x)-g(x)|:x\in [0,1]\}=\max\{|g(x)-f(x)|:x\in [0,1]\}=d_m(g,f)$. Now let $f,g,h\in C([0,1])$ then we have $d_m(f,g)=\max{|f(x)-h(x)+h(x)-g(x)|: x\in [0,1]}\leq \max\{|f(x)-h(x)|+|h(x)-g(x)|:x\in [0,1]\}\leq \max\{|f(x)-h(x)|:x\in [0,1]\}+\max\{|h(x)-g(x)|:x\in [0,1]\}= d_m(f,h)+d_m(h,g)$. Therefore the four conditions of being a metric are satisfied.
+\end{proof}
+
+
+\noindent
+\subsection*{Remark.} It is also the case that the maps
+\[
+    d_T : \mathbb R ^n \times \mathbb R ^n \rightarrow \mathbb R
+\]
+and
+\[
+    d : \mathbb R ^n \times \mathbb R ^n \rightarrow \mathbb R
+\]
+defined by
+\[
+    d_T( (u_1, \ldots , u_n) , (v_1, \ldots , v_n )) = \sum _{i=1}^n |u_i - v_i|
+\]
+and
+\[
+    d( (u_1, \ldots , u_n) , (v_1, \ldots , v_n )) = \big( \sum  _{i=1}^n (u_i - v_i)^2 \big) ^{1/2}
+\]
+define metrics on $\mathbb R ^n$. You may use those assertions without proof. $d_T$ is often called the taxicab metric and $d$ the standard metric.
+
+\vspace{.15in}
+
+\noindent
+\subsection*{3.}  Show that for all $\vec{u} = (u_1, \ldots , u_n)$ and $\vec{v} = (v_1, \ldots , v_n )$
+\[
+    d_M (\vec{u} , \vec{v} ) \le d_T (\vec{u} , \vec{v} ) \le n\cdot d_M (\vec{u} , \vec{v} )
+\]
+and
+\[
+    d_M (\vec{u} , \vec{v} ) \le d (\vec{u} , \vec{v} ) \le \sqrt{n}\cdot d_M (\vec{u} , \vec{v} ).
+\]
+
+\vspace{.15in}
+
+
+\begin{proof}
+
+    Let $\vec{u},\vec{v}\in \mathbb{R}^n$ then $d_M(\vec{u},\vec{v})=|u_j-v_j|$ for some $j=1,...,n$ as $d_T(\vec{u},\vec{v})=\sum_{i=1}^{j-1}|u_i-v_i|+|u_j-v_j|+\sum_{i=j+1}^{n}|u_i-v_i|$ we get the inequality $d_M(\vec{u},\vec{v})\leq d_T(\vec{u},\vec{v})$. As $d_M(\vec{u},\vec{v})\geq |u_i-v_i|$ where $i=1,...,n$ then we get the inequality $d_T(\vec{u},\vec{v})=\sum_{i}^{n}|u_i-v_i|\leq \sum_{i=1}^{n}d_M(\vec{u},\vec{v})=nd_M(\vec{u},\vec{v})$.
+    Combining both inequalities we get $$d_M(\vec{u},\vec{v})\leq d_T(\vec{u},\vec{v})\leq nd_M(\vec{u},\vec{v})$$
+\end{proof}
+
+\begin{proof}
+    Let $f:[0,\infty)\mapsto \mathbb{R}$ where $f(x)=\sqrt{x}$. Assume that $f$ is not increasing then we have that there exists $x,y\in [0,\infty)$ where $x<y$ but $\sqrt{x}>\sqrt{y}$. Then we have $\sqrt{x}\cdot \sqrt{x}> \sqrt{y}\cdot \sqrt{y}$ which implies $x>y$ a contradiction therefore $f$ is increasing on its domain. Now let $\vec{u},\vec{v}\in \mathbb{R}^n$ now as $d_M(\vec{u},\vec{v})=\max\{|u_i-v_i|:i=1,...,n\}=\sqrt{(u_j-v_j)^2}$ for some $j=1,...,n$ as $f$ is increasing we get $\sqrt{(u_j-v_j)^2}\leq \sqrt{\sum_{i=1}^{j-1}(u_i-v_i)^2+(u_j-v_j)^2+\sum_{i=j+1}^{n}(u_i-v_i)^2}=d(\vec{u},\vec{v})$. Now replacing the summands we get $d(\vec{u},\vec{v})=\sqrt{\sum_{i=1}^{n}(u_i-v_i)^2}\leq \sqrt{\sum_{i=1}^{n}d_M(\vec{u},\vec{v})^2}=\sqrt{\sum_{i=1}^{n}(u_j-v_j)^2}=\sqrt{n(u_j-v_j)^2}=\sqrt{n}|u_j-v_j|=\sqrt{n}d_M(\vec{u},\vec{v})$. Combining both inequalities we get $$d_M(\vec{u},\vec{v})\leq d(\vec{u},\vec{v})\leq \sqrt{n}d_M(\vec{u},\vec{v})$$
+\end{proof}
+
+
+
+\noindent
+{\bfseries Definition.} If $d$ is a metric on a set $X$ (making $(X,d)$ a metric space), if $x_0$ is an element of $X$, and if $r$ is a positive real number, we define the {\bfseries open ball} with center $x_0$ and radius $r$, denoted $B_d(x_0, r)$, to be $\{ x\in X : d(x, x_0) < r\}$.
+
+\vspace{.15in}
+
+\noindent
+\subsection*{4.} Suppose that $X$ is a set with two different metrics, $d$ and $\widetilde{d}$ on it, and suppose that there are positive constants $c$ and $k$ such that for all $x$ and $y$ in $X$
+\[
+    c\cdot d(x,y) \le \widetilde{d} (x,y) \le k\cdot d(x,y).
+\]
+Show that for every $x_0\in X$ and for every $r > 0$ there is an $s > 0$ such that
+\[
+    B_{\widetilde{d}} (x_0, s) \subset B_d (x_0, r)
+\]
+and there is a $t >0$ such that
+\[
+    B_d (x_0, t) \subset B_{\widetilde{d}} (x_0, r).
+\]
+
+\vspace{.15in}
+
+\noindent
+{\bfseries Definition.} If $(X,d)$ is a metric space and if $U$ is a subset of $X$, we call $U$ an {\bfseries open set} in the metric space $(X,d)$ if, for every $x\in U$, there is an $\epsilon >0$ for which $B_d(x,\epsilon ) \subset U$.
+
+\vspace{.15in}
+
+\noindent
+\subsection*{5.} If $X$, $d$, and $\widetilde{d}$ are as in problem 4, show that a subset $U$ of $X$ is an open set in $(X,d)$ if and only if it is an open set in $(X,\widetilde{d})$.
+
+
+
+
+
+
+
+
+\end{document}

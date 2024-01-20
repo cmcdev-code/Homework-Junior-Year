@@ -122,8 +122,14 @@ have neither given nor received unauthorized assistance on this assignment.}}
 \vskip1em
 %===========================================================
 % SOLUTION 4
+
+
 %===========================================================
 \begin{proof}
+    Let $U_1$ and $U_2$ be as defined above. Let $(x,y+a,z,y-a)\in U_1 \oplus U_2$ then we have $x,y+a,z,y-a\in \mathbb{Q}$ which implies $(x,y+a,z,y-a)\in\mathbb{Q}^4$ so we have $U_1 \oplus U_2 \subseteq \mathbb{Q}^4$. Now let $(a,b,c,d)\in \mathbb{Q}^4$ consider the two vectors $(a, \frac{b+d}{2},c,\frac{b+d}{2})\in U_1$ and $(0,\frac{b-d}{2},0,-\frac{b-d}{2})\in U_2$ adding these two vectors we get $$(a, \frac{b+d}{2},c,\frac{b+d}{2})+(0,\frac{b-d}{2},0,-\frac{b-d}{2})=(a,b,c,d)$$
+    therefore we have $\mathbb{Q}^4\subseteq U_1 \oplus U_2$ which implies $\mathbb{Q}^4=U_1\oplus U_2$.
+
+
 \end{proof}
 \newpage
 %===========================================================
@@ -133,8 +139,7 @@ have neither given nor received unauthorized assistance on this assignment.}}
     \textbf{Problem 5.} Recall that $\Poly_m(\K)$ is the $\K$-vector space of
     polynomials of degree (at most) $m$ and with coefficients in $\K$.
     \begin{enumerate}[label=\textbf{\alph*.}]
-        \item Find a list of four distinct, nonzero polynomials that span $\
-                  mathcal{P}_2(\R)$.
+        \item Find a list of four distinct, nonzero polynomials that span $\mathcal{P}_2(\R)$.
         \item Prove that the polynomials found in part (a) is linearly dependent.
     \end{enumerate}
 \end{tcolorbox}
