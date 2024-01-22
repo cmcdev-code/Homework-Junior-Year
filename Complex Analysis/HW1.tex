@@ -1,0 +1,68 @@
+
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I
+have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt} %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 5235 HOMEWORK 01}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+    \textbf{Problem 1.} For a fixed $a\in \mathbb{C}$, show that $\frac{|z-a|}{|1-\bar{a}z|}=1$ if $|z|=1$ and $1-\bar{a}z\not = 0$.
+
+\end{tcolorbox}
+
+\begin{proof}
+    Assume $a\in \mathbb{C}$ and $z\in \mathbb{Z}$ with $|z|=1$ and $1-\bar{a}z\not = 0$. Then for some $x,y,c,d\in \mathbb{R}$ we have $a=x+iy$ and $z=c+id$.
+
+    Calculating $|1-\bar{a}z|$ yields \begin{align}
+        |1-\bar{a}z| & = |1-(x-iy)(c+id)|                                         \\
+                     & = \sqrt{(1-xc-yd)^2+(yc-xd)^2}                             \\
+                     & = \sqrt{1-2xc-2yd+2xcyd+x^2c^2+y^2d^2+y^2c^2-2ycxd+x^2d^2} \\
+                     & =\sqrt{1-2xc-2yd+x^2c^2+x^2d^2+y^2d^2+y^2c^2}              \\
+                     & =\sqrt{1-2xc-2yd+x^2(c^2+d^2)+y^2(c^2+d^2)}                \\
+                     & =\sqrt{1-2xc-2yd+x^2+y^2}                                  \\
+                     & =\sqrt{c^2+d^2+x^2+y^2-2xc-2yd}                            \\
+                     & =\sqrt{(c-x)^2+(d-y)^2}                                    \\
+                     & =|z-a|
+    \end{align}
+
+    Based on the assumption of $|1-\bar{a}z|\not = 0$ we have $$\frac{|z-a|}{|1-\bar{a}z|}=1$$
+
+
+
+
+
+
+
+\end{proof}
+
+
+
+
+\end{document}
+
