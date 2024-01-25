@@ -160,6 +160,12 @@ and there is a $t >0$ such that
 \noindent
 \subsection*{5.} If $X$, $d$, and $\widetilde{d}$ are as in problem 4, show that a subset $U$ of $X$ is an open set in $(X,d)$ if and only if it is an open set in $(X,\widetilde{d})$.
 
+\begin{proof}
+    Assume $X,d$ and $\tilde{d}$ are as in problem $4$ let $U\subset X$ that is open in $(X,d)$. Then for every $x_0\in U$, there is $\epsilon >0$ for which $B_d(x_0,\epsilon)\subset U$. As $d,\tilde{d}$ are from problem $4$ we have there exists some $k>0$ for all $x,y\in U$ such that $\tilde{d}(x,y)\leq kd(x,y)$. Let $x\in B_{\tilde{d}}(x_0,k\epsilon)$ then we have $\tilde{d}(x_0,x)\leq kd(x_0,x)< k\epsilon$ which is true if and only if $d(x_0,x)<\epsilon$ which implies $B_{\tilde{d}}(x_0,k\epsilon)\subset B_d(x_0,\epsilon)\subset U$.
+
+    Now suppose $U\subset X$ is an open set in $(X,\tilde{d})$. Then for every $x_0\in U$ we have that there exists $\epsilon >0$ such that $B_{\tilde{d}}(x_0,\epsilon)\subset U$. Using the inequalities from above there exists $c>0$ such that for all $x,y$ we have $cd(x,y)\leq \tilde{d}(x,y)<\epsilon$. Let $x\in B_{d}(x_0,\frac{\epsilon}{c})$ then $d(x_0,x)\leq \frac{\tilde{d}(x_0,x)}{c}<\frac{\epsilon}{c}$ which is true if and only if $\tilde{d}(x_0,x)<\epsilon$ which implies $B_d(x_0,\frac{\epsilon}{c})\subset B_{\tilde{d}}(x_0,\epsilon)\subset U$.
+
+\end{proof}
 
 
 
