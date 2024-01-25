@@ -141,6 +141,17 @@ and there is a $t >0$ such that
 
 \vspace{.15in}
 
+\begin{proof}
+    Let $X$ be a set with two metrics $d,\tilde{d}$ that satisfies the inequalities listed above. Let $x_0\in X$ and $r>0$ be given. Then from the inequalities listed above we have some $k>0$ such that for all $x,y \in X$ $\tilde{d}(x,y)\leq kd(x,y)$. Choosing $s=rk$ we get $B_{\tilde{d}}(x_0,rk)=\{x\in X: \tilde{d}(x_0,x)< kr\}$. Now to show that $B_{\tilde{d}}(x_0,rk)\subset B_{d}(x_0,r)$. Let $x\in B_{\tilde{d}}(x_0,rk)$ then we have $\tilde{d}(x_0,x)\leq kd(x_0,x)<kr$ which is true if and only if $d(x_0,x)<r$ which implies $x\in B_d(x_0,r)$ which shows that $B_{\tilde{d}}(x_0,rk)\subset B_d(x_0,r)$.
+
+
+
+\end{proof}
+
+\begin{proof}
+    Let $X$ be a set with two metrics $d,\tilde{d}$ that satisfies the inequalities listed above. Let $x_0\in X$ and $r>0$ be given. Using the inequalities from above there exists some $c>0$ for all $x,y\in X$ we have $cd(x,y)<\tilde{d}(x,y)<r$. Let $t=\frac{r}{c}$ and $x\in B_d(x_0,\frac{r}{c})$ then $d(x,x_0)\leq \frac{\tilde{d}(x,x_0)}{c}<\frac{r}{c}$ which is true if and only if $\tilde{d}(x,x_0)<r$ which implies $x\in B_{\tilde{x}}(x_0,r)$. Which implies $B_d(x_0,t)\subset B_{\tilde{d}}(x_0,r)$
+\end{proof}
+
 \noindent
 {\bfseries Definition.} If $(X,d)$ is a metric space and if $U$ is a subset of $X$, we call $U$ an {\bfseries open set} in the metric space $(X,d)$ if, for every $x\in U$, there is an $\epsilon >0$ for which $B_d(x,\epsilon ) \subset U$.
 
