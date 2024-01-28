@@ -41,26 +41,57 @@ have neither given nor received unauthorized assistance on this assignment.}}
 
     Calculating $|1-\bar{a}z|$ yields \begin{align}
         |1-\bar{a}z| & = |1-(x-iy)(c+id)|                                         \\
-                     & = \sqrt{(1-xc-yd)^2+(yc-xd)^2}                             \\
-                     & = \sqrt{1-2xc-2yd+2xcyd+x^2c^2+y^2d^2+y^2c^2-2ycxd+x^2d^2} \\
-                     & =\sqrt{1-2xc-2yd+x^2c^2+x^2d^2+y^2d^2+y^2c^2}              \\
-                     & =\sqrt{1-2xc-2yd+x^2(c^2+d^2)+y^2(c^2+d^2)}                \\
-                     & =\sqrt{1-2xc-2yd+x^2+y^2}                                  \\
-                     & =\sqrt{c^2+d^2+x^2+y^2-2xc-2yd}                            \\
-                     & =\sqrt{(c-x)^2+(d-y)^2}                                    \\
-                     & =|z-a|
+        |1-\bar{a}z| & = \sqrt{(1-xc-yd)^2+(yc-xd)^2}                             \\
+        |1-\bar{a}z| & = \sqrt{1-2xc-2yd+2xcyd+x^2c^2+y^2d^2+y^2c^2-2ycxd+x^2d^2} \\
+        |1-\bar{a}z| & =\sqrt{1-2xc-2yd+x^2c^2+x^2d^2+y^2d^2+y^2c^2}              \\
+        |1-\bar{a}z| & =\sqrt{1-2xc-2yd+x^2(c^2+d^2)+y^2(c^2+d^2)}                \\
+        |1-\bar{a}z| & =\sqrt{1-2xc-2yd+x^2+y^2}                                  \\
+        |1-\bar{a}z| & =\sqrt{c^2+d^2+x^2+y^2-2xc-2yd}                            \\
+        |1-\bar{a}z| & =\sqrt{(c-x)^2+(d-y)^2}                                    \\
+        |1-\bar{a}z| & =|z-a|
     \end{align}
 
     Based on the assumption of $|1-\bar{a}z|\not = 0$ we have $$\frac{|z-a|}{|1-\bar{a}z|}=1$$
 
+\end{proof}
 
+\begin{tcolorbox}
+    \textbf{Problem 2.} For which $n$ is $i$ an $n$th root of unity?
+\end{tcolorbox}
+For any positive integer $n$ where $n\equiv 0\bmod 4$.
 
+\begin{tabbing}
 
+\end{tabbing}
+
+\begin{tcolorbox}
+    \textbf{Problem 3.} If the point $P$ on the sphere corresponds to $z$ under stereographic projection, show that the antipodal point $-P$ on the sphere corresponds to $-\frac{1}{\overline{z}}$.
+\end{tcolorbox}
+
+\begin{proof}
+    Assume that the point $P$ corresponds to $z_0=x_0+iy_0$ under stereographic projection. Then solving for the point $z$ from the projection $-P$ by using the equations on page 12
+    \[
+        \begin{cases}
+             & X=\frac{2x_0}{|z_0|^2+1}       \\
+            \\
+             & Y = \frac{2y_0}{|z_0|^2+1}     \\
+            \\
+             & Z= \frac{|z_0|^2-1}{|z_0|^2+1}
+        \end{cases}
+    \] substituting in for $z=-\frac{X}{1+Z}-i\frac{Y}{1+Z}$ we get
+    \begin{align*}
+        z & =-\frac{\frac{2x_0}{|z_0|^2+1}}{1+\frac{|z_0|^2-1}{|z_0|^2+1}}-i\frac{\frac{2y_0}{|z_0|^2+1}}{1+\frac{|z_0|^2-1}{|z_0|^2+1}} \\
+        z & = -\frac{\frac{2x_0+i2y_0}{|z_0|^2+1}}{1+\frac{|z_0|^2-1}{|z_0|^2+1}}                                                        \\
+        z & = -\frac{\frac{2x_0+i2y_0}{|z_0|^2+1}}{\frac{2|z_0|^2}{|z_0|^2+1}}
+        \\
+        z & = -\frac{x_0+iy_0}{|z_0|^2}                                                                                                  \\
+        z & = -\frac{x_0+iy_0}{|z_0|^2}\cdot \frac{\frac{1}{z_0}}{\frac{1}{z_0}}                                                         \\
+        z & = -\frac{1}{\bar{z_0}}
+    \end{align*}
 
 
 
 \end{proof}
-
 
 
 
