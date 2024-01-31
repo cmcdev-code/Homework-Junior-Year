@@ -45,9 +45,9 @@ have neither given nor received unauthorized assistance on this assignment.}}
 % SOLUTION 1
 %===========================================================
 \begin{enumerate}[label=\textbf{\alph{*}.}]
-    \item Yes: This is a subsets as the equation being equal to zero would imply any two added together would be equal to zero and any being multiplied by a scalar would be equal to zero as well.
+    \item Yes: This is a subspace as it is non empty as $\vec{0}$ is an element. The equation being equal to zero would imply any two added together would be equal to zero and any being multiplied by a scalar would be equal to zero as well.
     \item No: Consider the two vectors $(1,0,0),(0,1,1)\in \mathbb{R}^3$ both would be in the set but adding them together would give $(1,1,1)$ which is not in the set.
-    \item Yes: As the set would be equal to $\{(x,y,x)\in \mathbb{R}^3\}$ any two added together would be of the form $(a,b,a)+(c,d,c)=(a+c,b+d,a+c)$. As scalar multiplication is distributed the 1st and last elements of any vector would still be equal.
+    \item Yes: Nonempty as $\vec{0}$ is an element. As the set would be equal to $\{(x,y,x)\in \mathbb{R}^3\}$ any two added together would be of the form $(a,b,a)+(c,d,c)=(a+c,b+d,a+c)$. As scalar multiplication is distributed the 1st and last elements of any vector would still be equal.
 \end{enumerate}
 \newpage
 %===========================================================
@@ -102,7 +102,7 @@ have neither given nor received unauthorized assistance on this assignment.}}
 %===========================================================
 \begin{proof}
     The set should be $N = \left\{ (x,x,-x) \in \R^3 \: : \: x \in \R \right\}.$
-    Let $(x,y,x+y)\in U$ and let $(a,a,-a)\in N$ the $(x,y,x+y)\cdot (a,a,-a)=ax+ay+-a(x+y)=ax+ay+-ax+-ay=0$. Now to show that $N$ is a subspace. We have that $(0,0,0)\in N$. Now let $(x,x,-x),(y,y,-y)\in N$ adding the vectors yields $(x,x,-x)+(y,y,-y)=\big(x+y,x+y,-(x+y)\big)$ as $x+y\in \mathbb{R}$ we get that $\big(x+y,x+y,-(x+y)\in \mathbb{R}\big)$. Let $\lambda \in \mathbb{R}$ and $(x,x,-x)\in N$ as $\lambda x\in \mathbb{R}$ we get $(\lambda x,\lambda x, -\lambda x)\in N$ therefore $N$ is a subspace.
+    Let $(x,y,x+y)\in U$ and let $(a,a,-a)\in N$ the $(x,y,x+y)\cdot (a,a,-a)=ax+ay+-a(x+y)=ax+ay+-ax+-ay=0$. Now to show that $N$ is a subspace. We have that $(0,0,0)\in N$. Now let $(x,x,-x),(y,y,-y)\in N$ adding the vectors yields $(x,x,-x)+(y,y,-y)=\big(x+y,x+y,-(x+y)\big)$ as $x+y\in \mathbb{R}$ we get that $\big(x+y,x+y,-(x+y)\big)\in \mathbb{R}^3$. Let $\lambda \in \mathbb{R}$ and $(x,x,-x)\in N$ as $\lambda x\in \mathbb{R}$ we get $(\lambda x,\lambda x, -\lambda x)\in N$ therefore $N$ is a subspace.
 
 
 \end{proof}
@@ -129,6 +129,9 @@ have neither given nor received unauthorized assistance on this assignment.}}
     Let $U_1$ and $U_2$ be as defined above. Let $(x,y+a,z,y-a)\in U_1 \oplus U_2$ then we have $x,y+a,z,y-a\in \mathbb{Q}$ which implies $(x,y+a,z,y-a)\in\mathbb{Q}^4$ so we have $U_1 \oplus U_2 \subseteq \mathbb{Q}^4$. Now let $(a,b,c,d)\in \mathbb{Q}^4$ consider the two vectors $(a, \frac{b+d}{2},c,\frac{b+d}{2})\in U_1$ and $(0,\frac{b-d}{2},0,-\frac{b-d}{2})\in U_2$ adding these two vectors we get $$(a, \frac{b+d}{2},c,\frac{b+d}{2})+(0,\frac{b-d}{2},0,-\frac{b-d}{2})=(a,b,c,d)$$
     therefore we have $\mathbb{Q}^4\subseteq U_1 \oplus U_2$ which implies $\mathbb{Q}^4=U_1\oplus U_2$.
 
+    Suppose $(x,y,z,w)\in U_1 \cap U_2$ then we have $x=z=0$, and $w=-y$ by the definition of the vectors in $U_1$ we also get $y=-y$ which implies $y=0$ therefore $U_1\cap U_2=\{\vec{0}\}$.
+
+
 
 \end{proof}
 \newpage
@@ -148,9 +151,10 @@ have neither given nor received unauthorized assistance on this assignment.}}
 % SOLUTION 5
 %===========================================================
 \begin{enumerate}[label=\textbf{\alph*.}]
-    \item
+    \item The four polynomials that span $\mathcal{P}_2(\R)$ are $S=\{x^1+1,x^2-1,x,1\}$. This is shown to span $\mathcal{P}_2(\R)$ by letting $ax^2+bx+c\in \mathcal{P}_2(\R)$ we have $a(x^2+1)+bx+(c-a)1=ax^2+bc+c$ as an arbitrary element of $\mathcal{P}_2(\R)$ was equal to a linear combination of the elements of $S$ we have $\text{span}(S)=\mathcal{P}_2(\R)$.
     \item
           \begin{proof}
+              We have $(x^2+1)+(-1)\cdot(x^2-1)+0x+-2\cdot(1)=0$ as the coefficients are not all zero then we have it is linearly dependent.
           \end{proof}
 \end{enumerate}
 \end{document}

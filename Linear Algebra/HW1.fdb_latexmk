@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1705698181 "/home/oem/Homework/Linear Algebra/HW1.tex" "HW1.pdf" "HW1" 1705698181
+["pdflatex"] 1706624316 "/home/oem/Homework/Linear Algebra/HW1.tex" "HW1.pdf" "HW1" 1706624316
   "/etc/texmf/web2c/texmf.cnf" 1703735389 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/oem/Homework/Linear Algebra/HW1.tex" 1705698181 8388 212c965e81c2fc4fbe75c3c039eb4539 ""
+  "/home/oem/Homework/Linear Algebra/HW1.tex" 1706624316 9159 7c09272b042561812c1ba67cb6d611fc ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -139,8 +139,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1703735954 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1703735956 1405657 9b783f3d4bea17389bf3d4d38a206b72 ""
-  "HW1.aux" 1705698181 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
-  "HW1.tex" 1705698181 8388 212c965e81c2fc4fbe75c3c039eb4539 ""
+  "HW1.aux" 1706624316 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
+  "HW1.tex" 1706624316 9159 7c09272b042561812c1ba67cb6d611fc ""
   (generated)
   "HW1.aux"
   "HW1.log"

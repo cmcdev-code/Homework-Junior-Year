@@ -7,7 +7,7 @@
 \usepackage{graphics}
 \usepackage{xspace}
 \usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref}
-
+\usetikzlibrary{automata,positioning}
 
 \newcommand\proofs[1]{\begin{proof}#1\end{proof}}
 
@@ -362,7 +362,24 @@ Be certain to explain why your design works.
 
 \solution
 
-% PUT YOUR SOLUTION HERE
+\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto]
+    \node[state,initial] (q_0)   {$q_0$};
+    \node[state] (q_1) [right=of q_0] {$q_1$};
+    \node[state] (q_2) [right=of q_1] {$q_2$};
+    \node[state,accepting](q_3) [right=of q_2] {$q_3$};
+    \path[->]
+    (q_0) edge  node {0} (q_1)
+    edge [loop above] node {1} ()
+    (q_1) edge  node  {1} (q_2)
+    edge [loop above] node {0} ()
+    (q_2) edge [loop above] node {0} ()
+    (q_2) edge  node  {1} (q_3)
+    (q_3) edge [loop above] node {0,1} ();
+
+\end{tikzpicture}
+
+This design for a \textbf{FA} works as reading through the input string we have it only enters state $q_1$ if it has read $0$ and will loop otherwise. Then for each of the next states $q_1,q_2$ they will loop if they receive a $0$ otherwise they will go to $q_2$ and $q_3$ respectively. $q_3$ is an accepting state and will loop for any input which ensures that the string only need to contain $011$ not end in that.
+
 
 \problembreak
 
