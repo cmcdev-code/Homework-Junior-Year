@@ -49,20 +49,57 @@ ${\displaystyle \bigcap _{j = 1} ^n U_j}$ is in the collection.
 
 {\bfseries b.} Give an example of a collection that satisfies the property stated at the beginning of this problem and in which there is an infinite collection of sets whose intersection is not in the collection. As always, prove that your example has the asserted properties.
 
+\begin{proof}
+    Consider the collection $\{U_\alpha\}_{\alpha \in \mathbb{N}\setminus \{0\}}$ of sets of the form $U_n=(0,\frac{1}{n})$ where $n=\mathbb{N}\setminus\{0\}$. We have this satisfying the property at the beginning as given any two positive integers $a,b$ we have $U_a\bigcap U_b=U_{\min(\{a,b\})}$ as $\min(\{a,b\})\in \mathbb{N}\setminus\{0\}$ we have $ U_a\cap U_b\in \{U_\alpha\}_{\alpha \in \mathbb{N}\setminus \{0\}}$. 
+
+    Now take the intersection $\bigcap_{n=1}^\infty U_n$ we have that this intersection is just the empty set. This is proven by assuming that it is non empty so there is a real number $r\in \bigcap_{n=1}^{\infty}U_n$ this implies that there exists a real number $0<r<\frac{1}{n}$ for all positive integers $n$. Rearranging the inequality we get $0<n<\frac{1}{r}$  which would imply that the positive integers are bounded above a contradiction. Hence the intersection is empty. Now to show that $\emptyset \not \in \bigcap_{n=1}^\infty U_n$ assume that $\emptyset \in \bigcap_{n=1}^\infty U_n$ then we would have for some $n\in \mathbb{N}\setminus \{0\}$ the following is true $\frac{1}{n}=0$ which would imply $1=0$ a contradiction. 
+    
+\end{proof}
+
 \vspace{.1in}
+
+
+
+
 
 {\bfseries c.} In the setting described at the beginning of this problem, assume that $A_1$ and $A_2$ are subsets of $A$. Show that
 \[
     \left( \bigcup _{\beta \in A_1} U_{\beta} \right) \bigcap \left( \bigcup _{\gamma \in A_2} U_{\gamma} \right) = \bigcup _{\beta \in A_1 \ \mbox{and} \ \gamma \in A_2} (U_{\beta} \bigcap U_{\gamma}).
 \]
 
+\begin{proof}
+    This will be a proof by double containment. Assume $A_1,A_2$ are both subsets of $A$.
+    Assume that $x\in \left( \bigcup_{\beta \in A_1}\right) \bigcap \left( \bigcup_{\gamma \in A_2}U_{\gamma}\right)$. Then for some $\beta \in A_1$ and some $\gamma \in A_2$ we have $x\in U_\beta \cap U_\gamma$ which implies $\bigcup _{\beta \in A_1 \text{and} \gamma \in A_2}(U_\beta \cap U_\gamma)$. This implies \[
+        \left( \bigcup _{\beta \in A_1} U_{\beta} \right) \bigcap \left( \bigcup _{\gamma \in A_2} U_{\gamma} \right) \subseteq \bigcup _{\beta \in A_1 \ \mbox{and} \ \gamma \in A_2} (U_{\beta} \bigcap U_{\gamma})
+        \]
+    Now let $x\in \bigcup _{\beta \in A_1 \ \mbox{and} \ \gamma \in A_2} (U_{\beta} \bigcap U_{\gamma})$ then $x\in U_\beta \cap U_\gamma$ for some $\beta \in A_1, \; \gamma \in A_2$. This implies $x\in \left( \bigcup_{\beta \in A_1} U_\beta\right)\cap \left(U_{\gamma \in A_2}U_\gamma\right)$ which implies \[   \left( \bigcup _{\beta \in A_1} U_{\beta} \right) \bigcap \left( \bigcup _{\gamma \in A_2} U_{\gamma} \right) \supseteq \bigcup _{\beta \in A_1 \ \mbox{and} \ \gamma \in A_2} (U_{\beta} \bigcap U_{\gamma})\]
+
+    By double containment we have that the sets are equal. 
+
+\end{proof}
+
 
 \vspace{.15in}
+
+
+
 
 \noindent
 \subsection*{2.} Let $X$ be an infinite set and let $\mathcal T _c$ be the set of subsets $U$ of $X$ satisfying: $U=X$ or $U=\emptyset$ or $X\setminus U$ is countable. Show that $\mathcal T _c$ is a topology on $X$. This is often called the countable-complement topology.
 
-\subsection*{Remarks.} I follow Munkres in using ``countable" to refer to sets that are either finite or countably infinite. Some books may use ``countable" to mean ``countably infinite." Those books usually use ``at most countable" when they mean either finite or countably infinite. The only facts you need to know about ``countable" in order to do problem 3 are: a subset of a countable set is countable (Munkres Corollary 7.3) and a union of finitely many countable sets is countable (consequence of Munkres Theorem 7.5.) You may use these facts even if you do not understand their proofs. As we go further in the course, there will be times when you need to understand more about countable and not countable. The information you need is in Munkres Section 7. If you are not familiar with the ideas in that section, please come to an office hour to discuss them.
+\begin{proof}
+    Assume $X$ is an infinite set and $\mathcal T _ c$ is as stated. We have $\emptyset,X\in \mathcal T _c$ by the definition of $\mathcal T _c$. Consider the intersection of $U_1\cap U_2$ where $U_1,\in U_2 \in \mathcal T_c$. If either $U_1=\emptyset$ or $U_2=\emptyset$ we have $U_1\cap U_2=\emptyset$ and if $U_1=X$ then $U_1\cap U_2=U_2$. In either case the intersection is in $\mathcal T_c$. Now given $U_1,U_2\in \mathcal T_c$ assuming neither is the empty set or $X$. Then $X\setminus (U_1\cap U_2)=X\cap \overline{(U_1\cap U_2)}=X\cap(\overline{U_1}\cup \overline{U_2})=X\cap\overline U_1 \cup X\cap \overline {U_2}$. (note the 'overline' is set complement, I used De Morgan's laws and also distributivity of sets over intersection,  union). We have that the union of two countable sets is countable following the equality that implies $X\setminus (U_1\cap U_2)$ is countable which implies $U_1\cap U_2\in \mathcal T_c$. That covers the base case so now assume for some $k\in \mathbb{N}$ with $k\geq 2$ we have that the intersection of $k$ elements of $\mathcal T_c$ is in $\mathcal T_c$. Then given the intersection of $k+1$ elements of $\mathcal T_c$ we have $U_1\cap ... \cap U_{k+1}$ then we have the intersection of $k$ of the elements is in $\mathcal T_c$. WLOG $U_{k+1}\not =\emptyset$ or $U_{k+1}\not = X$.
+    \begin{itemize}
+        \item If $U_1\cap ...\cap U_k=\emptyset$ then $U_1\cap ...\cap U_{k+1}=\emptyset$
+        \item If $U_1\cap ... \cap U_{k}=X$ then $U_1\cap ... U_{k+1}=U_{k+1}$
+        \item If $X\setminus{U_1\cap ... \cap U_{k}}$ is countable then using the same reasoning as above we have $X\setminus{U_1\cap...\cap U_{k+1}}$ is countable as well.
+    \end{itemize}
+    In all cases we have that $\mathcal T_c$ is closed under finite intersections. 
+
+    Now given a subset of $S\subset \mathcal T_c\setminus \{\emptyset\}$ we have $X\setminus \bigcup_{U\in S}U\subseteq X\setminus U$ where $U\in S$. As subsets of countable sets are countable then we have arbitrary unions are closed in $\mathcal {T}_c$ as well. In the case that the empty set is in a union the resulting set is equal to not having it be in the union hence the reason for the removal in $S$.
+
+
+\end{proof}
 
 \vspace{.15in}
 
@@ -70,12 +107,39 @@ Munkres introduces several topologies on the real line $\mathbb R$. The standard
 
 In doing problem 3. you may {\bfseries assume} without proof that the sets I have chosen to generate the topologies are bases for the topologies, so that Munkres Lemma 13.3 applies.
 
+
+
 \vspace{.15in}
 
 \noindent
 \subsection*{3.}  Let $\mathcal T _Q$ be the topology on $\mathbb R$ generated by $\{ U_{a, b} : a\in \mathbb Q \ \mbox{and} \ b\in \mathbb Q \}$. Let $\mathcal T _{Q,l}$ be the topology on $\mathbb R$ generated by $\{ I_{a, b} : a\in \mathbb Q \ \mbox{and} \ b\in \mathbb Q \}$. Show that $\mathcal T _Q = \mathcal T$. Show that $\mathcal T _{Q,l} \ne \mathcal T _l$.
 
+\begin{proof}{${\mathcal{T}_Q=\mathcal{T}}$}
+    
+    Let $x\in \mathbb{R}$ and $x\in (a,b)$ where $a,b\in \mathbb{Q}$ then as the rationals are a subset of the real numbers the same open interval is a basis for $\mathcal {T}$. Which implies by Lemma 13.3 $\mathcal{T}_Q\subset \mathcal{T}$.
+    Now let $x\in \mathbb{R}$ and $x\in (a,b)$ where $a,b \in \mathbb{R}$. Then as the rationals are dense in the reals we have two rational numbers $c,d$ such that $a<c<x<d<b$. This implies $x\in (c,d)\subset (a,b)$ by Lemma 13.3 we have $\mathcal T\subset \mathcal T_c$.
+    By double containment $\mathcal T_c= \mathcal T$
+ 
+
+\end{proof}
 \vspace{.15in}
+
+The next proof using contrapositive of Lemma 13.3 which says let $\mathcal{B}$ and $\mathcal{B}^\prime$ be bases for the topologies $\mathcal{T}$ and $\mathcal{T}^\prime$ on $X$. Then the following are equivalent:
+\begin{enumerate}
+    \item $\mathcal{T}^\prime$ is not finer than $\mathcal{T}$
+    \item There exists $x\in X$ and there exists a basis element $B\in \mathcal{B}$ with $x\in B$ such that for all $B^\prime\in \mathcal{B}^\prime$ with $x\in B^\prime$ we have $B^\prime \not \subset B$
+\end{enumerate}
+
+
+\begin{proof}{$\mathcal T_{Q,l}\not= \mathcal T_l$}
+    
+ 
+
+
+
+\end{proof}
+
+
 
 \subsection*{Definitions.} A {\bfseries sequence} in a topological space $X$ is a function $f : \mathbb N \rightarrow X$. Using the notation $x_n$ for $f(n)$, we also can think of a sequence as a list, indexed by the natural numbers, of elements of $X$. Thinking this way, we often use the notation $(x_n)$ for the sequence. We say that $(x_n)$ {\bfseries converges} to $y\in X$ if, for every open set $U$ containing $y$, there is an $N\in \mathbb N$ such that for all $n > N$, $x_n \in U$. When this happens, we call $y$ a {\bfseries limit} of the sequence $(x_n)$. We say that $(x_n)$ {\bfseries converges} if one or more elements of $X$ is a limit or are limits of $(x_n)$. The elements $x_n$ in $X$ are called the {\bfseries values} of the sequence. Note that the list of values in the sequence is always infinitely long but that some sequences have only finitely many different values. For example, in $\mathbb R$, the sequence in which $x_n = 0$ when $n$ is even and $x_n = 1$ when $n$ is odd has only two different values, and a constant sequence has only one value.
 
