@@ -398,6 +398,16 @@ for $M_4$.
 
 \solution
 
+$Q=\{C,A_1,B_1,A_2,B_2,...\}$ is the set of states for $M_4$. 
+
+$\Sigma=\{a,b\}$ is $M_4$'s input alphabet.
+
+$\delta: Q\time \Sigma\mapsto Q$ is $M_4$'s state transition function. Where $\delta(A_k,a)=A_{k+1}$ and $\delta(A_k,b)=B_k$ for $k\geq 2$ and $\delta(A_0,b)=\delta(B_1,b)=\delta(B_1,a)=C$ and $\delta(B_k,b)=B_{k-1}$ for $k\geq 2$ and $\delta(B_K,a)=C$ for $k\geq 1$. 
+
+$q_0=A_0$ the starting state.
+
+$F=\{A_0,B_1\}$ is the final/accepting states. These are only reached if the input are from the set $\{a^nb^n:n \in \mathbb{N}\}$.  
+
 % PUT YOUR SOLUTION HERE
 
 \problembreak
@@ -423,7 +433,14 @@ on Pages 76 and 77.
 
 \solution
 
-% PUT YOUR SOLUTION HERE
+\begin{proof}
+    Assume that $L_5$ is regular then there is a finite automata 
+    \[M=\{Q,\{a,b,c\},\delta, q_0,F\}
+    \]
+    such that $L(M)=L_5$.
+    As $Q$ is finite and $\{a^k:k\in \mathbb{N}\}$ has infinite cardinality then the function $\delta:J\subseteq Q\times \{a^k:k\in \mathbb{N}\}\mapsto Q$ cannot be injective by the pigeonhole principle. Then for some $k,j\in \mathbb{N}$ with $k\not = j$ we have $\delta(q_0,a^k)=\delta(q_0,a^j)=q$ where $q\in Q$. Then we have by the continuation lemma $\delta(q,b^i)=\delta(q_0,a^kb^i)=\delta(q_0,a^jb^i)=q_1$ where $i\in \mathbb{N}$. Again by the pigeonhole principle we have that there exists $t,s\in \mathbb{N}$ where $t\not = s$ and $\delta(q_1,c^s)=\delta(q_1,c^t)$. Then this would imply $\delta(q_0,a^kb^ic^s)=\delta(q_0,a^jb^ic^t)$
+\end{proof}
+
 
 \problembreak
 
