@@ -1,9 +1,9 @@
-PWD /home/oem/Homework/Topology
+PWD /home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/oem/Homework/Topology/feb 2 hw.tex
+INPUT /home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/feb 2 hw.tex
 OUTPUT feb 2 hw.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsart.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsart.cls
@@ -182,3 +182,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
