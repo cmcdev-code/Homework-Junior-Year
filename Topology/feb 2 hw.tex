@@ -190,7 +190,19 @@ This sequence does not converge.
 {\bfseries b.} Suppose that $(x_n)$ is a sequence in an infinite space $X$ with the countable-complement topology. Show that $(x_n)$ converges if and only if there exists $c\in X$ and there exists $N\in \mathbb N$ such that for all $n > N$, $x_n = c$.
 
 \begin{proof}
-    Assume $(x_n)$ sequence in an infinite space $X$ with the countable-complement topology. For the forward direction assume that $(x_n)$ converges. As $(x_n)$ converges we have some $c\in X$ such that for all open sets $U$ with $c\in U$ there exists $N\in \mathbb{N}$ such that for all $n>N$ we have $x_n\in U$.
+    Assume $(x_n)$ sequence in an infinite space $X$ with the countable-complement topology $\mathcal{T}_c$. For the forward direction assume that $(x_n)$ converges. As $(x_n)$ converges we have some $c\in X$ such that for all open sets $U$ with $c\in U$ there exists $N\in \mathbb{N}$ such that for all $n>N$ we have $x_n\in U$. Take the set of all elements of the sequence $U_s=\{x_n: n\in \mathbb{N}\text{ and }x_n\not = c \}$ and we have that $X\setminus U_s$ is an open set as 
+    \begin{align*}
+        X\setminus (X \setminus(U_s ))& = X \cap \overline{(X \cap \overline{U_s})}\\
+        &=X \cap (\overline{X}\cup U_s)\\
+        &= (X\cap \overline X) \cup X\cap U_s\\
+        &= \emptyset \cup U_s\\
+        &= U_s
+    \end{align*}
+    (I used De Morgan's laws, distributivity of sets over union and intersection, intersection of a set with its complement is emptyset, intersection of any set with universal set is itself)
+    Then as $U_s$ is countable as its just elements of the sequence we have $X\setminus U_s\in \mathcal{T}_c$. As $(x_n)$ is convergent and $c\in X\setminus U_s$ but no other elements of the sequence are in $X\setminus U_s$. This implies for all $n>N$ we have $x_n=c$ which completes the proof for the forward direction. 
+
+    For the backwards direction assume that there exists $c\in X$ and there exists $N\in \mathbb{N}$ such that for all $n>N$, $x_n=c$. Then for any open set $U$ with $c\in U$ we have $x_n\in U$ for $n>N$ as $x_n=c$. This completes the proof.
+
 \end{proof}
 
 
