@@ -81,11 +81,13 @@ to be linearly independent?
 \item
 \begin{proof}
     Assume that $V$ is a $\mathbb{K}$-vector space, and that $S_1,S_2$ are as described.
-    First I will show that $\Span(S_1)+\Span(S_2)$ is a direct sum. As $\Span(S_1),\Span(S_2)$ are both vector spaces we have that $\vec{0}\in \Span(S_1)+\Span(S_2)\not = \emptyset$. Now assume that $\vec{v}\in \Span(S_1)\cap \Span(S_2)$ then $\vec{v}\in \Span(S_1)$ and $\vec{v}\in \Span(S_2)$ so $v=k_1\vec{s_1}+...+k_n\vec{s_n}$ where $k_i\in \K$ and $\vec{s}\in S_1$ and $v= c_1\vec{u_1}+...+c_n\vec{u_n}$ where $c_i\in \K$ and $\vec{u_i}\in S_2$. Then $c_1\vec{u_1}+...+c_n\vec{u_n}+-(k_1\vec{s_1}+...+k_n\vec{s_n})=c_1\vec{u_1}+...+c_n\vec{u_n}+(-k_1\vec{s_1})+...+(-k_n\vec{s_n})=\vec{0}$ but as $S_1\cup S_2$ is linear independent and the previous equation is a linear combination of $S_1\cup S_2$ we have that for each $c_i,k_i\in \K$ that $c_i=k_i=0$ hence only $\vec{0}\in \Span(S_1)\cap \Span(S_2)$ which implies $\Span(S_1)+ \Span(S_2)$ is a direct sum. 
+    First I will show that $\Span(S_1)+\Span(S_2)$ is a direct sum. As $\Span(S_1),\Span(S_2)$ are both vector spaces we have that $\vec{0}\in \Span(S_1)+\Span(S_2)\not = \emptyset$. Now assume that $\vec{v}\in \Span(S_1)\cap \Span(S_2)$ then $\vec{v}\in \Span(S_1)$ and $\vec{v}\in \Span(S_2)$ so $v=k_1\vec{s_1}+...+k_n\vec{s_n}$ where $k_i\in \K$ and $\vec{s}\in S_1$ and $v= c_1\vec{u_1}+...+c_n\vec{u_n}$ where $c_i\in \K$ and $\vec{u_i}\in S_2$. Then $c_1\vec{u_1}+...+c_n\vec{u_n}+-(k_1\vec{s_1}+...+k_n\vec{s_n})=c_1\vec{u_1}+...+c_n\vec{u_n}+(-k_1\vec{s_1})+...+(-k_n\vec{s_n})=\vec{0}$ but as $S_1\cup S_2$ is linearly independent and the previous equation is a linear combination of $S_1\cup S_2$ we have that for each $c_i,k_i\in \K$ that $c_i=k_i=0$ hence only $\vec{0}\in \Span(S_1)\cap \Span(S_2)$ which implies $\Span(S_1)+ \Span(S_2)$ is a direct sum. 
     
-    Now suppose $\vec{v}\in \Span(S_1\cup S_2)$ then $\vec{v}= k_1\vec{s_1}+...+k_n\vec{s_n}+c_1\vec{u_1}+...+c_n\vec{c_n}$ where $k_i ,c_i\in \K$ and $\vec{s_i} \in S_1$ and $\vec{u_i}\in S_2$. As $k_1\vec{s_1}+...+k_n\vec{s_n}\in \Span(S_1)$ and $c_1\vec{u_1}+...+c_n\vec{u_n}\in S_2$
+    Now suppose $\vec{v}\in \Span(S_1\cup S_2)$ then $\vec{v}= k_1\vec{s_1}+...+k_n\vec{s_n}+c_1\vec{u_1}+...+c_n\vec{c_n}$ where $k_i ,c_i\in \K$ and $\vec{s_i} \in S_1$ and $\vec{u_i}\in S_2$. As $k_1\vec{s_1}+...+k_n\vec{s_n}\in \Span(S_1)$ and $c_1\vec{u_1}+...+c_n\vec{u_n}\in \Span(S_2)$ we have that $\vec{v}\in \Span(S_1)\oplus \Span(S_2)$. Thus $\Span(S_1\cup S_2)\subseteq \Span(S_1) \oplus \Span(S_2)$. 
+    
+    Let $\vec{v}\in \Span(S_1)\oplus \Span(S_2)$ then $\vec{v}= k_1\vec{s_1}+...+k_n\vec{s_n}+c_1\vec{u_1}+...+c_n\vec{c_n}$ where $k_i ,c_i\in \K$ and $\vec{s_i} \in S_1$ and $\vec{u_i}\in S_2$. Then we have as this is just a linear combination of the elements of $S_1\cup S_2$ we have that $\vec{v}\in \Span(S_1 \cup S_2)$ therefore $\Span(S_1) \oplus \Span(S_2)\subseteq \Span(S_1 \cup S_2)$ which implies $\Span(S_1 \cup S_2)= \Span(S_1) \oplus \Span(S_2)$
 \end{proof}
-\item
+\item Then $\Span(S_1)+\Span(S_2)$ would no longer be a direct sum. But the equation would still be true if you replaced '$\oplus$' with '$+$' i.e. $\Span(S_1 \cup S_2) = \Span(S_1) + \Span(S_2)$.
 \end{enumerate}
 \newpage
 %===========================================================
@@ -105,6 +107,48 @@ is a basis for $V$.
 % SOLUTION 3
 %===========================================================
 \begin{proof}
+
+    Adding the two vectors $(0,0,1,0)$ and $(0,0,0,1)$ will make a basis. 
+
+    Let $\langle a,b,c,d\rangle \in V$ and consider the linear combination 
+    \[
+    (3a+2b)\langle 1,-1,2,1\rangle+ (-a-b)\langle 2,-3,6,3\rangle +(c+2b)\langle 0,0,1,0\rangle
+    + (d+b)\langle 0,0,0,1\rangle = 
+    \]
+    \[
+    \langle (3a+2b) + (-a-b)2, -(3a+2b)-3(-a-b),2(3a+2b)+6(-a-b)+(c+2b), (3a+2b)+3(-a-b)+(d+b)  \rangle =
+    \]
+
+    $$
+    \langle 3a+2b-2a-2b,-3a-2b+3a+3b,6a+4b-6a-6b+c+2b,3a+2b-3a-3b+d+b\rangle = 
+    $$
+
+    \[\langle a,b,c,d\rangle \]
+
+    \vspace{6mm}
+
+    Therefore we have an arbitrary element of $V$ as a linear combination of the vectors $\mathbf{u_1},\mathbf{u_2},\mathbf{v_1},\mathbf{v_2}$. Lastly to show linear independence. Consider the linear combination $a,b,c,d\in \Q$
+        \[
+        a(1,-1,2,1)+b(2,-3,6,3)+c(0,0,1,0)+d(0,0,0,1)=0
+        \]
+        \[
+        (a+2b, -a-3b, 2a+6b+c, a+3b+d) = (0,0,0,0)
+        \]
+
+    From this we get the system of equations 
+    \begin{equation*}
+        \begin{cases}
+            a+2b=0\\
+            -a-3b=0\\
+            2a+6b+c=0\\
+            a+3b+d=0
+        \end{cases}
+    \end{equation*}
+
+    From the first two equations we get $a+2b-a-3b=0$ which implies $b=0$ substituting in $0$ for $b$ we get $a+2\cdot 0=0$ which implies $a=0$. Replacing $a,b$ in the bottom equations we get that $c=0$ and $d=0$ as well. As the scalars where chosen arbitrarily we have that the set is linear independent hence it is a basis for $V$.
+
+
+
 \end{proof}
 \newpage
 %===========================================================
