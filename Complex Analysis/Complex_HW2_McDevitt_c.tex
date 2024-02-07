@@ -75,8 +75,28 @@ The phase factor at the branch point $z=0$ is given by $e^{2\pi i a}$ and the ph
     &= \overline{f^\prime(\overline z_0)}
     \end{align*}
 This shows that $g^\prime(z_0)$ and $g^\prime(z_0)=\overline{f^\prime (\bar z_0)}$. 
-Now to show that $g$ is analytic on $D^\star$. As $f$ is analytic on $D$ we have for any $z\in D$ that for any $\epsilon>0$ there exists $\delta >0$ such that for all $z_0\in D$ with $0< |z-z_0|<\delta$ implies  
+Now to show that $g$ is analytic on $D^\star$. As $f$ is analytic on $D$ we have for any $\overline{z}\in D^\star$ for any $\epsilon>0$ there exists $\delta >0$ such that for all $\overline{z_0}\in D^\star$ with $|\overline z- \overline z_0|<\delta$ implies $|g^\prime{(\overline{z})}-g^\prime (\overline z_0)|=|\overline{f^\prime (z)}-\overline{f^\prime (z_0)}|=|f^{\prime}(z)-f^\prime(z_0)|<\epsilon$.  
+\end{proof}
+\begin{tcolorbox}
+    Let $h(t)$ be a continuous function on $[0,1]$ and define 
+        \[
+        H(z)=\int_0^1\frac{h(t)}{t-z}dt, \; \; \; z\in \mathbb{C}\setminus [0,1]
+        \]
+        Show that $H(z)$ is analytic and compute its derivative.
+\end{tcolorbox}
+
+\begin{proof}
+    Let $H(z)$ be as defined let $z\in \mathbb{C}\setminus [0,1]$ then 
+
+    \begin{align*}
+        \lim_{\Delta z\mapsto 0}\frac{H(z+\Delta z)-H(z)}{\Delta z}&= \lim_{\Delta z\mapsto 0}\frac{1}{\Delta z}\left(\int_0^1\frac{h(t)}{t-(z+\Delta z)}dt -\int_0^1 \frac{h(t)}{t-z}dt \right)\\
+        &= \lim_{\Delta z\mapsto 0}\frac{1}{\Delta z}\int_0^1\frac{h(t)}{t-z-\Delta z}-\frac{h(t)}{t-z}dt\\
+        &= \lim_{\Delta z\mapsto 0}\int_0^1\frac{h(t)}{(t-z-\Delta z)(t-z)}dt\\ 
+        &= \int_0^1\lim_{\Delta z\mapsto 0}\frac{h(t)}{(t-z-\Delta z)(t-z)}dt\\
+        &= \int_0^1\frac{h(t)}{(t-z)^2}dt
+    \end{align*}
 \end{proof}
 
 
-\end{document}
+
+\end{document}the
