@@ -1,0 +1,160 @@
+
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amssymb,amsmath,amsthm,bm,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I
+have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{NAME: } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 02}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+\textbf{Problem 1.}
+\begin{enumerate}[label=(\alph*)]
+\item Considering $\C$ as a $\R$-vector space, find a basis for $\C$.
+\item Considering $\C$ as a $\C$-vector space, find a basis for $\C$.
+\end{enumerate}
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 1
+%===========================================================
+\begin{enumerate}[label=(\alph*)]
+\item
+\begin{proof}
+    A basis for $\mathbb{C}$ as a $\R$-vector space is $B=\{1, i\}$. This is shown to be a basis by the following: Let $a+bi\in \mathbb{C}$ then consider the linear combination $a(1)+b(i)=a+bi$ as an arbitrary element of $\C$ is a linear combination of the elements of $B$ we have $\Span(B)=\mathbb{C}$. Lastly to show linear independence of $B$ consider the linear combination $a(1)+b(i)=0=0+0i$ as two complex numbers are equal if and only if their real parts are equal and imaginary parts are equal we get $a=0$ and $b=0$. Thus $B$ is a basis for $\C$ as a $\R$-vector space.
+\end{proof}
+\item
+\begin{proof}
+    A basis for $\mathbb{C}$ as a $\C$-vector space is given by $B=\{1+i\}$. Let $a+bi\in \C$ then consider the linear combination $(\frac{a+b}{2}+\frac{b-a}{2}i)(1+i)=\frac{a+b}{2}+\frac{a+b}{2}i+\frac{b-a}{2}i-\frac{b-a}{2}=a+bi$ as an arbitrary element of $\C$ is a linear combination of the element of $B$ we have $\Span(B)=\mathbb{C}$. \textit{Note that $\frac{a+b}{2}+\frac{b-a}{2}i\in C$ is a scalar as this is a $\C$-vector space}. Lastly to show linear independence of $B$ consider the linear combination $a+bi\in \C$ and $1+i\in B$ we have $(a+bi)(1+i)=0$ if and only if $a+bi=0$ as $\C$ is a field hence no zero divisors. 
+\end{proof}
+\end{enumerate}
+\newpage
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+\textbf{Problem 2.} Let $V$ be a $\K$-vector space, and suppose that $S_1, S_2$
+are subsets of $V$ satisfying the following conditions:
+\begin{itemize}
+\item $S_1$ and $S_2$ are both finite.
+\item $S_1 \cap S_2 = \emptyset$.
+\item $S_1 \cup S_2$ is a linearly independent set.
+\end{itemize}
+\vskip1em
+\begin{enumerate}[label=(\alph*)]
+\item Prove that $\Span(S_1 \cup S_2) = \Span(S_1) \oplus \Span(S_2).$
+\item What would change about the claim in (a) if $S_1 \cup S_2$ was not assumed
+to be linearly independent?
+\end{enumerate}
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 2
+%===========================================================
+\begin{enumerate}[label=(\alph*)]
+\item
+\begin{proof}
+    Assume that $V$ is a $\mathbb{K}$-vector space, and that $S_1,S_2$ are as described.
+    First I will show that $\Span(S_1)+\Span(S_2)$ is a direct sum. As $\Span(S_1),\Span(S_2)$ are both vector spaces we have that $\vec{0}\in \Span(S_1)+\Span(S_2)\not = \emptyset$. Now assume that $\vec{v}\in \Span(S_1)\cap \Span(S_2)$ then $\vec{v}\in \Span(S_1)$ and $\vec{v}\in \Span(S_2)$ so $v=k_1\vec{s_1}+...+k_n\vec{s_n}$ where $k_i\in \K$ and $\vec{s}\in S_1$ and $v= c_1\vec{u_1}+...+c_n\vec{u_n}$ where $c_i\in \K$ and $\vec{u_i}\in S_2$. Then $c_1\vec{u_1}+...+c_n\vec{u_n}+-(k_1\vec{s_1}+...+k_n\vec{s_n})=c_1\vec{u_1}+...+c_n\vec{u_n}+(-k_1\vec{s_1})+...+(-k_n\vec{s_n})=\vec{0}$ but as $S_1\cup S_2$ is linear independent and the previous equation is a linear combination of $S_1\cup S_2$ we have that for each $c_i,k_i\in \K$ that $c_i=k_i=0$ hence only $\vec{0}\in \Span(S_1)\cap \Span(S_2)$ which implies $\Span(S_1)+ \Span(S_2)$ is a direct sum. 
+    
+    Now suppose $\vec{v}\in \Span(S_1\cup S_2)$ then $\vec{v}= k_1\vec{s_1}+...+k_n\vec{s_n}+c_1\vec{u_1}+...+c_n\vec{c_n}$ where $k_i ,c_i\in \K$ and $\vec{s_i} \in S_1$ and $\vec{u_i}\in S_2$. As $k_1\vec{s_1}+...+k_n\vec{s_n}\in \Span(S_1)$ and $c_1\vec{u_1}+...+c_n\vec{u_n}\in S_2$
+\end{proof}
+\item
+\end{enumerate}
+\newpage
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+\textbf{Problem 3.} Let $V = \Q^4$, considered as a $\Q$-vector space, and let
+$U$ be the subspace
+$$U = \Span\!\big(\mathbf{u_1}=(1,-1,2,1),\,\mathbf{u_2}=(2,-3,6,3)\,\big).$$
+Extend the set $\left\{\mathbf{u_1},\mathbf{u_2}\right\}$ into a basis for $V$.
+That is, find two vectors $\mathbf{v_1},\mathbf{v_2} \in V$ so that
+$$\left\{\mathbf{u_1},\mathbf{u_2},\mathbf{v_1},\mathbf{v_2}\right\}$$
+is a basis for $V$.
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 3
+%===========================================================
+\begin{proof}
+\end{proof}
+\newpage
+%===========================================================
+% PROBLEM 4
+%===========================================================
+\begin{tcolorbox}
+\textbf{Problem 4.}
+Let $V=\Poly_3(\R)$ be the $\R$-vector space of polynomials of degree $3$ or
+less. Let $U$ be the subspace (you can take this for granted)
+$$U = \left\{ p(x) \in \Poly_3(\R) \: : \: p'(7)=0\right\}$$
+where $p'(x)$ is the derivative of $p(x)$ and $p'(7)$ is the derivative evaluated
+at $x=7$.
+Find a basis for $U$.
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 4
+%===========================================================
+\begin{proof}
+\end{proof}
+\newpage
+%===========================================================
+% PROBLEM 5
+%===========================================================
+\begin{tcolorbox}
+\textbf{Problem 5.} The classical ``Inclusion-Exclusion Principle'' states that,
+for two finite sets $A_1, A_2$, the cardinality of the union satisfies:
+$$|A_1 \cup A_2| = |A_1| + |A_2| - |A_1 \cap A_2|.$$
+Notice that we have a similar formula for vector spaces $V_1, V_2$:
+$$\dim(V_1 + V_2) = \dim(V_1) + \dim(V_2) - \dim(V_1 \cap V_2).$$
+For three sets, $A_1, A_2, A_3$, the Inclusion-Exclusion Principle says
+\begin{align*}
+|A_1 \cup A_2 \cup A_3| =& |A_1| + |A_2| + |A_3| \\
+& - |A_1 \cap A_2| - |A_1 \cap A_3| - |A_2 \cap A_3| \\
+& + |A_1 \cap A_2 \cap A_3|.
+\end{align*}
+Give an example showing that, sadly, the following analogous formula does not
+hold for vector spaces $V_1, V_2, V_3$:
+\begin{align*}
+\dim(V_1 + V_2 + V_3) =& \dim(V_1) + \dim(V_2) + \dim(V_3) \\
+& - \dim(V_1 \cap V_2) - \dim(V_1 \cap V_3) - \dim(V_2 \cap V_3) \\
+& +\dim(V_1 \cap V_2 \cap V_3).
+\end{align*}
+\vskip0.5em
+{\footnotesize \textsc{Hint: consider subspaces of a familiar low-dimensional
+vector space.}}
+\end{tcolorbox}
+\vskip1em
+%===========================================================
+% SOLUTION 5
+%===========================================================
+\end{document}
+Annotations
