@@ -438,7 +438,8 @@ on Pages 76 and 77.
     \[M=\{Q,\{a,b,c\},\delta, q_0,F\}
     \]
     such that $L(M)=L_5$.
-    As $Q$ is finite and $\{a^k:k\in \mathbb{N}\}$ has infinite cardinality then the function $\delta:J\subseteq Q\times \{a^k:k\in \mathbb{N}\}\mapsto Q$ cannot be injective by the pigeonhole principle. Then for some $k,j\in \mathbb{N}$ with $k\not = j$ we have $\delta(q_0,a^k)=\delta(q_0,a^j)=q$ where $q\in Q$. Then we have by the continuation lemma $\delta(q,b^i)=\delta(q_0,a^kb^i)=\delta(q_0,a^jb^i)=q_1$ where $i\in \mathbb{N}$. Again by the pigeonhole principle we have that there exists $t,s\in \mathbb{N}$ where $t\not = s$ and $\delta(q_1,c^s)=\delta(q_1,c^t)$. Then this would imply $\delta(q_0,a^kb^ic^s)=\delta(q_0,a^jb^ic^t)$
+    As $Q$ is finite and $\{a^k:k\in \mathbb{N}\}$ has infinite cardinality then the function $\delta:J\subseteq Q\times \{a^k:k\in \mathbb{N}\}\mapsto Q$ cannot be injective by the pigeonhole principle. Then for some $k,j\in \mathbb{N}$ with $k\not = j$ we have $\delta(q_0,a^k)=\delta(q_0,a^j)=q$ where $q\in Q$. Then we have by the continuation lemma $\delta(q,b^i)=\delta(q_0,a^kb^i)=\delta(q_0,a^jb^i)=q_1$ where $i\in \mathbb{N}$. Again by the pigeonhole principle we have that there exists $t,s\in \mathbb{N}$ where $t\not = s$ and $\delta(q_1,c^s)=\delta(q_1,c^t)$. Then this would imply $\delta(q_0,a^kb^ic^s)=\delta(q_0,a^jb^ic^t)$ now if 
+    they are accepted then we have $i=k$ or $i=s$ however as $k\not = j$ and $t\not =s$ then $M$ would accept strings not belonging to $L_5$. If $M$ accepts neither string that would then there would be some strings in $L_5$ that are not accepted by $M$. Such a string can be shown to exist by letting $i=k$ then we have $\delta(q_0,a^kb^ic^s)=\delta(q_0,a^kb^kc^s)$ a contradiction on the universal quantifier of $i$. In both cases $M$ does not accept the language of $L_5$
 \end{proof}
 
 
