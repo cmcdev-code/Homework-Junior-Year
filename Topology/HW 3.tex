@@ -93,8 +93,7 @@ Now to prove that the product topology is strictly finer I will be using the con
 \begin{proof}
     Suppose $(\vec{x}_n)$ is a sequence in $X$ and assume that it converges to $\vec{x}\in X$ let the sequence $\pi_\alpha(\vec{x}_n)$ be as stated assume that there exists an $\alpha \in A$ such that $f(n)=\pi_\alpha(\vec x_n)$ does not converge to $\pi_\alpha(\vec x)$. Then there exists an open set $U_\alpha\in X_\alpha$ we have that for all $N\in \mathbb{N}$ such that there exists $n\in \mathbb{N}$ with $n>N$ that $\pi_\alpha(\vec x_n)\not \in U_\alpha$. However as $\pi_\alpha^{-1}(U_\alpha)$ is open and $\vec{x} \in \pi_\alpha^{-1}(U_\alpha)$ we have that for some $M\in \mathbb{N}$ for all $m>M$  that $\vec x_m\in \pi_\alpha^{-1}(U_\alpha)$ this implies that $\pi_\alpha(\vec x_m) \in U_\alpha$ which contradicts the assumption that $\pi_\alpha(\vec x_n)$ does not converge. 
     
-    Assume that 
-
+    Assume that for every $\alpha\in A$ we have that the sequence $f(n)=\pi_\alpha(\vec v_n)$ converges to $\pi_{\alpha}(\vec x)$. Then given any open set $U$ with $x\in U$ we have by Munkres Theorem 19.1 that there is a finite number of $U_\alpha$ where $X_\alpha$ is a proper subset of $U_\alpha$. For the finite number $U_\alpha$ from $U$ where $U_\alpha\not = X_\alpha$ choose the minimum $N$ for each such that $\pi_\alpha(\vec{x}_n)$ converges to $\pi_\alpha(\vec{x})$ take the maximum $N$ from that and we have that for all $\vec{x_n}$ with $n>N$ that $\vec{x_n}\in U$. This shows that $(\vec x_n)$ converges to $\vec x$.
 \end{proof}
 
 
@@ -103,10 +102,9 @@ Now to prove that the product topology is strictly finer I will be using the con
 \noindent
 \subsection*{5.} Let $X =\prod _{k\in \mathbb N} X_k$ be the product of countably many copies of the real line $\mathbb R$  (that is, every $X_k$ is $\mathbb R$), with each factor $\mathbb R$ having the topology it gets from the standard metric on $\mathbb R$. Let $X$ have the box topology. Let $(\vec{x}_n)$ be a sequence in $X$ that satisfies for all $k$ and for all $n$, $\pi_k  (\vec{x}_n) = 1/n$. Show that $(\vec{x}_n)$ does not converge to the element of $X$ represented by the vector in which every entry is zero. {\bfseries Aside.} An equivalent way to describe $(\vec{x}_n)$ is to say that, for each $n$, the $n^{th}$ value of the sequence, $\vec{x}_n$, is the vector with every entry equal to $1/n$.
 
-\subsection*{Remark.} Your first reaction may have been that the definition of the box topology is more natural than the definition of the product topology. The last three problems show that, contrary to that first impression, some properties of the box topology are more surprising than the related properties of the product topology. 
-
-\vspace{.2in}
-There will be one more assignment followed by a week when you will take a test. The test, which will cover the material on the first four assignments (and in the associated textbook sections and class meetings), will be ``closed book" (meaning no aids of any kind) and timed (2 hours) but will not be proctored. I will give you access to a test file, with a cover page that does not reveal the content of the test. When you first look beyond the cover page, you must finish your work on the test within the following two hours. 
+ \begin{proof}
+    
+ \end{proof}
 
  
 \end{document}
