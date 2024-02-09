@@ -103,7 +103,9 @@ Now to prove that the product topology is strictly finer I will be using the con
 \subsection*{5.} Let $X =\prod _{k\in \mathbb N} X_k$ be the product of countably many copies of the real line $\mathbb R$  (that is, every $X_k$ is $\mathbb R$), with each factor $\mathbb R$ having the topology it gets from the standard metric on $\mathbb R$. Let $X$ have the box topology. Let $(\vec{x}_n)$ be a sequence in $X$ that satisfies for all $k$ and for all $n$, $\pi_k  (\vec{x}_n) = 1/n$. Show that $(\vec{x}_n)$ does not converge to the element of $X$ represented by the vector in which every entry is zero. {\bfseries Aside.} An equivalent way to describe $(\vec{x}_n)$ is to say that, for each $n$, the $n^{th}$ value of the sequence, $\vec{x}_n$, is the vector with every entry equal to $1/n$.
 
  \begin{proof}
-    
+    We have that for all $n\in \mathbb{N}$ that $(-\frac{1}{n},\frac{1}{n})$ is open in $\mathbb{R}$. So as this is the box topology we have that $\prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ is open. As the element of all zeros is in $\prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ we have that for all $n \in \mathbb{N}$ sequence $\vec{x}_n\not \in  \prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ because we have when $k\geq n$ that $\pi_k(\vec{x}_n)=\frac{1}{n}$ but $\frac{1}{k}\leq \frac{1}{n}$. This shows that the sequence $$
+
+
  \end{proof}
 
  
