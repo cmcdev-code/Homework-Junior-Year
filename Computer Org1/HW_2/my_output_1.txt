@@ -1,0 +1,15 @@
+Command: dot_product
+	<1.423, 92.310, 37.180>
+	<827.220, 78.600, 2.330>
+	The dot product of the two vectors is 8519.329
+
+Command: angle_between
+	<17.320, 98.492>
+	<73.590, 1.327>
+	The angle between the two vectors is 78.993 degrees
+
+Command: subtract
+	V1 Direction: 38.900	 V1 Magnitude: 8.000
+	V2 Direction: 129.215	 V2 Magnitude: 2.129
+	The resultant vector has a direction of 24.019 degrees and a magnitude of 8.290
+

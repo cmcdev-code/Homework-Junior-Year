@@ -9,7 +9,7 @@
 \def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I
 have neither given nor received unauthorized assistance on this assignment.}}
 \fancyhead{}
-\fancyhead[L]{NAME: } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[L]{Collin McDevitt } %Replace "NAME: " WITH YOUR NAME
 \fancyhead[C]{MATH 3144 HOMEWORK 02}
 \fancyhead[R]{PAGE \thepage}
 \fancyfoot{}
@@ -168,6 +168,11 @@ Find a basis for $U$.
 % SOLUTION 4
 %===========================================================
 \begin{proof}
+
+Consider the set $B=\left\{\frac{x^3}{147}+\frac{x^2}{14}-2x,\;\frac{x^2}{14}-x,\;1\right\}$. First I will show the linear independent of $B$. Consider the linear combination $a\left(\frac{x^3}{147}+\frac{x^2}{14}-2x\right)+b\left(\frac{x^2}{14}-x\right)+c(1)=0$ then as the right of the equation has no $x^3$ and the coefficient on $x^3$ is $\frac{a}{147}$ we have that $a=0$.  Likewise we have that $b=0$ as the right of the equation has no $x^2$ lastly we have that $c=0$. Now we have that $\dim(U)\leq \mathcal{P}_3(\mathbb{R})=4$. If $\dim(U)=4$ then we would be able to add another vector to $B$ and have $B$ still be linearly independent denote this vector by $ax^3+bx^2+cx+d$ where $a,b,c,d\in \mathbb{R}$ however consider the linear combination $$ax^3+bx^2+cx+d-a147\left(\frac{x^3}{147}+\frac{x^2}{14}-2x\right)+-(14b-a147)(\frac{x^2}{14}-x)+d\cdot 1 =$$
+$$ax^3+bx^2+cx+d-ax^3- \frac{a147x^2}{14} +294ax-14bx^2+14bx +\frac{147ax^2}{14}-a147x-d=$$
+$$cx+294ax+14bx=x(c+294a+14b)$$ 
+If $c+294a+14b=0$ then the set would not be linearly independent. If $c+294a+14b\not =0$ then taking the derivative and evaluating at $x=7$ would give a non-zero value. This implies that no such vector exists and that $\dim(U)=3$. Thus $B$ is a basis for $U$ by \textbf{Theorem 2.39}.
 \end{proof}
 \newpage
 %===========================================================
@@ -197,8 +202,9 @@ hold for vector spaces $V_1, V_2, V_3$:
 vector space.}}
 \end{tcolorbox}
 \vskip1em
-%===========================================================
-% SOLUTION 5
-%===========================================================
+
+Consider the three $\R$-vector spaces $V_1=\{(a,0):a\in \mathbb{R}\}, V_2 = \{(0,b):b\in \mathbb{R}\},V_3=\{(0,0)\}$ We have $\dim(V_1+V_2+V_3)=2$. However $\dim(V_1)+\dim(V_2)+\dim(V_3)-\dim(V_1\cap V_2)-\dim(V_1\cap V_3)-\dim(V_2\cap V_3)+\dim(V_1\cap V_2\cap V_3)=1+1+0-1-0-0+0=1$. Thus the formula does not hold.
+
+
 \end{document}
 Annotations

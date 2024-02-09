@@ -1,0 +1,95 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Product spaces } 
+
+\subsection*{Hand in Friday, February 9.} 
+\vspace{.15in}
+
+
+\noindent
+\subsection*{1.}  Suppose that  $X = \prod _{\alpha \in A} X_{\alpha}$ is the product space formed by an arbitrary collection of topological spaces $X_{\alpha}$. Among the assertions you are asked to prove in this problem is an assertion stated by Munkres as a theorem but not proven in Munkres. Prove the assertion; don't just quote Munkres's theorem. 
+
+\vspace{.1in}
+{\bfseries a.} Assume that $X$ has the product topology. Show that $X$ is Hausdorff if and only if every $X_{\alpha}$ is Hausdorff. 
+
+
+\begin{proof}
+    Assume that $X$ is Hausdorff with the product topology. Let $x,y\in X$ where $x_j=y_j$ for all $j\in A\setminus \{\alpha\}$ with $x_\alpha \not = y_\alpha$ for a single $\alpha \in A$. Then as $x\not = y$ as they differ in the $\alpha'th$ index we have that there are two open sets $U_1$ and $U_2$ where $x\in U_1$ and $y\in U_2$ and $U_1\cap U_2 =\emptyset$. However as all indices of $x,y$ are equal in all but the $\alpha$'th index we have that for all $\beta \in A$ with $\beta\not = \alpha$ that any two open sets $U_{\beta_1},U_{\beta_2}\in X_\beta$ with $x_\beta\in U_{\beta_1}$ and $y_\beta\in U_{\beta_2}$ that $U_{\beta_1}\cap U_{\beta_2}\not = \emptyset$. But as $X$ is Hausdorff we have that there are two open sets $U_{\alpha_1}, U_{\alpha_2}$ in $X_\alpha$ such that $x_\alpha \in U_{\alpha_1}$ and $y_\alpha \in U{\alpha_2}$ but $U_{\alpha_1}\cap U_{\alpha_2}=\emptyset$ as $x_\alpha,y_\alpha$ where arbitrarily chosen we have that every $X_\alpha$ is Hausdorff. 
+
+    Now assume that each $X_\alpha$ is Hausdorff. Then let $x,y\in X$ with $x\not = y$ then for some $\beta\in A$ we have that $x_\beta\not = y_\beta$. As each $X_\alpha$ is Hausdorff take the two sets $U_{\beta_1},U_{\beta_2}\in X_\beta$ where $x_\beta \in U_{\beta_1},y_\beta \in U_{\beta_2}$ but $U_{\beta_1}\cap U_{\beta_2}=\emptyset$. Now take the two open sets in the product topology $\pi_{\beta}^{-1}(U_{\beta_1})$ and $\pi_{\beta}^{-1}(U_{\beta_2})$ we have that $x\in\pi_{\beta}^{-1}(U_{\beta_1}) $ and $y\in\pi_{\beta}^{-1}(U_{\beta_2})$ but $\pi_{\beta}^{-1}(U_{\beta_1})\cap U_\beta^{-1}(\beta_2)=\emptyset$ as $x,y$ are arbitrarily we have that $X$ is Hausdorff.
+    
+
+\end{proof}
+
+
+
+\vspace{.1in}
+{\bfseries b.} Assume that $X$ has the box topology. Show that $X$ is Hausdorff if and only if every $X_{\alpha}$ is Hausdorff. 
+
+
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{2.} Suppose that $X = X_1 \times X_2$ is a product space formed by two infinite topological spaces, each with the finite-complement topology. Show that both the box and product topologies on $X$ are strictly finer than the finite-complement topology on $X$. 
+
+
+As $X$ is the cartesian product of a finite number of sets we have that both the box and product topology are the same. So in the proof we only need to consider one and it will hold for the other. 
+
+For containment I will be using Munkres Lemma 13.3. 
+
+Let $x\in X$ with $x\in X_1\setminus \{x_{1_1},x_{1_2},....,x_{1_n}\}\times X_2\setminus \{x_{2_1},x_{2_2},...,x_{2_m}\}$ where $x_{1_{i}}\in X_1$ for $1 \leq i\leq n$ and $x_{2_j}\in X_2$ where $1\leq j \leq m$ for some $n,m\in \mathbb{N}$. Then as $X_1\setminus \{x_{1_1},x_{1_2},....,x_{1_n}\}, X_2\setminus \{x_{2_1},x_{2_2},...,x_{2_m}\}$ are open in $X_1,X_2$ respectively we have by the definition of product topology that $X_1\setminus \{x_{1_1},x_{1_2},....,x_{1_n}\}\times X_2\setminus \{x_{2_1},x_{2_2},...,x_{2_m}\}$ is in the product topology. Hence $x\in X_1\setminus \{x_{1_1},x_{1_2},....,x_{1_n}\}\times X_2\setminus \{x_{2_1},x_{2_2},...,x_{2_m}\}\subset X_1\setminus \{x_{1_1},x_{1_2},....,x_{1_n}\}\times X_2\setminus \{x_{2_1},x_{2_2},...,x_{2_m}\}$ therefore by Munkres lemma 13.3 that the product topology is finer then the finite complement topology.
+
+Now to prove that the product topology is strictly finer I will be using the contrapositive of Munkres Lemma 13.3.
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{3.} Let $X =\prod _{k\in \mathbb N} X_k$ be the product of countably many copies of the real line $\mathbb R$  (that is, every $X_k$ is $\mathbb R$), with each factor $\mathbb R$ having the topology it gets from the standard metric on $\mathbb R$. Let $X$ have the box topology. Let $(\vec{x}_n)$ be a sequence of elements of $X$, where, for each $n$, $\vec{x}_n$ has its $n^{th}$ entry equal to $1$ and the rest of its entries equal to $0$.  Show that $(\vec{x}_n)$ does not converge to the element of $X$ represented by the vector in which every entry is zero. 
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{4.} Suppose that  $X = \prod _{\alpha \in A} X_{\alpha}$ is the product space formed by an arbitrary collection of topological spaces $X_{\alpha}$. Let $X$ have the product topology. Let $(\vec{x}_n)$ be a sequence in $X$. Show that this sequence converges to $\vec{x} \in X$ if and only if for every $\alpha \in A$, the sequence defined by $f(n) = \pi _{\alpha} (\vec{x}_n)$ converges to $ \pi _{\alpha} (\vec{x})$. {\bfseries Aside.} Another way to state what you're asked to prove is : the sequence $(\vec{x}_n)$ converges to $\vec{x} \in X$ if and only if for every $\alpha \in A$, the sequence $\pi _{\alpha} (\vec{x}_1) , \pi _{\alpha} (\vec{x}_2), \pi _{\alpha} (\vec{x}_3) , . . . $ in $X_{\alpha}$ converges to $ \pi _{\alpha} (\vec{x})$ in $X_{\alpha}$.
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{5.} Let $X =\prod _{k\in \mathbb N} X_k$ be the product of countably many copies of the real line $\mathbb R$  (that is, every $X_k$ is $\mathbb R$), with each factor $\mathbb R$ having the topology it gets from the standard metric on $\mathbb R$. Let $X$ have the box topology. Let $(\vec{x}_n)$ be a sequence in $X$ that satisfies for all $k$ and for all $n$, $\pi_k  (\vec{x}_n) = 1/n$. Show that $(\vec{x}_n)$ does not converge to the element of $X$ represented by the vector in which every entry is zero. {\bfseries Aside.} An equivalent way to describe $(\vec{x}_n)$ is to say that, for each $n$, the $n^{th}$ value of the sequence, $\vec{x}_n$, is the vector with every entry equal to $1/n$.
+
+\subsection*{Remark.} Your first reaction may have been that the definition of the box topology is more natural than the definition of the product topology. The last three problems show that, contrary to that first impression, some properties of the box topology are more surprising than the related properties of the product topology. 
+
+\vspace{.2in}
+There will be one more assignment followed by a week when you will take a test. The test, which will cover the material on the first four assignments (and in the associated textbook sections and class meetings), will be ``closed book" (meaning no aids of any kind) and timed (2 hours) but will not be proctored. I will give you access to a test file, with a cover page that does not reveal the content of the test. When you first look beyond the cover page, you must finish your work on the test within the following two hours. 
+
+ 
+\end{document}
