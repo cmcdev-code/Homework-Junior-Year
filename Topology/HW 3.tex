@@ -40,7 +40,7 @@
 \begin{proof}
     Assume that $X$ is Hausdorff with the product topology. Let $x,y\in X$ where $\pi_j(x)=\pi_j(y)$ for all $j\in A\setminus \{\alpha\}$ with $\pi_\alpha(x) \not = \pi_\alpha(y)$ for a single $\alpha \in A$. Then as $x\not = y$ as they differ in the $\alpha'th$ index we have that there are two open sets $U_1$ and $U_2$ where $x\in U_1$ and $y\in U_2$ and $U_1\cap U_2 =\emptyset$. However as all indices of $x,y$ are equal in all but the $\alpha$'th index we have that for all $\beta \in A$ with $\beta\not = \alpha$ that any two open sets $U_{\beta_1},U_{\beta_2}\in X_\beta$ with $\pi_\beta(x)\in U_{\beta_1}$ and $\pi_\beta(y)\in U_{\beta_2}$ that $U_{\beta_1}\cap U_{\beta_2}\not = \emptyset$. But as $X$ is Hausdorff we have that there are two open sets $U_{\alpha_1}, U_{\alpha_2}$ in $X_\alpha$ such that $\pi_\alpha(x) \in U_{\alpha_1}$ and $\pi_\alpha(y) \in U{\alpha_2}$ but $U_{\alpha_1}\cap U_{\alpha_2}=\emptyset$. As $\alpha$ was chosen arbitrarily we have that every $X_\alpha$ is Hausdorff. 
 
-    Now assume that each $X_\alpha$ is Hausdorff. Then let $x,y\in X$ with $x\not = y$ then for some $\beta\in A$ we have that $\pi_\beta(x)\not = \pi_\beta(y)$. As each $X_\alpha$ is Hausdorff take the two sets $U_{\beta_1},U_{\beta_2}\in X_\beta$ where $x_\beta \in U_{\beta_1},y_\beta \in U_{\beta_2}$ but $U_{\beta_1}\cap U_{\beta_2}=\emptyset$. Now take the two open sets in the product topology $\pi_{\beta}^{-1}(U_{\beta_1})$ and $\pi_{\beta}^{-1}(U_{\beta_2})$ we have that $x\in\pi_{\beta}^{-1}(U_{\beta_1}) $ and $y\in\pi_{\beta}^{-1}(U_{\beta_2})$ but $\pi_{\beta}^{-1}(U_{\beta_1})\cap U_\beta^{-1}(\beta_2)=\emptyset$ as $x,y$ are arbitrarily we have that $X$ is Hausdorff.
+    Now assume that each $X_\alpha$ is Hausdorff. Then let $x,y\in X$ with $x\not = y$ then for some $\beta\in A$ we have that $\pi_\beta(x)\not = \pi_\beta(y)$. As each $X_\alpha$ is Hausdorff take the two sets $U_{\beta_1},U_{\beta_2}\in X_\beta$ where $\pi_\beta(x) \in U_{\beta_1},\pi(y) \in U_{\beta_2}$ but $U_{\beta_1}\cap U_{\beta_2}=\emptyset$. Now take the two open sets in the product topology $\pi_{\beta}^{-1}(U_{\beta_1})$ and $\pi_{\beta}^{-1}(U_{\beta_2})$ we have that $x\in\pi_{\beta}^{-1}(U_{\beta_1}) $ and $y\in\pi_{\beta}^{-1}(U_{\beta_2})$ but $\pi_{\beta}^{-1}(U_{\beta_1})\cap U_\beta^{-1}(\beta_2)=\emptyset$ as $x,y$ are arbitrarily we have that $X$ is Hausdorff.
     
 
 \end{proof}
@@ -60,6 +60,8 @@
 \noindent
 \subsection*{2.} Suppose that $X = X_1 \times X_2$ is a product space formed by two infinite topological spaces, each with the finite-complement topology. Show that both the box and product topologies on $X$ are strictly finer than the finite-complement topology on $X$. 
 
+\begin{proof}
+    
 
 As $X$ is the cartesian product of a finite number of sets we have that both the box and product topology are the same. So in the proof we only need to consider one and it will hold for the other. 
 
@@ -70,7 +72,7 @@ Let $x\in X$ with $x\in X_1\setminus \{x_{1_1},x_{1_2},....,x_{1_n}\}\times X_2\
 Now to prove that the product topology is strictly finer then the finite complement topology.
 
 We have that $X_1\times (X_2\setminus \{x_2\})$ where $x_2\in X_2$ is in the product topology as both $X_1,X_2\setminus \{x_2\}$ are open in their finite complement topologies. However as $X_1\times (X_2\setminus \{x_2\})=X\setminus (\cup_{x\in X_1} (x,x_2))$ is not in the finite complement topology we have that the product topology is strictly finer than the finite complement topology.
-
+\end{proof}
 
 \vspace{.15in}
 
@@ -93,9 +95,9 @@ We have that $X_1\times (X_2\setminus \{x_2\})$ where $x_2\in X_2$ is in the pro
 
 
 \begin{proof}
-    Suppose $(\vec{x}_n)$ is a sequence in $X$ and assume that it converges to $\vec{x}\in X$ let the sequence $\pi_\alpha(\vec{x}_n)$ be as stated assume that there exists an $\alpha \in A$ such that $f(n)=\pi_\alpha(\vec x_n)$ does not converge to $\pi_\alpha(\vec x)$. Then there exists an open set $U_\alpha\in X_\alpha$ we have that for all $N\in \mathbb{N}$ such that there exists $n\in \mathbb{N}$ with $n>N$ that $\pi_\alpha(\vec x_n)\not \in U_\alpha$. However as $\pi_\alpha^{-1}(U_\alpha)$ is open and $\vec{x} \in \pi_\alpha^{-1}(U_\alpha)$ we have that for some $M\in \mathbb{N}$ for all $m>M$  that $\vec x_m\in \pi_\alpha^{-1}(U_\alpha)$ this implies that $\pi_\alpha(\vec x_m) \in U_\alpha$ which contradicts the assumption that $\pi_\alpha(\vec x_n)$ does not converge. 
+    Suppose $(\vec{x}_n)$ is a sequence in $X$ and assume that it converges to $\vec{x}\in X$ let the sequence $\pi_\alpha(\vec{x}_n)$ be as stated. Let $U_\alpha$ be an arbitrary open set of $X_\alpha$ with $\pi_\alpha(\vec{x})\in U_\alpha$. Then as $\pi_\alpha^{-1}(U_\alpha)$ is open in the product topology and $\vec{x} \in \pi_\alpha^{-1}(U_\alpha)$ we have that for some $M\in \mathbb{N}$ for all $m>M$  that $\vec x_m\in \pi_\alpha^{-1}(U_\alpha)$ this implies that $\pi_\alpha(\vec x_m) \in U_\alpha$  which shows that for any $\alpha \in A$ the sequence $f(n)=\pi_\alpha(\vec{x}_n)$ converges to $\pi_\alpha(\vec{x})$.
     
-    Assume that for every $\alpha\in A$ we have that the sequence $f(n)=\pi_\alpha(\vec v_n)$ converges to $\pi_{\alpha}(\vec x)$. Then given any open set $U$ with $x\in U$ we have by Munkres Theorem 19.1 that there is a finite number of $U_\alpha$ where $X_\alpha$ is a proper subset of $U_\alpha$. For the finite number $U_\alpha$ from $U$ where $U_\alpha\not = X_\alpha$ choose the minimum $N$ for each such that $\pi_\alpha(\vec{x}_n)$ converges to $\pi_\alpha(\vec{x})$ take the maximum $N$ from that and we have that for all $\vec{x_n}$ with $n>N$ that $\vec{x_n}\in U$. This shows that $(\vec x_n)$ converges to $\vec x$.
+    Assume that for every $\alpha\in A$ we have that the sequence $f(n)=\pi_\alpha(\vec v_n)$ converges to $\pi_{\alpha}(\vec x)$. Then given any open set $U$ with $x\in U$ we have by Munkres Theorem 19.1 that there is a finite number of $U_\alpha$ where $X_\alpha$ is a proper subset of $U_\alpha$. For the finite number $U_\alpha$ from $U$ where $U_\alpha\not = X_\alpha$ choose the minimum $N$ for each such that $\pi_\alpha(\vec{x}_n)$ converges to $\pi_\alpha(\vec{x})$ take the maximum $N$ from that and we have that for all $\vec{x_n}$ with $n>N$ that $\vec{x_n}\in U$. Because $U$ is an element of the product topology we have all but a finite number of the 'factors' in the cartesian product would be of the form $X_\alpha$ so $\pi_\alpha(\vec{x})\in X_\alpha$ the finite number that aren't of that form are taken care of by the choice of $N$. This shows that $(\vec x_n)$ converges to $\vec x$.
 \end{proof}
 
 
@@ -105,7 +107,7 @@ We have that $X_1\times (X_2\setminus \{x_2\})$ where $x_2\in X_2$ is in the pro
 \subsection*{5.} Let $X =\prod _{k\in \mathbb N} X_k$ be the product of countably many copies of the real line $\mathbb R$  (that is, every $X_k$ is $\mathbb R$), with each factor $\mathbb R$ having the topology it gets from the standard metric on $\mathbb R$. Let $X$ have the box topology. Let $(\vec{x}_n)$ be a sequence in $X$ that satisfies for all $k$ and for all $n$, $\pi_k  (\vec{x}_n) = 1/n$. Show that $(\vec{x}_n)$ does not converge to the element of $X$ represented by the vector in which every entry is zero. {\bfseries Aside.} An equivalent way to describe $(\vec{x}_n)$ is to say that, for each $n$, the $n^{th}$ value of the sequence, $\vec{x}_n$, is the vector with every entry equal to $1/n$.
 
  \begin{proof}
-    We have that for all $n\in \mathbb{N}$ that $(-\frac{1}{n},\frac{1}{n})$ is open in $\mathbb{R}$. So as this is the box topology we have that $\prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ is open. As the element of all zeros is in $\prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ we have that for all $n \in \mathbb{N}$ sequence $\vec{x}_n\not \in  \prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ because we have when $k\geq n$ that $\pi_k(\vec{x}_n)=\frac{1}{n}$ but $\frac{1}{k}\leq \frac{1}{n}$. This shows that the sequence $(\vec{x}_n)$ does not converge to the element of $X$ of all zeros.
+    We have that for all $n\in \mathbb{N}$ that $(-\frac{1}{n},\frac{1}{n})$ is open in $\mathbb{R}$. As this is the box topology we have that $\prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ is open. As the element of all zeros is in $\prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ we have that for all $n \in \mathbb{N}$ sequence $\vec{x}_n\not \in  \prod_{k\in\mathbb{N}}(-\frac{1}{k},\frac{1}{k})$ because we have when $k\geq n$ that $\pi_k(\vec{x}_n)=\frac{1}{n}$ but $\frac{1}{k}\leq \frac{1}{n}$. This shows that the sequence $(\vec{x}_n)$ does not converge to the element of $X$ of all zeros.
 
  \end{proof}
 

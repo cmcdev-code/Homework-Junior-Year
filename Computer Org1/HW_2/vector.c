@@ -4,17 +4,9 @@
 
 #define PI 3.14159625 
 
-// double dot_product(const double vec1[], int v1_len, const double vec2[], int v2_len);
-
-// double angle_between(const double vec1[], int v1_len, const double vec2[], int v2_len);
-
-// void subtract(double v1_dir, double v1_mag, double v2_dir, double v2_mag, double* new_dir, double* new_mag);
-
-
-
-
 double dot_product(const double vec1[], int v1_len, const double vec2[], int v2_len) {
     double dot_product = 0;
+        v2_len+=0;
     for (int i =0; i< v1_len; i++){
         dot_product += vec1[i] * vec2[i];
     }
@@ -35,7 +27,7 @@ double calculate_magnitude(const double vec[], int v_len) {
 
 
 double angle_between(const double vec1[], int v1_len,const double vec2[], int v2_len){
-    
+
     double dot= dot_product(vec1,v1_len,vec2,v2_len);
     double mag_1= calculate_magnitude(vec1,v1_len);
     double mag_2= calculate_magnitude(vec2,v2_len);
@@ -51,11 +43,10 @@ void subtract(double v1_dir, double v1_mag, double v2_dir, double v2_mag, double
 
 
     double vec[2]={i_part,j_part};
-    double unit_vec[2]={1.0,0.0};
+    *new_dir = atan2(j_part, i_part) * (180 / PI); 
+    if (*new_dir < 0) {
+    *new_dir += 360; }
 
-    
-    *new_dir = angle_between(vec,2,unit_vec,2);
-    
     *new_mag= calculate_magnitude(vec,2);
 
 }

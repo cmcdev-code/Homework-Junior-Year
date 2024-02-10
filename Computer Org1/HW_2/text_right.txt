@@ -1,14 +1,124 @@
 Command: dot_product
-        <1.423, 92.310, 37.180>
-        <827.220, 78.600, 2.330>
-        The dot product of the two vectors is 8519.329
+	<53.688, 73.907, 47.133, 63.526, 37.163>
+	<42.939, 12.081, 34.575, 25.941, 98.782>
+	The dot product of the two vectors is 10146.766
+
+Command: dot_product
+	<34.763, 70.181>
+	<40.229, 45.066>
+	The dot product of the two vectors is 4561.258
+
+Command: dot_product
+	<95.084, 98.057>
+	<3.370, 69.358>
+	The dot product of the two vectors is 7121.470
 
 Command: angle_between
-        <17.320, 98.492>
-        <73.590, 1.327>
-        The angle between the two vectors is 78.993 degrees
+	<47.157, 5.732>
+	<39.857, 29.980>
+	The angle between the two vectors is 30.020 degrees
 
 Command: subtract
-        V1 Direction: 38.900     V1 Magnitude: 8.000
-        V2 Direction: 129.215    V2 Magnitude: 2.129
-        The resultant vector has a direction of 24.019 degrees and a magnitude of 8.290
+	V1 Direction: 4.874	 V1 Magnitude: 6.106
+	V2 Direction: 30.172	 V2 Magnitude: 57.562
+	The resultant vector has a direction of 213.042 degrees and a magnitude of 52.107
+
+Command: angle_between
+	<76.305, 21.088>
+	<16.176, 19.243>
+	The angle between the two vectors is 34.500 degrees
+
+Command: angle_between
+	<49.751, 44.185>
+	<30.951, 45.959>
+	The angle between the two vectors is 14.433 degrees
+
+Command: angle_between
+	<64.714, 16.140>
+	<85.261, 9.780>
+	The angle between the two vectors is 7.461 degrees
+
+Command: angle_between
+	<99.496, 4.864>
+	<64.503, 2.866>
+	The angle between the two vectors is 0.255 degrees
+
+Command: subtract
+	V1 Direction: 91.208	 V1 Magnitude: 49.023
+	V2 Direction: 77.955	 V2 Magnitude: 31.064
+	The resultant vector has a direction of 111.969 degrees and a magnitude of 20.091
+
+Command: subtract
+	V1 Direction: 79.614	 V1 Magnitude: 34.939
+	V2 Direction: 83.108	 V2 Magnitude: 9.786
+	The resultant vector has a direction of 78.257 degrees and a magnitude of 25.178
+
+Command: angle_between
+	<62.121, 85.090>
+	<12.588, 77.297>
+	The angle between the two vectors is 26.882 degrees
+
+Command: dot_product
+	<27.048, 47.518, 73.709>
+	<72.006, 92.550, 38.422>
+	The dot product of the two vectors is 9177.456
+
+Command: subtract
+	V1 Direction: 77.812	 V1 Magnitude: 47.202
+	V2 Direction: 53.593	 V2 Magnitude: 77.308
+	The resultant vector has a direction of 204.119 degrees and a magnitude of 39.354
+
+Command: angle_between
+	<18.096, 79.173>
+	<24.288, 9.303>
+	The angle between the two vectors is 56.167 degrees
+
+Command: angle_between
+	<2.243, 39.367>
+	<6.198, 80.857>
+	The angle between the two vectors is 1.122 degrees
+
+Command: dot_product
+	<50.428, 74.733, 76.395>
+	<27.725, 78.066, 20.152>
+	The dot product of the two vectors is 8771.735
+
+Command: dot_product
+	<25.779, 18.135>
+	<31.284, 12.925>
+	The dot product of the two vectors is 1040.865
+
+Command: subtract
+	V1 Direction: 77.486	 V1 Magnitude: 65.518
+	V2 Direction: 72.254	 V2 Magnitude: 28.552
+	The resultant vector has a direction of 81.502 degrees and a magnitude of 37.176
+
+Command: dot_product
+	<51.840, 90.917, 78.623>
+	<53.083, 30.284, 83.822>
+	The dot product of the two vectors is 12095.490
+
+Command: subtract
+	V1 Direction: 72.128	 V1 Magnitude: 23.583
+	V2 Direction: 67.397	 V2 Magnitude: 22.556
+	The resultant vector has a direction of 131.445 degrees and a magnitude of 2.163
+
+Command: dot_product
+	<55.805, 27.832>
+	<18.101, 86.089>
+	The dot product of the two vectors is 3406.155
+
+Command: subtract
+	V1 Direction: 63.575	 V1 Magnitude: 5.275
+	V2 Direction: 84.302	 V2 Magnitude: 91.126
+	The resultant vector has a direction of 265.543 degrees and a magnitude of 86.213
+
+Command: subtract
+	V1 Direction: 42.966	 V1 Magnitude: 77.805
+	V2 Direction: 14.352	 V2 Magnitude: 95.050
+	The resultant vector has a direction of 140.024 degrees and a magnitude of 45.868
+
+Command: subtract
+	V1 Direction: 28.990	 V1 Magnitude: 10.679
+	V2 Direction: 69.302	 V2 Magnitude: 51.573
+	The resultant vector has a direction of 258.341 degrees and a magnitude of 43.976
