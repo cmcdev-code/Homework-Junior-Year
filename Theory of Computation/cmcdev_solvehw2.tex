@@ -373,20 +373,24 @@ Prove or disprove:
 
 
 \begin{proof}{(a) this is false}
-Consider the language $L_2$ from problem $1$ we have that $L_2$ is not regular. However consider the language $L_2^\prime=\{w\in \{0,1\}^*\}$ we have that $L_2^\prime$ is regular as it is recognized by the FA. \begin{center}
+Consider the language $L_2$ from problem $1$ we have that $L_2$ is not regular. However consider the language $L_2^\prime=\{w\in \{0,1\}^*\}$ we have that $L_2^\prime$ is regular as it is recognized by the FA. 
+\begin{center}
     \begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto]
-        \node[state,initial, accepting] (q_0)   {$q_0$};
+        \node[state,initial,accepting] (q_0)   {$q_0$};
         \path[->]
-        (q_0) edge  loop [above] node {0,1} (q_0);
+        (q_0) edge [loop above]  node {0,1} (q_0);
     
     \end{tikzpicture}
-    
-        
 \end{center}
-
+    We have that $L_2\subseteq L_2^\prime$ but $L_2$ is not regular. Therefore we have a counter example to the claim. 
 \end{proof}
     
+\begin{proof}{(b) this is true}
 
+
+    
+\end{proof}
+    
 
 
 \problembreak
