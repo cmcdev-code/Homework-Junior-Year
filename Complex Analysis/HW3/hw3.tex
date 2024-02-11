@@ -1,0 +1,62 @@
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,bm,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt} %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 5235 HOMEWORK 03}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+
+
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 1.}
+  Show that if $f$ and $\bar f$ are analytic on a domain $D$, then $f$ is constant.
+  \end{tcolorbox}
+\vskip1em
+
+\begin{proof}
+    Assume that $f=u+iv$ and $\bar f= u- i v$ are both analytic on domain $D$. Then we have that both satisfy the Cauchy-Riemann equations: That is 
+    \begin{align*}
+        \frac{\partial u}{\partial x} &= \frac{\partial v}{\partial y}, & \frac{\partial u}{\partial y} &= -\frac{\partial v}{\partial x}, \\
+        \frac{\partial u}{\partial x} &= -\frac{\partial v}{\partial y}, & \frac{\partial u}{\partial x} &= \frac{\partial v}{\partial x}.
+    \end{align*}
+    Then we have $\frac{\partial u}{\partial x}=- \frac{\partial u}{\partial x}\implies \frac{\partial u}{\partial x}=0$ using the same reasoning for the rest we get  $\frac{\partial v}{\partial x}=\frac{\partial u}{ \partial y}= \frac{\partial v}{\partial y}=0$. This implies that $u$ and $v$ are both constant functions therefore $f$ is constant.
+    \end{proof}
+
+    \begin{tcolorbox}
+    \textbf{Problem 2.}
+    Let $a$ be a complex number, $a \not = 0 $, and $f(z)$ be an analytic branch of $z^a$ on $\C \setminus (-\infty, 0]$. Show that $f^\prime(z)=a f(z)/z$. 
+    \end{tcolorbox}
+
+    \begin{proof}
+        Let $f(z)=z^a$ where $a\neq 0$, and $f(z)$ be an analytic branch of $z^a$ on $\C \setminus (-\infty,0]$. Then we have $f(z)=e^{a \text{Log} z}$. Using the chain rule we get $f^\prime(z)=ae^{a\text{Log} z}\cdot \frac{1}{z}$. As $f(z)=e^{a\text{Log}}$ is the same branch we can do the substitution $f^\prime(z)=ae^{a\text{Log}z}/z=af(z)/z$ which completes the proof.
+    \end{proof}
+
+
+
+\end{document}

@@ -1,0 +1,158 @@
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,bm,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt} %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 03}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+
+
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 1.}
+  Consider $V=\C$, the complex numbers, as a $\C$-vector space. Define a function $\Re: \C \rightarrow \C$ by
+  \begin{align*}
+    \Re(x+iy) = x
+  \end{align*}
+  Is $\Re$ a linear map? If so, prove it. If not, explain why not.
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 1
+%===========================================================
+
+No it is not
+\begin{proof}
+    No as it does not satisfy homogeneity.
+    Consider $(1+i)\cdot \Re(1+i)=1+i$ but $\Re((1+i)\cdot (1+i))=\Re(2i)=0$ so it does not satisfy homogeneity.
+
+\end{proof}
+\newpage
+
+
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 2.} \textbf{Extending a linear map.} Let $V$ be a finite-dimensional $\K$-vector space, $W$ a $\K$-vector space, and $U$ asubspace of $V$. Furthermore, let
+  \begin{align*}
+    \left\{\mathbf{u_1},\ldots,\mathbf{u_m}\right\} & \text{ be a basis for } U \text{ and} \\
+    \left\{\mathbf{u_1},\ldots,\mathbf{u_m},\mathbf{v_{m+1}},\ldots,\mathbf{v_n}\right\} & \text{ be the (extended) basis for } V.
+  \end{align*}
+  Taking $T:U \rightarrow W$ to be any linear map, define a function $f: V \rightarrow W$ by
+  $$ f\big(a_1 \mathbf{u_1} + \cdots + a_m \mathbf{u_m} + a_{m+1} \mathbf{v_{m+1}} + \cdots + a_n \mathbf{v_{n}}\big) = T\!\big(a_1 \mathbf{u_1} + \cdots + a_m \mathbf{u_m}\big). $$
+  \begin{enumerate}[label=(\alph*)]
+  \item Is $f$ a linear map? If so, prove it. If not, explain why not.
+  \item What happens if the definition of $f$ is changed to the following?
+    $$f(\mathbf{x}) = \begin{cases} T(\mathbf{x}) & \text{ if } \mathbf{x} \in U \\ \mathbf{0} & \text{ otherwise} \end{cases}$$
+  \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 2
+%===========================================================
+\begin{enumerate}[label=(\alph*)]
+\item \begin{proof}
+    Let $\lambda \in \K$ and $a_1 \mathbf{u_1}+a_2 \mathbf{u_2}+...+a_m\mathbf{u_m}$ 
+\end{proof}
+\item
+\end{enumerate}
+  
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 3.} Prove that the following is a subspace of $\mathcal{L}(\K^2)$:
+  $$U = \left\{ f \in \mathcal{L}(\K^2) \: : \: \begin{array}{l} a,b,c \in \K \text{ and} \\ f(x,y) = (ax+by,bx+cy) \end{array} \right\}$$
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 3
+%===========================================================
+\begin{proof}
+\end{proof}
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 4
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 4.}
+  For any linear map $T \in \mathcal{L}(V)$, we say that a subspace $U \subseteq V$ is an \textbf{invariant subspace of \bm{$T$}} if and only if $T(U) \subseteq U$.
+  \vskip1em
+  Let $T:\R^3 \rightarrow \R^3$ be the linear map given by
+  $$
+  T\!\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix}\right) = \begin{bmatrix} 7x-3y+5z \\ 12x-4y+12z \\ -x + y + z \end{bmatrix}.
+  $$
+  Show that each of the following subspaces of $\R^3$ are invariant subspaces of $T$.
+  $$
+  U_1 = \Span\!\left(\begin{bmatrix} -2 \\ -3 \\ 1 \end{bmatrix}\right)
+  \qquad \text{and} \qquad
+  U_2 = \Span\!\left(\begin{bmatrix} - 1 \\ 0 \\ 1 \end{bmatrix},\begin{bmatrix}1 \\ 2 \\ 0 \end{bmatrix}\right)
+  $$
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 4
+%===========================================================
+\begin{proof}
+\end{proof}
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 5
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 5.}
+  Let $U_1, U_2$ be the subspaces from Problem 4. Prove that
+  $$\R^3 = U_1 \oplus U_2.$$
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 5
+%===========================================================
+\begin{proof}
+\end{proof}
+
+
+\end{document}
