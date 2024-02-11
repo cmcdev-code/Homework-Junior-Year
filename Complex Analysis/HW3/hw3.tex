@@ -57,6 +57,44 @@
         Let $f(z)=z^a$ where $a\neq 0$, and $f(z)$ be an analytic branch of $z^a$ on $\C \setminus (-\infty,0]$. Then we have $f(z)=e^{a \text{Log} z}$. Using the chain rule we get $f^\prime(z)=ae^{a\text{Log} z}\cdot \frac{1}{z}$. As $f(z)=e^{a\text{Log}}$ is the same branch we can do the substitution $f^\prime(z)=ae^{a\text{Log}z}/z=af(z)/z$ which completes the proof.
     \end{proof}
 
+    \begin{tcolorbox}
+    \textbf{Problem 3.}
+    Show that if $h(z)$ is a complex valued harmonic function such that $zh(z)$ is also harmonic, then $h(z)$ is analytic.
+    \end{tcolorbox}
+    
+    \begin{proof}
+        Assume that $h(z)$ is a complex valued harmonic function such that $zh(z)$ is also harmonic. Then $h(z)=u(z)+iv(z)$ we get \begin{align*}
+            \frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2 } & =0 \\ \frac{\partial^2 v}{\partial x^2}+\frac{\partial ^2 v}{\partial y^2} & =0
+        \end{align*} 
+        Additionally as we have $zh(z)$ is harmonic we get $$(x+iy)(u(z)+iv(z))=xu(z)-yv(z) +i(xv(z)+yu(z))$$
+         
+        We get \begin{align}
+            \frac{\partial ^2(xu(z)-yv(z))}{\partial x^2}+\frac{\partial ^2 (xu(z)-yv(z))}{\partial y^2} &=0 \\ \frac{\partial ^2(xv(z)+yu(z))}{\partial x^2}+\frac{\partial ^2 (xv(z)+yu(z))}{\partial y^2} &=0
+        \end{align}
 
+        Applying the partial derivatives to (1) we get 
+        \[
+            x\frac{\partial ^2 u}{\partial x^2}+ \frac{\partial u}{\partial x}-y\frac{\partial^2 v}{\partial x^2}+ x\frac{\partial ^2 u}{\partial y^2}- y\frac{\partial ^2 v}{\partial y^2}- \frac{\partial v}{\partial y}=0
+        \]
+        \[
+            x(\frac{\partial^2 u}{\partial x^2}+\frac{\partial ^2 u}{\partial y^2})-y(\frac{\partial ^2 v}{\partial x^2}+\frac{\partial ^2 v}{\partial y^2})+ \frac{\partial u}{\partial x}-\frac{\partial v}{\partial y}=0
+        \]
+        \[
+            \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}
+        \]
+        
+        Applying the partial derivatives to (2) we get.
+        \[
+            x\frac{\partial ^2 v}{\partial x^2}+ \frac{\partial v}{\partial x}+ y\frac{\partial ^2 u}{\partial x^2 } + x\frac{\partial ^2 v}{\partial y^2}+y\frac{\partial ^2u}{\partial y^2}+ \frac{\partial u}{\partial y}=0
+        \] 
+        \[
+            x(\frac{\partial ^2 v}{\partial x^2}+\frac{\partial ^2 v}{\partial y^2})+y(\frac{\partial ^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2})+\frac{\partial v}{\partial x}+\frac{\partial u}{\partial y}=0
+        \]
+        \[
+            \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}
+        \]
+        Therefore we have that the Cauchy Riemann equations are satisfied which implies that $h(z)$ is analytic.
+
+    \end{proof}
 
 \end{document}
