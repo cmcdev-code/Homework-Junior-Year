@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1707836246 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Linear Algebra/HW3/McDevitt_C_HW_3.tex" "McDevitt_C_HW_3.pdf" "McDevitt_C_HW_3" 1707836247
+["pdflatex"] 1707851778 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Linear Algebra/HW3/McDevitt_C_HW_3.tex" "McDevitt_C_HW_3.pdf" "McDevitt_C_HW_3" 1707851779
   "/etc/texmf/web2c/texmf.cnf" 1706748241 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Linear Algebra/HW3/McDevitt_C_HW_3.tex" 1707836246 6309 e341396df5ff34818df448ed90ec0e47 ""
+  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Linear Algebra/HW3/McDevitt_C_HW_3.tex" 1707851778 7076 a5551fc96f40f5d3ca5d9a3560a42f8f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -140,8 +140,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706748264 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706748299 2801216 d262d31f3423aa879e9c207d45741308 ""
-  "McDevitt_C_HW_3.aux" 1707836247 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
-  "McDevitt_C_HW_3.tex" 1707836246 6309 e341396df5ff34818df448ed90ec0e47 ""
+  "McDevitt_C_HW_3.aux" 1707851779 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
+  "McDevitt_C_HW_3.tex" 1707851778 7076 a5551fc96f40f5d3ca5d9a3560a42f8f ""
   (generated)
   "McDevitt_C_HW_3.aux"
   "McDevitt_C_HW_3.log"
