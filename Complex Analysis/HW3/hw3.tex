@@ -94,6 +94,24 @@
             \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}
         \]
         Therefore we have that the Cauchy Riemann equations are satisfied which implies that $h(z)$ is analytic.
+    \end{proof}
+    \begin{tcolorbox}
+    \textbf{Problem 4.}
+    Let $f=u+iv$ be a continuously differentiable complex valued function on a domain $D$ such that the Jacobian matrix of $f$ does not vanish at any point of $D$. Show that if $f$ maps orthogonal curves to orthogonal curves, then either $f$ or $\bar f$ is analytic, with a nonvanishing derivative.
+    \end{tcolorbox}
+    \begin{proof}
+        Assume that $f$ maps orthogonal curves to orthogonal We have that derivative of the tangent curves. Let $x_0+iy_0\in D$ and consider the four curves $c_1(t)=(x_0+t,y_0+t), c_2(t)=(x_0+t,y_0-t), c_3(t)=(x_0+t,y_0) ,c_4(t)=(x_0,y_0+t)$. We have that tangent vectors for $c_1$ and $c_2$ are orthogonal and the tangent vectors for $c_3$ and $c_4$ are orthogonal. Now for some curve $c(t)=(x(t),y(t))$ the following equation  $$\frac{ f( c(t))}{dt}=(\frac{\partial u}{\partial x}\frac{dx}{dt}+\frac{\partial u}{\partial y}\frac{dy}{dt},\;\;\frac{\partial v}{\partial x}\frac{dx}{dt}+\frac{\partial v}{\partial y}\frac{dy}{dt})$$
+        which shows that the image of the tangent vector for a curve under a function is given by the Jacobian.
+
+        Applying the equation for the curves above we get 
+
+        \begin{align*}
+            f(c_1(t)) &= (\frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}, \frac{\partial v}{\partial x}+\frac{\partial v}{\partial y}) \\
+            f(c_2(t)) &= (\frac{\partial u}{\partial x}-\frac{\partial u}{\partial y}, \;)
+        \end{align*}
+        
+
+
 
     \end{proof}
 
