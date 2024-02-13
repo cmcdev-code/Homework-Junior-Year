@@ -79,10 +79,21 @@ No it is not
 % SOLUTION 2
 %===========================================================
 \begin{enumerate}[label=(\alph*)]
-\item \begin{proof}
-    Let $\lambda \in \K$ and $a_1 \mathbf{u_1}+a_2 \mathbf{u_2}+...+a_m\mathbf{u_m}$ 
+\item \begin{proof}{Yes it is a linear map}
+
+    Let $\lambda \in \K$ and let $\vec{v}=\mathbf{a_1u_1+...+a_1u_m+a_{m+1}v_{m+1}+...+a_nv_n}\in V$ and $u=\mathbf{b_1w_1+...+b_mw_m+v_{m+1}v_{m+1}+...+b_mv_n}\in V$. Where $u_i,w_i\in \Span(U)$ and $a_i\in \K$
+    \begin{align*}
+      f(\lambda \vec{v}+\vec{u})&=T(\lambda (a_1u_1+...+a_1u_m)+b_1w_1+...+b_mw_m) \\
+      &=T(\lambda (a_1u_1+...+a_1u_m))+T(b_1w_1+...+b_mw_m)   \\
+      &= \lambda T(a_1u_1+...+a_1u_m)+T(b_1w_1+...+b_mw_m)\\
+      &= \lambda f(\vec v)+f(\vec{u})
+    \end{align*}
+
+    
 \end{proof}
-\item
+\item \begin{proof}
+  Then it is no longer a linear map. Let $x\in U$ and $y\in V$ where $y\not \in U$. Then $f(x+y)=0$ but $f(x)+f(y)=T(x)+0$ hence it is not linear.
+\end{proof}
 \end{enumerate}
   
 

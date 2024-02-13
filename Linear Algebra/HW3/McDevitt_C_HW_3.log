@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.31)  10 FEB 2024 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.31)  13 FEB 2024 09:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -503,13 +503,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  14036 strings out of 478287
  276719 string characters out of 5849289
- 554041 words of memory out of 5000000
+ 559041 words of memory out of 5000000
  31985 multiletter control sequences out of 15000+600000
  477514 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,104p,656b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on McDevitt_C_HW_3.pdf (5 pages, 123267 bytes).
+Output written on McDevitt_C_HW_3.pdf (5 pages, 125898 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
