@@ -145,6 +145,28 @@ No it is not
 % SOLUTION 4
 %===========================================================
 \begin{proof}
+
+  Assume $T,U_1,U_2$ are as defined above. Let $\vec{v}\in U_1$ then by the definition of span we have for some scalar $\lambda$ that $\vec{v}=\lambda \begin{bmatrix} -2 \\ -3 \\ 1 \end{bmatrix}$ likewise as for any vector $\vec w\in U_2$ there exists two scalars $\alpha,\beta$ such that $\vec w= \alpha \begin{bmatrix} - 1 \\ 0 \\ 1 \end{bmatrix} + \beta \begin{bmatrix}1 \\ 2 \\ 0 \end{bmatrix} $. Then 
+  \[
+    T(\vec{v})= T\left(\lambda \begin{bmatrix} -2 \\ -3 \\ 1 \end{bmatrix}\right)= \lambda T\left(\begin{bmatrix} -2 \\ -3 \\ 1 \end{bmatrix}\right)=\lambda \begin{bmatrix} -14+9+5 \\ -24+12+12 \\ 2 -3 + 1 \end{bmatrix}=\lambda \begin{bmatrix}
+      0\\0\\0
+    \end{bmatrix}
+  \] 
+  As this is just the subspace containing the zero vector we have $T(U_1)\subseteq U_2$.
+
+  Now computing $T(\vec w)$.
+  \[
+    \alpha T\left(\begin{bmatrix} - 1 \\ 0 \\ 1 \end{bmatrix}\right)+ \beta T\left( \begin{bmatrix}1 \\ 2 \\ 0 \end{bmatrix} \right) =\alpha \begin{bmatrix}
+      -7+5\\-12+12\\1+1
+    \end{bmatrix}+ \beta\begin{bmatrix}
+      7-6\\12 - 8\\-1+2
+    \end{bmatrix} =2\alpha \begin{bmatrix}1 \\ 2 \\ 0 \end{bmatrix}+2\beta \begin{bmatrix}
+      1\\2\\0
+    \end{bmatrix}+ \beta \begin{bmatrix}
+      1\\0\\1
+    \end{bmatrix}
+  \]
+  As this is just equal to a linear combination of the basis elements of $U_2$ we have  $T(U_2)\subseteq U_2$. 
 \end{proof}
 
 
@@ -165,6 +187,13 @@ No it is not
 % SOLUTION 5
 %===========================================================
 \begin{proof}
+
+  Let $(a,b,c)\in \mathbb{R}^3$ then we have the linear combination \[(-b+2a+2c)\langle -2,-3,1\rangle+(b-2a+2c)\langle -1,0,1\rangle+(3a-b+3c)\langle 1,2,0 \rangle=\langle a,b,c\rangle\]
+  Therefore we have $\mathbb{R}^3\subseteq U_1+ U_2$. Now the other direction we have have the sum of two subspaces of $\R^3$ therefore $U_1+U_2\subseteq \mathbb{R}^3$ which implies $R^3=U_1+U_2$. 
+  Now to show the direct sum. Let $(a,b,c)\in U_1\cap U_2$ then we have for some scalars $\alpha, \beta, \lambda$ that 
+  \[
+    \]
+
 \end{proof}
 
 
