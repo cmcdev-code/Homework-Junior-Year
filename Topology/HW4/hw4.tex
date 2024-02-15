@@ -37,6 +37,10 @@
 
 \vspace{.1in}
 {\bfseries a.} If $\mathbb R$ has the standard topology, what is the boundary of $A$, and what is the set of limit points of $A$. Show that your answers are correct. 
+    
+The boundary points of $A$ are the set $A\cup \{0\}$. This is shown as \[\partial A=\{x\in \mathbb{R}: \text{ for all open neighborhood } O \text{  of } x, O\cap A\not = \emptyset \text{ and } O\cap (\mathbb{R}\setminus A)\not = \emptyset\}\]
+
+Now we have all points of $A$ are in $\partial A$ as for any $1/n\in A$ any open neighborhood $O$ of $1/n$ we have $1/n\in \mathbb{R}\cap O$. Now as $O$ is open then there exists a basis element $B$ such that $x\in B$ and as this is the standard topology we have $B=(a,b)$ for some $a,b\in \mathbb{R}$ with $a<x<b$. We have  $(a+x)/2 \in O \cap A^c $ therefore $A\subset \partial A$. For any open neighborhood $O$ containing $0$ that again as $O$ is open there exists a basis element $(a,b)$ with $a,b\in \mathbb{R}$ and $a<0<b$ and for some $n\in \mathbb{N}$ we have $1/n<b$ hence $1/n\in O\cap A\not = \emptyset$ additionally we have for some $c\in \mathbb{R}$ where $c\not \in A$ with $0<c<b$ that $c\in O\cap A^c\not = \emptyset$. Now assume $x\in \mathbb{R}$ with $x\not \in A\cup \{0\}$. Then if $x<0$ we immediately have an open neighborhood $(x-1,0)$ with $(x-1,0)\cap A$ like wise if $x>0$ then we have the open neighborhood $(1,x+1) $ with $(1,x+1)\cap A=\emptyset$. If $0<x<1$ we have for some $n\in \mathbb{N}$ that $1/(n+1)<x<1/n$ we have the open neighborhood of x $(1/(n+1),1/n)$ with $A\cap (1/(n+1),1/n)=\emptyset$. This shows that $A\cup \{0\}=\partial A$.      
 
 \vspace{.1in}
 {\bfseries b.} If $\mathbb R$ has the upper limit topology, what is the boundary of $A$, and what is the set of limit points of $A$. Show that your answers are correct. The upper limit topology is the topology with basis all the sets of the form $(a,b]$ for real numbers $a<b$. 
