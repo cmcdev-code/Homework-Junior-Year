@@ -1,0 +1,141 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Closed sets } 
+
+\subsection*{Hand in Friday, February 16.} 
+
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{1.} In $\mathbb R$ let $A = \{ 1/k : k\in \mathbb N \}$.
+
+\vspace{.1in}
+{\bfseries a.} If $\mathbb R$ has the standard topology, what is the boundary of $A$, and what is the set of limit points of $A$. Show that your answers are correct. 
+
+\vspace{.1in}
+{\bfseries b.} If $\mathbb R$ has the upper limit topology, what is the boundary of $A$, and what is the set of limit points of $A$. Show that your answers are correct. The upper limit topology is the topology with basis all the sets of the form $(a,b]$ for real numbers $a<b$. 
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{2.} Let $A$ and $B$ be subsets of a topological space $X$. 
+
+\vspace{.1in}
+{\bfseries a.} If $A\subset B$, show that $\overline{A} \subset \overline{B}$. 
+
+\vspace{.1in}
+{\bfseries b.} Show that $\overline{A\bigcup B} = \overline{A} \bigcup \overline{B}$. 
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{3.} 
+
+\vspace{.1in}
+{\bfseries a.} Give an example of a topological space $X$ and subsets $A$ and $B$ for which $\overline{A\bigcap B} \ne \overline{A} \bigcap \overline{B}$. Show that your example has the asserted property. 
+
+\vspace{.1in}
+{\bfseries b.} Give an example of a topological space $X$ and a collection of subsets $\{ A_j : j\in \mathbb N \}$ for which 
+\[
+\bigcup _{j\in \mathbb N } \overline{A_j}
+\]
+is not equal to 
+\[
+\overline{\bigcup _{j\in \mathbb N } A_j}.
+\]
+Show that your example has the asserted property. 
+
+\vspace{.15in}
+
+\noindent
+\subsection*{4.}  Show that if $X$ is a Hausdorff topological space and $Y$ is a finite subset of $X$, then $Y$ has no limit points.
+
+
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{5.} 
+
+{\bfseries a.} If $X$ is an infinite set with the finite complement topology and if $Y$ is a finite subset of $X$, what are the limit points of $Y$? Show that your answer is correct. 
+
+
+\vspace{.1in}
+{\bfseries b.} If $X$ is an infinite set with the finite complement topology and if $Y$ is an infinite subset of $X$, what are the limit points of $Y$? Show that your answer is correct. 
+
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{6.} 
+
+{\bfseries a.} Let $X$ be the product of countably many copies of $\mathbb R$, i.e. $X = \prod _{j\in \mathbb N } X_j$, where each $X_j$ is $\mathbb R$ with the standard topology. Let $Y$ be the subset of $X$ of elements $\vec{x} = ( x_1 , x_2 , . . . )$ for which at most finitely many of the entries $x_j$ are nonzero. If we give $X$ the box topology, what is the closure of $Y$? Show that your answer is correct. 
+
+\vspace{.1in}
+
+{\bfseries b.} Let $X$ be the product of countably many copies of $\mathbb R$, i.e. $X = \prod _{j\in \mathbb N } X_j$, where each $X_j$ is $\mathbb R$ with the standard topology. Let $Y$ be the subset of $X$ of elements $\vec{x} = ( x_1 , x_2 , . . . )$ for which at most finitely many of the entries $x_j$ are nonzero. If we give $X$ the product topology, what is the closure of $Y$? Show that your answer is correct. 
+
+\vspace{.45in}
+On Friday, February 16, I will send each of you the first {\bfseries test}, as an email attachment. I will also post the test in the tests folder in the Files section of the course Canvas site. The test will have a first page that is a cover page and that reveals no information about the test content.   Once you look beyond the cover page of the file, you may work on the test only during the next two hours.  During this time you may not consult any person or other source.  You must email your completed test to me 
+no later than 5:00 pm on Friday, February 23.  There will be no class 
+on Friday, February 23.  
+
+Unless you're unusually good at typing and TeXing, I suggest that you handwrite your answers. You may use time beyond the 2 hours to put your answers into a TeX file, but don't change your answers during that transcription. A pdf file made from a TeX file is easiest for me to read, but I will also accept a scanned pdf file of your handwritten answers or, if necessary, a photo of your handwritten answers.
+
+The most likely way to approach the test is to study during most of 
+the week and to open the file and do the test at some time late in the week.  If you want to have me available to answer questions while you are doing the test, contact me ahead of time to ask whether I will be available when you plan to work on the test. 
+
+It is an honor issue that anyone who has seen the test must not risk 
+communicating any information about the test to anyone who has not 
+finished the test.  This covers conversations about topology   
+(including conversations that are overheard by others not in the 
+conversation), leaving test scratchwork where it can be seen by others, etc.  If you have 
+any questions about the honor expectations, please ask me before 
+engaging in any questionable behavior.  
+
+People who have not started the test may engage in all the usual 
+preparations for the test, including consulting books, notes, and 
+other sources, and discussing the material with classmates, as long as 
+all such discussions are not overheard by anyone currently taking the 
+test.
+
+The test will cover all the material we have studied through the 
+material appearing on the assignment due February 16.  Thus the test will cover material that has appeared on all assignments through this assignment. The sections of Munkres that cover this material are the sections on topological spaces, basis for a topology, metric topology, product topology, and closed sets and limit points. 
+
+
+ 
+\end{document}
