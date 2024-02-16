@@ -338,20 +338,25 @@ The language $L_1$ is regular as it is recognized by the FA.
     \begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto]
         \node[state,initial, accepting] (q_0)   {$q_0$};
         \node[state] (q_1) [right=of q_0] {$q_1$};
+        \node[state] (q_3) [below= of q_0] {$q_3$};
         \path[->]
         (q_0) edge  node {0} (q_1)
-        (q_1) edge [bend right,above] node {0} (q_0);
-    
+        (q_1) edge [bend right,above] node {0} (q_0)
+        (q_0) edge node {1} (q_3)
+        (q_1) edge node {1} (q_3)
+        (q_3) edge [loop below] node {0,1} ();
+
     \end{tikzpicture}
     
         
 \end{center}
-For the language $L_1=\{0^i0^j: i,j\geq 0 \text{ and } i =j\}$ we can simplify the set to just be $L_1=\{0^i0^i:i\geq 0\}=\{0^{2i}:i\geq 0\}$. Therefore we just have to distinguish between an odd and even number of $0$'s which this FA does.
+
+For the language $L_1=\{0^i0^j: i,j\geq 0 \text{ and } i =j\}$ we can simplify the set to just be $L_1=\{0^i0^i:i\geq 0\}=\{0^{2i}:i\geq 0\}$. Therefore we just have to distinguish between an odd and even number of $0$'s and go to a state which never accepts if it receives any $1$'s which this FA does.
 
 $L_2$ is not regular. 
 
 \begin{proof}
-   We claim that $F=\{0^i:i\geq 0\}$ is a fooling set for $L_2$. To see this we consider the two arbitrary distinct words $0^j,0^n\in F$, we have for $m\geq 0$ that $0^j1^m0^j\in L_2$ but $0^n1^m1^j\not \in L_2$ as $n\not = j$ this implies $0^j\not \equiv_{L_2} 0^n$. By \textbf{Lemma} 4.2 we have $L_2$ is not regular
+   We claim that $F=\{0^i:i\geq 0\}$ is a fooling set for $L_2$. To see this we consider the two arbitrary distinct words $0^j,0^n\in F$, we have for $m\geq 0$ that $0^j1^m0^j\in L_2$ but $0^n1^m1^j\not \in L_2$ as $n\not = j$ this implies $0^j\not \equiv_{L_2} 0^n$. By Lemma 4.2 we have $L_2$ is not regular
 \end{proof}
 
 \problembreak
@@ -373,6 +378,7 @@ Prove or disprove:
 
 
 \begin{proof}{(a) this is false}
+
 Consider the language $L_2$ from problem $1$ we have that $L_2$ is not regular. However consider the language $L_2^\prime=\{w\in \{0,1\}^*\}$ we have that $L_2^\prime$ is regular as it is recognized by the FA. 
 \begin{center}
     \begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto]
@@ -387,8 +393,7 @@ Consider the language $L_2$ from problem $1$ we have that $L_2$ is not regular. 
     
 \begin{proof}{(b) this is true}
 
-
-    
+    We have the language $L(M_5)=\{a^{n^2}:n\in \mathbb{N}\}$ from page 76 is not regular. However $L(M_5)^*=\{\epsilon , a,aa,aaa,...\}=\{a\}^*$ this follows as $1$ is a perfect square so we can have any finite length of $a$'s in $L(M_5)^*$. Then by the definition of Kleene closure we have $L(M_5)\subset L(M_5)^*$. But as $L(M_5)^*$ is regular and $L(M_5)$ is not we have shown the existence in the claim which completes the proof. 
 \end{proof}
     
 
