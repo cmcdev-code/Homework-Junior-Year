@@ -356,7 +356,7 @@ For the language $L_1=\{0^i0^j: i,j\geq 0 \text{ and } i =j\}$ we can simplify t
 $L_2$ is not regular. 
 
 \begin{proof}
-   We claim that $F=\{0^i:i\geq 0\}$ is a fooling set for $L_2$. To see this consider the two arbitrary distinct words $0^j,0^n\in F$, we have for $m\geq 0$ that $0^j1^m0^j\in L_2$ but $0^n1^m1^j\not \in L_2$ as $n\not = j$ this implies $0^j\not \equiv_{L_2} 0^n$. As $F$ is an infinite subset and every distinct element is not in the same congruence class of $\equiv_{L_2}$ then this implies that $\equiv_{L_2}$ has infinite index. By the Myhill-Nerode Theorem this implies $L_2$ is not regular. 
+   We claim that $F=\{0^i:i\geq 0\}$ is a fooling set for $L_2$. To see this consider the two arbitrary distinct words $0^j,0^n\in F$, we have for $m\geq 0$ that $0^j1^m0^j\in L_2$ but $0^n1^m1^j\not \in L_2$ as $n\not = j$ this implies $0^j\not \equiv_{L_2} 0^n$. As $F$ is an infinite subset of $\{0,1\}^*$ and every distinct element is not in the same congruence class of $\equiv_{L_2}$ then this implies that $\equiv_{L_2}$ has infinite index by the Myhill-Nerode Theorem this implies $L_2$ is not regular. 
 \end{proof}
 
 \problembreak
