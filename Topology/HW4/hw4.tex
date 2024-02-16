@@ -153,10 +153,10 @@ Claim is that $\bar Y=Y$
 
 \begin{proof}
     Let $X,Y$ be as definition. From the definition of closure if we prove that $Y^\prime \subset Y$ then that proves the claim. Let  $\vec x\in X\setminus Y$ then consider the neighborhood $O=\prod_{j\in \mathbb{N}}u_j$ where $u_j=\begin{cases}
-        (0,\pi_j(x)+1)& \text{ if } \pi_j(x)\not =0\\
-        (-1,1) & \text{ if } \pi_j(x) = 0
+        (0,\pi_j(\vec x)+1)& \text{ if } \pi_j(\vec x)\not =0\\
+        (-1,1) & \text{ if } \pi_j(\vec x) = 0
     \end{cases}$
-    we have $O$ does not contain zero an infinite number of times based on $x\not \in Y$. But as each element of $Y$ contains zero an infinite number of times we have $U\cap Y=\emptyset$. This implies that $Y^\prime \not = X\setminus Y$ which implies that $Y^\prime\subset Y$ so $\bar Y=Y\cup Y^\prime = Y$ which completes the proof. 
+    we have $O$ does not contain zero an infinite number of times based on $\vec x\not \in Y$. But as each element of $Y$ contains zero an infinite number of times we have $U\cap Y=\emptyset$. This implies that $Y^\prime \not = X\setminus Y$ which implies that $Y^\prime\subset Y$ so $\bar Y=Y\cup Y^\prime = Y$ which completes the proof. 
 
 
 
@@ -167,6 +167,11 @@ Claim is that $\bar Y=Y$
 
 {\bfseries b.} Let $X$ be the product of countably many copies of $\mathbb R$, i.e. $X = \prod _{j\in \mathbb N } X_j$, where each $X_j$ is $\mathbb R$ with the standard topology. Let $Y$ be the subset of $X$ of elements $\vec{x} = ( x_1 , x_2 , . . . )$ for which at most finitely many of the entries $x_j$ are nonzero. If we give $X$ the product topology, what is the closure of $Y$? Show that your answer is correct. 
 
+
+Claim that $Y^\prime=X$
+\begin{proof}
+    Assume that $X,Y$ are defined as above. Then let $\vec{x} \in X$ then for any neighborhood $U$ of $x$ as this is the product topology for some $N\in \mathbb{N}$ we have for all $n\in \mathbb{N}$ with $n>N$ that $U_n=\mathbb{R}$. Then we have the element $\vec{y} \in Y$ where $\pi_j(\vec{y})=\pi_j(\vec{x})$ for $j\in \mathbb{N}$ with $j\leq N$ and zero for the rest. Then we have $\vec{y}\in U\cap Y\not = \emptyset$. This shows that $Y^\prime=X$ hence $\bar Y=Y\cup Y^\prime = X$. 
+\end{proof}
 
  
 \end{document}
