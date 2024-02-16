@@ -136,8 +136,11 @@ Claim that the limit points of $Y$ is the emptyset.
 {\bfseries b.} If $X$ is an infinite set with the finite complement topology and if $Y$ is an infinite subset of $X$, what are the limit points of $Y$? Show that your answer is correct. 
 
 
-Claim is that the set of all limit points of 
+Claim it is all of $X$ 
 
+\begin{proof}
+    Let $X$,$Y$ be as definined. Then let $x\in X$ we have that any neighborhood $O$ of $x$ contains an infinite number of elements of $Y$ as if it only contained a finite number of elements of $Y$ then $X\setminus O$ would not be countable because it would at least contain an infinite number of elements of $Y$. Therefore we have $O\cap Y\not = \emptyset$. Hence $x$ is a limit point and as $x$ was arbitrarily chosen from $X$ we have that $Y^\prime=X$.
+\end{proof}
 
 \vspace{.15in}
 
@@ -146,36 +149,23 @@ Claim is that the set of all limit points of
 
 {\bfseries a.} Let $X$ be the product of countably many copies of $\mathbb R$, i.e. $X = \prod _{j\in \mathbb N } X_j$, where each $X_j$ is $\mathbb R$ with the standard topology. Let $Y$ be the subset of $X$ of elements $\vec{x} = ( x_1 , x_2 , . . . )$ for which at most finitely many of the entries $x_j$ are nonzero. If we give $X$ the box topology, what is the closure of $Y$? Show that your answer is correct. 
 
+Claim is that $\bar Y=Y$
+
+\begin{proof}
+    Let $X,Y$ be as definition. From the definition of closure if we prove that $Y^\prime \subset Y$ then that proves the claim. Let  $\vec x\in X\setminus Y$ then consider the neighborhood $O=\prod_{j\in \mathbb{N}}u_j$ where $u_j=\begin{cases}
+        (0,\pi_j(x)+1)& \text{ if } \pi_j(x)\not =0\\
+        (-1,1) & \text{ if } \pi_j(x) = 0
+    \end{cases}$
+    we have $O$ does not contain zero an infinite number of times based on $x\not \in Y$. But as each element of $Y$ contains zero an infinite number of times we have $U\cap Y=\emptyset$. This implies that $Y^\prime \not = X\setminus Y$ which implies that $Y^\prime\subset Y$ so $\bar Y=Y\cup Y^\prime = Y$ which completes the proof. 
+
+
+
+\end{proof}
+
+
 \vspace{.1in}
 
 {\bfseries b.} Let $X$ be the product of countably many copies of $\mathbb R$, i.e. $X = \prod _{j\in \mathbb N } X_j$, where each $X_j$ is $\mathbb R$ with the standard topology. Let $Y$ be the subset of $X$ of elements $\vec{x} = ( x_1 , x_2 , . . . )$ for which at most finitely many of the entries $x_j$ are nonzero. If we give $X$ the product topology, what is the closure of $Y$? Show that your answer is correct. 
-
-\vspace{.45in}
-On Friday, February 16, I will send each of you the first {\bfseries test}, as an email attachment. I will also post the test in the tests folder in the Files section of the course Canvas site. The test will have a first page that is a cover page and that reveals no information about the test content.   Once you look beyond the cover page of the file, you may work on the test only during the next two hours.  During this time you may not consult any person or other source.  You must email your completed test to me 
-no later than 5:00 pm on Friday, February 23.  There will be no class 
-on Friday, February 23.  
-
-Unless you're unusually good at typing and TeXing, I suggest that you handwrite your answers. You may use time beyond the 2 hours to put your answers into a TeX file, but don't change your answers during that transcription. A pdf file made from a TeX file is easiest for me to read, but I will also accept a scanned pdf file of your handwritten answers or, if necessary, a photo of your handwritten answers.
-
-The most likely way to approach the test is to study during most of 
-the week and to open the file and do the test at some time late in the week.  If you want to have me available to answer questions while you are doing the test, contact me ahead of time to ask whether I will be available when you plan to work on the test. 
-
-It is an honor issue that anyone who has seen the test must not risk 
-communicating any information about the test to anyone who has not 
-finished the test.  This covers conversations about topology   
-(including conversations that are overheard by others not in the 
-conversation), leaving test scratchwork where it can be seen by others, etc.  If you have 
-any questions about the honor expectations, please ask me before 
-engaging in any questionable behavior.  
-
-People who have not started the test may engage in all the usual 
-preparations for the test, including consulting books, notes, and 
-other sources, and discussing the material with classmates, as long as 
-all such discussions are not overheard by anyone currently taking the 
-test.
-
-The test will cover all the material we have studied through the 
-material appearing on the assignment due February 16.  Thus the test will cover material that has appeared on all assignments through this assignment. The sections of Munkres that cover this material are the sections on topological spaces, basis for a topology, metric topology, product topology, and closed sets and limit points. 
 
 
  
