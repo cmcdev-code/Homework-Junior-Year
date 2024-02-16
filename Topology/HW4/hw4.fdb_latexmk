@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1708039729 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW4/hw4.tex" "hw4.pdf" "hw4" 1708039729
+["pdflatex"] 1708041864 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW4/hw4.tex" "hw4.pdf" "hw4" 1708041865
   "/etc/texmf/web2c/texmf.cnf" 1706748241 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW4/hw4.tex" 1708039729 7674 28134cb86d92deb3b25738e1f0e0c96f ""
+  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW4/hw4.tex" 1708041864 8106 107f5b0a4191aa65f558b9cbb632e56b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -46,8 +46,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706748264 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706748299 2801216 d262d31f3423aa879e9c207d45741308 ""
-  "hw4.aux" 1708039729 1008 1fa77947634dbe6d31475a88d5ddb81a "pdflatex"
-  "hw4.tex" 1708039729 7674 28134cb86d92deb3b25738e1f0e0c96f ""
+  "hw4.aux" 1708041865 1008 3de02ccf0421fdec347568df4de2284c "pdflatex"
+  "hw4.tex" 1708041864 8106 107f5b0a4191aa65f558b9cbb632e56b ""
   (generated)
   "hw4.aux"
   "hw4.log"
