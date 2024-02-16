@@ -115,7 +115,10 @@ Claim that $A_j=\{1/j\}$ has this property in the Real numbers with the standard
 \noindent
 \subsection*{4.}  Show that if $X$ is a Hausdorff topological space and $Y$ is a finite subset of $X$, then $Y$ has no limit points. 
 
-
+\begin{proof}
+    Suppose $X$ is a Hausdorff topological space and $Y=\{y_1,...,y_n\}$ is a finite subset of $X$. Then for any $x\in X$ construct the set $\bigcap_{j=1}^nX_j$ where $x \in X_j$ but if $y_j\not = x$ then $y_j\not \in X_j$ such a set exists based off the assumption $X$ is Hausdorff topological space. Then we have $\bigcap_{j=1}^nX_j$ is a neighborhood of $x$ as it contains $x$ and finite sets are open. As $\bigcap_{j=1}^nX_j\cap Y\subset \{x\}$ this shows that no element of $X$ is a limit point which completes the proof.
+    
+\end{proof}
 
 
 
