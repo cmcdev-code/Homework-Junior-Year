@@ -75,7 +75,7 @@ Let $1/n\in A$ then we have the neighborhood $(1/(n+1),1/n]$ then as $(1/(n+1),1
 {\bfseries b.} Show that $\overline{A\bigcup B} = \overline{A} \bigcup \overline{B}$. 
 
 \begin{proof}
-    
+    As $\overline{ A\bigcup B}= A\cup B \cup (A\cup B)^\prime$ we just need to show $(A\cup B)^\prime = A^\prime \cup B^\prime$. Let $x\in (A\cup B)^\prime$ then for all neighborhoods $O$ of $x$ we have $O\cap (A\cup B)\setminus \{x\}\not = \emptyset$. Then \begin{equation}O\cap (A\cup B)\setminus \{x\}=(O\cap A)\cap \{x\}^c\cup (O\cap B)\cap \{x\}^c = (O\cap A\setminus \{x\})\cup (O\cap B\setminus \{x\})\end{equation} this shows that $x\in A^\prime \cup B^\prime$ hence $(A\cup B)^\prime \subset A^\prime \cup B^\prime $. Then for the other inclusion the equation $(1)$ also holds hence $A^\prime \cup B^\prime \subset (A\cup B)^\prime$ which implies $(A\cup B)^\prime=A^\prime \cup B^\prime$. Then we have $\overline{ A\bigcup B}=(A\cup B) \cup (A\cup B)^\prime=A \cup B \cup A^\prime \cup B^\prime= (A\cup A^\prime) \cup (B\cup B^\prime)=\overline{A} \bigcup \overline B$
 \end{proof}
 
 
