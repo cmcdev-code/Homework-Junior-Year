@@ -87,7 +87,7 @@ Let $1/n\in A$ then we have the neighborhood $(1/(n+1),1/n]$ then as $(1/(n+1),1
 \vspace{.1in}
 {\bfseries a.} Give an example of a topological space $X$ and subsets $A$ and $B$ for which $\overline{A\bigcap B} \ne \overline{A} \bigcap \overline{B}$. Show that your example has the asserted property. 
 
-Let $\mathbb{R}$ be a topological space with the standard topology. Let the two sets be the open interval $(0,1)$ and $(1,2)$ then we have $(0,1)^\prime=[0,1]$ as for any $x\in (0,1)$ any neighborhood $O$ of $x$ we have a basis element $(a,b)$ where $a,b\in \mathbb{R}$ with $x\in (a,b)\subset U$ and as $(a,b)\cap (0,1)\setminus \{x\}\not = \emptyset$ then we have $x$ is a limit point. Now to show that $0\in (0,1)^\prime$ we have for any neighborhood $O$ of $0$ that there exists a basis element $(a,b)$ with $a,b\in \mathbb R$ and $a<0<b$ such that $(a,b)\subset U$ then $(a,b)\cap (0,1)\setminus \{0\}\not = \emptyset$ as $b/2\in (0,1)$. To show $1\in (0,1)^\prime$ for any neighborhood $O$ of $1$ we have a element of the basis $(a,b)$ where $a,b\in \mathbb{R}$ with $a<1<b$ and $(a,b)\subset O$. Then we have $(a,b)\cap (0,1)\not = \emptyset$ as there exists a real number $c$ with $a<c<1$. This shows that $1\in (0,1)^\prime$. For any real number $r\in \mathbb{R}\setminus [0,1]$ if $r<0$ we have the neighborhood $(r-1,0)$ and $(r-1,0)\cap (0,1)= \emptyset$ which shows that it is not a limit point. If $r>1$ then we have the neighborhood $(1,r+1)$ and $(1,r+1)\cap (0,1)=\emptyset$. This shows that the limit points of $(0,1)$ are $[0,1]$. From the definition of closure we have $\overline {(0,1)}= (0,1)\cup [0,1]=[0,1]$. 
+Let $\mathbb{R}$ be a topological space with the standard topology. Let the two sets be the open interval $(0,1)$ and $(1,2)$ then we have $(0,1)^\prime=[0,1]$ as for any $x\in (0,1)$ any neighborhood $O$ of $x$ we have a basis element $(a,b)$ where $a,b\in \mathbb{R}$ with $x\in (a,b)\subset U$ and as $(a,b)\cap (0,1)\setminus \{x\}\not = \emptyset$ then we have $x$ is a limit point. Now to show that $0\in (0,1)^\prime$ we have for any neighborhood $O$ of $0$ that there exists a basis element $(a,b)$ with $a,b\in \mathbb R$ and $a<0<b$ such that $(a,b)\subset U$ then $(a,b)\cap (0,1)\setminus \{0\}\not = \emptyset$ as $b/2\in (0,1)$. To show $1\in (0,1)^\prime$ for any neighborhood $O$ of $1$ we have a element of the basis $(a,b)$ where $a,b\in \mathbb{R}$ with $a<1<b$ and $(a,b)\subset O$. Then we have $(a,b)\cap (0,1)\not = \emptyset$ as there exists a real number $c$ with $a<c<1$. This shows that $1\in (0,1)^\prime$. For any real number $r\in \mathbb{R}\setminus [0,1]$ if $r<0$ we have the neighborhood $(r-1,0)$ and $(r-1,0)\cap (0,1)= \emptyset$ which shows that it is not a limit point. If $r>1$ then we have the neighborhood $(1,r+1)$ and $(1,r+1)\cap (0,1)=\emptyset$. This shows that the limit points of $(0,1)$ are $[0,1]$. From the definition of closure we have $\overline {(0,1)}= (0,1)\cup [0,1]=[0,1]$. A similar argument gives that $(1,2)^\prime=[1,2]$. Now as $(0,1)\cap (1,2)=\emptyset$. We have $\overline{(0,1)\bigcap (1,2)}=\emptyset$ and $\overline{(0,1)}\cap \overline{(1,2)}={1}$ hence they are not equal. n
 
 
 
@@ -101,6 +101,14 @@ is not equal to
 \overline{\bigcup _{j\in \mathbb N } A_j}.
 \]
 Show that your example has the asserted property. 
+
+Claim that $A_j=\{1/j\}$ has this property in the Real numbers with the standard topology.
+
+\begin{proof}
+    From problem (1a) we have that the limit point of $\bigcup_{j\in \mathbb{N}}A_j$ is ${0}$. By the definition of complement $\overline {\bigcup_{j\in \mathbb{N}}A_j}=(\bigcup_{j\in \mathbb{N}}A_j) \cup (\bigcup_{j\in \mathbb{N}}A_j)^\prime=\{1/n:n\in \mathbb{N}\}\cup \{0\}$. But for each $\overline {A_j}=A_j\cup A_j^\prime$ we have $A^\prime=\emptyset$ which follows from (1a) therefore we have $\overline{A_j}=A_j$ which implies $\bigcup_{j\in \mathbb{N}}\overline A_j=\{1/n:n\in \mathbb{N}\}$ but this set does not contain $0$ hence $\overline {\bigcup_{j\in \mathbb{N}}A_j}\not = \bigcup_{j\in \mathbb{N}}\overline{A_j}$. 
+\end{proof}
+
+
 
 \vspace{.15in}
 
@@ -118,11 +126,17 @@ Show that your example has the asserted property.
 
 {\bfseries a.} If $X$ is an infinite set with the finite complement topology and if $Y$ is a finite subset of $X$, what are the limit points of $Y$? Show that your answer is correct. 
 
+Claim that the limit points of $Y$ is the emptyset. 
+\begin{proof}
+    Assume that $X$ is an infinite set with the finite complement topology and $Y$ is a finite subset of $X$. Now let $x\in X$ then we have that $(X\setminus Y)\cup \{x\}$ is a neighborhood as it it's complement is finite and contains $x$ but as $((X\setminus Y)\cup \{x\})\cap Y=\{x\}$ we have $x$ is not a limit point. As it was chosen arbitrarily we have $Y^\prime=\emptyset$  
+\end{proof}
+
 
 \vspace{.1in}
 {\bfseries b.} If $X$ is an infinite set with the finite complement topology and if $Y$ is an infinite subset of $X$, what are the limit points of $Y$? Show that your answer is correct. 
 
 
+Claim is that the set of all limit points of 
 
 
 \vspace{.15in}
