@@ -66,6 +66,11 @@ Let $1/n\in A$ then we have the neighborhood $(1/(n+1),1/n]$ then as $(1/(n+1),1
 \vspace{.1in}
 {\bfseries a.} If $A\subset B$, show that $\overline{A} \subset \overline{B}$. 
 
+\begin{proof}
+    Assume $A$ and $B$ are subsets of a topological space $X$ with $A\subset B$. Then we have $\bar A=A\cup A^\prime\subset B\cup A^\prime$. Let $x\in A^\prime$ then for all neighborhoods $O$ of $x$ we have $O\cap A\setminus 
+    \{x\}\not = \emptyset$ as $A\subset B$ then $O\cap B\setminus \{x\}\not = \emptyset$ hence $x\in B^\prime$. This implies $A^\prime\subset B^\prime$ so we have $\bar A=A\cup A^\prime \subset B\cup B^\prime = \bar B$.
+\end{proof}
+
 \vspace{.1in}
 {\bfseries b.} Show that $\overline{A\bigcup B} = \overline{A} \bigcup \overline{B}$. 
 
