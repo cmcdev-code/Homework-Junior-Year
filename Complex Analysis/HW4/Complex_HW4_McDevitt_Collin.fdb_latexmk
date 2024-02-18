@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1708296094 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Complex Analysis/HW4/Complex_HW4_McDevitt_Collin.tex" "Complex_HW4_McDevitt_Collin.pdf" "Complex_HW4_McDevitt_Collin" 1708296094
+["pdflatex"] 1708296109 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Complex Analysis/HW4/Complex_HW4_McDevitt_Collin.tex" "Complex_HW4_McDevitt_Collin.pdf" "Complex_HW4_McDevitt_Collin" 1708296109
   "/etc/texmf/web2c/texmf.cnf" 1706748241 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Complex Analysis/HW4/Complex_HW4_McDevitt_Collin.tex" 1708296093 1987 639437323f8182057de51a7b1344ccd1 ""
+  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Complex Analysis/HW4/Complex_HW4_McDevitt_Collin.tex" 1708296108 1989 90b4c77925165cf7ce02456b15b0a203 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -137,8 +137,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706748264 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706748299 2801216 d262d31f3423aa879e9c207d45741308 ""
-  "Complex_HW4_McDevitt_Collin.aux" 1708296094 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "Complex_HW4_McDevitt_Collin.tex" 1708296093 1987 639437323f8182057de51a7b1344ccd1 ""
+  "Complex_HW4_McDevitt_Collin.aux" 1708296109 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Complex_HW4_McDevitt_Collin.tex" 1708296108 1989 90b4c77925165cf7ce02456b15b0a203 ""
   (generated)
   "Complex_HW4_McDevitt_Collin.aux"
   "Complex_HW4_McDevitt_Collin.log"
