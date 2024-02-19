@@ -129,7 +129,9 @@ Therefore as this is a closed curve it is not independent of path.
 \end{tcolorbox}
 
 \begin{proof}
-    Assume that $p(z)$ is a polynomial of degree greater then $1$, and that $p(z)$ does not have any zeros. Then we have that the function $f(z)=\frac{1}{p(z)}$ is defined for all $z\in \mathbb{C}$. 
+    Assume that $p(z)$ is a polynomial of degree greater then $1$, and that $p(z)$ does not have any zeros. We have by the maximum principle that $p(z)$ obtains a maximum $M_1$ on a closed disk $\overline D(r,0)=\{z\in \mathbb{C}: |z-0|\leq r\}$ where $r>0$. Additionally as $f(z)=\frac{1}{p(z)}$ is defined for all $\mathbb{C}$ (as $p(z)$ has no zeros) we have that it also obtains a maximum $M_2$ on the closed disk. 
+
+    However as $r\mapsto \infty$ we get $M_1\mapsto \infty$. As $f(z)=\frac{1}{p(z)}$ we get $M_2 \mapsto 0$ as $r\mapsto \infty$ by the maximum principle this implies $\frac{1}{p(z)}\leq M_2$. This implies that $f(z)$ is constant which implies that $p(z)$ is constant but from the assumption that $p(z)$ has degree greater then $1$ that is a contradiction. 
 \end{proof}
 
 \end{document}
