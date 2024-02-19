@@ -89,7 +89,7 @@ Therefore as this is a closed curve it is not independent of path.
         h(z)&=u(z)+v(z)\\&=\frac{a(z)+\overline{a(z)}}{2}+i\frac{b(z)+\overline{b(z)}}{2}\\
         &=\frac{a(z)+ib(z)}{2}+\frac{\overline{ a(z)-ib (z)}}{2}
     \end{align*}
-    Letting $f(z)=\frac{a(z)+ib(z)}{2}$ and $\overline{g(z)}=\frac{\overline{ a(z)-ib (z)}}{2}$. Both $f,g$ are analytic as $a,b$ are and the sum of two differentiable functions is differentiable with their derivatives still being continuos as well. This completes the forward direction.
+    Letting $f(z)=\frac{a(z)+ib(z)}{2}$ and $\overline{g(z)}=\frac{\overline{ a(z)-ib (z)}}{2}$. Both $f,g$ are analytic as $a,b$ are and the sum of two differentiable functions is differentiable with their derivatives still being continuous as well. This completes the forward direction.
 
     For the backwards direction assume that $h(z)$ is a complex valued function on the simply connected domain $D$ and $f(z),g(z)$ are analytic on $D$. With $h(z)=f(z)+\overline{g(z)}$
 
@@ -105,6 +105,24 @@ Therefore as this is a closed curve it is not independent of path.
 
 
 \end{proof}
+
+\begin{tcolorbox}
+    \textbf{Problem 4.} If $z_0\in D$ and $D_0$ is a disk centered at $z_0$ with area $A$ and contained in $D$, then $f(z_0)=\frac{1}{A}\int \int_{D_0}f(z)dxdy.$
+\end{tcolorbox}
+
+\begin{proof}
+    Let $D_0$ have radius $\rho$. Then 
+    \begin{align*}
+    \frac{1}{A}\int_0^\rho\int_0^{2\pi}f(z_0+re^{i\theta})d\theta dr
+    \end{align*}
+    As $f(z)$ has the mean value property with respect to circles we get.
+    \[
+        \frac{1}{A}\int_0^\rho\int_0^{2\pi}f(z_0+re^{i\theta})rd\theta dr
+        =\frac{2\pi}{A}f(z_0) \int_0^\rho r dr=\frac{\pi\rho^2}{A}f(z_0) =f(z_0)
+    \]
+    The last equality was satisfied due to $A=\rho^2 \pi$.
+\end{proof}
+
 
 
 \end{document}
