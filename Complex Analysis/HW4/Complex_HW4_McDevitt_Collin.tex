@@ -52,7 +52,59 @@ Then $f(0)=1$, $f(1)=\frac{2i}{1+i}=\frac{2i(1-i)}{|1+i|}=i(1-i)=i+1$, and $f(\i
     is closed. Show that it is not independent of path on any annulus centered at $0$.
 \end{tcolorbox}
 
+First to show that the differential is closed. 
 
+Computing $\frac{\partial P}{\partial y}$ we get \[\frac{\partial \left(\frac{-y}{x^2+y^2}\right)}{\partial y}=\frac{2y^2}{(x^2+y^2)}+\frac{-1}{x^2+y^2}=\frac{-x^2+y^2}{(x^2+y^2)^2}\]
+
+Computing $\frac{\partial Q}{\partial x}$
+
+\[
+\frac{\partial \left(\frac{x}{x^2+y^2}\right)}{\partial x}=\frac{-2x^2}{(x^2+y^2)^2}+\frac{1}{x^2+y^2}=\frac{-x^2+y^2}{(x^2+y^2)^2}
+\]
+As $\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$ we have that the differential is closed.
+
+Now to show that it is not independent of path on any annulus centered at $0$. 
+
+Let $r>0$
+\[
+    \oint_{|z|=r}  \frac{-ydx+xdy}{x^2+y^2}
+\]
+Using the parametrization $\gamma(t)=(r\cos t,r \sin t)$ for $t\in [0,2\pi)$
+
+\begin{align*}
+    \oint_{|z|=r} \frac{-ydx+xdy}{x^2+y^2}&=\int_{0}^{2\pi}\frac{-r\sin t \cdot - r \sin t+r\cos t \cdot r c\cos t}{r^2\cos^2 t+r^2\sin^2t} dt\\
+    &=\int_0^{2\pi}dt\\
+    &= 2\pi
+\end{align*}
+Therefore as this is a closed curve it is not independent of path. 
+\newpage
+\begin{tcolorbox}
+    \textbf{Problem 3.} Show that a complex valued function $h(z)$ on a simply connected domain is harmonic if and only if $h(z)=f(z)+\overline{g(z)}$, where $f(z),g(z)$ are analytic on $D$.
+\end{tcolorbox}
+
+
+\begin{proof}
+
+    Assume that $h(z)$ is harmonic on a simply connected domain $D$. Then we have $h(z)=u(z)+iv(z)$ where $u(z),v(z)$ are both harmonic on $D$ as well. Then for $u(z)$ as this is a simply connected domain there exists a harmonic conjugate $\mu (z)$. Likewise for $v(z)$ there exists a harmonic conjugate $\phi(z)$. From this we get the two analytic equations $a(z)=u(z)+i\mu(z)$ and $b(z)=v(z)+i\phi(z)$. Solving for $u(z)$ and $v(z)$ we get $u(z)=\frac{a(z)+\overline{a(z)}}{2}$ and $v(z)=\frac{b(z)+\overline{b(z)}}{2}$. Then we have \begin{align*}
+        h(z)&=u(z)+v(z)\\&=\frac{a(z)+\overline{a(z)}}{2}+i\frac{b(z)+\overline{b(z)}}{2}\\
+        &=\frac{a(z)+ib(z)}{2}+\frac{\overline{ a(z)-ib (z)}}{2}
+    \end{align*}
+    Letting $f(z)=\frac{a(z)+ib(z)}{2}$ and $\overline{g(z)}=\frac{\overline{ a(z)-ib (z)}}{2}$. Both $f,g$ are analytic as $a,b$ are and the sum of two differentiable functions is differentiable with their derivatives still being continuos as well. This completes the forward direction.
+
+    For the backwards direction assume that $h(z)$ is a complex valued function on the simply connected domain $D$ and $f(z),g(z)$ are analytic on $D$. With $h(z)=f(z)+\overline{g(z)}$
+
+    Then we have $h=u+ iv$ with $u=\text{Re} f+\text{Re}g$ and $v=\text{Im}f-\text{Im}g$. Then as \[\frac{\partial^2  \text{Re} f+\text{Re}g}{\partial x^2}=\frac{\partial }{\partial x}\frac{\partial \text{Im}f +\text{Im}g}{\partial y}=\frac{\partial }{\partial y}\frac{\partial \text{Im}f +\text{Im}g}{\partial x}=\frac{\partial ^2 \text{Re}f+\text{Re}g}{\partial y^2}\]
+    Which shows that $u$ is harmonic.
+
+    Similarly with $v$.
+    
+    \[
+        \frac{\partial ^2 \text{Im}f - \text{Im}g}{\partial x^2}=\frac{\partial}{\partial x} \frac{\partial \text{Re}f-\text{Re}g}{\partial y}=\frac{\partial}{\partial y} \frac{\partial \text{Re}f-\text{Re}g}{\partial x}=\frac{\partial \text{Im}f -\text{Im} g}{\partial y^2}
+    \]
+    Hence $v$ is harmonic as well which implies that $h=u+iv$  is harmonic. 
+
+
+\end{proof}
 
 
 \end{document}
