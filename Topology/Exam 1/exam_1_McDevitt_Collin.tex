@@ -1,0 +1,75 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+
+\noindent
+\subsection*{1.}
+In each of the following topological spaces, give an example of an intersection of infinitely many open sets that is not itself an open set. 
+\begin{enumerate}
+    \item $\mathbb{R}$ with it's standard topology. Consider the intersection 
+    \[
+        \bigcap_{n\in \mathbb{N}}(-1/n,1/n)
+    \] 
+    We have $\bigcap_{n\in \mathbb{N}}(-1/n,1/n)=\{0\}$. This is shown as $-1/n<0<1/n$ for all $n\in \mathbb{N}$. Any element $j\in(0,1)$ is not in the intersection as there exists $n\in \mathbb{N}$ such that $1/n<j$ by the Archimedean property. Likewise for any $-j\in (-1,0)$ there exists a $n\in \mathbb{N}$ such that $-j<-1/n$ again by the Archimedean property. Now $\{0\}$ is not open as there exists no basis element in the standard topology that is a subset of $\{0\}$. This is shown as all basis elements are of the form $(a,b)$ where $a,b\in \mathbb{R}$ where $a<b$ but $|\{0\}|=1$ but $|(a,b)|$ is uncountable. 
+    \item $\mathbb{R}$ with its lower limit topology. Consider \[\bigcap _{n\in \mathbb{N}}[0,1/n)\]. We have that $\bigcap_{n\in \mathbb{N}}[0,1/n)=\{0\}$ using the same reasoning as above. Now $|\{0\}|=1$ but any basis element $[a,b)$ where $a,b\in \mathbb{R}$ with $a<b$ is uncountable hence no basis element is a subset of $\{0\}$ which implies it is not open. 
+    \item $\mathbb{R}$ with the finite complement topology. Consider \[\bigcap _{n\in \mathbb{N}}\mathbb{R}\setminus \{1/n\}\]. We have each $n\in \mathbb{N}$ that $\mathbb{R}\setminus (\mathbb{R}\setminus \{1/n\})=\{1/n\}$ hence $\mathbb{R}\setminus \{1/n\}$ is open. But $\bigcap_{n\in \mathbb{N}}\mathbb{R}\setminus \{1/n\}=\mathbb{R}\setminus \{1,1/2,1/3,...\}$ the complement of this set is not finite hence not open. 
+\end{enumerate}
+
+\noindent
+\subsection*{2.}
+Let $\mathbb{R}$ have the lower limit topology is $(0,1)$ open?
+Yes 
+\begin{proof}
+Consider the union $\bigcup_{n\in \mathbb{N}}[1/n,1)$ as each of the sets is open and this is a union we have that it is open in the lower limit topology so just need to demonstrate double containment. Let $j\in \bigcup_{n\in \mathbb{N}}[1/n,1)$ then for some $n\in \mathbb{N}$ we have $j\in [1/n,1)$ but as $0<1/n$ for all $n\in \mathbb{N}$ we get the inequality $0<j<1$ hence $j\in (0,1)$. Now let $j\in (0,1)$ then by the Archimedean property for some $n\in \mathbb{N}$ we have $1/n<j<1$ hence $j\in \bigcup [1/n,1)$. Which shows double containment hence $\bigcup_{n\in \mathbb{N}}[1/n,1)=(0,1)$ which completes the proof.
+
+\end{proof}
+
+\subsection*{3}
+In the set $\mathbb{R}$, consider the collection of subsets consisting of $\mathbb{R},\emptyset$, and all sets whose complements are finite sets of irrational numbers. Is this collection a topology on $\mathbb{R}$?
+
+Yes
+\begin{proof}
+   As $\emptyset ,\mathbb{R}$ are in this collection $\mathcal{C}$ we just need to demonstrate finite intersections  and arbitrary unions are in $\mathcal{C}$.
+
+   Consider the intersection of two elements $A,B\in \mathcal{C}$ then we have $\mathbb{R}\setminus {A\cap B}=(\mathbb{R}\setminus A) \cup (\mathbb{R}\setminus B)$ as the union of two finite sets is finite that completes the base case. Now assume for some $n\in \mathbb{N}$ where $n\geq 2$ we have that the intersection of $n$ elements of $\mathcal C$ is in $\mathcal{C}$. Then given $n+1$ elements $A_1,...,A_{n+1}$ consider the intersection $A_1\cap ...\cap A_{n+1}$ then we have $\mathbb{R}\setminus (A_1\cap...\cap A_2) =(\mathbb{R}\setminus A_1\cup ...\cup \mathbb{R}\setminus A_n)\cup \mathbb{R}\setminus A_{n+1}$ using the induction hypothesis we have $\mathbb{R}\setminus A_1\cup...\cup\mathbb{R}\setminus A_n\in \mathcal{C}$ by the base case the intersection of two elements of $\mathcal{C}$ is also in $\mathcal{C}$ hence that completes finite intersections.
+
+   Let $\mathcal{B}\subset \mathcal{C}$ consider the arbitrary union of elements $\bigcup_{b\in \mathcal{B}}U_b$ where $U_b\in \mathcal{B}$. Then $\mathbb{R}\setminus\bigcup_{b\in \mathcal{B}}U_{b}\subset \mathbb{R}\setminus U_b$ where $U_b$ is any $U_b\in \mathcal B$ as subsets of finite sets are finite this shows that arbitrary unions are in $\mathcal C$ hence it is a topology. 
+
+\end{proof}
+
+\subsection*{4}
+Suppose that $Y$ is a Hausdorff topological space. Let $a,b$ distinct elements of $Y$. Suppose that $(a_n)$ is a sequence in $Y$ that converges to $a$ and $(b_n)$ is a sequence in $Y$ that converges to $b$. Show that there exists an $N$ such that, for all $n>N$, $a_n\not = b_n$.
+
+\begin{proof}
+    As $Y$ is a Hausdorff space and $a,b$ are distinct elements then there exists two neighborhoods $U_a,U_b$ for $a,b$ respectively where $U_a\cap U_b=\emptyset$. But as $(a_n)$ is convergent we have for some $N_1\in \mathbb{N}$ that for all $n\geq N_1$ that $a_n\in U_a$. Likewise for $(b_n)$ for some $N_2\in \mathbb{N}$ we have for all $n\geq N_2$ that $b_n\in U_b$. Let $N=\max(N_1,N_2)$ then for all $n\geq N$ we have $a_n\in U_a$ and $b_n\in U_b$ but as these sets are disjoint we have $a_n\not = b_n$. 
+\end{proof}
+
+\subsection*{5}
+
+
+
+
+\end{document}
