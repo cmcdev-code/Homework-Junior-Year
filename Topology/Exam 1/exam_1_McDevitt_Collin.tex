@@ -93,9 +93,16 @@ For all natural numbers $j$ let $X_j$ be $\mathbb{R}$ with the standard topology
         Denote the set of $5$ bounded elements by $B_5$ we have that a set is closed if and only if it contains it's limit points. Let $\vec{x}\in B_5$ then we have for any neighborhood $U$ of $\vec{x}$ that $U_i\not=  \mathbb R_i$ for a finite number of $i$. As this is the product topology we have for each $U_i\not = \mathbb{R}_i$  as $U_i$ is open a basis element $u_i=(a_i,b_i)\subset U_i $ where $a_i,b_i\in \mathbb{R}$ with $-5\leq a_i<\pi_i(\vec{x})<b_i\leq 5$ then we have the set $A=\mathbb{R}_1 \times u_2\times ...\times u_i\times ...\times \mathbb R_n \times ...$ is open and $A\subset U$ and $A\cap B_5\setminus \{\vec{x}\}\not = \emptyset$ as there exists some $\vec{y}\in B_5\setminus \{\vec{x}\}$ with $a_i<\pi_i(\vec{y})<b_i$ where the $a_i,b_i$ come from the bases element $u_i$ when $U_i\not = \mathbb{R}_i$ if $U_i=\mathbb{R}_i$ then $\pi_i(\vec{y})\in [-5,5]$ hence this shows $A\cap B_5\setminus \{\vec{x}\}\not = \emptyset$. Which implies every element of $B_5$ is a limit point of $B_5$. 
 
         If $\vec{x}\not \in B_5$ then there exists some $i\in \mathbb{N}$ we have $|\pi_i(\vec{x})|> 5$. If $\pi_i(\vec{x})>5$ then consider the open set $\pi_i^{-1}((a,b))$ where $a,b\in \mathbb{R}$ with $5<a<\pi_i(\vec{x})<b$. We have $\pi_i^{-1}((a,b))\cap B_5=\emptyset$ as every element of $B_5$ is $5-$bounded. If $\pi_i(\vec{x})<-5$ then we we have the open set $\pi_i^{-1}(a,b)$ with $a<\pi_i(\vec{x})<b<-5$ again this open set $\pi_i^{-1}(a,b)\cap B_5=\emptyset$ as $B_5$ is 5 bounded. This shows that $B_5$ contains its limit points hence it is closed in the product topology.
-        
+
+        We have that the box topology is finer than the product topology. Which implies that $B_5$ if it is closed in the product topology then it is also closed in the box topology.
 
     \end{proof}
+    \item Show that the set of bounded elements of $X$ is closed in the box topology.
+    \begin{proof}
+    Denote the set of bounded elements by $B$. We have that $B$ is closed if and only if it contains it's limit points. Let $\vec{x} \in B$ then consider the open set $U=\prod_{i\in \mathbb{N}}(\pi_i(\vec{x})-1,\pi(\vec{x})+1)$ we have that $U\cap B=\emptyset$ because if it did not then there would exist $\vec{y}\in B$ with $|\pi_i(\vec{x})-\pi_i(\vec{y})|<1$ for all $i\in \mathbb{N}$ but as $\vec{y}$ is bounded we have for some $M\in \mathbb{R}$ with $M>0$ that $-M\leq \pi_i(\vec{y})\leq M$ for all $i\in \mathbb{N}$. Then we have for all $i\in \mathbb{N}$ that $|\pi_i(\vec{x})-\pi_i(\vec{y})|<1$ which by the triangle inequality yields $|\pi_i(\vec{x})|-|\pi_i(\vec{y})|<1$ which implies $|\pi_i(\vec{x})|<1+M$ which is a contradiction on $\vec{x}$ being bounded. Hence $U\cap B=\emptyset$. Now suppose that $\vec{x}$ is bounded 
+    \end{proof}
+        
+    
 \end{enumerate}
 
 
