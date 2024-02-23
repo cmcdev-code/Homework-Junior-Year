@@ -68,7 +68,21 @@ Suppose that $Y$ is a Hausdorff topological space. Let $a,b$ distinct elements o
 \end{proof}
 
 \subsection*{5}
+\begin{enumerate}
+    \item Show that, in any metric space $(X,d)$ and for any $x_0\in X$, the closure of $B_d(x_0,1)$ is contained in $D_d(x_0,1)$.
+    \begin{proof}
+        Let $(X,d)$ be an arbitrary metric space and $x_0\in X$. We have $\overline{B_d(x_0,1)}=B_d(x_0,1)\cup B_d(x_0,1)^\prime$. We have $B_d(x_0,1)\subset D_d(x_0,1)$ which follows from the strict inequality on $B_d(x_0,1)$. Now let $y\in B_d(x_0,1)^\prime$ then for every $\epsilon$-neighborhood we have for some distinct $x\in B_d(x_0,1)$ that $0<d(x,y)<\epsilon$ from the definition of the open ball we have $d(x_0,x)<1$ applying the triangle inequality we get $d(x_0,y)\leq d(x_0,x)+d(x_0,y)<1+\epsilon$ as this is true for all $\epsilon >0$ we get the strict inequality $d(x_0,y)\leq 1$ hence $y\in D_d(x_0,1)$ which shows $B_d(x_0,1)^\prime\subset D_d(x_0,1)$ as both the set and its limit points are subsets of $D_d(x_0,1)$ this completes the proof.
 
+    \end{proof}
+    \item Is it the case that, in every metric space $(X,d)$ and for every $x_0\in X, D_d(x_0,1)$ is contained in the closure of $B_d(x_0,1)$?
+    \begin{proof}
+        No this is not true consider the metric $(\mathbb{R},d)$ where $d(x,y)=\begin{cases}
+            1 \; & \; \text{ if } x\not = y \\
+            0 \; & \; \text { if } x =y
+        \end{cases}$
+        . Consider the open ball $B_d(0,1)=\{0\}$ which follows because of the strict inequality but $D_d(0,1)=\mathbb{R}$. The closure of $B_d(0,1)=B_d(0,1)\cup B_d(0,1)^\prime$ but for any $x\in \mathbb{R}$ with $x\not = 0 $ we have that any epsilon neighborhood of $x$ with $0<\epsilon<1$ that $B_d(x,\epsilon)=\{x\}$ hence not every neighborhoods even intersects $B_d(0,1)$ so the limit point is the emptyset. Therefore $\overline{B_d(0,1)}=\{0\}\not \supset D_d(0,1)=\mathbb{R}$.
+    \end{proof}
+\end{enumerate}
 
 
 
