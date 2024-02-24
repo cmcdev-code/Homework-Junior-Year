@@ -1,0 +1,164 @@
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,bm,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 04}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+
+
+
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+
+
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 1.}
+  Let $V$ be a finite-dimensional $\K$-vector space with basis $\left\{\mathbf{v_1},\ldots,\mathbf{v_n}\right\}$. Let $\{\varphi_1,\ldots,\varphi_n\}$ be a set of linear maps in $\mathcal{L}(V,\K)$ satisfying
+  $$\varphi_j(\mathbf{v_k}) = \begin{cases} 1 & \text{ when } j=k \\ 0 & \text{ otherwise.} \end{cases}$$
+  Prove that $\left\{\varphi_1,\ldots,\varphi_n\right\}$ is a basis for $\mathcal{L}(V,\K)$.
+  \vskip0.5em
+  {\footnotesize The proof Lemma 3D.8 might be useful to you.}
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 1
+%===========================================================
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 2.} Give an example of two $2 \times 2$ matrices $A$ and $B$ for which $AB\neq BA$.
+\end{tcolorbox}
+\vskip1em
+
+Let $A=\begin{bmatrix}
+    1 & 1 \\ 1 & 0
+\end{bmatrix}$ and let $B= \begin{bmatrix}
+    0 & 0 \\ 1 & 1
+\end{bmatrix}$. Then $AB=\begin{bmatrix}
+    1 & 1 \\ 1 & 0
+\end{bmatrix} \begin{bmatrix}
+    0 & 0 \\ 1 & 1
+\end{bmatrix}= \begin{bmatrix}
+    1 & 1 \\ 0 & 0
+\end{bmatrix}$
+and \\$BA= \begin{bmatrix}
+    0 & 0 \\ 1 & 1
+\end{bmatrix} \begin{bmatrix}
+    1 & 1 \\ 1 & 0
+\end{bmatrix}= \begin{bmatrix}
+    0 & 0 \\ 2 & 1
+\end{bmatrix}$
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 3.}  
+  Recall that the Fibonacci sequence $\left\{F_n\right\} = \left\{0,1,1,2,3,5,8,13,\ldots\right\}$ is recursively-defined:
+  \begin{align*}
+    F_0 &= 0 \\
+    F_1 &= 1 \\
+    F_n &= F_{n-1} + F_{n-2} \text{ for } n \geq 2.
+  \end{align*}
+  Prove that, for all $n \geq 0$, the $3 \times 3$ matrix $A_n = \begin{pmatrix} F_n & F_{n+1} & F_{n+2} \\ F_{n+3} & F_{n+4} & F_{n+5} \\ F_{n+6} & F_{n+7} & F_{n+8} \end{pmatrix}$ formed by consecutive Fibonacci terms cannot have rank $3$.
+  \vskip0.5em
+  {\footnotesize \textit{Challenge.} Can you prove that $A_n$ must always have rank $2$?}
+  \end{tcolorbox}
+\vskip1em
+
+\begin{proof}
+
+    To prove that the rank cannot be $3$ it suffices to show that the nullity is always strictly greater then $0$. So for any $n\in \mathbb{N}$ (0 is a natural number) we have $\begin{bmatrix} 1 \\1 \\-1\end{bmatrix}\in \text{ null} A_n$ this is shown as computing $A_n \begin{bmatrix} 1 \\1 \\-1\end{bmatrix}=\begin{bmatrix}F_n+F_{n+1}-F_{n+2}\\ F_{n+3}+F_{n+4}-F_{n+5}\\F_{n+6}+F_{n+7}-F_{n+8}\end{bmatrix}=\begin{bmatrix}
+        F_{n+2}-F_{n-2}\\ F_{n+5}-F_{n+5}\\ F_{n+8}-F_{n+8}
+    \end{bmatrix}=\begin{bmatrix}
+        0\\0\\0
+    \end{bmatrix}$. 
+
+    As we have the null space is a vector space and $\Span(\begin{bmatrix}
+        1 \\ 1 \\-1
+    \end{bmatrix})=1$ and the $\Span(\begin{bmatrix}
+        1\\1\\-1
+    \end{bmatrix})$ is a subspace of $\text{null} A_n$ then we have $3 \geq \text{nullity}\geq 1$ by the fundamental theorem of linear algebra we get $\text{rank}A_n= 3$
+
+
+\end{proof}
+    
+
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 4
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 4.}
+  Let $\K^{m,n}$ and $\K^{n,m}$ denote the vector spaces of $m \times n$ and $n \times m$, respectively. Prove or disprove the following
+  \begin{align*}
+    T: \K^{m,n} &\rightarrow \K^{n,m} \\
+    T(A) &= A^t
+  \end{align*}
+  is a linear map.
+\end{tcolorbox}
+\vskip1em
+
+\begin{proof}
+    First to show scalar multiplication. Let $\lambda \in \K, A\in \K^{m,n}$ then we have $T(\lambda A)=(\lambda A)^t=\lambda A^t=\lambda T(A)$.  Now let $A,B\in \K^{m,n}$ then $T(A+B)=(A+B)^t=A^t+B^t=T(A)+T(B)$ hence we have $T$ is linear. 
+
+
+\end{proof}
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 5
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 5.}
+  Give an example of linear maps $T \in \mathcal{L}(\R^3, \R^2)$ and $S \in \mathcal{L}(\R^2,\R^3)$ for which exactly one of $TS$ or $ST$ is invertible.
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 5
+%===========================================================
+
+
+\end{document}
