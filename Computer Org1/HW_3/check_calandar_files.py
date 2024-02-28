@@ -11,7 +11,9 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Check if the calendar directory exists
+    
     calendar_path = sys.argv[1]
+    
     if not os.path.exists(calendar_path):
         print(f"Calendar path {calendar_path} does not exist.")
         sys.exit(1)

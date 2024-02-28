@@ -49,6 +49,24 @@
 % SOLUTION 1
 %===========================================================
 
+\begin{proof}
+  
+  Assume $V$ is a finite $\K$-vector space with basis $\{v_1,...,v_n\}$. Assume that $\{\varphi_1,..., \varphi_n\}$ are as described. We have that $\dim(\mathcal L(V,\K))=\dim(V)\dim(\K)=\dim(V)=n$. Hence we just have to show that $\{\varphi_1,...,\varphi_n\}$ is linear independent and we can apply the theorem linear independent set of the right length is a basis. 
+
+  Now assume for $\alpha_1,...,\alpha_n\in \K$ we have the map $Z\in \mathcal (V,\K)$ where
+  \[
+    Z(v) = \alpha_1 \varphi_1(v)+...+ \alpha_n \varphi_n(v)=0  
+  \]  
+
+  but then evaluating the function at each of the basis elements we get
+  \[
+    Z(v_i)=\alpha_1 \varphi_1(v_i)+...+\alpha_i \varphi_i(v_i)+...+\alpha_n \varphi_n(v_i)=\alpha_i =0
+  \]
+
+  hence we get $\alpha _1=...=\alpha_n=0$ which shows that $\{\varphi_1,...,\varphi_n\}$ is a linear independent set.
+  Then as $dim(\mathcal )$
+
+\end{proof}
 
 \newpage
 
@@ -113,7 +131,7 @@ and \\$BA= \begin{bmatrix}
         1 \\ 1 \\-1
     \end{bmatrix})=1$ and the $\Span(\begin{bmatrix}
         1\\1\\-1
-    \end{bmatrix})$ is a subspace of $\text{null} A_n$ then we have $3 \geq \text{nullity}\geq 1$ by the fundamental theorem of linear algebra we get $\text{rank}A_n= 3$
+    \end{bmatrix})$ is a subspace of $\text{null} A_n$ then we have $3 \geq \text{nullity}A_n\geq 1$ by the fundamental theorem of linear algebra we get $\text{rank}A_n = \dim \mathbb{R}^3- \text{nullity}A_n\leq 3 -1 $ as the $n$ was an arbitrary natural number then the claim is proved.
 
 
 \end{proof}
@@ -156,9 +174,10 @@ and \\$BA= \begin{bmatrix}
 \end{tcolorbox}
 \vskip1em
 
-%===========================================================
-% SOLUTION 5
-%===========================================================
+Consider the linear map $T\in \mathcal (\R^3, \R^2)$ where $T(x,y,z)=(x+z,y+z)$ and the linear map $S\in \mathcal L (\R^2,\R^3)$ where $S(x,y)=(x,y,0)$. Then we have $ST(x,y,z)=(x+z,y+z,0)$ this is not invertible as it is neither injective or surjective. However we have $TS(x,y)=(x+0,y+0)=(x,y)$. We have that $TS$ is just the identity function on $\R^2$ hence it is invertible.
+
+
+
 
 
 \end{document}
