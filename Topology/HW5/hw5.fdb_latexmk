@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1709245284 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW5/hw5.tex" "hw5.pdf" "hw5" 1709245285
+["pdflatex"] 1709245377 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW5/hw5.tex" "hw5.pdf" "hw5" 1709245377
   "/etc/texmf/web2c/texmf.cnf" 1706748241 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW5/hw5.tex" 1709245284 10903 e9e7f2fcdbde021da6d0b9af7f5a9601 ""
+  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW5/hw5.tex" 1709245376 10948 5dae6db83f5332117fb758b1d4783feb ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -50,8 +50,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706748264 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706748299 2801216 d262d31f3423aa879e9c207d45741308 ""
-  "hw5.aux" 1709245285 1038 284cf1e0f42bc1767aafae470f951787 "pdflatex"
-  "hw5.tex" 1709245284 10903 e9e7f2fcdbde021da6d0b9af7f5a9601 ""
+  "hw5.aux" 1709245377 1038 284cf1e0f42bc1767aafae470f951787 "pdflatex"
+  "hw5.tex" 1709245376 10948 5dae6db83f5332117fb758b1d4783feb ""
   (generated)
   "hw5.aux"
   "hw5.log"
