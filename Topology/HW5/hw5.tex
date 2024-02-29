@@ -1,0 +1,137 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Order Topology and Introduction to Continuity } 
+
+\subsection*{Hand in Friday, March 1.} 
+
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{1.}  Recall that a map $f : X \rightarrow Y$ between topological spaces is said to be continuous at a point $x_0 \in X$ if and only if, for each open set $V$ that contains $f(x_0)$, there is an open $U$ satisfying $x_0 \in U \subset f^{-1}(V)$. Let $\mathcal B _X$ be a basis for the topology of $X$ and $\mathcal B _Y$ a basis for the topology of $Y$. Show that $f$ is continuous at $x_0 \in X$ if and only if, for each $W\in \mathcal B _Y$ that contains $f(x_0)$, there is a $\widetilde{W} \in \mathcal B _X$ satisfying $x_0 \in \widetilde{W} \subset f^{-1} (W)$. 
+
+
+\begin{proof}
+    Suppose that $f:X\mapsto Y$ is continuous at $x_0\in X$ then we have for all neighborhoods $V_{f(x_0)}$ of $f(x_0)$ that there exists an open neighborhood $U_{x_0}$ of $x_0$ with $x_0\in U_{x_0}\subset f^{-1}(V_{f(x_0)})$ but as $U_{x_0}$ is open then it is the union of bases elements hence there exists a basis element $U_{b}$ with $x_0\in U_{b}\subset f^{-1}(V_{f(x_0)})$ as $V_{f(x_0)}$ is an arbitrary neighborhood of $f(x_0)$ then this implies that the above is true for all neighborhoods $V_{b}\in \mathcal B_Y$ of $f(x_0)$ which completes the forward direction. 
+
+    Assume that for $f:X\mapsto Y$ we have for each $x_0\in X$ that for each $W\in \mathcal B_Y$ that contains $f(x_0)$, there is a $\widetilde{W}\in \mathcal B_X$ with $x_0\in \widetilde{W} \subset f^{-1}(W)$. Now for any $x_0\in X$ consider an arbitrary 
+
+\end{proof}
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{2.}  When $X$ is a metric space, we know that the set of open balls, $\{ B(x,r) : x\in X \ \mbox{and} \ r>0\}$ is a basis for $X$'s metric topology $\mathcal T$. 
+
+\vspace{.1in}
+{\bfseries a.} Show that $\{ B(x,r) : x\in X \ \mbox{and} \ 0<r<1\}$ is a basis for a topology on $X$. Call this topology $\mathcal T _1$. 
+
+\vspace{.1in}
+{\bfseries b.} Show that $\mathcal T = \mathcal T _1$. 
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{3.} Let $X$ be $\{0\} \bigcup \{ 1/k : k\in \mathbb N \}$ be ordered by the usual ``less than" $<$, i.e. the order it gets from ``less than" when $X$ is regarded as a subset of $[0,1]$. Give $X$ the associated order topology. In the associated product topology on $X\times X$, show that every open set that contains $(0,1)$ contains infinitely many points with second coordinate $1$ and that there is an open set that contains $(0,1)$ and in which every point has second coordinate $1$. 
+
+If we start with the same order on $X$ and give $X\times X$ the associated dictionary order, then in the topology $X\times X$ gets from the dictionary order, show that, for every $y\in X$, every open set that contains $(0,1)$ contains infinitely many points with second coordinate $y$.
+
+\vspace{.25in} {\bf The discussion immediately below and the three problems that follow it are extra credit problems. This assignment is worth thirty points, which you can earn on problems 1 - 3. Any points you score on problems 4 - 6 will be extra, added to your homework score, possibly to exceed ``possible" points. I believe that problems 4 - 6, and particularly the sections of Munkres they connect to, introduce those who work through them to an intriguing blend of topology and fairly advanced set theory, but this material is not a required part of the course, and it will not appear on the next test or on the final exam.}
+ 
+
+\vspace{.25in}
+Background for problems 4 - 6 is in Munkres Section 10 for well-ordered sets and in Munkres Section 7 for countable and uncountable sets; but I'll try to provide in this assignment the information you need to do the assignment. Of course you can also speak to me about topics on which you want more information. 
+
+A set is called countable if it is finite or in bijective correspondence with $\mathbb N$. The sets in bijective correspondence with $\mathbb N$ are infinite and, when we want to distinguish them from finite sets, we call them countably infinite. There are infinite sets that are not countable (also called uncountable). The set of points on the real line is an example, as is the set of subsets of $\mathbb N$. A subset of a countable set is countable, the union of countably many countable sets is countable, and a product of finitely many sets, with each of the factors countable, is countable. 
+
+A well-ordered set is a linearly ordered set in which every nonempty subset has a least element. That apparently innocuous property has many implications. Note that, in the usual ``less than" order $<$, $\mathbb Z$ and $\mathbb R$ are not well-ordered, but every subset of $\mathbb N$, including $\mathbb N$ itself, is well-ordered. Other examples include $\mathbb N \bigcup \{ \omega\}$, where we add to $\mathbb N$ an element that we consider larger than every element of $\mathbb N$. Unless otherwise specified, the topology on a well-ordered set will be the order topology. In a well-ordered set, I'll use interval notations, including or excluding endpoints, to have their usual meaning in the presence of a ``less than" order $<$. 
+
+If $x$ is an element of a well-ordered set $X$, the section $S_x$ refers to $\{ y \in X : y < x\}$.  If $x$ is an element of a well-ordered set, we call $y$ the immediate predecessor of $x$ if $y$ is the greatest element that is less than $x$. In $\mathbb N \bigcup \{ \omega\}$, each $n > 1$ has the immediate predecessor $n-1$, but $\omega$ has no immediate predecessor. 
+
+An example with interesting properties is the uncountable well-ordered set $S_{\Omega}$ with the property that, for all $x \in S_{\Omega}$, the section $S_x$ is countable. $\overline{S} _{\Omega}$ is a notation used for $S_{\Omega} \bigcup \{ \Omega\}$, which is well-ordered by considering the added element $\Omega$ to be larger than every element in $S_{\Omega}$. In this context, the notation for the set $S_{\Omega}$ is then consistent with the notation for the section of all elements of $\overline{S} _{\Omega}$ that are less than $\Omega$. In a problem below, you will check that the overline notation in $\overline{S} _{\Omega}$ is consistent with our usual notation for the closure of $S_{\Omega}$ in $\overline{S} _{\Omega}$'s order topology. 
+
+If $Y$ is a subset of a topological space $X$, then the expression {\bf open cover} of $Y$ refers to a collection $\{ U_{\alpha} : \alpha \in A\}$ of open subsets in $X$ that satisfies $Y\subset \bigcup _{\alpha \in A} U_{\alpha}$. 
+
+\vspace{.15in}
+\noindent
+\subsection*{4.}  
+
+\vspace{.1in}
+{\bfseries a.} Show that, if $X$ is a well-ordered set, then every subset of $X$ that has an upper bound has a least upper bound (also known as a supremum or sup).
+
+\vspace{.1in}
+{\bfseries b.}  Show that, if $Y$ is a countable subset of $S_{\Omega}$, then there is a $b \in S_{\Omega}$ for which $Y \subset [a_0 , b ]$. ({\bf Hint.} Is $(\bigcup _{y\in Y} S_y)\bigcup Y$ countable?) 
+
+\vspace{.1in}
+{\bfseries c.} Show that, in $S_{\Omega} \bigcup \Omega$, no sequence $(y_n)$ of elements of $S_{\Omega}$  converges to $\Omega$.
+
+\vspace{.1in}
+{\bfseries d.} Show that, in $S_{\Omega} \bigcup \Omega$, $\Omega$ is in the closure of $S_{\Omega}$. 
+
+\vspace{.1in} {\bf Remark.} The last two parts of the above problem show that a point can be in the closure of a set even if no sequence in the set converges to the point. This does not happen in metric spaces. 
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{5.} Let $S_{\Omega}$ and $\overline{S} _{\Omega}$ be as above. For either set call the least element $a_0$. 
+
+\vspace{.1in}
+{\bfseries a.} Show that, for all $x\in S_{\Omega}$, there is a $y\in S_{\Omega}$ that satisfies $x < y$.
+
+\vspace{.1in}
+{\bfseries b.}  Show that there is a collection $\{ U_{\gamma} : \gamma \in \Gamma \}$ of open subsets of $S_{\Omega}$ satisfying the following condition: $S_{\Omega} \subset \bigcup _{\gamma \in \Gamma} U_{\gamma}$ but for every countable subcollection $\{ U_{\gamma _j} : j\in J \} $ of the $U_{\gamma}$'s, there is an $x\in S_{\Omega}$ for which $x\notin \bigcup _{j\in J} U_{\gamma _j}$.  Here $J$ can be either all of $\mathbb N$ or a finite subset of $\mathbb N$. 
+
+\vspace{.1in}
+{\bfseries c.} Suppose that $\{ V_{\beta} : \beta \in B \}$ is a collection of open subsets of $\overline{S} _{\Omega}$ that satisfies $\overline{S} _{\Omega} \subset \bigcup _{\beta \in B} V_{\beta}$. Show that there is a finite subcollection  $\{ V_{\beta _1} , .\ .\ .\ , V_{\beta _n}\}$ of the 
+$V_{\beta}$'s for which $\overline{S} _{\Omega} \subset \bigcup _{j = 1}^nV_{\beta _j}$. ({\bfseries Hint.} Consider the set of elements $x$ of $\overline{S} _{\Omega}$ for which no finite subcollection  $\{ V_{\beta _1} , .\ .\ .\ , V_{\beta _n}\}$ satisfies $[a_0 , x]  \subset \bigcup _{j = 1}^nV_{\beta _j}$.)
+
+\vspace{.15in}
+
+\noindent
+\subsection*{6.}  Let $S_{\Omega}$ be as above. Call its least element $a_0$. 
+
+\vspace{.1in}
+{\bfseries a.} Show that, for each $z\in S_{\Omega} \bigcup \Omega$, the single-element set $\{ z\}$ is a closed subset of $S_{\Omega} \bigcup \Omega$.
+
+\vspace{.1in}
+{\bfseries b.}  Suppose that $W$ is a countably infinite subset of $S_{\Omega}$. Show that $W$ has a limit point in $S_{\Omega}$. ({\bf Hint.} By the result of problem 4.b., we may choose a $b\in S_{\Omega}$ for which $W\subset [a_0,b]$. If $V$ is a subset of $[a_0,b]$ for which each point $c$ in $[a_0,b]$ has a neighborhood $U_c$ satisfying $(U_c\setminus \{c\} )\bigcap V = \emptyset$, make an open cover $\{ U_c : c \in [a_0,b]\} \bigcup \{ (b, \Omega ]\}$ of $S_{\Omega} \bigcup \Omega$. What does the result of problem 5.c. imply about $V$?)
+
+
+\vspace{.1in}
+{\bfseries c.} Suppose that $W$ is a countably infinite subset of $S_{\Omega}$. Show that, for some $c\in S_{\Omega}$, every open neighborhood of $c$ contains infinitely many elements of $W$. ({\bf Hint.} If $d$ has an open neighborhood that has finite intersection with $W$, does the result of problem 6.a. permit $d$ to be a limit point of $W$? Combine the answer to that question with the result of problem 6.b.) 
+
+\vspace{.1in}
+{\bf Remark.} The reasoning used at the end of the preceding answer applies to limit points in any topological space in which every single-element set is closed. 
+
+
+ 
+\end{document}
