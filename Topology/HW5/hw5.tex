@@ -74,10 +74,17 @@
 \begin{proof}
     Let $X= \{0\}\bigcup \{1/k:k\in \mathbb{N}\}$ with the order topology. Now let $A\times B$ be an arbitrary open set in the product topology with $(0,1)\in A\times B$. Then as this is the product topology we have $A,B$ are open sets of $X$ with $0\in A$ and $1\in B$. Then we have two basis elements of the form $[0,b)\subset A$ where $b=1/n$ for some $n\in \mathbb{N}$ and $(a,1]$ where $a=1/k$ for some $k\in \mathbb{K}$. Then we have $(1/j,1)\in [0,b)\times (a,1]\subset A\times B$ where $j\in \mathbb{N}$ and $j\geq n$ this shows that there is an infinite number of points where the second coordinate is $1$. 
     
-    
+    We have $(1/2,1]=\{1\}$ is open in $X$ and as this is the product topology we have that $\{1\}\times \{1\}$ is open in $X\times X$ but $\{1\}\times \{1\}=\{(1,1)\}$ hence every element has 2nd coordinate $1$.
 \end{proof}
 
 If we start with the same order on $X$ and give $X\times X$ the associated dictionary order, then in the topology $X\times X$ gets from the dictionary order, show that, for every $y\in X$, every open set that contains $(0,1)$ contains infinitely many points with second coordinate $y$.
+
+\begin{proof}
+    Assume that $X\times X$ has the dictionary order and the order topology. Let $A\times B$ be an open set with $(0,1)\in A\times B$. Then we have a basis element of the form $\big((0,b),(c,1)\big)=\{(x,z)\in X\times X: (0,b)< (x,z)\text{ and }(x,z)<(c,1)\}$ where $b,c\in X$ with $(0,1)\in \big((0,b),(c,1)\big)\subset A\times B$. Then we have for all 
+
+
+
+\end{proof}
 
 \vspace{.25in} {\bf The discussion immediately below and the three problems that follow it are extra credit problems. This assignment is worth thirty points, which you can earn on problems 1 - 3. Any points you score on problems 4 - 6 will be extra, added to your homework score, possibly to exceed ``possible" points. I believe that problems 4 - 6, and particularly the sections of Munkres they connect to, introduce those who work through them to an intriguing blend of topology and fairly advanced set theory, but this material is not a required part of the course, and it will not appear on the next test or on the final exam.}
  
