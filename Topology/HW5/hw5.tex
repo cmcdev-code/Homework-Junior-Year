@@ -39,7 +39,7 @@
 \begin{proof}
     Suppose that $f:X\mapsto Y$ is continuous at $x_0\in X$ then we have for all neighborhoods $V_{f(x_0)}$ of $f(x_0)$ that there exists an open neighborhood $U_{x_0}$ of $x_0$ with $x_0\in U_{x_0}\subset f^{-1}(V_{f(x_0)})$ but as $U_{x_0}$ is open then it is the union of bases elements hence there exists a basis element $U_{b}$ with $x_0\in U_{b}\subset f^{-1}(V_{f(x_0)})$ as $V_{f(x_0)}$ is an arbitrary neighborhood of $f(x_0)$ then this implies that the above is true for all neighborhoods $V_{b}\in \mathcal B_Y$ of $f(x_0)$ which completes the forward direction. 
 
-    Assume that for $f:X\mapsto Y$ we have for each $x_0\in X$ that for each $W\in \mathcal B_Y$ that contains $f(x_0)$, there is a $\widetilde{W}\in \mathcal B_X$ with $x_0\in \widetilde{W} \subset f^{-1}(W)$. Now for any $x_0\in X$ consider an arbitrary 
+    Assume that for $f:X\mapsto Y$ we have for each $x_0\in X$ that for each $W\in \mathcal B_Y$ that contains $f(x_0)$, there is a $\widetilde{W}\in \mathcal B_X$ with $x_0\in \widetilde{W} \subset f^{-1}(W)$. Now for any $x_0\in X$ consider an arbitrary neighborhood $V$ of $f(x_0)$. Then we have $V=\bigcup U_\alpha $ where $U_\alpha \in \mathcal B_Y $ which implies $f(x_0)\in U_{\alpha}^\prime\in \mathcal B_Y $ this implies that there exists $\widetilde{W} \in \mathcal B_X$ with $x_0\in \widetilde{W}\subset  f^{-1}(U_{\alpha}^\prime)\subset f^{-1}(\bigcup U_\alpha)=f^{-1}(V)$ which shows that $f$ is continuous at $x_0\in X$.
 
 \end{proof}
 
@@ -49,18 +49,33 @@
 \noindent
 \subsection*{2.}  When $X$ is a metric space, we know that the set of open balls, $\{ B(x,r) : x\in X \ \mbox{and} \ r>0\}$ is a basis for $X$'s metric topology $\mathcal T$. 
 
+
 \vspace{.1in}
 {\bfseries a.} Show that $\{ B(x,r) : x\in X \ \mbox{and} \ 0<r<1\}$ is a basis for a topology on $X$. Call this topology $\mathcal T _1$. 
 
+\begin{proof}
+    Let $x\in X$ then we have $x\in B(x,0.5)$ hence we have the first condition for being a basis satisfied.  Now suppose that we have $x\in B(y_1,r_1)\cap B(y_2,r_2)$ where $y_1,y_2\in X$ and $0<r_1<1$ and $0<r_2<1$. Then let $r_3=\min(r_1-d(x,y_1),r_2-d(x,y_2))$ then consider the set $B(x,r_3)$. Then for any $x_0\in B(x,r_3)$ we have $d(x_0,y_1)\leq d(x_0,x)+d(x,y_1)< r_3+d(x,y_1)\leq r_1-d(x,y_1)+d(x,y_1)\leq r_1$ not that the strict inequality follows from $d(x_0,x)<r_3$ and I used the triangle inequality for the first inequality and the third inequality follows due to the choice of $r_3$. Using the similar reasoning we get $d(x_0,y_2)<r_2$ hence we get $B(x,r_3)\subset B(y_1,r_1)$ and $B(x,r_3)\subset B(y_2,r_2)$ hence we get $x\in B(x,r_3)\subset B(y_1,r_1)\cap B(y_2,r_2)$. Which shows that it is a basis. 
+\end{proof}
+
+
 \vspace{.1in}
 {\bfseries b.} Show that $\mathcal T = \mathcal T _1$. 
+\begin{proof}
+    Suppose $B(x_0,r_0)\in \{ B(x,r) : x\in X \ \mbox{and} \ 0<r<1\}$ then as $x\in X$ and $0<r_0$ we get $B(x_0,r_0)\in \{ B(x,r) : x\in X \ \mbox{and} \ r>0\}$ hence $\{ B(x,r) : x\in X \ \mbox{and} \ 0<r<1\}\subset \{ B(x,r) : x\in X \ \mbox{and} \ r>0\}$ which implies $\mathcal T_1\subset \mathcal T$. 
 
-
+    Now using Munkres Lemma 13.3 for an arbitrary $x\in X$ and an arbitrary $B(x_0,r_0)\in \{B(x,r): x\in X \text{ and } 0<r<1\}$ with $x\in B(x_0,r_0)$ then we have $B(x_0,r_0)\in \{B(x,r): x \in X \text{ and } 0<r\}$ then as $x\in B(x_0,r_0)\subset B(x_0,r_0)$ we get $\mathcal T\supset \mathcal T_1$ as we have double inclusion we get $\mathcal T_1 =\mathcal T$ 
+\end{proof}
 
 \vspace{.15in}
 
 \noindent
 \subsection*{3.} Let $X$ be $\{0\} \bigcup \{ 1/k : k\in \mathbb N \}$ be ordered by the usual ``less than" $<$, i.e. the order it gets from ``less than" when $X$ is regarded as a subset of $[0,1]$. Give $X$ the associated order topology. In the associated product topology on $X\times X$, show that every open set that contains $(0,1)$ contains infinitely many points with second coordinate $1$ and that there is an open set that contains $(0,1)$ and in which every point has second coordinate $1$. 
+
+\begin{proof}
+    Let $X= \{0\}\bigcup \{1/k:k\in \mathbb{N}\}$ with the order topology. Now let $A\times B$ be an arbitrary open set in the product topology with $(0,1)\in A\times B$. Then as this is the product topology we have $A,B$ are open sets of $X$ with $0\in A$ and $1\in B$. Then we have two basis elements of the form $[0,b)\subset A$ where $b=1/n$ for some $n\in \mathbb{N}$ and $(a,1]$ where $a=1/k$ for some $k\in \mathbb{K}$. Then we have $(1/j,1)\in [0,b)\times (a,1]\subset A\times B$ where $j\in \mathbb{N}$ and $j\geq n$ this shows that there is an infinite number of points where the second coordinate is $1$. 
+    
+    
+\end{proof}
 
 If we start with the same order on $X$ and give $X\times X$ the associated dictionary order, then in the topology $X\times X$ gets from the dictionary order, show that, for every $y\in X$, every open set that contains $(0,1)$ contains infinitely many points with second coordinate $y$.
 
