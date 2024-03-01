@@ -39,7 +39,7 @@
 \begin{proof}
     Suppose that $f:X\mapsto Y$ is continuous at $x_0\in X$ then we have for all neighborhoods $V_{f(x_0)}$ of $f(x_0)$ that there exists an open neighborhood $U_{x_0}$ of $x_0$ with $x_0\in U_{x_0}\subset f^{-1}(V_{f(x_0)})$ but as $U_{x_0}$ is open then it is the union of bases elements hence there exists a basis element $U_{b}$ with $x_0\in U_{b}\subset f^{-1}(V_{f(x_0)})$ as $V_{f(x_0)}$ is an arbitrary neighborhood of $f(x_0)$ then this implies that the above is true for all neighborhoods $V_{b}\in \mathcal B_Y$ of $f(x_0)$ which completes the forward direction. 
 
-    Assume that for $f:X\mapsto Y$ we have for each $x_0\in X$ that for each $W\in \mathcal B_Y$ that contains $f(x_0)$, there is a $\widetilde{W}\in \mathcal B_X$ with $x_0\in \widetilde{W} \subset f^{-1}(W)$. Now for any $x_0\in X$ consider an arbitrary neighborhood $V$ of $f(x_0)$. Then we have $V=\bigcup U_\alpha $ where $U_\alpha \in \mathcal B_Y $ which implies $f(x_0)\in U_{\alpha}^\prime\in \mathcal B_Y $ this implies that there exists $\widetilde{W} \in \mathcal B_X$ with $x_0\in \widetilde{W}\subset  f^{-1}(U_{\alpha}^\prime)\subset f^{-1}(\bigcup U_\alpha)=f^{-1}(V)$ which shows that $f$ is continuous at $x_0\in X$.
+    Assume that for $f:X\mapsto Y$ we have for each $x_0\in X$ that for each $W\in \mathcal B_Y$ that contains $f(x_0)$, there is a $\widetilde{W}\in \mathcal B_X$ with $x_0\in \widetilde{W} \subset f^{-1}(W)$. Now for any $x_0\in X$ consider an arbitrary neighborhood $V$ of $f(x_0)$. Then we have $V=\bigcup U_\alpha $ where $U_\alpha \in \mathcal B_Y $ which implies for some $U_\alpha ^\prime \in \mathcal B_y$ that $f(x_0)\in U_{\alpha}^\prime\subset V$ this implies (by the assumption) that there exists $\widetilde{W} \in \mathcal B_X$ with $x_0\in \widetilde{W}\subset  f^{-1}(U_{\alpha}^\prime)\subset f^{-1}(\bigcup U_\alpha)=f^{-1}(V)$ which shows that $f$ is continuous at $x_0\in X$.
 
 \end{proof}
 
@@ -74,13 +74,13 @@
 \begin{proof}
     Let $X= \{0\}\bigcup \{1/k:k\in \mathbb{N}\}$ with the order topology. Now let $A\times B$ be an arbitrary open set in the product topology with $(0,1)\in A\times B$. Then as this is the product topology we have $A,B$ are open sets of $X$ with $0\in A$ and $1\in B$. Then we have two basis elements of the form $[0,b)\subset A$ where $b=1/n$ for some $n\in \mathbb{N}$ and $(a,1]$ where $a=1/k$ for some $k\in \mathbb{K}$. Then we have $(1/j,1)\in [0,b)\times (a,1]\subset A\times B$ where $j\in \mathbb{N}$ and $j\geq n$ this shows that there is an infinite number of points where the second coordinate is $1$. 
     
-    We have $(1/2,1]=\{1\}$ is open in $X$ and as this is the product topology we have that $\{1\}\times \{1\}$ is open in $X\times X$ but $\{1\}\times \{1\}=\{(1,1)\}$ hence every element has 2nd coordinate $1$.
+    We have $(1/2,1]=\{1\}$ and $[0,1/2)$ are open in $X$ and as this is the product topology we have that $[0,1/2)\times \{1\}$ is open in $X\times X$ but $[0,1/2)\times \{1\}=\{(a,1):a=0\text{ or } a=1/n\text{ where }n>2\}$ hence every element has 2nd coordinate $1$.
 \end{proof}
 
 If we start with the same order on $X$ and give $X\times X$ the associated dictionary order, then in the topology $X\times X$ gets from the dictionary order, show that, for every $y\in X$, every open set that contains $(0,1)$ contains infinitely many points with second coordinate $y$.
 
 \begin{proof}
-    Assume that $X\times X$ has the dictionary order and the order topology. Let $A\times B$ be an open set with $(0,1)\in A\times B$. Then we have a basis element of the form $\big((0,b),(c,1)\big)=\{(x,z)\in X\times X: (0,b)< (x,z)\text{ and }(x,z)<(c,1)\}$ where $b,c\in X$ with $(0,1)\in \big((0,b),(c,1)\big)\subset A\times B$. Then we have for all 
+    Assume that $X\times X$ has the dictionary order and the order topology. Let $A\times B$ be an open set with $(0,1)\in A\times B$. Then we have a basis element of the form $\big((a,b),(c,d)\big)=\{(x,z)\in X\times X: (a,b)< (x,z)\text{ and }(x,z)<(c,d)\}$ where $a,b,c,d\in X$ with $(0,1)\in \big((a,b),(c,d)\big)\subset A\times B$. Then as $(0,1)\in \big((a,b),(c,d)\big)$ we have $(a,b)<(0,1)<(c,d)$. This implies that $a=0$ and $b<1$ as this is the order topology we get that $0<c$ as if it where not then we would have $c=0$ and $d=1$ which would imply that the basis is $\big((0,1),(0,1)\big)$ which is not an element of the order topology. Hence we get the strict inequality $0<c$ then we have for all $n\in \mathbb{N}$ with $1/n<c$ that for all $y\in X$ the inequality $(a,b)<(1/n,y)<(c,d)$ as there is an infinite number of natural numbers $k\in \mathbb{N}$ such that $0=a<1/k<c$ this completes the proof.
 
 
 
