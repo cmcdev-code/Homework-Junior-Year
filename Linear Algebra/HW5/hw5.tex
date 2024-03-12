@@ -1,0 +1,155 @@
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,bm,enumitem,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 05}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Mat}{\mathcal{M}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+
+
+
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+
+
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 1.}
+  Let $V$ be a finite-dimensional $\K$-vector space with basis $\left\{\mathbf{v_1},\ldots,\mathbf{v_n}\right\}$. The vector space $\mathcal{L}(V,\K)$ is called the \textbf{dual space} of $V$, and is denoted $V'$. Last time you proved that $\left\{\varphi_1,\ldots,\varphi_n\right\}$ was a basis for $V'$ (this basis is called the \textbf{dual basis}).
+  \vskip1em
+  Let $W$ be another finite-dimensional $\K$-vector space with basis $\left\{\mathbf{w_1},\ldots,\mathbf{w_m}\right\}$, and dual basis $\left\{\omega_1,\ldots,\omega_m\right\}$. Given a map $T \in \mathcal{L}(V,W)$, there is another map $T' \in \mathcal{L}(W',V')$ defined by $T'(\psi) = \psi \circ T$. (The notation is a bit strange, but $T'(\psi)$ is a function in $\mathcal{L}(V,\K)$, and for every $\mathbf{v} \in V$, we define $T'(\psi)(\mathbf{v}) = \psi(T(\mathbf{v})$.)
+  \vskip1em
+  Show that $\mathcal{M}(T') = \left(\mathcal{M}(T)\right)^t.$
+\end{tcolorbox}
+\vskip1em
+
+
+\begin{proof}
+  Assume that $V,W$ are both $\K$ vector spaces with basis $\{\mathbf{v_1},...,\mathbf{v_n}\}$ and $\{\mathbf{w_1},...,\mathbf{w_m}\}$ respectively. Assume that the basis for $V^\prime$ is $\{\varphi_1,...,\varphi_n\}$ and the basis for $W^\prime$ is $\{\omega_1,...,\omega_m\}$. Now consider two arbitrary linear transformations $T\in \mathcal{L}(V,W)$ and $T^\prime\in \mathcal L(W^\prime,V^\prime)$. The we have $A=\mathcal M( T)$ and $B=\mathcal M ({T^\prime})$. Then we have the entires of $B$ are given by 
+
+  Then by the definition of $T^\prime$ we get 
+  \[
+    T^\prime \omega_k (\mathbf{v_j})=\omega_k\circ T(\mathbf {v_j})
+  \]
+  where $1\leq k\leq m$ and $1 \leq j \leq n$.
+
+  We also get 
+  \[
+    T^\prime \omega _k= \sum_{i=1}^n B_{i,k}\varphi_{i}
+  \]
+
+  substituting this into the equation above we get 
+  \[
+    \sum_{i=1}^n B_{i,k}\varphi_{i}(\mathbf{v_j})=\omega_k\circ \sum_{c=1}^mA_{c,j} \mathbf{w_c}
+  \] 
+  which follows from the definition of matrix of a linear map.  
+
+  Then we have $B_{k,j}=\sum_{i=1}^n B_{i,k}\varphi_{i}(\mathbf{v_j})$ by the definition of matrix of a linear map. We also get $\omega_k \circ \sum_{c=1}^m A_{c,j}\mathbf{w_c}=\sum_{c=1}^m A_{c,j}\omega_{k}(\mathbf{w_c})$ which follows due to $\omega_k$ being linear. Then by the definition of dual basis we get $\sum_{c=1}^m A_{c,j}\omega_{k}(\mathbf{w_c})=A_{k,j}$ this implies $\mathcal M(T^\prime)=(\mathcal M(T))^t$ 
+
+
+\end{proof}
+
+%===========================================================
+% SOLUTION 1
+%===========================================================
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 2.} Let $D:\Poly_4(\R) \rightarrow \Poly_3(\R)$ be the derivative map $D(p(x)) = \frac{dp}{dx}$. When using the standard polynomial bases $\left\{1,x,x^2,x^3,x^4\right\}$ and $\left\{1,x,x^2,x^3\right\}$, the matrix $\Mat(D)$ is
+  $$\Mat(D) = \begin{pmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 2 & 0 & 0 \\ 0 & 0 & 0 & 3 & 0 \\ 0 & 0 & 0 & 0 & 4 \end{pmatrix}.$$
+  Find bases $\mathcal{B}$ for $\Poly_4(\R)$ and $\mathcal{C}$ for $\Poly_3(\R)$ so that
+  $$\Mat(D,\mathcal{B},\mathcal{C}) = \begin{pmatrix} 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{pmatrix}.$$
+\end{tcolorbox}
+\vskip1em
+
+
+
+We have that the basis $\mathcal{B}=\{\mathbf{v_1}=x^4,\mathbf{v_2}=x^3,\mathbf{v_3}=x^2,\mathbf{v_2}=x,\mathbf{v_1}=1\}$ and $\mathcal{C}=\{\mathbf{w_1}=4x^3,\mathbf{w_2}=3x^2,\mathbf{w_3}=2x,\mathbf{w_4}=1\}$ work. First to show that these are basis $\mathcal{B}$ is the standard basis for $\Poly_4(\R)$ hence it is a basis. Now for $\mathcal{C}$ consider $\alpha _1 4x^3+\alpha_2 3x^2+\alpha_3 2x+\alpha_4 1=0$ where each $\alpha_i$ is an arbitrary scalar as each $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ is a coefficient for a unique degree polynomial we get $\alpha_1=\alpha_2=\alpha_3=\alpha_4=0$ hence $\mathcal C$ is linear independent and as $\dim \Poly_3(\R)=4$ we get it is a basis. 
+
+Now computing $\Mat(D,\mathcal{B},\mathcal{C})$ we have $$D(x^4)=1\cdot 4x^3+0\cdot 3x^2 + 0\cdot 2x+0\cdot 1$$ $$D(x^3)=0\cdot 4x^3+1\cdot 3x^2 + 0\cdot 2x+0\cdot 1$$
+$$D(x^2)=0\cdot 4x^3+0\cdot 3x^2 + 1\cdot 2x+0\cdot 1$$
+$$D(x^1)=0\cdot 4x^3+0\cdot 3x^2 + 0\cdot 2x+1\cdot 1$$
+$$D(x^0)=0\cdot 4x^3+0\cdot 3x^2 + 0\cdot 2x+0\cdot 1$$
+
+From this we get the matrix above. 
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 3.}
+  Let $\mathcal{B}=\{\mathbf{b_1}=(1,-1,0),\,\mathbf{b_2}=(1,0,2),\,\mathbf{b_3}=(0,2,-1)\}$ be a basis for $\K^3$ and let $\mathcal{E}$ denote the standard basis for $\K^3$.
+  \begin{enumerate}[label=(\alph*)]
+  \item Find scalars $k_1, k_2, k_3$ satisfying $k_1 \mathbf{b_1} + k_2 \mathbf{b_2} + k_3 \mathbf{b_3} = (3,5,1)$.
+  \item Find the change of basis matrix $\Mat(\mathrm{Id}, \mathcal{B}, \mathcal{E})$.
+  \item Compute the following matrix product. How does this relate to your work in part (a)?
+    $$\Mat(\mathrm{Id}, \mathcal{B}, \mathcal{E}) \begin{pmatrix} 1 & 1 & 0 & 3 \\ -1 & 0 & 2 & 5 \\ 0 & 2 & -1 & 1 \end{pmatrix}$$
+  \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 3
+%===========================================================
+
+%\begin{enumerate}[label=(\alph*)]
+%\item 
+%\item 
+%\item 
+%\end{enumerate}
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 4
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 4.}
+  Have a lovely Spring Break!
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 4
+%===========================================================
+
+%The solution is to stop working on this and relax!
+
+
+
+\end{document}
