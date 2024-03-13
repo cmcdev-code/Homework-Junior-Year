@@ -1,0 +1,89 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Continuous maps } 
+
+\subsection*{Hand in Friday, March 15.}
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{1.} Suppose that $X$ and $Y$ are topological spaces, that $A \subset X$, and that $f$ and $g$ are continuous maps from $X$ to $Y$ that satisfy, for all $x\in A$, $f(x) = g(x)$. If $Y$ is Hausdorff, show that, for all $z$ in the closure of $A$, $f(z) = g(z)$.
+
+\begin{proof}
+    Assume $X$ and $Y$ are topological spaces, that $A\subset X$, and that $f$ and $g$ are continuous maps from $X$ to $Y$ that satisfy, for all $x\in A$, $f(x)=g(x)$. Assuming $Y$ is Hausdorff and that there there exists some point $z$ in the closure of $A$ where $f(z)\not = g(z)$. Then as $Y$ is Hausdorff we have two neighborhoods $U_f$ of $f(z)$ and $U_g$ of $g(z)$ where $U_f\cap U_g=\emptyset$. As $f,g$ are continuous we have that $f^{-1}(U_f)$ and $g^{-1}(U_g)$ are both open. We have that $z\in f^{-1}(U_f)\cap g^{-1}(U_g)$ but we have that $z$ is a limit point as if $z\in A$ then that would be an immediate contraction on $f(z)\not = g(z)$ hence we have $A\cap f^{-1}(U_f)\cap g^{-1}(U_g)\setminus \{z\}\not = \emptyset $ hence we have for some $a\in A\cap f^{-1}(U_f)\cap g^{-1}(U_g)\setminus \{z\}$ then we have a neighborhood $U_{a}$ of $a$ with $U_{a}\subset f^{-1}(U_f)\cap g^{-1}(U_g)$ hence we have $f(a)\in U_f\cap U_g$ which contradicts $U_f$ and $U_g$ being disjoint. 
+\end{proof}
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{2.} Let $f : X_1 \rightarrow Y_1$ and $g : X_2 \rightarrow Y_2$ be continuous maps between topological spaces. Give the products $X_1 \times X_2$ and $Y_1 \times Y_2$ their product topologies. Show that the map $H : X_1 \times X_2 \rightarrow Y_1 \times Y_2$ defined by $H((x_1 , x_2 )) = (f(x_1) , g(x_2) )$ is continuous. 
+
+
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{3.} An injective (one-to-one) continuous map $f : X \rightarrow Y$ between topological spaces is a bijection from $X$ to the image $f(X)$. Give $f(X)$ the subspace topology induced by $Y$'s topology.  We call such an $f$ an imbedding if it is a homeomorphism from $X$ to $f(X)$. 
+
+In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be an arbitrary element of $X$. 
+
+ \vspace{.1in}
+{\bfseries a.} Show that $f : X \rightarrow X \times X$ defined by $f(x) = (x, x_0 )$ is an imbedding.
+
+\vspace{.1in}
+{\bfseries b.} Show that $g : X \rightarrow X \times X$ defined by $g(x) = (x, x )$ is an imbedding. 
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{4.} Suppose that $h : X \rightarrow Y$ is a homeomorphism of topological spaces. If $Z$ is any other topological space and if $g : Y \rightarrow Z$ is a continuous map, we know that the composition $g\circ h$ is a continuous map from $X$ to $Z$. Show that every continuous map $f : X \rightarrow Z$ arises this way, i.e. for any continuous $f : X \rightarrow Z$, there exists a continuous $G : Y \rightarrow Z$ for which $f = G \circ h$. 
+\vspace{.15in}
+
+\noindent
+\subsection*{5.}
+
+{\bf a.} Show that a linearly ordered set with the order topology is Hausdorff. 
+
+{\bf b.} Suppose that $X$ is a topological space. Show that $X$ is Hausdorff if and only if the diagonal subset $\{ (x , x ) : x\in X\}$ of the product $X\times X$ is a closed subset of the product. Assume here that the topology on $X\times X$ is the product topology.
+
+
+
+\vspace{.15in}
+
+\noindent
+\subsection*{6.} text p. 111-112, problem 8. 
+
+
+
+ 
+\end{document}
