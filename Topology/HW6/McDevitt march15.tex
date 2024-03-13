@@ -63,6 +63,17 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
  \vspace{.1in}
 {\bfseries a.} Show that $f : X \rightarrow X \times X$ defined by $f(x) = (x, x_0 )$ is an imbedding.
 
+\begin{proof}
+    Assume that $f:X \to X\times X$ is a map defined by $f(x)=(x,x_0)$ where $x_0$ is an arbitrary element of $X$. Suppose $x,y\in X$ with $f(x)=f(y)$ then we have $(x,x_0)=(y,x_0)$ hence $x=y$ which shows that $f$ is injective. Let $U_1\times U_2 \subset f(X)$ be an arbitrary basis element. Then as $f(X)=X\times \{x_0\}$ we get that $U_2=\{x_0\}$ additionally from the definition of subspace topology we get $U_1=X\cap U_3$ where $U_3$ is some open set in $X$ hence $U_1$ is also open. As $f^{-1}(U_1\times U_2)=U_1$ we have $f^{-1}(U_1\times U_2)$ is open. Hence $f$ is continuous. 
+
+    We have $f^{-1}:f(X)\to X$ where $f^{-1}(x,y)=x$ is a bijection as we have shown that $f$ is injective and it is surjective with its own range. So we just need to show that $f^{-1}$ is continuous. Given an arbitrary basis element $U$ of $X$. We have that $(f^{-1})^{-1}=f$ hence $f(U)=U\times\{x_0\}$ and as $U\times \{x_0\}=f(X)\cap (U\times X)$ and $U\times X$ is open in the product topology we get $U\times \{x_0\}$ is open in the subspace topology hence which shows that $f^{-1}$ is continuous which implies $f$ is a homeomorphism which shows that $f$ is an imbedding.
+
+
+
+    
+
+\end{proof}
+
 \vspace{.1in}
 {\bfseries b.} Show that $g : X \rightarrow X \times X$ defined by $g(x) = (x, x )$ is an imbedding. 
 
