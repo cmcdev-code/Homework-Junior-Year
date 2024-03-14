@@ -78,7 +78,10 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
 {\bfseries b.} Show that $g : X \rightarrow X \times X$ defined by $g(x) = (x, x )$ is an imbedding. 
 
 \begin{proof}
-    Let $g:X \to X\times X$ be defined by $g(x)=(x,x)$. Let $x,y\in X$ be two elements with $g(x)=g(y)$ then $(x,x)=(y,y)$ which implies $x=y$ hence $g$ is injective. Now let $U_1 \times U_2 \subset g(X)$ be an open set. Then we have $U_1\times U_2=\{(x,x):x\in X\}\cap A\times B$ for some open sets $A,B$ in $X$.
+    Let $g:X \to X\times X$ be defined by $g(x)=(x,x)$. Let $x,y\in X$ be two elements with $g(x)=g(y)$ then $(x,x)=(y,y)$ which implies $x=y$ hence $g$ is injective. Now let $U_1 \times U_2 \subset g(X)$ be an open set. Then we have $U_1\times U_2=\{(x,x):x\in X\}\cap A\times B$ for some open sets $A,B$ in $X$ which implies $U_1\times U_2=\{(x,x): x\in A \cap B\}$. Then $g^{-1}(U_1\times U_2)=A\cap B$ and as $A,B$ are open we get $A\cap B$ is open which shows that $g$ is continuous.
+
+    Let the map $g^{-1}:g(X)\to X$ be defined by $g^{-1}(x,x)=x$ we have already shown $g$ is injective and as $g$ is surjective with its own range we have that $g^{-1}$ is a bijection. Let $U\subset X$ be an open set then we have $(g^{-1})^{-1}=g$ hence $(g^{-1})^{-1}(U)=g(U)=\{(x,x):x\in U\}$. As $\{(x,x):x\in U\}=(U\times U) \cap g(X)$ we get $\{(x,x):x\in U\}$ is open in the subspace topology hence $g^{-1}$ is continuous which implies that $g$ is an imbedding.
+
 \end{proof}
 
 
