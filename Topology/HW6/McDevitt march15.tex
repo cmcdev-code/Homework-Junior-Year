@@ -110,10 +110,14 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
 \begin{proof}
     Suppose $X$ is a linearly ordered set with the order topology. Let $a,b\in X$ with $a\not = b$ and without loss of generality assume $a<b$. Then let $U_a$ and $U_b$ be neighborhoods of $a,b$ respectively. I will proceed by cases. 
     \begin{enumerate}
-        \item If there is no element $c\in X$ with $a<c<b$ and $a$ is the minimum element of $X$ and $b$ is the maximum element of $X$ consider the open sets $a\in U_a\cap [a,b)$ and $b\in U_b\cap (a,b]$ we have each of the sets is open and $U_a\cap [a,b)\cap U_b\cap (a,b]=\emptyset$. In this case it is Hausdorff.
+        \item If there is no element $c\in X$ with $a<c<b$ and $a$ is the minimum element of $X$ and $b$ is the maximum element of $X$ consider the open sets $a\in U_a\cap [a,b)$ and $b\in U_b\cap (a,b]$ we have each of the sets is open and $U_a\cap [a,b)\cap U_b\cap (a,b]=\emptyset$. 
         \item If there exists an element $c\in X$ with $a<c<b$ and $a$ is the minimum element of $X$ and $b$ is the maximum. Then consider the open sets $U_a\cap [a,c)$ and $U_b\cap (c,b]$ then we have $a\in U_a\cap [a,c)$ and $U_b\cap (c,b]$ but $U_a \cap[a,c) \cap U_b\cap (c,b]=\emptyset$.
-        \item If there is no element $c\in X$ with $a<c<b$ and $a$ is not a minimum element of $X$ and $b$ is not a maximum then we have the sets $U_a\cap (d,b)$ where $d\in X$ with $d<a$ is open and the set $U_b\cap (a,l)$ where $l\in X$ with 
+        \item If there is no element $c\in X$ with $a<c<b$ and $a$ is not a minimum element of $X$ and $b$ is not a maximum of $X$ then we have the sets $U_a\cap (d,b)$ where $d\in X$ with $d<a$ is open and the set $U_b\cap (a,l)$ where $l\in X$ with $b<l$ is open. We have $a\in U_a\cap (d,b)$ and $b\in U_b\cap (a,l)$ but $U_a\cap (d,b)\cap  U_b\cap (a,l)=\emptyset $
+        \item If there exists some element $c\in X$ with $a<c<b$ and $a$ is not a minimum of $X$ and $b$ is not a maximum of $X$ then we have the sets $U_a\cap (d,c)$ where $d\in X$ and $d<a$ is open and the set $U_b\cap (c,l)$ where $l\in X$ with $b<l$ is open. We have $a\in U_a\cap (d,c)$ and $b\in U_b\cap (c,l)$ where $l\in X$ with $b<l$ but $U_a \cap (d,c)\cap U_b \cap (c,l)=\emptyset$
+        \item If there exists no element $c\in X$ with $a<c<b$ and without loss of generality $a$ is a minimum of $X$ and $b$ is not the maximum (the case where $a$ is not min of $X$ and $b$ is max of $X$ will follow by almost the same exact reasoning) then consider the open sets $a\in U_a\cap [a,b)$ and $b\in U_b\cap (a,d)$ where $d\in X$ with $b<d$ then we have $U_a\cap [a,b) \cap U_b\cap (a,d)=\emptyset$.
+        \item If there exists some element $c\in X$ with $a<c<b$ and without loss of generality $a$ is a minimum of $X$ and $b$ is not the maximum. Then $a\in U_a\cap [a,c)$ and $b\in U_b\cap (c,d)$ where $d\in X$ with $b<d$ then $U_a\cap [a,c) \cap U_b\cap (c,d)=\emptyset$ 
     \end{enumerate} 
+    This completes all the cases hence we get $X$ is a Hausdorff space.
 \end{proof}
 
 
