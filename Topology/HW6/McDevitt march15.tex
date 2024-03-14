@@ -91,6 +91,16 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
 \subsection*{4.} Suppose that $h : X \rightarrow Y$ is a homeomorphism of topological spaces. If $Z$ is any other topological space and if $g : Y \rightarrow Z$ is a continuous map, we know that the composition $g\circ h$ is a continuous map from $X$ to $Z$. Show that every continuous map $f : X \rightarrow Z$ arises this way, i.e. for any continuous $f : X \rightarrow Z$, there exists a continuous $G : Y \rightarrow Z$ for which $f = G \circ h$. 
 \vspace{.15in}
 
+\begin{proof}
+  Assume $h:X\mapsto Y$ is a homeomorphism of topological spaces and $Z$ is some other topological space. Then given an arbitrary continuous function $f:X\to Z$ we need to create a function $G: Y\to Z$ such that $G\circ h=f$. First I will prove the existence and then that it is continuous. Define $G: Y \to Z$ where $G(y)=f(h^{-1}(y))$.
+  
+  Now to prove that $G$ is continuous let $U\subset Z$ be an open set. Then as $f^{-1}(U)$ is open in $X$ we have that $h(f^{-1}(U))$ is open in $Y$ as homeomorphisms preserve open sets (this is immediate based off both directions of homeomorphisms being continuous) we just need to show $G^{-1}(U)=h(f^{-1}(U))$. 
+  
+  Let $y\in G^{-1}(U)$ as $h$ is a homeomorphism we have for some unique $x\in X$ that $h(x)= y $  and as $G(y)=f(x)\in U$ we get $x\in f^{-1}(U)$ which implies $y=h(x)\in h(f^{-1}(U))$ hence $y\in h(f^{-1}(U))$ which gives $G^{-1}(U)\subset h(f^{-1}(U))$ 
+
+  Now let $y\in h(f^{-1}U)$. Then as $h$ is a homeomorphism we have for some $x\in f^{-1}(U)$ that $y=h(x)$ but then $G(y)=f(h^{-1}(y))=f(x)\in U$ which implies $y\in G^{-1}(U)$ hence $h(f^{-1}U)\subset G^{-1}(U)$ then $h(f^{-1}U)=G^{-1}(U)$ which implies $G$ is continuous. As for any $x\in X$ we have $G\circ h (x)=f(h^{-1}(h(x)))=f(x)$ we get $f=G\circ h$. 
+\end{proof}
+
 \noindent
 \subsection*{5.}
 
