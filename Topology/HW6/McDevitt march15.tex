@@ -106,6 +106,17 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
 
 {\bf a.} Show that a linearly ordered set with the order topology is Hausdorff. 
 
+
+\begin{proof}
+    Suppose $X$ is a linearly ordered set with the order topology. Let $a,b\in X$ with $a\not = b$ and without loss of generality assume $a<b$. Then let $U_a$ and $U_b$ be neighborhoods of $a,b$ respectively. I will proceed by cases. 
+    \begin{enumerate}
+        \item If there is no element $c\in X$ with $a<c<b$ and $a$ is the minimum element of $X$ and $b$ is the maximum element of $X$ consider the open sets $a\in U_a\cap [a,b)$ and $b\in U_b\cap (a,b]$ we have each of the sets is open and $U_a\cap [a,b)\cap U_b\cap (a,b]=\emptyset$. In this case it is Hausdorff.
+        \item If there exists an element $c\in X$ with $a<c<b$ and $a$ is the minimum element of $X$ and $b$ is the maximum. Then consider the open sets $U_a\cap [a,c)$ and $U_b\cap (c,b]$ then we have $a\in U_a\cap [a,c)$ and $U_b\cap (c,b]$ but $U_a \cap[a,c) \cap U_b\cap (c,b]=\emptyset$.
+        \item If there is no element $c\in X$ with $a<c<b$ and $a$ is not a minimum element of $X$ and $b$ is not a maximum then we have the sets $U_a\cap (d,b)$ where $d\in X$ with $d<a$ is open and the set $U_b\cap (a,l)$ where $l\in X$ with 
+    \end{enumerate} 
+\end{proof}
+
+
 {\bf b.} Suppose that $X$ is a topological space. Show that $X$ is Hausdorff if and only if the diagonal subset $\{ (x , x ) : x\in X\}$ of the product $X\times X$ is a closed subset of the product. Assume here that the topology on $X\times X$ is the product topology.
 
 
