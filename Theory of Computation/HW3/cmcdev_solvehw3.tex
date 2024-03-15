@@ -452,9 +452,53 @@ You will need a dead state that is in $\Qpollrej$.
 
 \solution
 
-% PUT YOUR SOLUTION HERE
+Let $M_2=(\Qpollacc,\Qpollrej,\Qaut,\Sigma,\Gamma,\delta)$ be an OTM with the following algebraic specification. 
+
+\[
+    Q^{(\text{pull,acc})}=\{q_0,q_3\}
+\]
+\[
+    Q^{(\text{pull,rej})}=\{q_1,q_2,q_4\}    
+\]
+\[
+\Qaut=\emptyset    
+\]
+\[
+    \Sigma=\{a,b\}
+\]
+\[
+    \Gamma=\{a,b,\blank\}
+\]
+Where $\delta$ is given by the state transition Table 2. Note each of the transition functions will be doing the same thing regardless of what is on the tape so for the sake of readability I will construct the table with an arbitrary tape element $d\in \Gamma$
+\begin{table}[bp]
+    \begin{displaymath}
+    \begin{array}{c|cccccc}
+    q
+    & \delta((q,a),d) & \delta((q,b),d)
+    
+    \\[2pt]\hline\hline
+    q_0
+    & (q_1,a,R) & (q_4,b,R)
+    \\\hline
+    q_1
+    & (q_2,a,R) & (q_4,b,R)
+    \\\hline
+    q_2 & (q_4,a,R) & (q_3,b,R)
+    \\\hline
+    q_3 &
+    (q_1,a,R) & (q_4,b,R)\\\hline
+    q_4 & 
+    (q_4,a,R) & (q_4,b,R)
+    \end{array}
+    \end{displaymath}
+    \caption{Transition table for Problem 2 with  $d\in \Gamma$}
+    \label{table:transition1}
+    \end{table}
+    
 
 \problembreak
+
+\newpage
 
 \problem{20}
 Let $D$ be a set of cards from a standard deck,
