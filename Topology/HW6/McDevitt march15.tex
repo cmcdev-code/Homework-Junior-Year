@@ -147,7 +147,17 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
     \item Show that the set $\{x: f(x)\leq g(x)\}$ is closed in $X$.
     \begin{proof}
         Assume that $X$ is a topological space and $Y$ is an ordered set in the order topology and $f,g:X\to Y$ are continuous. We just need to show that $\{x: f(x)\leq g(x)\}^c=\{x: f(x)> g(x)\}$ is open. Let $x\in \{x: f(x)> g(x)\}$ then $f(x)\not = g(x)$. I will proceed by cases. \begin{enumerate}
-            \item Now if there exists no $y\in Y$ such that $f(x)>y>g(x)$ and $f(x)=\max(Y)$ and $g(x)=\min(Y)$ we have the neighborhoods $f(x)\in (g(x),f(x)]$ and $g(x)\in [g(x),g(x))$ as $f,g$ are continuous we have $f^{-1}((g(x),f(x)])$ and $g^{-1}([g(x),f(x)))$ are open in $X$ with for all $x_f\in  f^{-1}((g(x),f(x)])$ for all $x_g\in g^{-1}([g(x),f(x)))$ we have $f(x_f)>g(x_g)$ hence we get \[f^{-1}((g(x),f(x)])\cup g^{-1}([g(x),f(x))) \subset \{x: f(x)>g(x)\}\]
+            \item If there exists no $y\in Y$ such that $f(x)>y>g(x)$ and $f(x)=\max(Y)$ and $g(x)=\min(Y)$ we have the neighborhoods $f(x)\in (g(x),f(x)]$ and $g(x)\in [g(x),g(x))$ as $f,g$ are continuous we have $f^{-1}((g(x),f(x)])$ and $g^{-1}([g(x),f(x)))$ are open in $X$ with for all $x_f\in  f^{-1}((g(x),f(x)])$ for all $x_g\in g^{-1}([g(x),f(x)))$ we have $f(x_f)>g(x_g)$ hence we get \[f^{-1}((g(x),f(x)])\cup g^{-1}([g(x),f(x))) \subset \{x: f(x)>g(x)\}\]
+            \item If there exists some $y\in Y$ such that $f(x)>y>g(x)$ and $f(x)=\max(Y)$ and $g(x)=\min (Y)$ then we have the neighborhoods $f(x)\in (y,f(x)]$ and $g(x)\in [g(x),f(x))$ and $f^{-1}((y,f(x)])$ is open and $g^{-1}([g(x),f(x)))$ is open. Using the same reasoning as above we have 
+            \[
+                f^{-1}((y,f(x)])\cup g^{-1}([g(x),y)) \subset \{x: f(x)>g(x)\}
+            \]
+            \item If there exists no $y\in Y$ with $f(x)>y > g(x)$ and $f(x)\not = \max (Y)$ and $g(x)\not = \min (Y)$ then we have the neighborhoods $f(x)\in (g(x),a)$ where $a\in Y$ with $a> f(x)$ and $g(x)\in (b,f(x))$ where $b\in Y$ with $b< g(x)$ then using same reasoning \[ f^{-1}((g(x),a))\cup g^{-1}((b,f(x))) \subset \{x: f(x)>g(x)\}\]
+            \item If there exists some $y\in Y$ where $f(x)>y>g(x)$ and $f(x)\not =\max(Y)$ and $g(x)\not =\min(Y)$ then we have the the neighborhoods $f(x)\in (y,b)$ where $b\in Y$ with $b>f(x)$ and $g(x)\in (c,y)$ where $x\in Y$ with $c<g(x)$. Then 
+            \[
+                f^{-1}((y,b))\cup g^{-1}((c,y))\subset \{x:f(x)> g(x)\}
+            \]
+            \item If there exists no $y\in Y$ where $f(x)>y>g(x)$ and without loss of generality $f(x)=\max(Y)$ and $g(x)\not = \min (Y)$
         \end{enumerate}
             
         
