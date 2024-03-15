@@ -178,8 +178,11 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
     \item Let $h:X\to Y$ be the function \[ h(x)=\min \{f(x),g(x)\}\]. Show that $h$ is continuous. 
     \begin{proof}
     Assume that $X$ is a topology and $Y$ is an ordered set with the order topology. Let $g,f:X\to Y$ be continuous maps. Let $h:X\to Y$ be the function where $h(x)=\min \{f(x),g(x)\}$. 
-    We have $X=\{x:f(x)\leq g(x)\}\cup \{x: g(x)\leq f(x)\}$ both $\{x: g(x)\leq f(x)\},\{x:f(x)\leq g(x)\}$ 
+    We have $X=\{x:f(x)\leq g(x)\}\cup \{x: g(x)\leq f(x)\}$ both $\{x: g(x)\leq f(x)\},\{x:f(x)\leq g(x)\}$ are closed by part (a). As $f,g$ are continuous then $f^\prime:\{x:f(x)\leq g(x)\}\to Y $ where $f^\prime(x)=f(x)$ is continuous and $g^\prime :\{x: g(x)\leq f(x)\}\to Y$ where $g^{\prime}(x)=g(x)$ is continuous.
     
+    We also have $\{x:f(x)\leq g(x)\}\cap \{x: g(x)\leq f(x)\}=\{x: f(x)=g(x)\}$ hence $f^\prime(x)=g^\prime(x)$ for all $x\in \{x:f(x)\leq g(x)\}\cap \{x: g(x)\leq f(x)\}=\{x: f(x)=g(x)\}$ then by the Munkres Theorem 18.3 we have the continuous function $h^\prime: X\to Y$ where $h^\prime(x)=g^\prime(x)$ if $x\in \{x: g(x)\leq f(x)\}$ and $h^\prime(x)=f^\prime(x)$ if $x\in \{x: f(x)\leq g(x)\}$. 
+
+    To show $h=h^\prime$ let $x\in X$ then $h(x)=\min\{f(x),g(x)\}$ and $h^\prime(x)=g(x)$ if $g(x)\leq f(x)$ or $h^\prime (x)=f(x)$ if $f(x)\leq g(x)$ which shows $h^\prime(x) = \min \{g(x),f(x)\}$.
     \end{proof}
 \end{enumerate}
 
