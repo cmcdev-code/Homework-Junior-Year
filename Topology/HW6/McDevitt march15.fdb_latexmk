@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1710469612 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW6/McDevitt march15.tex" "McDevitt march15.pdf" "McDevitt march15" 1710469612
+["pdflatex"] 1710471109 "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW6/McDevitt march15.tex" "McDevitt march15.pdf" "McDevitt march15" 1710471110
   "/etc/texmf/web2c/texmf.cnf" 1706748241 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW6/McDevitt march15.tex" 1710469612 15193 da8d5edd2cfd07b6123d441be6852747 ""
+  "/home/cmcdev/Documents/LaTex/Homework-Junior-Year/Topology/HW6/McDevitt march15.tex" 1710471109 15529 54690bef4a7a5d7e085948ff165cabb2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -47,8 +47,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706748264 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706748299 2801216 d262d31f3423aa879e9c207d45741308 ""
-  "McDevitt march15.aux" 1710469612 1009 8992d925ff05c4c35401391cf2e879e3 "pdflatex"
-  "McDevitt march15.tex" 1710469612 15193 da8d5edd2cfd07b6123d441be6852747 ""
+  "McDevitt march15.aux" 1710471110 1009 8992d925ff05c4c35401391cf2e879e3 "pdflatex"
+  "McDevitt march15.tex" 1710471109 15529 54690bef4a7a5d7e085948ff165cabb2 ""
   (generated)
   "McDevitt march15.aux"
   "McDevitt march15.log"
