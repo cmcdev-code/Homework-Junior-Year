@@ -1,6 +1,6 @@
 \documentclass[11pt,twoside]{article}
 
-\usepackage{amssymb}
+\usepackage{amssymb,amscd}
 \usepackage{amsmath}
 \usepackage{latexsym}
 \usepackage{color}
@@ -522,7 +522,7 @@ Think about the Pigeonhole Principle.
 
 \solution
 
-% PUT YOUR SOLUTION HERE
+    Assume that $D,C$ are sets as described above. Also assume that there exists an injective function $h:D\to C$. Then from the definition of injective we get for all $x,y\in D$  with $x\not = y$ we have $h(x)\not = h(y)$ but as $|D|=52$ and $|C|=50$ we have by the Pigeonhole Principle that there exists two distinct elements $a,b\in D$ where $h(a)=h(b)$ this contradicts the assumption that $h$ is injective hence we get that no such injective function exists. 
 
 \problembreak
 
