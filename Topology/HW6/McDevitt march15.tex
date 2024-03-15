@@ -157,10 +157,21 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
             \[
                 f^{-1}((y,b))\cup g^{-1}((c,y))\subset \{x:f(x)> g(x)\}
             \]
-            \item If there exists no $y\in Y$ where $f(x)>y>g(x)$ and without loss of generality $f(x)=\max(Y)$ and $g(x)\not = \min (Y)$
-        \end{enumerate}
-            
+            \item If there exists no $y\in Y$ where $f(x)>y>g(x)$ and without loss of generality $f(x)=\max(Y)$ and $g(x)\not = \min (Y)$ then we have the neighborhoods $f(x)\in (g(x),f(x)]$ and $g(x)\in (c,f(x))$ where $c\in Y$ with $c<g(x)$. Then 
+            \[
+                f^{-1}((g(x),f(x)])\cup g^{-1}((c,f(x)))\subset \{x:f(x)> g(x)\}
+            \]
+            \item If there is some $y\in Y$ where $f(x)>y> g(x)$ and without loss of generality $f(x)=\max (Y)$ and $g(x)\not =\min (Y)$ then we have the neighborhoods $f(x)\in (y, f(x)]$ and $g(x)\in (b,y)$ where $b\in Y$ with $b<g(x)$ then 
+            \[
+                f^{-1}((y,f(x)])\cup g^{-1}((b,y))\subset \{x:f(x)>g(x)\}
+            \]
         
+        \end{enumerate}
+        Hence for all $x\in \{x: f(x)>g(x)\}$ we have the existence of two open sets $U,V$ in $Y$ with $x\in f^{-1}(U)\cup g^{-1}(V)\subset \{x: f(x)>g(x)\}$ then we get 
+        \[
+            \bigcup_{x\in \{x: f(x)>g(x)\}}f^{-1}(U_x)\cup g^{-1}(V_x)= \{x: f(x)>g(x)\}
+        \]
+        This implies that $\{x:f(x)>g(x)\}$ is open which implies that $\{x:f(x)\leq g(x)\}$ is closed. 
     \end{proof}
 
 
