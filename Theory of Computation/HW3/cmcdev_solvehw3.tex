@@ -410,6 +410,8 @@ The sequence of configurations is
 \[C_5^{M_1}(01100)=\langle 01100,\blank 01100 q_1 \blank \rangle \]
 
 
+The language that $M_1$ accepts is given by $$L_1=\{w\in \{0,1\}^\star: w \text{ has even length} \}$$.
+We have no autonomous states and all the state transition functions only ever move right hence we only have to examine when the final state is $q_0$. Looking at the transition table we see that on any input and any tape symbol the state goes from $q_0$ to $q_1$ or from $q_1$ to $q_0$ informally the state flips at each step in the configuration. As the initial state is $q_0$ then for us to end up in $q_0$ again we need to have flipped an even number of times which implies that the word was even length.
 
 \problembreak
 
