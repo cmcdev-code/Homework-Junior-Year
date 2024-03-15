@@ -123,13 +123,26 @@ In this context, let $Y$ be $X \times X$ with the product topology. Let $x_0$ be
 
 {\bf b.} Suppose that $X$ is a topological space. Show that $X$ is Hausdorff if and only if the diagonal subset $\{ (x , x ) : x\in X\}$ of the product $X\times X$ is a closed subset of the product. Assume here that the topology on $X\times X$ is the product topology.
 
+\begin{proof}
+
+    $\newline$
+    $(\Rightarrow)$
+
+    Suppose $X$ is a topological space and $X$ is Hausdorff. Now assume that $X\times X$ has the product topology. Assume that $(a,b)\in X\times X$ with $a\not = b$ is a limit point of $\{(x,x):x\in X\}$. Then as $a\not = b$ and $X$ is Hausdorff we have two neighborhoods $U_a,U_b$ of $a,b$ respectively with $U_a\cap U_b=\emptyset$ then we have $(a,b)\in U_a\times U_b$ but as $U_a\cap U_b=\emptyset$ we get $(U_a\times U_b) \cap \{(x,x):x\in X\}=\emptyset$ hence $(a,b)$ is not a limit point of $\{(x,x): x\in X\}$. 
+    
+    This implies either there are no limit points of $\{(x,x):x\in X\}$ or $\{(x,x):x\in X\}^\prime \subset \{(x,x):x\in X\}$ in either case we get $\overline {\{(x,x):x\in X\}}= \{(x,x):x\in X\}\cup \{(x,x):x\in X\}^\prime = \{(x,x):x\in X\}$ hence $\{(x,x):x\in X\}$ contains it's limit points so its closed. 
+
+    $(\Leftarrow)$
+
+    Assume that $X$ is a topological space and that $X\times X$ has the product topology and $\{(x,x): x\in X\}$ is closed in $X\times X$. Then for any $a,b\in X$ with $a\not = b$ we have $(a,b)\in \{(x,x): x\in X\}^c$ as there exists a basis element of the form $(a,b)\in U_a\times U_b\subset \{(x,x): x\in X\}^c$ but as we have $U_a\times U_b \cap \{(x,x): x\in X\}=\emptyset$ we get that there exists no $x\in X$ such that $(x,x)\in U_a\times U_b$ which implies $U_a\cap U_b=\emptyset$ this implies that $X$ is Hausdorff.
+
+\end{proof}
 
 
 \vspace{.15in}
 
 \noindent
-\subsection*{6.} text p. 111-112, problem 8. 
-
+\subsection*{6.} Let $Y$ e an ordered set in the order topology. Let $f,g:X\to Y$ be continuous.
 
 
  
