@@ -402,12 +402,16 @@ Explain.
 
 The sequence of configurations is 
 
- \[C_{0}^{M_1}(01100)=\langle \varepsilon, \blank q_0 \blank \blank\rangle \]
-\[C_{1}^{M_1}(01100)=\langle 0, \blank 0 q_1\blank  \rangle\]
-\[C_{2}^{M_1}(01100)=\langle 01,\blank 0 1 q_0 \blank \rangle\]
-\[C_3^{M_1}(01100)=\langle 011 , \blank 01 1 q_1\blank\rangle \]
-\[C_4^{M_1}(01100)=\langle 0110,\blank 01 1 0 q_0\blank\rangle\]
-\[C_5^{M_1}(01100)=\langle 01100,\blank 01100 q_1 \blank \rangle \]
+\begin{align*}
+    C_{0}^{M_1}(01100)& =\langle \varepsilon, \blank q_0 \blank \blank\rangle \\
+    C_{1}^{M_1}(01100)& =\langle 0, \blank 0 q_1\blank  \rangle\\
+    C_{2}^{M_1}(01100)& =\langle 01,\blank 0 1 q_0 \blank \rangle\\
+    C_3^{M_1}(01100)& =\langle 011 , \blank 01 1 q_1\blank\rangle \\
+    C_4^{M_1}(01100)& =\langle 0110,\blank 01 1 0 q_0\blank\rangle\\
+    C_5^{M_1}(01100)& =\langle 01100,\blank 01100 q_1 \blank \rangle 
+\end{align*}
+
+
 
 
 The language that $M_1$ accepts is given by $$L_1=\{w\in \{0,1\}^\star: w \text{ has even length} \}$$.
@@ -452,27 +456,6 @@ You will need a dead state that is in $\Qpollrej$.
 
 \solution
 
-Let $M_2=(\Qpollacc,\Qpollrej,\Qaut,\Sigma,\Gamma,\delta)$ be an OTM with the following algebraic specification. 
-
-\[
-    Q^{(\text{pull,acc})}=\{q_0,q_3\}
-\]
-\[
-    Q^{(\text{pull,rej})}=\{q_1,q_2,q_4\}    
-\]
-\[
-\Qaut=\emptyset    
-\]
-\[
-    \Sigma=\{a,b\}
-\]
-\[
-    \Gamma=\{a,b,\blank\}
-\]
-Where $\delta$ is given by the state transition Table 2. Note each of the transition functions will be doing the same thing regardless of what is on the tape so for the sake of readability I will construct the table with an arbitrary tape element $d\in \Gamma$. 
-
-Explanation of the OTM $M_2$. I have $q_4$ as a dead sate. This state is reached on words of the form $\{a,b\}^\star $ 
-
 \begin{table}[bp]
     \begin{displaymath}
     \begin{array}{c|cccccc}
@@ -495,9 +478,32 @@ Explanation of the OTM $M_2$. I have $q_4$ as a dead sate. This state is reached
     \end{array}
     \end{displaymath}
     \caption{Transition table for Problem 2 with  $d\in \Gamma$}
-    \label{table:transition1}
-    \end{table}
+    \label{table:transition2}
+\end{table}
     
+Let $M_2=(\Qpollacc,\Qpollrej,\Qaut,\Sigma,\Gamma,\delta,q_0)$ be an OTM with the following algebraic specification. 
+
+\[
+    Q^{(\text{pull,acc})}=\{q_0,q_3\}
+\]
+\[
+    Q^{(\text{pull,rej})}=\{q_1,q_2,q_4\}    
+\]
+\[
+\Qaut=\emptyset    
+\]
+\[
+    \Sigma=\{a,b\}
+\]
+\[
+    \Gamma=\{a,b,\blank\}
+\]
+Where $\delta$ is given by the state transition Table 2. Note each of the transition functions will be doing the same thing regardless of what is on the tape (for same input and same state) so for the sake of readability I will construct the table with an arbitrary tape element $d\in \Gamma$. 
+
+Explanation of why $M_2$  works. If $M_2$ reads in an $a$ from the initial configuration, then we have it enter state $q_1$ (non-accepting state). If we get a $b$ in state $q_1$, then we would have had a string of the form $ab$, hence we go to the dead state. $q_4$ If instead we get a $a$ in $q_1$, we go on to state $q_2$. If we get another $a$ in $q_2$ (non-accepting state), then we would have read three continuos $a$'s, hence we enter the dead state $q_4$. If $q_2$ reads a $b$, then we enter the accepting state $q_3$. If $q_3$ reads a $b$, then we would have read two $b$'s in a row, hence we enter $q_4$. If we read another $a$ in $q_3$, we enter state $q_1$, and the process continues.
+
+
+
 
 \problembreak
 
