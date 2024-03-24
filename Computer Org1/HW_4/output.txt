@@ -1,2 +1,4 @@
 Command: add Herwen Xu
     Herwen Xu was added. 0 spot(s) remain
+Command: modify Herwen Xu: Morris
+    Herwen Xu name modified to  Morris.
