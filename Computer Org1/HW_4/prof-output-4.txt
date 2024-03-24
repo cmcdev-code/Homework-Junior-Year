@@ -1,0 +1,217 @@
+Command: add Eliel Lindsey
+	Eliel Lindsey was added. 6 spot(s) remain.
+Command: modify Cash Webb:Kali Vasquez
+	No student with name Cash Webb found.
+Command: remove Eliel Lindsey
+	Student Eliel Lindsey removed. The course now has 7 seats remaining.
+Command: remove Eliel Lindsey
+	No student named Eliel Lindsey was found to remove.
+Command: display
+	Currently Enrolled:
+Command: remove Mallory Blair
+	No student named Mallory Blair was found to remove.
+Command: add Titan Morton
+	Titan Morton was added. 6 spot(s) remain.
+Command: add Briggs Hudson
+	Briggs Hudson was added. 5 spot(s) remain.
+Command: add Troy Middleton
+	Troy Middleton was added. 4 spot(s) remain.
+Command: remove Troy Middleton
+	Student Troy Middleton removed. The course now has 5 seats remaining.
+Command: remove Frank Reyes
+	No student named Frank Reyes was found to remove.
+Command: remove Titan Morton
+	Student Titan Morton removed. The course now has 6 seats remaining.
+Command: add Elodie McCarty
+	Elodie McCarty was added. 5 spot(s) remain.
+Command: add Miley Johnston
+	Miley Johnston was added. 4 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Briggs Hudson
+		Student 2: Elodie McCarty
+		Student 3: Miley Johnston
+Command: display
+	Currently Enrolled:
+		Student 1: Briggs Hudson
+		Student 2: Elodie McCarty
+		Student 3: Miley Johnston
+Command: add Aaron Andersen
+	Aaron Andersen was added. 3 spot(s) remain.
+Command: add Cheyenne Shannon
+	Cheyenne Shannon was added. 2 spot(s) remain.
+Command: modify Brynn Beck:Felix Wolfe
+	No student with name Brynn Beck found.
+Command: modify Colette Morales:Henley Underwood
+	No student with name Colette Morales found.
+Command: delete
+	Briggs Hudson removed in class delete.
+	Elodie McCarty removed in class delete.
+	Miley Johnston removed in class delete.
+	Aaron Andersen removed in class delete.
+	Cheyenne Shannon removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Eithan Valenzuela
+	Eithan Valenzuela was added. 8 spot(s) remain.
+Command: modify Angie Carlson:Reece Knight
+	No student with name Angie Carlson found.
+Command: remove Eithan Valenzuela
+	Student Eithan Valenzuela removed. The course now has 9 seats remaining.
+Command: modify Eithan Valenzuela:Cheyenne Shannon
+	No student with name Eithan Valenzuela found.
+Command: add Hassan Love
+	Hassan Love was added. 8 spot(s) remain.
+Command: remove Eithan Valenzuela
+	No student named Eithan Valenzuela was found to remove.
+Command: add Justice Mayer
+	Justice Mayer was added. 7 spot(s) remain.
+Command: add Quinton Peterson
+	Quinton Peterson was added. 6 spot(s) remain.
+Command: add Genesis Middleton
+	Genesis Middleton was added. 5 spot(s) remain.
+Command: add Titan Morton
+	Titan Morton was added. 4 spot(s) remain.
+Command: modify Autumn Dejesus:Brynn Beck
+	No student with name Autumn Dejesus found.
+Command: modify Misael Holland:Diego Eaton
+	No student with name Misael Holland found.
+Command: modify Royal Lynch:Zoie Barrett
+	No student with name Royal Lynch found.
+Command: add Nevaeh West
+	Nevaeh West was added. 3 spot(s) remain.
+Command: remove Titan Morton
+	Student Titan Morton removed. The course now has 4 seats remaining.
+Command: modify Briggs Hudson:Caroline Anthony
+	No student with name Briggs Hudson found.
+Command: add Troy Middleton
+	Troy Middleton was added. 3 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Hassan Love
+		Student 2: Justice Mayer
+		Student 3: Quinton Peterson
+		Student 4: Genesis Middleton
+		Student 5: Nevaeh West
+		Student 6: Troy Middleton
+Command: remove Genesis Middleton
+	Student Genesis Middleton removed. The course now has 4 seats remaining.
+Command: modify Nevaeh West:Misael Holland
+	Student Nevaeh West name modified to Misael Holland.
+Command: delete
+	Hassan Love removed in class delete.
+	Justice Mayer removed in class delete.
+	Quinton Peterson removed in class delete.
+	Misael Holland removed in class delete.
+	Troy Middleton removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Ariella Curry
+	Ariella Curry was added. 7 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Ariella Curry
+Command: remove Ariella Curry
+	Student Ariella Curry removed. The course now has 8 seats remaining.
+Command: modify Rio Craig:Misael Holland
+	No student with name Rio Craig found.
+Command: remove Ariella Curry
+	No student named Ariella Curry was found to remove.
+Command: modify Quinton Peterson:Rio Craig
+	No student with name Quinton Peterson found.
+Command: add Angelo Jenkins
+	Angelo Jenkins was added. 7 spot(s) remain.
+Command: add Cash Webb
+	Cash Webb was added. 6 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Angelo Jenkins
+		Student 2: Cash Webb
+Command: remove Cash Webb
+	Student Cash Webb removed. The course now has 7 seats remaining.
+Command: remove Elodie McCarty
+	No student named Elodie McCarty was found to remove.
+Command: display
+	Currently Enrolled:
+		Student 1: Angelo Jenkins
+Command: modify Cash Webb:Diego Eaton
+	No student with name Cash Webb found.
+Command: display
+	Currently Enrolled:
+		Student 1: Angelo Jenkins
+Command: modify Cash Webb:Mariah Jensen
+	No student with name Cash Webb found.
+Command: add Kali Vasquez
+	Kali Vasquez was added. 6 spot(s) remain.
+Command: modify Ariella Curry:Eliel Lindsey
+	No student with name Ariella Curry found.
+Command: remove Paislee Chan
+	No student named Paislee Chan was found to remove.
+Command: add Zane Mann
+	Zane Mann was added. 5 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Angelo Jenkins
+		Student 2: Kali Vasquez
+		Student 3: Zane Mann
+Command: delete
+	Angelo Jenkins removed in class delete.
+	Kali Vasquez removed in class delete.
+	Zane Mann removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Mariah Jensen
+	Mariah Jensen was added. 2 spot(s) remain.
+Command: add Rio Craig
+	Rio Craig was added. 1 spot(s) remain.
+Command: modify Rio Craig:Gracie Cline
+	Student Rio Craig name modified to Gracie Cline.
+Command: remove Mariah Jensen
+	Student Mariah Jensen removed. The course now has 2 seats remaining.
+Command: add Kali Vasquez
+	Kali Vasquez was added. 1 spot(s) remain.
+Command: add Troy Middleton
+	Troy Middleton was added. 0 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Gracie Cline
+		Student 2: Kali Vasquez
+		Student 3: Troy Middleton
+Command: add Felix Wolfe
+	Student Felix Wolfe not added. The class is already at capacity.
+Command: remove Felix Wolfe
+	No student named Felix Wolfe was found to remove.
+Command: modify Rio Craig:Eduardo Miller
+	No student with name Rio Craig found.
+Command: add Avianna Gates
+	Student Avianna Gates not added. The class is already at capacity.
+Command: remove Troy Middleton
+	Student Troy Middleton removed. The course now has 1 seats remaining.
+Command: remove Mariah Jensen
+	No student named Mariah Jensen was found to remove.
+Command: add Genesis Middleton
+	Genesis Middleton was added. 0 spot(s) remain.
+Command: add Aaron Andersen
+	Student Aaron Andersen not added. The class is already at capacity.
+Command: add Shiloh Short
+	Student Shiloh Short not added. The class is already at capacity.
+Command: display
+	Currently Enrolled:
+		Student 1: Gracie Cline
+		Student 2: Kali Vasquez
+		Student 3: Genesis Middleton
+Command: display
+	Currently Enrolled:
+		Student 1: Gracie Cline
+		Student 2: Kali Vasquez
+		Student 3: Genesis Middleton
+Command: modify Aaron Andersen:Blaise Brooks
+	No student with name Aaron Andersen found.
+Command: modify Quinton Peterson:Aniya Beil
+	No student with name Quinton Peterson found.
+Command: delete
+	Gracie Cline removed in class delete.
+	Kali Vasquez removed in class delete.
+	Genesis Middleton removed in class delete.
+	Class was restarted and reopened for enrollment.
+

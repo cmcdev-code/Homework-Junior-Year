@@ -1,0 +1,116 @@
+Command: add Blaise Brooks
+	Blaise Brooks was added. 4 spot(s) remain.
+Command: add Mariah Jensen
+	Mariah Jensen was added. 3 spot(s) remain.
+Command: remove Blaise Brooks
+	Student Blaise Brooks removed. The course now has 4 seats remaining.
+Command: add Frank Reyes
+	Frank Reyes was added. 3 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Mariah Jensen
+		Student 2: Frank Reyes
+Command: add Eithan Valenzuela
+	Eithan Valenzuela was added. 2 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Mariah Jensen
+		Student 2: Frank Reyes
+		Student 3: Eithan Valenzuela
+Command: modify Mariah Jensen:Misael Holland
+	Student Mariah Jensen name modified to Misael Holland.
+Command: add Mallory Blair
+	Mallory Blair was added. 1 spot(s) remain.
+Command: remove Van Brennan
+	No student named Van Brennan was found to remove.
+Command: add Nevaeh West
+	Nevaeh West was added. 0 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Misael Holland
+		Student 2: Frank Reyes
+		Student 3: Eithan Valenzuela
+		Student 4: Mallory Blair
+		Student 5: Nevaeh West
+Command: display
+	Currently Enrolled:
+		Student 1: Misael Holland
+		Student 2: Frank Reyes
+		Student 3: Eithan Valenzuela
+		Student 4: Mallory Blair
+		Student 5: Nevaeh West
+Command: remove Felix Wolfe
+	No student named Felix Wolfe was found to remove.
+Command: modify Blaise Brooks:Angie Carlson
+	No student with name Blaise Brooks found.
+Command: modify Justice Mayer:Avianna Gates
+	No student with name Justice Mayer found.
+Command: remove Nevaeh West
+	Student Nevaeh West removed. The course now has 1 seats remaining.
+Command: remove Mallory Blair
+	Student Mallory Blair removed. The course now has 2 seats remaining.
+Command: display
+	Currently Enrolled:
+		Student 1: Misael Holland
+		Student 2: Frank Reyes
+		Student 3: Eithan Valenzuela
+Command: modify Nevaeh West:Rio Craig
+	No student with name Nevaeh West found.
+Command: delete
+	Misael Holland removed in class delete.
+	Frank Reyes removed in class delete.
+	Eithan Valenzuela removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Misael Holland
+	Misael Holland was added. 7 spot(s) remain.
+Command: add Frank Reyes
+	Frank Reyes was added. 6 spot(s) remain.
+Command: add Hallie Rubio
+	Hallie Rubio was added. 5 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Misael Holland
+		Student 2: Frank Reyes
+		Student 3: Hallie Rubio
+Command: add Blaise Brooks
+	Blaise Brooks was added. 4 spot(s) remain.
+Command: modify Blaise Brooks:Rowan Chase
+	Student Blaise Brooks name modified to Rowan Chase.
+Command: remove Kamila Cantu
+	No student named Kamila Cantu was found to remove.
+Command: add Diego Eaton
+	Diego Eaton was added. 3 spot(s) remain.
+Command: remove Diego Eaton
+	Student Diego Eaton removed. The course now has 4 seats remaining.
+Command: remove Ermias Acosta
+	No student named Ermias Acosta was found to remove.
+Command: remove Hallie Rubio
+	Student Hallie Rubio removed. The course now has 5 seats remaining.
+Command: remove Misael Holland
+	Student Misael Holland removed. The course now has 6 seats remaining.
+Command: add Aaron Andersen
+	Aaron Andersen was added. 5 spot(s) remain.
+Command: remove Aaron Andersen
+	Student Aaron Andersen removed. The course now has 6 seats remaining.
+Command: add Reece Knight
+	Reece Knight was added. 5 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Frank Reyes
+		Student 2: Rowan Chase
+		Student 3: Reece Knight
+Command: remove Maverick Gregory
+	No student named Maverick Gregory was found to remove.
+Command: remove Aaron Andersen
+	No student named Aaron Andersen was found to remove.
+Command: modify Kaia Hurley:Paul Ellis
+	No student with name Kaia Hurley found.
+Command: remove Hallie Rubio
+	No student named Hallie Rubio was found to remove.
+Command: delete
+	Frank Reyes removed in class delete.
+	Rowan Chase removed in class delete.
+	Reece Knight removed in class delete.
+	Class was restarted and reopened for enrollment.
+

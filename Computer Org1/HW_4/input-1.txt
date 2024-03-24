@@ -1,0 +1,45 @@
+5
+add Blaise Brooks
+add Mariah Jensen
+remove Blaise Brooks
+add Frank Reyes
+display
+add Eithan Valenzuela
+display
+modify Mariah Jensen:Misael Holland
+add Mallory Blair
+remove Van Brennan
+add Nevaeh West
+display
+display
+remove Felix Wolfe
+modify Blaise Brooks:Angie Carlson
+modify Justice Mayer:Avianna Gates
+remove Nevaeh West
+remove Mallory Blair
+display
+modify Nevaeh West:Rio Craig
+delete
+8
+add Misael Holland
+add Frank Reyes
+add Hallie Rubio
+display
+add Blaise Brooks
+modify Blaise Brooks:Rowan Chase
+remove Kamila Cantu
+add Diego Eaton
+remove Diego Eaton
+remove Ermias Acosta
+remove Hallie Rubio
+remove Misael Holland
+add Aaron Andersen
+remove Aaron Andersen
+add Reece Knight
+display
+remove Maverick Gregory
+remove Aaron Andersen
+modify Kaia Hurley:Paul Ellis
+remove Hallie Rubio
+delete
+0

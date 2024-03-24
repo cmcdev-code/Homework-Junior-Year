@@ -1,0 +1,223 @@
+Command: add Felix Wolfe
+	Felix Wolfe was added. 3 spot(s) remain.
+Command: modify Angelo Jenkins:Quinton Peterson
+	No student with name Angelo Jenkins found.
+Command: modify Aaron Andersen:Troy Middleton
+	No student with name Aaron Andersen found.
+Command: remove Felix Wolfe
+	Student Felix Wolfe removed. The course now has 4 seats remaining.
+Command: add Kaia Hurley
+	Kaia Hurley was added. 3 spot(s) remain.
+Command: add Briggs Hudson
+	Briggs Hudson was added. 2 spot(s) remain.
+Command: add Autumn Dejesus
+	Autumn Dejesus was added. 1 spot(s) remain.
+Command: add Blaise Brooks
+	Blaise Brooks was added. 0 spot(s) remain.
+Command: modify Rowan Chase:Shiloh Morris
+	No student with name Rowan Chase found.
+Command: display
+	Currently Enrolled:
+		Student 1: Kaia Hurley
+		Student 2: Briggs Hudson
+		Student 3: Autumn Dejesus
+		Student 4: Blaise Brooks
+Command: add Paislee Chan
+	Student Paislee Chan not added. The class is already at capacity.
+Command: remove Autumn Dejesus
+	Student Autumn Dejesus removed. The course now has 1 seats remaining.
+Command: remove Avianna Gates
+	No student named Avianna Gates was found to remove.
+Command: display
+	Currently Enrolled:
+		Student 1: Kaia Hurley
+		Student 2: Briggs Hudson
+		Student 3: Blaise Brooks
+Command: display
+	Currently Enrolled:
+		Student 1: Kaia Hurley
+		Student 2: Briggs Hudson
+		Student 3: Blaise Brooks
+Command: remove Briggs Hudson
+	Student Briggs Hudson removed. The course now has 2 seats remaining.
+Command: modify Paislee Chan:Aniya Beil
+	No student with name Paislee Chan found.
+Command: remove Briggs Hudson
+	No student named Briggs Hudson was found to remove.
+Command: add Maverick Gregory
+	Maverick Gregory was added. 1 spot(s) remain.
+Command: modify Briggs Hudson:Ermias Acosta
+	No student with name Briggs Hudson found.
+Command: delete
+	Kaia Hurley removed in class delete.
+	Blaise Brooks removed in class delete.
+	Maverick Gregory removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Rylee Bernal
+	Rylee Bernal was added. 6 spot(s) remain.
+Command: add Aaron Andersen
+	Aaron Andersen was added. 5 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Rylee Bernal
+		Student 2: Aaron Andersen
+Command: add Mallory Blair
+	Mallory Blair was added. 4 spot(s) remain.
+Command: remove Mallory Blair
+	Student Mallory Blair removed. The course now has 5 seats remaining.
+Command: add Cullen Nicholson
+	Cullen Nicholson was added. 4 spot(s) remain.
+Command: remove Cullen Nicholson
+	Student Cullen Nicholson removed. The course now has 5 seats remaining.
+Command: display
+	Currently Enrolled:
+		Student 1: Rylee Bernal
+		Student 2: Aaron Andersen
+Command: display
+	Currently Enrolled:
+		Student 1: Rylee Bernal
+		Student 2: Aaron Andersen
+Command: add Shiloh Morris
+	Shiloh Morris was added. 4 spot(s) remain.
+Command: add Kamila Cantu
+	Kamila Cantu was added. 3 spot(s) remain.
+Command: add Avianna Gates
+	Avianna Gates was added. 2 spot(s) remain.
+Command: add Blaise Brooks
+	Blaise Brooks was added. 1 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Rylee Bernal
+		Student 2: Aaron Andersen
+		Student 3: Shiloh Morris
+		Student 4: Kamila Cantu
+		Student 5: Avianna Gates
+		Student 6: Blaise Brooks
+Command: modify Misael Holland:Paul Ellis
+	No student with name Misael Holland found.
+Command: remove Aniya Beil
+	No student named Aniya Beil was found to remove.
+Command: add Royal Lynch
+	Royal Lynch was added. 0 spot(s) remain.
+Command: modify Maverick Gregory:Isabella Callahan
+	No student with name Maverick Gregory found.
+Command: add Reece Knight
+	Student Reece Knight not added. The class is already at capacity.
+Command: add Isabella Callahan
+	Student Isabella Callahan not added. The class is already at capacity.
+Command: delete
+	Rylee Bernal removed in class delete.
+	Aaron Andersen removed in class delete.
+	Shiloh Morris removed in class delete.
+	Kamila Cantu removed in class delete.
+	Avianna Gates removed in class delete.
+	Blaise Brooks removed in class delete.
+	Royal Lynch removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Ariel Jacobson
+	Ariel Jacobson was added. 9 spot(s) remain.
+Command: remove Ariel Jacobson
+	Student Ariel Jacobson removed. The course now has 10 seats remaining.
+Command: modify Ariel Jacobson:Autumn Dejesus
+	No student with name Ariel Jacobson found.
+Command: add Troy Middleton
+	Troy Middleton was added. 9 spot(s) remain.
+Command: remove Ariel Jacobson
+	No student named Ariel Jacobson was found to remove.
+Command: add Mallory Blair
+	Mallory Blair was added. 8 spot(s) remain.
+Command: modify Paislee Chan:Mariah Jensen
+	No student with name Paislee Chan found.
+Command: add Van Brennan
+	Van Brennan was added. 7 spot(s) remain.
+Command: add Rowan Chase
+	Rowan Chase was added. 6 spot(s) remain.
+Command: modify Cullen Nicholson:Kamila Cantu
+	No student with name Cullen Nicholson found.
+Command: add Kaia Hurley
+	Kaia Hurley was added. 5 spot(s) remain.
+Command: modify Rowan Chase:Rylee Bernal
+	Student Rowan Chase name modified to Rylee Bernal.
+Command: remove Troy Middleton
+	Student Troy Middleton removed. The course now has 6 seats remaining.
+Command: modify Eduardo Miller:Yahir Gonzalez
+	No student with name Eduardo Miller found.
+Command: remove Ariel Jacobson
+	No student named Ariel Jacobson was found to remove.
+Command: add Felix Wolfe
+	Felix Wolfe was added. 5 spot(s) remain.
+Command: add Genesis Middleton
+	Genesis Middleton was added. 4 spot(s) remain.
+Command: add Henley Underwood
+	Henley Underwood was added. 3 spot(s) remain.
+Command: remove Mallory Blair
+	Student Mallory Blair removed. The course now has 4 seats remaining.
+Command: add Rio Craig
+	Rio Craig was added. 3 spot(s) remain.
+Command: delete
+	Van Brennan removed in class delete.
+	Rylee Bernal removed in class delete.
+	Kaia Hurley removed in class delete.
+	Felix Wolfe removed in class delete.
+	Genesis Middleton removed in class delete.
+	Henley Underwood removed in class delete.
+	Rio Craig removed in class delete.
+	Class was restarted and reopened for enrollment.
+
+Command: add Gracie Cline
+	Gracie Cline was added. 5 spot(s) remain.
+Command: add Yahir Gonzalez
+	Yahir Gonzalez was added. 4 spot(s) remain.
+Command: display
+	Currently Enrolled:
+		Student 1: Gracie Cline
+		Student 2: Yahir Gonzalez
+Command: modify Nevaeh West:Brynn Beck
+	No student with name Nevaeh West found.
+Command: add Cheyenne Shannon
+	Cheyenne Shannon was added. 3 spot(s) remain.
+Command: modify Gracie Cline:Misael Holland
+	Student Gracie Cline name modified to Misael Holland.
+Command: modify Gracie Cline:Ace Carlson
+	No student with name Gracie Cline found.
+Command: display
+	Currently Enrolled:
+		Student 1: Misael Holland
+		Student 2: Yahir Gonzalez
+		Student 3: Cheyenne Shannon
+Command: modify Elodie McCarty:Avianna Gates
+	No student with name Elodie McCarty found.
+Command: remove Gracie Cline
+	No student named Gracie Cline was found to remove.
+Command: display
+	Currently Enrolled:
+		Student 1: Misael Holland
+		Student 2: Yahir Gonzalez
+		Student 3: Cheyenne Shannon
+Command: add Kaia Hurley
+	Kaia Hurley was added. 2 spot(s) remain.
+Command: remove Gracie Cline
+	No student named Gracie Cline was found to remove.
+Command: modify Gracie Cline:Misael Holland
+	No student with name Gracie Cline found.
+Command: add Aniya Beil
+	Aniya Beil was added. 1 spot(s) remain.
+Command: modify Kaia Hurley:Angelo Jenkins
+	Student Kaia Hurley name modified to Angelo Jenkins.
+Command: add Justice Mayer
+	Justice Mayer was added. 0 spot(s) remain.
+Command: add Van Brennan
+	Student Van Brennan not added. The class is already at capacity.
+Command: remove Justice Mayer
+	Student Justice Mayer removed. The course now has 1 seats remaining.
+Command: remove Aniya Beil
+	Student Aniya Beil removed. The course now has 2 seats remaining.
+Command: delete
+	Misael Holland removed in class delete.
+	Yahir Gonzalez removed in class delete.
+	Cheyenne Shannon removed in class delete.
+	Angelo Jenkins removed in class delete.
+	Class was restarted and reopened for enrollment.
+
