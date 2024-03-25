@@ -1,45 +1,89 @@
-5
-add Blaise Brooks
-add Mariah Jensen
-remove Blaise Brooks
-add Frank Reyes
+4
+add Abigail Carter
+add Genesis Middleton
+modify Colette Morales:Paislee Chan
+add Briggs Hudson
+add Ermias Acosta
 display
-add Eithan Valenzuela
+add Aniya Beil
+add Alaya Spencer
+modify Ermias Acosta:Misael Holland
+add Ariella Curry
+add Miley Johnston
+add Titan Morton
+modify Brynn Beck:Avianna Gates
 display
-modify Mariah Jensen:Misael Holland
-add Mallory Blair
-remove Van Brennan
+add Gracie Cline
+remove Angie Carlson
+add Caroline Anthony
+add Hallie Rubio
+add Cash Webb
+remove Genesis Middleton
+delete
+4
+add Rowan Chase
+display
+modify Zoie Barrett:Blaise Brooks
+remove Rowan Chase
+add Royal Lynch
 add Nevaeh West
 display
+modify Frank Reyes:Rio Craig
+add Ace Carlson
+modify Nevaeh West:Kali Vasquez
+remove Ace Carlson
 display
-remove Felix Wolfe
-modify Blaise Brooks:Angie Carlson
-modify Justice Mayer:Avianna Gates
-remove Nevaeh West
-remove Mallory Blair
+modify Henley Underwood:Audrey Hardin
+remove Rowan Chase
+modify Nevaeh West:Eliel Lindsey
 display
-modify Nevaeh West:Rio Craig
+modify Alaya Spencer:Ariella Curry
+modify Autumn Dejesus:Ariel Jacobson
+add Zoie Barrett
+modify Misael Holland:Eliel Lindsey
 delete
-8
-add Misael Holland
+6
 add Frank Reyes
-add Hallie Rubio
-display
-add Blaise Brooks
-modify Blaise Brooks:Rowan Chase
-remove Kamila Cantu
-add Diego Eaton
+remove Frank Reyes
+add Van Brennan
+add Rio Craig
+add Mariah Jensen
+modify Justice Mayer:Aniya Beil
+modify Frank Reyes:Shiloh Short
 remove Diego Eaton
-remove Ermias Acosta
-remove Hallie Rubio
-remove Misael Holland
-add Aaron Andersen
-remove Aaron Andersen
-add Reece Knight
+add Angelo Jenkins
+modify Rio Craig:Justice Mayer
+add Rowan Chase
+add Alaya Spencer
+remove Frank Reyes
+add Blaise Brooks
 display
+display
+modify Royal Lynch:Kali Vasquez
+add Aaron Andersen
+add Eduardo Miller
+modify Aaron Andersen:Eithan Valenzuela
+delete
+5
+add Rio Craig
+add Cash Webb
+remove Kaia Hurley
+add Angelo Jenkins
+display
+add Elodie McCarty
+modify Rio Craig:Paul Ellis
+add Hassan Love
+remove Rowan Chase
 remove Maverick Gregory
-remove Aaron Andersen
-modify Kaia Hurley:Paul Ellis
-remove Hallie Rubio
+modify Angelo Jenkins:Angie Carlson
+add Yahir Gonzalez
+add Felix Wolfe
+remove Hassan Love
+display
+remove Hassan Love
+add Zoie Barrett
+display
+modify Aniya Beil:Titan Morton
+add Caroline Anthony
 delete
 0

@@ -1,4 +1,12 @@
 Command: add Herwen Xu
-    Herwen Xu was added. 0 spot(s) remain
-Command: modify Herwen Xu: Morris
-    Herwen Xu name modified to  Morris.
+    Herwen Xu was added. 9 spot(s) remain
+Command: modify Herwen Xu:Morris
+    Herwen Xu name modified to Morris.
+Command: add The
+    The was added. 8 spot(s) remain
+Command: add last
+    last was added. 7 spot(s) remain
+Command: add a
+    a was added. 6 spot(s) remain
+Command: remove Morris
+    Student Morris removed. The course now has 7 seats remaining.
