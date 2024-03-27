@@ -1,0 +1,185 @@
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,bm,enumitem,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 07}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Lin}{\mathcal{L}}
+\newcommand{\Mat}{\mathcal{M}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+\newcommand{\Null}{\operatorname{Null}}
+
+
+
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+
+
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 1.} Let $T \in \Lin(\C^3)$ be given by $T(x,y,z) = (3x,\,2y+z,\,-y+2z)$. Show that $T$ is diagonalizable and find a diagonal matrix $A$ so that $A=\Mat(T)$.
+\end{tcolorbox}
+\vskip1em
+
+We get the system of equations with the corresponding augmented matrix. Using the method that is guaranteed to work (I left out two of the rows of the matrix because they immediately can be eliminated by a single row operation).
+\begin{equation}
+    \begin{pmatrix}
+        1 & 3 & 9 & -27 \\
+        1 & 2 & 3 & 2 \\
+        0 & 1 & 4 & -11
+    \end{pmatrix}
+\end{equation}
+
+After putting the matrix in row reduced echelon form we get that $x_0=-15,x_1=17,x_2=-7$ hence the minimal polynomial is $p(x)=-15+17x-7x^2+x^3$. One of the roots is $3$ which can be found by the fact that $p(4)=20$ and $p(0)=-15$ intermediate value theorem. Hence we get $p(x)=(x-3)q(x)$ using polynomial division we get $q(x)=x^2-4x+5$ which by the quadratic equation we get has roots $\frac{4\pm \sqrt{16-20}}{2}=2\pm i$. As all the eigenvalues are distinct we have that it is diagonalizable with the 
+\[
+    \Mat(T,\mathcal{B}) = \begin{pmatrix}
+        3 & 0 & 0 \\
+        0 & 2+i & 1 \\
+        0 & 0 & 2-i
+        \end{pmatrix}
+\]
+Where $\mathcal{B}=\{\text{ eigenvalue for }3,\text{ eigenvalue for }2+i\text{ eigenvalue for }2-i\}$. 
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 2.} Let $T \in \Lin(\K^3)$ be the operator with matrix (in the standard basis) $\Mat(T) = \begin{pmatrix} 7 & 2 & 1 \\ -4 & 1 & 0 \\ 0 & 0 & 3 \end{pmatrix}$. Find a basis $\mathcal{B}=\{\mathbf{b_1},\mathbf{b_2},\mathbf{b_3}\}$ for $\K^3$ so that
+  $$\Mat(T,\mathcal{B}) = \begin{pmatrix} 5 & 0 & 0 \\ 0 & 3 & 1 \\ 0 & 0 & 3 \end{pmatrix}.$$
+  Verify that $\mathbf{b_3} \in \Null\!\left((T-3\operatorname{Id})^2\right)$.
+\end{tcolorbox}
+\vskip1em
+
+
+We see that $\{5,3\}$ are both eigenvalues of $\Mat(T)$ hence we just have to find an eigenvector relative to $5,3$ and then solve for the $3$rd vector according to the matrix. We have $\Mat(T)(x,y,z)=(7x+2y+z,-4x+y, 3z)=5(x,y,z)$
+This gives the system of equations 
+\begin{equation*}
+    \begin{cases}
+        7x+2y+z=5x\\
+        -4x+y=5y\\
+        3z=5z
+    \end{cases}    
+\end{equation*}
+Immediately we have that $z=0$ (by the last equation) hence we get $x=y$ so the eigenvectors are of the form $(1,1,0)$. Doing the same thing for the eigenvalue $3$. 
+\begin{equation*}
+    \begin{cases}
+        7x+2y+z=3x\\
+        -4x+y=3y\\
+        3z=3z
+    \end{cases}    
+\end{equation*}
+Which by the same reasoning we have $z=0$ which gives $-2x=y$ hence we get that the eigenvectors are of the form $(1,-2,0)$. Now from the definition of $\Mat (T,\mathcal B)$ we have that $T(b_3)=b_2+3b_3$ and hence $T(b_3)-3b_3=(1,-2,0)$ so we have to solve  $(7x+2y+z,-4x+y,3z)-3(x,y,z)=(1,-2,0)$ which gives us the system of equations
+\begin{equation*}
+    \begin{cases}
+        4x+2y+z=1\\
+        -4x-2y=-2
+    \end{cases}
+\end{equation*}
+
+Hence we get that $z=-1$ and $4x+2y=-2$ which has infinite solutions so letting $y=0$ we get $x=-1/2$ so the vector would be $(-1/2,0,-1)$. The fact that the final entry in $b_3$ is nonzero shows that it is linearly independent from $b_1,b_2$ hence $b_1,b_2,b_3$ are a basis for $\K^3$ by the theorem linear independent set of right length is a basis. Additionally from the construction of the three vectors we get that $\Mat(T,\mathcal{B})=\begin{pmatrix}
+    5 & 0 & 0 \\ 
+    0&3&1\\
+    0&0&3
+\end{pmatrix}$. Now to show that $b_3\in \Null((T-3\text{Id})^2)$ we have as $(1,-2,0)\in \Null(T-3\text{Id})$ and from the definition that $(T-3\text{Id})(b_3)=b_2$ that $(T-3\text{Id})^2(b_3)=(T-3\text{Id})b_2=0$ which gives $b_3\in \Null ((T-3\text{Id})^2)$. 
+
+
+
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 3.} Suppose $T \in \Lin(V)$ has three distinct eigenvalues, $\lambda_1, \lambda_2, \lambda_3$.
+  \begin{enumerate}
+  \item If $\dim(V) = 4$ and $\dim(E(\lambda_1,T)) = 2$, is $T$ necessarily diagonalizable? Why or why not?
+  \item If $\dim(V) = 7$ and $\dim(E(\lambda_1,T)) = 2$ and $\dim(E(\lambda_2,T))=3$, is $T$ necessarily diagonalizable? Why or why not?
+  \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+\begin{enumerate}
+    \item Yes because all the eigenvalues are distinct the other two have a distinct eigenvectors hence we have $\dim(E(\lambda_1,T))+\dim(E(\lambda_2,T))+\dim(E(\lambda_3,T))=4$ this is one of the charcterizations of diagonalizability.
+    \item No if $\dim(E(\lambda_3,T))\leq 1$ it wouldn't be diagonalizable as in that case $$\dim(E(\lambda_1,T))+\dim(E(\lambda_2,T))+\dim(E(\lambda_3,T))\leq 6$$
+\end{enumerate}
+%===========================================================
+% SOLUTION 3
+%===========================================================
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 4
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 4.} Let $V$ be finite dimensional and let $S, T \in \Lin(V)$ have all the same eigenvectors (with possibly different eigenvalues). If $S$ and $T$ are both diagonalizable, show that $T \circ S = S \circ T$.
+\end{tcolorbox}
+\vskip1em
+
+
+
+%===========================================================
+% SOLUTION 4
+%===========================================================
+  
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 5
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Optional Problem.}
+  Recall that the Fibonacci sequence $\left\{F_n\right\} = \left\{0,1,1,2,3,5,8,13,\ldots\right\}$ is recursively-defined:
+  \begin{align*}
+    F_0 &= 0 \\
+    F_1 &= 1 \\
+    F_n &= F_{n-1} + F_{n-2} \text{ for } n \geq 2.
+  \end{align*}
+  Define $T \in \Lin(\R^2)$ by $T(x,y) = (y,x+y)$.
+  \begin{enumerate}
+  \item Prove that $T^n(0,1) = (F_n, F_{n+1})$.
+  \item Prove that
+    $$F_n = \frac{1}{\sqrt{5}}\left[\Phi^n - \varphi^n\right]$$
+    where $\Phi = \frac{1+\sqrt{5}}{2}$ and $\varphi^n = \frac{1-\sqrt{5}}{2}$.\vskip0.5em
+    {\footnotesize\textsc{Hint: $T$ is a diagonalizable operator. What are its eigenvalues?}}
+  \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 5
+%===========================================================
+
+
+\end{document}
