@@ -1,0 +1,111 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Versions of Compactness } 
+
+\vspace{.15in}
+The {\bf next test} will be run like the previous test, with the due date very likely to be Friday, April 12. 
+
+\subsection*{Hand in Friday, March 22.} 
+
+
+\vspace{.15in}
+\noindent
+\subsection*{1.} The concept of first countable is defined on pages 130-131 of the textbook. Suppose that $X$ is a first countable topological space and that $A$ is a subspace of $X$. Show that, if $x_0\in \overline{A}$, then there is a sequence of points $(a_n)$ from $A$ that converges to $x_0$. {\bf Remark.} Because, for any point $x$ in any metric space, $\{ B(x, 1/n)$ is a countable basis at $x$, every metric space is first countable. The book asserts that the proof of the assertion in the problem is very much like the proof of that assertion for metric spaces. I am asking you to write the proof for first countable spaces, not to quote the book's assertion that the ``same" proof applies. {\it Aside (not to be handed in).} How would you go about looking for a first countable space whose topology is not a metric topology? 
+
+\vspace{.15in}
+\subsection*{Some comments on textbook sections 20 and 21} It can be useful to know when a topology comes from a metric. Metric spaces have properties that align well with our intuition: open sets can be understood in terms of open balls, allowing precise quantitative expression of terminology like ``near enough"; metric spaces are Hausdorff; and because metric spaces are first countable, in them we can understand the concept of closure, and hence the concept of closed set, in terms of sequences. 
+
+However, not all metric properties are topological properties. The concept of ``bounded" is one example of such a property. Theorem 20.1 shows that, on a metric space (for example $\mathbb R$ with the standard metric), it is possible to define another metric (the ``standard bounded metric") in which every subset is bounded (in fact the distance between any two points is less than or equal to $1$). However, on the small scale, the distances measured by the two metrics are the same. In particular the open balls of radius less than or equal to $1$ in one metric are exactly the same as the open balls of radius less than or equal to $1$ in the other metric. By problem 2 in our March 1 homework, the topologies defined by the two metrics are the same. 
+
+One implication of the ``standard bounded metric" is that it can be used to prove (Theorem 20.5)  that the product topology on the product of countably many copies of $\mathbb R$ (each with the standard topology) arises from a metric on this product space. We showed in class that the box topology on this same product space cannot arise from a metric. Example 2 on page 133 of the textbook shows that, for much the same reason, the product topology on the product of uncountably many copies of $\mathbb R$ (each with the standard topology) does not arise from any metric on this product space.
+
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{2.}  Let $X$ be an infinite set with the finite-complement topology. (You can assume that the $X$ is $\mathbb N$ or $\mathbb R$ if you like.) Show that every subset of $X$ is compact. Show that every infinite proper subset of $X$ is not closed. {\bf Remark.} So it can happen that a compact set is not closed! {\it Aside (not to be handed in).} What property of a topological space guarantees that every compact subset of that space is closed?
+
+\vspace{.15in}
+\noindent
+\subsection*{Definition.} Let $X$ be a topological space, with $A$ a subset of $X$ and $y$ an element of $X$. We call $y$ an $\omega$-accumulation point for $A$ if every open set that contains $y$ contains infinitely many elements of $A$. 
+
+\vspace{.15in}
+\noindent
+\subsection*{3.} Let  $X = \{ a_j : j \in \mathbb N \} \bigcup \{ b_j : j \in \mathbb N \}$, and give $X$  the topology defined by the basis $\{ \{ a_j , b_j \} : j\in \mathbb N \}$. (Each set in the basis contains exactly two elements, both the with same index.) (You may accept without proof that this set is a basis for a topology.) Show that every non-empty subset of $X$ has a limit point. Show that no subset of $X$ has an $\omega$-accumulation point.
+
+
+\vspace{.15in}
+\noindent
+\subsection*{4.} Which single-element subsets $\{ x\}$ of the $X$ in problem 3 are closed sets? Show that your answer is correct. 
+
+\vspace{.15in}
+\noindent
+\subsection*{Definition.} A topological space $X$ is called $T_1$ if every single-element subset of $X$ is closed. 
+
+\vspace{.15in}
+\noindent
+\subsection*{Definition.}  A subset $K$ of a topological space $X$ is called limit point compact if every infinite subset of $K$ has a limit point in $K$. 
+
+
+\vspace{.15in}
+\noindent
+\subsection*{Definition.}  A subset $L$ of a topological space $X$ is called $\omega$-accumulation point compact if every infinite subset of $L$ has an $\omega$-accumulation point in $L$. (This concept is widely accepted, but there is no widely accepted name for it, so the name I have chosen is not standard.)
+
+
+\vspace{.15in}
+\noindent
+\subsection*{5.} 
+
+{\bfseries a.} Show that every $\omega$-accumulation point compact topological space is limit point compact. 
+
+{\bfseries b.} Assume that the topological space $Y$ is $T_1$. Show that if $Y$ is limit point compact, then $Y$ is $\omega$-accumulation point compact. 
+
+{\bfseries c.} Give an example of a topological space that is limit point compact but not $\omega$-accumulation point compact. 
+
+\vspace{.15in}
+Problem 6 is an {\bf extra credit} problem. (I designate a problem as extra credit because I think the problem is interesting but I'm aware that it may make an assignment longer than the assignment should be.)
+
+\vspace{.15in}
+\noindent
+\subsection*{6.} Let $X$ be the product of copies of $\mathbb R$, with the factors indexed by the elements $x$ of the unit interval $[0,1]$. Give $X$ the product topology. Because an element of the product corresponds to the assignment of a real number to each $x\in[0,1]$, we may think of the product as the set of functions $f : [0,1] \rightarrow \mathbb R$. In the product topology, by problem 4 in the February 9 homework assignment, expressed in the language in which elements of a product are functions on the index set, convergence of a sequence, $f_n \rightarrow f$ as $n\rightarrow \infty$, corresponds to pointwise convergence of the sequence of functions: for each $x\in [0,1]$, $f_n(x) \rightarrow f(x)$ as $n\rightarrow \infty$. Let $C $ be the subset of the product that corresponds to the set of continuous functions from $[0,1]$ to $\mathbb R$. Give $C$ the subspace topology. In this problem you will show that this topology on $C$ cannot arise from a metric on $C$ because $C$ is not first countable. Recall that saying that a topological space is first countable means that for every $y$ in the space, there is a countable collection of open sets $\{ V_j^y : j\in \mathbb N \}$ that contain $y$ and that satisfy the property: for 
+every open $U$ that contains $y$ there is a $j\in \mathbb N$ for which $V_j \subset U$. In this problem you will show that the constant zero function $G$ does not have such a countable basis for its neighborhoods in $C$.
+
+Suppose that, in $C$, $\{ U_j\}$ is an arbitrary countable collection of open sets, each of which contains $G$. For each $j$, choose a basis element $W_j$ (that is the intersection of a product basis element with $C$) satisfying $G\in W_j\subset U_j$. Let $I_0$ denote the set of indices $x\in [0,1]$ at which function values are constrained by at least one of the $W_j$'s. Show that $I_0$ is countable. Conclude that there exists an $x_1 \in [0,1] \setminus I_0$. 
+
+For such an $x_1$, Let $W$ be the open neighborhood of $G$ defined by $|g(x_1)| < 1/2$. 
+
+Show that, for every $j$, there is an $f_j \in W_j\subset U_j$ such that $f_j(x_1) = 1$. Conclude that, for every $j$, $W_j$ is not contained in $W$ and hence that $U_j$ is not contained in $W$.  
+
+
+
+
+
+
+
+ 
+\end{document}
