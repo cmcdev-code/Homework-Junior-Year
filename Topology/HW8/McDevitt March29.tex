@@ -45,6 +45,14 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
 \noindent
 \subsection*{2.} Show that, if a topological space $X$ is sequentially compact (every sequence in $X$ has a subsequence converging to a point in $X$), then $X$ is $\omega$-accumulation-point-compact. 
 
+\begin{proof}
+    Assume that $X$ is a sequentially compact. Then take an arbitrary infinite set $A\subset X$ then create an arbitrary sequence $\{a_n\}_{n\in \mathbb{N}}$ in $A$. 
+    
+    
+    Then as $X$ is sequentially compact we have a subsequence $\{a_{n_k}\}_{k\in \mathbb{N}}$ for some $a\in A$ we have any neighborhood $U$ of $a$ which contains all points of the subsequence after some $n_k\in \mathbb{N}$. 
+    Hence $U$ contains an infinite number of elements of $A$ we have that $a$ is an $\omega-$accumulation point of $A$. As $A$ was an arbitrary infinite set we have that $X$ is $\omega-$accumulation-point-compact.
+\end{proof}
+
 \vspace{.15in}
 \noindent
 \subsection*{3.} Show that, if a topological space $X$ is $\omega$-accumulation-point-compact and first countable, then $X$ is sequentially compact. {\bfseries Hint.} For an arbitrary sequence, show that, if no single value appears with infinitely many indices, then the sequence must have infinitely many distinct values. Use first countable to show that an $\omega$-accumulation point is a limit of a subsequence. 
