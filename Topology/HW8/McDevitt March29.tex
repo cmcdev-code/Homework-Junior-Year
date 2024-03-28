@@ -36,6 +36,10 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
 \noindent
 \subsection*{1.}  Show that, if the topological space $X$ is compact, then every infinite subset of $X$ has an $\omega$-accumulation point in $X$, i.e. that every compact space is $\omega$-accumulation-point-compact. {\bfseries Hint.} If $Y$ is a subset that has no $\omega$-accumulation point, choose a neighborhood of each point of $X$ that helps you show that $Y$ must be finite. 
 
+\begin{proof}
+    Let $X$ be a compact topological space and $Y\subset X$ be a set with no $\omega-$accumulation point. Then for each $y \in Y$ we have a neighborhood $y\in U_y$ but $\mathcal U_y=Y\cap U_y$ is finite. Then we create the open cover $\{\mathcal U_y\}_{y\in Y}$ but as $X$ is compact we have a finite subcover $\{\mathcal U_{y_1},\ldots,\mathcal U_{y_n}\}$. But then $Y= \bigcup_{i=1}^n \mathcal U_{y_i}$ and so $Y$ is finite. This shows that any set that does not have an $\omega-$accumulation point is finite hence any infinite set must have an $\omega-$accumulation point.
+\end{proof}
+
 
 \vspace{.15in}
 \noindent
