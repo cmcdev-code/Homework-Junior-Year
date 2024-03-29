@@ -381,15 +381,15 @@ Prove that $L$ is undecidable by using m-reducibility.
 
 \solution
 
-Assume that $L=\{x: \text{program }x \text{ decides } E\}$ is decidable. Then 
+We have that $DHP$ is undecidable hence I will create the $m$-reduction $DHP\leq_M L$. We do this by taking any program $x\to P_x$ where $P_x$ is the program above.
 
 
 \begin{figure}[tp]
     \begin{tabular}{|l|}
     \hline
     \textbf{Program} $P_x$ \\
-    \textbf{if} $x$ halts on input $y$ \\
-    \textbf{    then} run program $x$ on input $y$ \\
+    \textbf{Input:} $y$ \\
+    \textbf{if} $x$ halts on input $x$ \\
     $\;\;$ \textbf{       if} if $y$ is a has even length
      \\
     $\;\;\;\;$ \textbf{       then} accept \\
