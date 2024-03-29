@@ -462,7 +462,7 @@ A: Yes $\mathrm{DOUBLE}$ is decidable. We could create the program that takes in
 
 B: We have that $W$ is not decidable. I will show this by creating the $m$-reduction $DHP\leq_M W$. We do this by taking any program $x\to P_x$ where $P_x$ is the program above. Note that $\mathrm{DOUBLE}$ is decidable using the same reasoning as in part A. Hence I am justified in asking weather $y\in \mathrm{DOUBLE}$ in $P_x$.
 
-Now to show that this is a valid $m$-reduction. Suppose that $x\in DHP$ then we have from the definition of $P_x$ that for any input $y$ that it either accepts or rejects.
+Now to show that this is a valid $m$-reduction. Suppose that $x\in DHP$ then we have from the definition of $P_x$ that for any input $y$ that it either accepts or rejects as $\textrm{DOUBLE}$ is decidable hence we have that $P_x \in  W$. Now suppose that $P_x\in W$ then we have that $P_x$ would have decided $\mathrm{DOUBLE}$ hence it halts so we have that $x$ halts on input $x$ hence $x \in DHP$. This implies that $x\in DHP$ if and only if $P(x)\in W$ so we have that $DHP\leq_M W$ so $W$ is undecidable as $DHP$ is undecidable.
 
 
 
