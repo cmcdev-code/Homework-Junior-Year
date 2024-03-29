@@ -381,7 +381,7 @@ Prove that $L$ is undecidable by using m-reducibility.
 
 \solution
 
-
+I wil use the M reduction $DHP\leq_M L$. I will do this by creating the function sending $x\to P_x$ where $P_x$ is the program:
 
 
 
@@ -391,21 +391,29 @@ Prove that $L$ is undecidable by using m-reducibility.
 \begin{figure}[tp]
 \begin{tabular}{|l|}
 \hline
-\textbf{Program} $P$
+\textbf{Program} $P_x$
 \\
-\textbf{Input} $w$
+\textbf{Input} $y$
 \\
-\textbf{if} $\ell(w)$ is even
+\textbf{if} If $x$ halts on input $x$
 \\
-\textbf{then} accept
+\textbf{    then} if $y$ is even
 \\
-\textbf{else} reject
+\textbf{    then} accept
+\\
+\textbf{    else} reject
+\\
+
+\textbf{else} loop forever
 \\\hline
 \end{tabular}
 \caption{A sample program to decide $E$,
 just to show how to format a program in \LaTeX.}
 \label{figure:sampleprogram}
 \end{figure}
+
+
+
 
 \problem{40}
 Let
