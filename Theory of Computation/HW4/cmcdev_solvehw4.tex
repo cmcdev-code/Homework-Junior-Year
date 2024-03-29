@@ -381,36 +381,26 @@ Prove that $L$ is undecidable by using m-reducibility.
 
 \solution
 
-I wil use the M reduction $DHP\leq_M L$. I will do this by creating the function sending $x\to P_x$ where $P_x$ is the program:
+I wil use the M reduction $HP\leq_M L$. I will do this by creating the function sending $\langle x, y\rangle  \to P_x$ where $P_x$ is the program defined above.
 
-
+\begin{figure}[tp]
+    \begin{tabular}{|l|}
+    \hline
+    \textbf{Program} $P_x$ \\
+    \textbf{if} $x$ halts on input $y$ \\
+    \textbf{    then} run program $x$ on input $y$ \\
+    $\;\;$ \textbf{       if} if $y$ is a has even length
+     \\
+    $\;\;\;\;$ \textbf{       then} accept \\
+     $\;\;\;\;$ \textbf{       else} reject \\
+    \textbf{else} loop forever \\
+    \hline
+    \end{tabular}
+    \label{figure:sampleprogram}
+\end{figure}
 
 
 \problembreak
-
-\begin{figure}[tp]
-\begin{tabular}{|l|}
-\hline
-\textbf{Program} $P_x$
-\\
-\textbf{Input} $y$
-\\
-\textbf{if} If $x$ halts on input $x$
-\\
-\textbf{    then} if $y$ is even
-\\
-\textbf{    then} accept
-\\
-\textbf{    else} reject
-\\
-
-\textbf{else} loop forever
-\\\hline
-\end{tabular}
-\caption{A sample program to decide $E$,
-just to show how to format a program in \LaTeX.}
-\label{figure:sampleprogram}
-\end{figure}
 
 
 
@@ -441,9 +431,13 @@ Prove your answer.
 \end{enumerate}
 }
 
+
+
 \solution
 
-% PUT YOUR SOLUTION HERE
+A: Yes $\mathrm{DOUBLE}$ is decidable. We have created a turing machine in class that accepts this language hence such a program exists that decides it. 
+
+
 
 \problembreak
 
