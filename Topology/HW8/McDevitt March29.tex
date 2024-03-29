@@ -29,10 +29,6 @@
 \subsection*{Hand in Friday, March 29.} 
 
 \vspace{.15in}
-In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make it clearer that the full expression is one adjective describing a space. 
-
-
-\vspace{.15in}
 \noindent
 \subsection*{1.}  Show that, if the topological space $X$ is compact, then every infinite subset of $X$ has an $\omega$-accumulation point in $X$, i.e. that every compact space is $\omega$-accumulation-point-compact. {\bfseries Hint.} If $Y$ is a subset that has no $\omega$-accumulation point, choose a neighborhood of each point of $X$ that helps you show that $Y$ must be finite. 
 
@@ -70,9 +66,6 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
     
 \end{proof}
 
-\vspace{.15in}
-\begin{definition} A topological space $X$ is called {\it second countable} if $X$'s topology has a countable basis. \end{definition}
-
 
 \vspace{.15in}
 \noindent
@@ -98,8 +91,7 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
 \begin{proof}
     Let $X$ be a second countable $\omega-$accumulation-point-compact space. By part (a) of this problem we have that all open covers of a second countable space have a countable subcover so it suffices to only examine arbitrary countable covers.
 
-    Let $\{U_n\}_{n\in \mathbb{N}}$ be a countable open cover with no finite subcover. We have as there is no finite subcovers that for an infinite number of $\{U_n\}_{n\in \mathbb{N}}$ 
-    
+    Let $\{U_n\}_{n\in \mathbb{N}}$ be a countable open cover with no finite subcover as this collection has no finite subcover we have that there is an infinite $\{U_{n_k}\}_{n_k\in \mathbb{N}}$ that contain at least one unique point. Then we create the set $Y=\{y_1,y_2,...\}$ where $y_i$ is a unique point of $U_{n_i}$  . Now despite $Y$ being an infinite set we have that it has no $\omega-$point as each point in $Y$ is contained in a single $U_n$. This would contradict the $\omega-$accumulation-point-compactness of $X$ so the assumption that $\{U_n\}_{n\in \mathbb{N}}$ has no finite subcover is false which implies that $X$ is compact.
 
 \end{proof}
 
@@ -108,26 +100,6 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
 
 \vspace{.15in}
 \begin{definition} Let $\{ U_{\alpha}\} _{\alpha \in A}$ be an open cover of a metric space $X$. A {\it Lebesgue number} for this cover is a number $\delta$ satisfying: for every subset $Y$ of $X$ with diameter less than $\delta$, there is a $U_{\alpha}$ for which $Y\subset U_{\alpha}$. \end{definition}
-
-\vspace{.15in}
-Problem 5 is an {\bf extra credit} problem, again with no penalty for students who do not do problem 5, as a way of making sure the assignment is of reasonable length.
- 
-\vspace{.15in}
-\noindent
-\subsection*{5.} The results in this problem apply to any metrizable topological space, that is to any space whose topology comes from a metric, regardless of which metric is used, as long as the topology the metric generates is the space's given topology. So that no one will worry about the implications of a choice of metric, I'll phrase the problem in terms of a metric space, i.e. I'll choose at the beginning a specific metric that defines the topology.  
-
-\vspace{.1in}
-\noindent
-{\bfseries a.} Show that, if $X$ is an $\omega$-accumulation-point-compact metric space, then every open cover of $X$ has a Lebesgue number. {\bfseries Hint.} Consider the implications of having a sequence of subsets $(Y_n)$, satisfying, for each $n$, the diameter of $Y_n$ is less than $1/n$ and, for each $n$, no open set from the cover contains $Y_n$.  
-
-\vspace{.1in}
-\noindent
-{\bfseries b.} Show that, if $X$ is an $\omega$-accumulation-point-compact metric space, then, for each $\epsilon > 0$, there is a finite collection of open balls of radius $\epsilon$ that covers $X$. {\bfseries Hint.} If there is some $\epsilon > 0$ for which no finite collection of open balls of radius $\epsilon$ that covers $X$, exhibit an infinite set with no $\omega$-accumulation point.
-
-\vspace{.1in}
-\noindent
-{\bfseries c.} Show that, if $X$ is an $\omega$-accumulation-point-compact metric space, then $X$ is compact. {\bfseries Hint.} Use parts a. and b. 
-
 
  
 \end{document}
