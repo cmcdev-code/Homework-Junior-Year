@@ -40,7 +40,7 @@
 % The document date depends on whether these are solutions
 \ifthenelse{\boolean{solutions}}{% Then
 \renewcommand{\docdate}{\duedate}
-}{% Else
+}{% 
 }
 
 % If you are the author, so put your name here
@@ -381,7 +381,8 @@ Prove that $L$ is undecidable by using m-reducibility.
 
 \solution
 
-I wil use the M reduction $HP\leq_M L$. I will do this by creating the function sending $\langle x, y\rangle  \to P_x$ where $P_x$ is the program defined above.
+Assume that $L=\{x: \text{program }x \text{ decides } E\}$ is decidable. Then 
+
 
 \begin{figure}[tp]
     \begin{tabular}{|l|}
