@@ -57,6 +57,19 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
 \noindent
 \subsection*{3.} Show that, if a topological space $X$ is $\omega$-accumulation-point-compact and first countable, then $X$ is sequentially compact. {\bfseries Hint.} For an arbitrary sequence, show that, if no single value appears with infinitely many indices, then the sequence must have infinitely many distinct values. Use first countable to show that an $\omega$-accumulation point is a limit of a subsequence. 
 
+
+\begin{proof}
+    Let $X$ be a first countable $\omega-$accumulation-point-compact space. Then take an arbitrary sequence $\{x_n\}_{n\in \mathbb{N}}$ in $X$. In the event that some value in our sequence occurs an infinite number of times we can just create the constant subsequence and we are done. So we have that each value in our sequence occurs finitely many times hence our sequence contains infinitely many distinct points. 
+
+    Then as $\{x_n\}_{n\in \mathbb{N}}$ is an infinite subset of $X$ we have for some $x \in \{x_n\}_{n\in \mathbb{N}}$ is an $\omega-$accumulation point. 
+    
+    Now as $X$ is first countable take the countable basis $\{B_n\}_{n\in \mathbb{N}}$ of $x$ each of which whose intersects $\{x_n\}_{n\in \mathbb{N}}$ is infinite. Then create the subsequence $x_{n_k}\in \bigcap_{i=1}^{n_k} (B_i ) \cap \{x_n\}_{n\in \mathbb{N}}$ where for each $n_k<n_{k+1}$ such an element is always guaranteed to exist as the intersection is infinite. 
+    
+    Lastly to show that this subsequence converges and has limit point $x$. Let $U_x$ be an arbitrary neighborhood of $x$ then we have as $X$ is first countable that for some $B\in \{B_n\}_{n\in \mathbb N}$  we have $B\subset U_x$ and for some $n_K\in \mathbb{N}$ we have that for all $n_k \geq n_K$ that $x_{n_k} \in B\subset U_x$ hence we have that this subsequence converges to $x$ and so $X$ is sequentially compact.
+
+    
+\end{proof}
+
 \vspace{.15in}
 \begin{definition} A topological space $X$ is called {\it second countable} if $X$'s topology has a countable basis. \end{definition}
 
