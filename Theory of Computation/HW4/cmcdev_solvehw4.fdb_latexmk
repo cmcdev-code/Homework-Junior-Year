@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1711719308 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW4/cmcdev_solvehw4.tex" "cmcdev_solvehw4.pdf" "cmcdev_solvehw4" 1711719309 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW4/cmcdev_solvehw4.tex" 1711719308 11801 45cabd5cb28eb153dc3813d18fadf03c ""
+["pdflatex"] 1711719625 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW4/cmcdev_solvehw4.tex" "cmcdev_solvehw4.pdf" "cmcdev_solvehw4" 1711719626 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW4/cmcdev_solvehw4.tex" 1711719625 11950 8d033b0561e9e90e17d116aaf1ab2655 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -66,8 +66,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "cmcdev_solvehw4.aux" 1711719309 256 83139e088b0cb933d20403930323c96c "pdflatex"
-  "cmcdev_solvehw4.tex" 1711719308 11801 45cabd5cb28eb153dc3813d18fadf03c ""
+  "cmcdev_solvehw4.aux" 1711719626 256 83139e088b0cb933d20403930323c96c "pdflatex"
+  "cmcdev_solvehw4.tex" 1711719625 11950 8d033b0561e9e90e17d116aaf1ab2655 ""
   (generated)
   "cmcdev_solvehw4.aux"
   "cmcdev_solvehw4.log"
