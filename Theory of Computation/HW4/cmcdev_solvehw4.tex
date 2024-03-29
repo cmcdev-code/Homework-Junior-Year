@@ -381,8 +381,7 @@ Prove that $L$ is undecidable by using m-reducibility.
 
 \solution
 
-We have that $DHP$ is undecidable hence I will create the $m$-reduction $DHP\leq_M L$. We do this by taking any program $x\to P_x$ where $P_x$ is the program above.
-
+We have that $DHP$ is undecidable hence I will create the $m$-reduction $DHP\leq_M L$. We do this by taking any program $x\to P_x$ where $P_x$ is the program above. Note that $E$ is regular as a simple FTA that has two states could recognize it. Hence I am justified in asking weather $y$ has even length in $P_x$.
 
 \begin{figure}[tp]
     \begin{tabular}{|l|}
@@ -390,7 +389,7 @@ We have that $DHP$ is undecidable hence I will create the $m$-reduction $DHP\leq
     \textbf{Program} $P_x$ \\
     \textbf{Input:} $y$ \\
     \textbf{if} $x$ halts on input $x$ \\
-    $\;\;$ \textbf{       if} if $y$ is a has even length
+    $\;\;$ \textbf{       if} if $y$ has even length 
      \\
     $\;\;\;\;$ \textbf{       then} accept \\
      $\;\;\;\;$ \textbf{       else} reject \\
@@ -400,6 +399,9 @@ We have that $DHP$ is undecidable hence I will create the $m$-reduction $DHP\leq
     \label{figure:sampleprogram}
 \end{figure}
 
+
+Fi
+Now let $x\in \Sigma^{\star}$ and suppose that $x\in DHP$ then we have that from the definition of $P_x$ that for any input $y$ that $P_x(y)$ will accept if $y$ has even length and reject if $y$ has odd length. This implies that $P_x$ decides $E$ so we have that $P_x \in L$. Now for any $x\in \Sigma^\star$ consider $P_x\in L$ then we have that $P_x$ would have decided $E$ hence it halts so we have that $x$ halts on input $x$ hence $x\in DHP$. This implies that $x\in DHP$ if and only if $P(x)\in L$ so we have that $DHP\leq_M L$ so $L$ is undecidable as $DHP$ is undecidable.
 
 \problembreak
 
