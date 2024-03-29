@@ -82,7 +82,13 @@ In this assignment I'll hyphenate ``$\omega$-accumulation-point-compact" to make
 {\bfseries a.} Show that, if a topological space $X$ is second countable, then every open cover of $X$ has a countable subcover.
 
 \begin{proof}
-    Suppose that $X$ is second countable $A\subset X$ and $\{U_a\}_{a\in B  }$ is an arbitrary open cover of $A$. Then we have a countable basis covering of $A$ where $\{B_a\}_{a \in A}$ where 
+   Suppose that $X$ is second countable and $A\subset X$ and $\{U_a\}_{a\in J}$ is an arbitrary open covering of $A$. Then as $X$ is second countable we have that the covering $\{B_a\}_{a\in A}$ where $B_a$ is a basis element is a countable covering of $A$. Then we create the subcover \[\{U_a: \text{ for each }B\in  \{B_a\}_{a\in A}  \text{ take a single } a\in J \text{ such that } B\subset U_a\}\]. 
+
+   This subcover is countable becuase we choose the elements by examining the elements of the basis cover which was countable. 
+
+
+
+
 \end{proof}
 
 \vspace{.1in}
