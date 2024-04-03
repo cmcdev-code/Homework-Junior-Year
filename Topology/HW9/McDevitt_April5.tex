@@ -1,0 +1,131 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Connected Spaces and Compact Spaces } 
+
+\subsection*{Hand in Friday, April 5.} 
+
+\vspace{.15in}
+\subsection*{Convention.} Assume that each subset of Euclidean space that you encounter on this assignment has the subspace topology it gets from the standard topology on Euclidean space. You may use without proof results such as: closed, bounded subsets of Euclidean space are compact; polynomial functions on Euclidean space are continuous; and sums, products, etc. of continuous functions are continuous; but be explicit about the dependence of your arguments on compactness and continuity. 
+
+\vspace{.15in}
+\noindent
+\subsection*{1.}  
+
+{\bfseries a.}  Show that no one of the three intervals $[0,1]$, $(0,1]$, and $(0,1)$ is homeomorphic to any other one of them. {\bfseries Hint.} Look for a homeomorphism-invariant property one has that the others don't have. Where that's not enough, consider an argument that the space resulting from removing some point from one of these cannot be homeomorphic to the space resulting from removing an arbitrary point from another of these. If you think of such an argument, be sure to express it clearly and justify its steps. 
+
+
+\begin{proof}{That $[0,1]$ not homeomorphic to $(0,1]$}
+
+
+    Suppose that a homeomorphism $h:[0,1]\to (0,1]$ exists. Then consider the two subspaces $(0,1]$ of $[0,1]$ and $(0,1]\setminus \{a_0\}$ of $(0,1]$ where $a_0\in (0,1]$. We have that $h\mid_{(0,1]}:(0,1]\to (0,1]\setminus \{a_0\}$ is a homeomorphism for some $a_0\in (0,1]$. 
+    
+    Now I claim that $(0,1]$ is connected. Suppose that $U,V$ are a separation of $(0,1]$ then we would have that two intervals of the form $(a,b]\subset U$ and $(b,c)\subset V$ for some $a,b,c\in (0,1)$. But then $b\in V^\prime$ and $b\in U$ hence this can not be a separation by Munkres Lemma 23.1. 
+
+    By Munkres Theorem 23.5 we have that $(0,1]\setminus \{a_0\}$ is connected as well. Now if $a_0\in (0,1)$ then we would have the separation $(0,a_0)$ and $(a_0,1]$ this implies that $a_0=1$. By the assumption we would have that $h\mid_{(0,1]}:(0,1]\to (0,1)$ is a homeomorphism. But then we would have $h|_{(0,1)}:(0,1)\to (0,1)\setminus 
+    \{a_1\}$ is a homeomorphism for some $a_1\in (0,1)$. But using similar reasoning to above we get that $(0,1)$ is connected while $(0,1)\setminus \{a_1\}$ is not. This is a contradiction and so no such homeomorphism exists.
+\vspace{5mm}
+
+    Now suppose that a homeomorphism $h:(0,1]\to (0,1)$ exists. Then consider the two subspaces $(0,1)$ of $(0,1]$ and $(0,1)\setminus \{a_0\}$ of $(0,1)$ where $a_0\in (0,1)$. We have that $h\mid_{(0,1)}:(0,1)\to (0,1)\setminus \{a_0\}$ is a homeomorphism for some $a_0\in (0,1)$. But as $(0,1)$ is connected (using same argument as above) we have that $(0,1)\setminus \{a_0\}$ is connected. But we have the separation $(0,a_0),(a_0,1)$ hence $(0,1)\setminus \{a_0\}$ is not connected. This is a contradiction and so no such homeomorphism exists.
+
+    The argument for $[0,1]$ and $(0,1)$ is essentially the same as the argument for $(0,1]$ and $(0,1)$. 
+    
+
+
+\end{proof}
+
+
+
+
+
+\vspace{.1in}
+{\bfseries b.} Show that $\mathbb R$ is not homeomorphic to $\mathbb R ^2$. 
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{2.} 
+
+{\bfseries a.}  Show that any continuous map $f : [0,1] \rightarrow [0,1]$ has a fixed point, by which I mean a point $x$ for which $f(x) = x$. {\bfseries Hint.} Consider the function $F(x) = f(x) - x$. {\bfseries Something to think about.} Is the same result true for continuous maps $[0,1] \times [0,1] \rightarrow [0,1] \times [0,1]$? I am asking you to think briefly about, not write an answer to, this question about the square. It may be instructive to explore briefly the challenges of trying to extend the interval result to the product. 
+
+\vspace{.1in}
+{\bfseries b.} Is it true that any continuous $g : [0,1) \rightarrow [0,1)$ must have a fixed point? Show that your answer is correct. {\bfseries Aside.} Consider (but you need not write): if you provide an example to show that the answer is no, why does your example not extend to contradict what you proved in part a?
+
+\vspace{.15in}
+\noindent
+\subsection*{3.}
+
+\vspace{.1in}
+{\bfseries a.} Suppose that $X$ is homeomorphic to $[0,1]$. Must any continuous $\phi : X \rightarrow X$ have a fixed point? Prove that your answer is correct. {\bfseries Comment.} Examples of such $X$'s include curves that are images of imbeddings of $[0,1]$ in higher dimensional Euclidean spaces. I mention that just to show that this question has substance, not because such examples necessarily help you answer the question. 
+
+\vspace{.1in}
+{\bfseries b.} Show that there is a continuous map $f : [-2, -1] \bigcup  \ [1,2] \rightarrow [-2, -1] \bigcup \ [1,2]$ that has no fixed point. {\bfseries Something to think about.} Again nothing written expected. Regarding the guarantee of existence of a fixed point, what was the crucial difference between the space in 2.a and the space in 3.b? 2.b and 3.a suggest that topology matters, as does compactness, but 3.b shows that compactness alone is not sufficient. The unit circle in the plane provides another example of a compact space on which continuous maps from the space to itself need not have fixed points. A rotation such as a quarter-turn is continuous and has no fixed point. The antipodal map from the circle to the circle that takes each $\vec{p}$ to $-\vec{p}$ also is continuous but without a fixed point. If we try to extend either of these map constructions to the unit disk in the plane, we realize that we encounter a fixed point at the origin, so we're left with the same question for the disk that we had for the square.  if there are topological conditions that force the existence of fixed points, they may have to distinguish between the circle and the disk. 
+
+
+\vspace{.15in}
+\noindent
+\subsection*{4.} Show that for any continuous $f : S^1 \rightarrow \mathbb R$, there is a point $\vec{p}$ for which $f(\vec{p}) = f(-\vec{p})$. Here $S^1$ is the unit circle, $\{ (x,y) : x^2 + y^2 = 1\}$ in $\mathbb R ^2$. {\bfseries Hint.} Consider the function $F(\vec{p}) = f(\vec{p}) - f(-\vec{p})$.
+
+
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{5.} Suppose that $X$ is a Hausdorff topological space and that $C$ and $K$ are compact subspaces of $X$ that satisfy $C\bigcap K = \emptyset$. Show that there exist open subsets of $X$, $U$ and $V$, that satisfy $C\subset U$, $K\subset V$, and $U\bigcap V = \emptyset$.
+
+\vspace{.45in}
+On Friday, April 5, I will send each of you the second {\bfseries test}, as an email attachment. I will also post the test in the tests folder in the Files section of the course Canvas site. The test will have a first page that is a cover page and that reveals no information about the test content.   Once you look beyond the cover page of the file, you may work on the test only during the next two hours.  During this time you may not consult any person or other source.  You must email your completed test to me 
+no later than 5:00 pm on Friday, April 12.  There will be no class 
+on Friday, April 12.  
+
+Unless you're unusually good at typing and TeXing, I suggest that you handwrite your answers. You may use time beyond the 2 hours to put your answers into a TeX file, but don't change your answers during that transcription. A pdf file made from a TeX file is easiest for me to read, but I will also accept a scanned pdf file of your handwritten answers or, if necessary, a photo of your handwritten answers.
+
+The most likely way to approach the test is to study during most of 
+the week and to open the file and do the test at some time late in the week.  If you want to have me available to answer questions while you are doing the test, contact me ahead of time to ask whether I will be available when you plan to work on the test. 
+
+It is an honor issue that anyone who has seen the test must not risk 
+communicating any information about the test to anyone who has not 
+finished the test.  This covers conversations about topology   
+(including conversations that are overheard by others not in the 
+conversation), leaving test scratchwork where it can be seen by others, etc.  If you have 
+any questions about the honor expectations, please ask me before 
+engaging in any questionable behavior.  
+
+People who have not started the test may engage in all the usual 
+preparations for the test, including consulting books, notes, and 
+other sources, and discussing the material with classmates, as long as 
+all such discussions are not overheard by anyone currently taking the 
+test.
+
+The test will focus on the material represented on assignments due from March 1 through April 5, inclusive, but dependence on topics represented on earlier assignments is unavoidable.  The sections of Munkres that cover the material that will be the focus of the test are the sections on the order topology, the subspace topology, continuous functions, connected sets and compact sets (all sections from Chapter 3 except the section on local compactness), and the countability axioms, as well as further attention the sections on the product topology and metric topology. Because we did not cover all topics in all of these sections, homework problems and material discussed in class are the best indications of the topics that will appear on the test. 
+
+
+
+
+ 
+\end{document}

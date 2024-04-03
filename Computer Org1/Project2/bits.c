@@ -162,11 +162,26 @@ NOTES:
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 int bitXor(int x, int y) {
-
   return ~(~(~x&y) & ~(x&~y));
 }
-
+void intToBinary(int num, char *binary) {
+    int i = 0;
+    // Size of an integer in bits
+    int size = sizeof(int) * 8;
+    
+    // Loop through each bit
+    for (i = size - 1; i >= 0; i--) {
+        // Check if the current bit is set or not
+        if ((num >> i) & 1)
+            binary[size - 1 - i] = '1';
+        else
+            binary[size - 1 - i] = '0';
+    }
+    // Null-terminate the string
+    binary[size] = '\0';
+}
 
 
 //2
@@ -180,8 +195,40 @@ int bitXor(int x, int y) {
  *   Rating: 2
  */
 int fitsBits(int x, int n) {
-  return 2;
+  return !!(~((x | 1 >> 31)>>(n)));
 }
+
+int test_fitsBits(int x, int n)
+{
+  int TMin_n = -(1 << (n-1));
+  // This convoluted way of generating TMax avoids overflow
+  int TMax_n = (int) ((1u << (n-1)) - 1u);
+  return x >= TMin_n && x <= TMax_n;
+}
+
+int main() {
+  
+   for(int i = -5; i < 5; i++) {
+    for(int j = 1 ; j <32; j++) {
+
+         if(fitsBits(i,j) == test_fitsBits(i,j)) {
+            printf("WORKS HERE  %d\n",fitsBits(i,j));
+            char binary[33];
+            intToBinary(i, binary);
+
+            printf("Binary: %s\n", binary);
+
+         } else {
+            printf("fitsBits(%d,%d) = %d\n",i,j,fitsBits(i,j));
+            printf("test_fitsBits(%d,%d) = %d\n",i,j,test_fitsBits(i,j));
+        
+         }
+
+      }
+   }
+    return 0;
+}
+
 //3
 /* 
  * rotateRight - Rotate x to the right by n

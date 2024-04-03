@@ -440,9 +440,32 @@ Prove your answer.
 
 \solution
 
-A: Yes $\mathrm{DOUBLE}$ is decidable. We could create the program that takes in an input and checks if the input has even length and checks if the input is a palindrome. If both of these are true we accept otherwise we reject. This program would be able to decide $\mathrm{DOUBLE}$ as the only strings that are in $\mathrm{DOUBLE}$ are palindromes of even length.
+A: Yes $\mathrm{DOUBLE}$ is decidable. An example of a program that decides $\mathrm{DOUBLE}$ is the program $P_{\mathrm{DOUBLE}}$ which is shown above. Note that I am having the range loop be noninclusive for range like how they are in python. 
+\begin{figure}[tp]
+    \begin{tabular}{|l|}
+    \hline
+    \textbf{Program} $P_{\mathrm{DOUBLE}}$ \\
+    \textbf{Input:} $y$ \\
+    \textbf{if} $y$ has odd length \\
+    $\;\;$ \textbf{       then} reject \\
+    \textbf{else} \\
+    $\;\;\; length\leftarrow len(y)$ 
+    \\
+    $\;\;\; $\textbf{for } $i\leftarrow 0$ \textbf{ to } $length/2$ \\
+    $\;\;\;\;\;$ \textbf{if} $y[i]\neq y[length/2+i]$ \\
+    $\;\;\;\;\;\;\;\;$ \textbf{then} reject \\
+    $accept$
+   
+    \end{tabular}
+    \label{figure:sampleprogra11m}
+\end{figure}
+
+
 
 \problembreak
+
+
+
 
 \begin{figure}[tp]
     \begin{tabular}{|l|}
