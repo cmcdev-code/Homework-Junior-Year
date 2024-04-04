@@ -135,6 +135,10 @@ Yes this is true.
 \noindent
 \subsection*{4.} Show that for any continuous $f : S^1 \rightarrow \mathbb R$, there is a point $\vec{p}$ for which $f(\vec{p}) = f(-\vec{p})$. Here $S^1$ is the unit circle, $\{ (x,y) : x^2 + y^2 = 1\}$ in $\mathbb R ^2$. {\bfseries Hint.} Consider the function $F(\vec{p}) = f(\vec{p}) - f(-\vec{p})$.
 
+\begin{proof}
+    Suppose that there exists $f:S^1\to \mathbb{R}$ where $f(\vec p)\not = f(-\vec p)$ for some $\vec p \in S^1$. Then consider the function $F:S^1 \to \mathbb{R}$ where $F(x)=f(x)-f(-x)$. We have that $F$ is continuos and by the assumption that $f(\vec p)\not = f(-\vec p)$ we get either $F(\vec{p})=f(\vec p)-f(-\vec p)>0$ or $F(\vec{p})=f(\vec p)-f(-\vec p)<0$. Without loss of generality assume that $F(\vec{p})=f(\vec p)-f(-\vec p)>0$ then we also have $F(-\vec p)= f(-\vec p)-f(\vec p)<0$ hence by Munkres Theorem 24.3 (intermediate value theorem) we get that there exists $\vec{q}\in S^1$ such that $F(\vec{q})=0=f(\vec{q})-f(-\vec{q})$ which implies $f(\vec{q})=f(-\vec{q})$ which is a contradiction. Hence we have that for all continuous functions $f:S^1\to \mathbb{R}$ there exists a point $\vec{p}$ such that $f(\vec{p})=f(-\vec{p})$.
+\end{proof}
+
 
 
 
