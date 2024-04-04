@@ -64,6 +64,25 @@
 \vspace{.1in}
 {\bfseries b.} Show that $\mathbb R$ is not homeomorphic to $\mathbb R ^2$. 
 
+\begin{proof}
+    Suppose that a homeomorphism $h: \mathbb{R}^2\to \mathbb R$ exists. Then we have that $$h|_{\mathbb{R}^2\setminus \{\vec 0\}}:\mathbb{R}^2 \setminus \{\vec 0\}\to \mathbb R \setminus \{a\}$$ is a homeomorphism for some $a\in \mathbb R$. 
+    
+    I will prove that $\mathbb{R}^2\setminus \{\vec 0\}$ is path connected which implies that $\mathbb R \setminus \{a\}$ is  connected. Let $\vec{x},\vec{y}\in \mathbb{R}^2\setminus \{\vec{0}\}$. 
+    
+    Then consider the function $f:[0,1]\to \mathbb{R}^2\setminus \{\vec{0}\}$ where if for all $t\in [0,1]$ we have $\vec{x}(1-t)+t\cdot  \vec{y}\not = \vec 0$ then $f(t)=\vec{x}(1-t)+t(\vec{y})$ otherwise 
+    \begin{equation}
+        f(t)=\begin{cases}
+            \vec{a}(1-2t)+2t (\vec{b}-(0,1)) & \text{ if } t\in [0,1/2]\\
+            (2-2t)(\vec b - (0,1))+ (2t-1)\vec b & \text{ if } t \in (1/2,1]
+        \end{cases}
+    \end{equation}
+
+    The fact that $f$ does not intersect the origin is clear for the first case in the definition of the function. For the second we would have that the line that intersects the two points $\vec{a},\vec{b}$ would also intersect $\vec{0}$ hence we get that the line that intersects $\vec{a},(\vec{b}-(0,1))$ would not intersect $\vec{0}$. Using similar reasoning we get the line that intersects 
+
+
+
+\end{proof}
+
 
 
 \vspace{.15in}
