@@ -113,8 +113,13 @@ No the function $f:[0,1)\to [0,1)$ where $f(x)=\frac{1}{2}x+\frac{1}{10}$ is a c
 {\bfseries a.} Suppose that $X$ is homeomorphic to $[0,1]$. Must any continuous $\phi : X \rightarrow X$ have a fixed point? Prove that your answer is correct. {\bfseries Comment.} Examples of such $X$'s include curves that are images of imbeddings of $[0,1]$ in higher dimensional Euclidean spaces. I mention that just to show that this question has substance, not because such examples necessarily help you answer the question. 
 
 \vspace{.1in}
-{\bfseries b.} Show that there is a continuous map $f : [-2, -1] \bigcup  \ [1,2] \rightarrow [-2, -1] \bigcup \ [1,2]$ that has no fixed point. {\bfseries Something to think about.} Again nothing written expected. Regarding the guarantee of existence of a fixed point, what was the crucial difference between the space in 2.a and the space in 3.b? 2.b and 3.a suggest that topology matters, as does compactness, but 3.b shows that compactness alone is not sufficient. The unit circle in the plane provides another example of a compact space on which continuous maps from the space to itself need not have fixed points. A rotation such as a quarter-turn is continuous and has no fixed point. The antipodal map from the circle to the circle that takes each $\vec{p}$ to $-\vec{p}$ also is continuous but without a fixed point. If we try to extend either of these map constructions to the unit disk in the plane, we realize that we encounter a fixed point at the origin, so we're left with the same question for the disk that we had for the square.  if there are topological conditions that force the existence of fixed points, they may have to distinguish between the circle and the disk. 
+{\bfseries b.} Show that there is a continuous map $f : [-2, -1] \bigcup  \ [1,2] \rightarrow [-2, -1] \bigcup \ [1,2]$ that has no fixed point.  
 
+\begin{proof}
+    Consider the function $f:[-2,-1]\bigcup [1,2]\to [-2,-1]\bigcup [1,2]$ defined by the equation $f(x)=-x$. 
+
+    Now to show that $f$ is continuous. Let $U$ be an arbitrary basis element of $[-2,-1]\bigcup [1,2]$ then $f^{-1}(U)=\{-u:u\in U\}$ which is open in $[-2,-1]\bigcup [1,2]$ hence $f$ is continuous. The fact that $f$ does not have any fixed points is due to the domain not including $0$ as all other points switch their signs. 
+\end{proof}
 
 \vspace{.15in}
 \noindent
