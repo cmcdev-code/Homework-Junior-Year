@@ -79,7 +79,7 @@
 
     The fact that $f$ does not intersect the origin is clear for the first case in the definition of the function. For the second we would have that the line that intersects the two points $\vec{a},\vec{b}$ would also intersect $\vec{0}$ hence we get that the line that intersects $\vec{a},(\vec{b}-(0,1))$ would not intersect $\vec{0}$. Using similar reasoning we get the line that intersects $(\vec{b}-(0,1)),\vec{b}$ does not intersect the origin. 
 
-    We have that each of the piecewise definitions of $f$ are continuos on their respective domains hence by  the pasting lemma we get $f$ is continuous. This implies that $\mathbb R^2 \setminus \{\vec 0\}$ is path connected which implies that it is connected. But we have $\mathbb{R}\setminus \{a\}$ is not connected as we have the separation  $(-\infty,a),(a,\infty)$ as homeomorphisms preserve connectedness we get that no such homeomorphism exists.
+    We have that each of the piecewise definitions of $f$ are continuous on their respective domains hence by  the pasting lemma we get $f$ is continuous. This implies that $\mathbb R^2 \setminus \{\vec 0\}$ is path connected which implies that it is connected. But we have $\mathbb{R}\setminus \{a\}$ is not connected as we have the separation  $(-\infty,a),(a,\infty)$ as homeomorphisms preserve connectedness we get that no such homeomorphism exists.
 
 
 
@@ -94,6 +94,10 @@
 \subsection*{2.} 
 
 {\bfseries a.}  Show that any continuous map $f : [0,1] \rightarrow [0,1]$ has a fixed point, by which I mean a point $x$ for which $f(x) = x$. {\bfseries Hint.} Consider the function $F(x) = f(x) - x$. {\bfseries Something to think about.} Is the same result true for continuous maps $[0,1] \times [0,1] \rightarrow [0,1] \times [0,1]$? I am asking you to think briefly about, not write an answer to, this question about the square. It may be instructive to explore briefly the challenges of trying to extend the interval result to the product. 
+
+\begin{proof}
+    Assume that there exists a continuous function $f:[0,1]\to [0,1]$ that has no fixed points and consider the function $F(x)=f(x)-x$. We have that $F$ is continuous and as $F(0)=f(0)-0>0$ and $F(1)=f(1)-1<0$ we have by the intermediate value theorem that there exists $r\in [0,1]$ such that $F(r)=0=f(r)-r$ which implies $f(r)=r$ which is a contradiction. So we have all continuous functions $f:[0,1]\to [0,1]$ have a fixed point.
+\end{proof}
 
 \vspace{.1in}
 {\bfseries b.} Is it true that any continuous $g : [0,1) \rightarrow [0,1)$ must have a fixed point? Show that your answer is correct. {\bfseries Aside.} Consider (but you need not write): if you provide an example to show that the answer is no, why does your example not extend to contradict what you proved in part a?
