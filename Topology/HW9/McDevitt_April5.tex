@@ -110,7 +110,17 @@ No the function $f:[0,1)\to [0,1)$ where $f(x)=\frac{1}{2}x+\frac{1}{10}$ is a c
 \subsection*{3.}
 
 \vspace{.1in}
-{\bfseries a.} Suppose that $X$ is homeomorphic to $[0,1]$. Must any continuous $\phi : X \rightarrow X$ have a fixed point? Prove that your answer is correct. {\bfseries Comment.} Examples of such $X$'s include curves that are images of imbeddings of $[0,1]$ in higher dimensional Euclidean spaces. I mention that just to show that this question has substance, not because such examples necessarily help you answer the question. 
+{\bfseries a.} Suppose that $X$ is homeomorphic to $[0,1]$. Must any continuous $\phi : X \rightarrow X$ have a fixed point? 
+
+
+
+
+Yes this is true.
+\begin{proof}
+    Assume that $X$ is homeomorphic to $[0,1]$ with homeomorphism $h:[0,1]\to X$ and suppose that $\phi : X\to X$ is an arbitrary continuous function. Then we have the function $h^{-1}\circ \phi \circ h:[0,1]\to [0,1] $ is a continuous function hence it has a fixed point $x_0\in [0,1]$. This implies that $h(x_0)$ is a fixed point of $\phi$ which follows from $h\circ h^{-1}\circ \phi \circ h(x_0)=h(x_0)\implies \phi \circ h(x_0)=h(x_0)$. This shows that all continuous functions $\phi:X\to X$ have a fixed point.
+\end{proof}
+
+
 
 \vspace{.1in}
 {\bfseries b.} Show that there is a continuous map $f : [-2, -1] \bigcup  \ [1,2] \rightarrow [-2, -1] \bigcup \ [1,2]$ that has no fixed point.  
