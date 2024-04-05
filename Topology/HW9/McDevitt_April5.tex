@@ -151,12 +151,13 @@ Yes this is true.
     Suppose that $X$ is a Hausdorff topological space and $C,K$ are compact subspaces of $X$. 
     
    
-    For $c_0 \in C$ we have that that for each $k\in K$ that there are two disjoint neighborhoods $k\in V_k$ and $c_0\in U_k$ we have that $\{V_k:k\in K\}$ is a cover of $K$.
+    For $c_0 \in C$ we have that that for each $k\in K$ that there are two disjoint neighborhoods $k\in V_k$ and $c_0\in U_k$ we have that $\{V_k:k\in K\}$ is a cover of $K$ (this cover is created from the neighborhoods of elements of $K$ which are disjoint with some neighborhood of a fixed element of $C$).
     
-    Now as as $K$ is compact we have that $\{V_k:k\in K\}$ has a finite subcover $K\subset V_{c_0}:= V_{k_1}\cup ... \cup V_{k_n}$ and $c_0\in U_{c_o}:=U_{k_1}\cap ...\cap U_{k_n}$. We have that $V_{c_0}\cap U_{c_0}$ which follows because each $V_{k_i}$ is disjoint from its corresponding $U_{k_i}$ and so $V_{c_0}$ is disjoint from $U_{c_0}$.
+    Now as $K$ is compact we have that $\{V_k:k\in K\}$ has a finite subcover $K\subset \mathcal V_{c_0}:= V_{k_1}\cup ... \cup V_{k_n}$ and $c_0\in \mathcal U_{c_o}:=U_{k_1}\cap ...\cap U_{k_n}$ where each $c_0\in U_{k_i}$ is the corresponding disjoint set of $V_{k_i}$. 
+    
+    We have that $\mathcal V_{c_0}\cap \mathcal U_{c_0}=\emptyset$ which follows because each $V_{k_i}$ is disjoint from its corresponding $U_{k_i}$ and so $V_{c_0}$ is disjoint from $U_{c_0}$.
 
-
-    Then take the cover $\{V_c: c\in C\}$ and $\{U_c: c\in K\}$ of $C$ and $K$ respectively. We have that $C$ is compact hence there exists a finite subcover $C\subset V_{c_1}\cup...\cup V_{c_n}$ and we have from the definition of $U_c$ each contains $K$ so $K\subset U_{c_1}\cap ...\cap U_{c_n}$. Then as each $V_{c_i}$ is disjoint from the corresponding $U_{c_i}$ we get that $\big (V_{c_1}\cup...\cup V_{c_n} \big )\bigcap \big (U_{c_1}\cap ...\cap U_{c_n} \big )=\emptyset$
+    Then take the cover $\{\mathcal V_c: c\in C\}$ and $\{\mathcal U_c: c\in K\}$ of $C$ and $K$ respectively. We have that $C$ is compact hence there exists a finite subcover $C\subset \mathcal V_{c_1}\cup...\cup \mathcal V_{c_n}$ and we have from the definition of $\mathcal U_c$ each contains $K$ so $K\subset \mathcal U_{c_1}\cap ...\cap \mathcal U_{c_n}$. Then as each $\mathcal V_{c_i}$ is disjoint from the corresponding $\mathcal U_{c_i}$ we get that $\big (\mathcal V_{c_1}\cup...\cup \mathcal V_{c_n} \big )\bigcap \big (\mathcal U_{c_1}\cap ...\cap \mathcal U_{c_n} \big )=\emptyset$
     
 
 
