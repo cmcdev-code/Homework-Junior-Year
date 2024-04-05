@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712270221 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW9/McDevitt_April5.tex" "McDevitt_April5.pdf" "McDevitt_April5" 1712270221 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW9/McDevitt_April5.tex" 1712270220 10107 a0979f0d99b4fbedb4fc8995d061e1c6 ""
+["pdflatex"] 1712281093 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW9/McDevitt_April5.tex" "McDevitt_April5.pdf" "McDevitt_April5" 1712281093 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW9/McDevitt_April5.tex" 1712281093 11347 4c1b40c892a50844a30b4d0379992ac1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -23,6 +23,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
@@ -49,8 +50,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "McDevitt_April5.aux" 1712270221 1037 f16d3f3ab88baeaa5a31b9be1a4133c8 "pdflatex"
-  "McDevitt_April5.tex" 1712270220 10107 a0979f0d99b4fbedb4fc8995d061e1c6 ""
+  "McDevitt_April5.aux" 1712281093 1037 e0e82861f21eba9f7037d29ff0478535 "pdflatex"
+  "McDevitt_April5.tex" 1712281093 11347 4c1b40c892a50844a30b4d0379992ac1 ""
   (generated)
   "McDevitt_April5.aux"
   "McDevitt_April5.log"
