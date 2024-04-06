@@ -1,7 +1,7 @@
 /* 
  * CS:APP Data Lab 
  * 
- * <Please put your name and userid here>
+ * Collin McDevitt cmcdev
  * 
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -161,32 +161,10 @@ NOTES:
  *   Rating: 1
  */
 
-#include <stdio.h>
-#include <stdlib.h>
 int bitXor(int x, int y) {
-
    // xor is equivalent to ~x&y | x&~y the expresion bellow is equivalent to that by using De Morgan's laws 
    //because we can't use | 
   return ~(~(~x&y) & ~(x&~y));
-}
-
-
-
-void intToBinary(int num, char *binary) {
-    int i = 0;
-    // Size of an integer in bits
-    int size = sizeof(int) * 8;
-    
-    // Loop through each bit
-    for (i = size - 1; i >= 0; i--) {
-        // Check if the current bit is set or not
-        if ((num >> i) & 1)
-            binary[size - 1 - i] = '1';
-        else
-            binary[size - 1 - i] = '0';
-    }
-    // Null-terminate the string
-    binary[size] = '\0';
 }
 
 
@@ -233,31 +211,7 @@ int fitsBits(int x, int n) {
    return !(~x & mask) | !(x & mask);
 }
 
-int test_fitsBits(int x, int n)
-{
-  int TMin_n = -(1 << (n-1));
-  // This convoluted way of generating TMax avoids overflow
-  int TMax_n = (int) ((1u << (n-1)) - 1u);
-  return x >= TMin_n && x <= TMax_n;
-}
 
-int main() {
-
-   for(int i = -100000; i < 10000; ++i) {
-      for(int j = 2; j<32; j ++){
-         if(fitsBits(i, j) != test_fitsBits(i, j)){
-          printf("fitsBits(%d, %d) = %d\n", i, j, fitsBits(i, j));
-          printf("test_fitsBits(%d, %d) = %d\n ____________ \n\n\n", i, j, test_fitsBits(i, j) );
-         }
-      }
-   }
-
-
-   int i = 0;
-   printf("%d is" , !i);
-
-    return 0;
-}
 
 //3
 /* 
@@ -268,9 +222,23 @@ int main() {
  *   Max ops: 25
  *   Rating: 3 
  */
+
 int rotateRight(int x, int n) {
-  return 2;
+   //Works by storing the first n bits of x by shifting them over to the left 
+   // Then shift over bits of x to the right and use the mask to ensure that the bits are filled in with 0 
+   // Which  allows us to use or to place in the stored bits 
+
+
+   //This is here because i need for the bit's that are filled in by the shift to be 0 
+   int mask = (~0)^(1<<31);
+   //This is getting the first n bits of x and putting them at the end and filling the rest with 0's
+   int temp = x<<(32+ ~n+1);
+
+   //the (x>>n) & mask>>(n+~0) is ensuring that the bits when right shifted are 0 and then
+   //I can just use or and the temp will be placed there
+return ((x>>n ) & (mask>>(n+~0)))| temp;
 }
+
 //4
 /*
  * bitReverse - Reverse bits in a 32-bit word
@@ -281,5 +249,47 @@ int rotateRight(int x, int n) {
  *   Rating: 4
  */
 int bitReverse(int x) {
-    return 2;
+
+
+      //I came up with another solution that used about 60 operators but it was harder to understand and if I am already over the limit 
+      //I would rather have the solution be more readable.
+
+
+      //This just grabs all the bits of the number stores them and swaps them in the return statement by controlling the shift
+      int bit_0= x& 1;
+      int bit_1= (x>>1) & 1;
+      int bit_2= (x>>2) & 1;
+      int bit_3= (x>>3) & 1;
+      int bit_4= (x>>4) & 1;
+      int bit_5= (x>>5) & 1;
+      int bit_6= (x>>6) & 1;
+      int bit_7= (x>>7) & 1;
+      int bit_8= (x>>8) & 1;
+      int bit_9= (x>>9) & 1;
+      int bit_10= (x>>10) & 1;
+      int bit_11= (x>>11) & 1;
+      int bit_12= (x>>12) & 1;
+      int bit_13= (x>>13) & 1;
+      int bit_14= (x>>14) & 1;
+      int bit_15= (x>>15) & 1;
+      int bit_16= (x>>16) & 1;
+      int bit_17= (x>>17) & 1;
+      int bit_18= (x>>18) & 1;
+      int bit_19= (x>>19) & 1;
+      int bit_20= (x>>20) & 1;
+      int bit_21= (x>>21) & 1;
+      int bit_22= (x>>22) & 1;
+      int bit_23= (x>>23) & 1;
+      int bit_24= (x>>24) & 1;
+      int bit_25= (x>>25) & 1;
+      int bit_26= (x>>26) & 1;
+      int bit_27= (x>>27) & 1;
+      int bit_28= (x>>28) & 1;
+
+      int bit_29= (x>>29) & 1;
+      int bit_30= (x>>30) & 1;
+      int bit_31= (x>>31) & 1;
+
+      return (bit_0<<31) | (bit_1<<30) | (bit_2<<29) | (bit_3<<28) | (bit_4<<27) | (bit_5<<26) | (bit_6<<25) | (bit_7<<24) | (bit_8<<23) | (bit_9<<22) | (bit_10<<21) | (bit_11<<20) | (bit_12<<19) | (bit_13<<18) | (bit_14<<17) | (bit_15<<16) | (bit_16<<15) | (bit_17<<14) | (bit_18<<13) | (bit_19<<12) | (bit_20<<11) | (bit_21<<10) | (bit_22<<9) | (bit_23<<8) | (bit_24<<7) | (bit_25<<6) | (bit_26<<5) | (bit_27<<4) | (bit_28<<3) | (bit_29<<2) | (bit_30<<1) | (bit_31<<0);
+
 }
