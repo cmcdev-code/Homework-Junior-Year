@@ -209,15 +209,27 @@ int fitsBits(int x, int n) {
    //digits i.e. the sign of the number. 
 
    //A high level overview of the function is that we check if all the digits past the n-th digit are the same 
-   //I accomplish that by creating a mask that is left shifted by n-1  
+   //I accomplish that by creating a mask that is left shifted by n-1 (the reason for n-1 instead of 1 is because the n'th bit denotes the sign ) 
+   //Then there are two 'branches' that deal with weather the number is positive or negative 
    
+
+
    int negative_1= ~0;
    
-   
+   //The mask- due to what was said above we only need to examine weather all 
+   //bits past n-1 are the same 
    int mask = negative_1<<(n+negative_1);
+
    
 
+   //4 cases here either x is negative or positive
+   //if it is positive and does not fit then (~x & mask) will be 1 note that this should always give 1 if x is positive 
+   //and (x& mask) will overlap hence 1 as well 
+   //The case for when x is negative is essentially the same 
 
+
+   //Now if x is positive and fits we would have mask not overlap anywhere hence (x & mask )==0
+   //Which after we take ! would be ! the other case where x is negative is again essentially the same due to the symmetry 
    return !(~x & mask) | !(x & mask);
 }
 
