@@ -164,8 +164,14 @@ NOTES:
 #include <stdio.h>
 #include <stdlib.h>
 int bitXor(int x, int y) {
+
+   // xor is equivalent to ~x&y | x&~y the expresion bellow is equivalent to that by using De Morgan's laws 
+   //because we can't use | 
   return ~(~(~x&y) & ~(x&~y));
 }
+
+
+
 void intToBinary(int num, char *binary) {
     int i = 0;
     // Size of an integer in bits
@@ -195,7 +201,24 @@ void intToBinary(int num, char *binary) {
  *   Rating: 2
  */
 int fitsBits(int x, int n) {
-  return !!(~((x | 1 >> 31)>>(n)));
+   //This works off the fact that in signed integer representation that 
+   //All numbers to the left of some point in the digit will be the same. 
+   //e.g. -10 = 1111 0110 as we can see there is 4 repeated 1's on the 'left' side
+   // Similar for the case when it is positive we have 10= 0000 1010 this tells us that we only 
+   //Need 5 digits to represent the number 4 for the right side and a single 1 or 0 to represent the repeated
+   //digits i.e. the sign of the number. 
+
+   //A high level overview of the function is that we check if all the digits past the n-th digit are the same 
+   //I accomplish that by creating a mask that is left shifted by n-1  
+   
+   int negative_1= ~0;
+   
+   
+   int mask = negative_1<<(n+negative_1);
+   
+
+
+   return !(~x & mask) | !(x & mask);
 }
 
 int test_fitsBits(int x, int n)
@@ -207,25 +230,20 @@ int test_fitsBits(int x, int n)
 }
 
 int main() {
-  
-   for(int i = -5; i < 5; i++) {
-    for(int j = 1 ; j <32; j++) {
 
-         if(fitsBits(i,j) == test_fitsBits(i,j)) {
-            printf("WORKS HERE  %d\n",fitsBits(i,j));
-            char binary[33];
-            intToBinary(i, binary);
-
-            printf("Binary: %s\n", binary);
-
-         } else {
-            printf("fitsBits(%d,%d) = %d\n",i,j,fitsBits(i,j));
-            printf("test_fitsBits(%d,%d) = %d\n",i,j,test_fitsBits(i,j));
-        
+   for(int i = -100000; i < 10000; ++i) {
+      for(int j = 2; j<32; j ++){
+         if(fitsBits(i, j) != test_fitsBits(i, j)){
+          printf("fitsBits(%d, %d) = %d\n", i, j, fitsBits(i, j));
+          printf("test_fitsBits(%d, %d) = %d\n ____________ \n\n\n", i, j, test_fitsBits(i, j) );
          }
-
       }
    }
+
+
+   int i = 0;
+   printf("%d is" , !i);
+
     return 0;
 }
 
