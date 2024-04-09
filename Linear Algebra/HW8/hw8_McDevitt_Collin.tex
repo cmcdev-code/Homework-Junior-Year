@@ -1,0 +1,143 @@
+%===========================================================
+% do not change this formatting please :-)
+%===========================================================
+\documentclass[letter,12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amssymb,amsmath,amsthm,bm,enumitem,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
+\def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
+\fancyhead{}
+\fancyhead[L]{Collin McDevitt } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[C]{MATH 3144 HOMEWORK 08}
+\fancyhead[R]{PAGE \thepage}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\honorcode}
+\date{\today}
+%===========================================================
+% convenient commands -- feel free to add more as you see fit
+%===========================================================
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Lin}{\mathcal{L}}
+\newcommand{\Mat}{\mathcal{M}}
+\newcommand{\Poly}{\mathcal{P}}
+\newcommand{\Bas}{\mathcal{B}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\dotp}{\boldsymbol{\cdot}}
+\newcommand{\Span}{\operatorname{Span}}
+\newcommand{\Null}{\operatorname{Null}}
+
+
+
+\begin{document}
+\pagestyle{fancy}
+%===========================================================
+%===========================================================
+
+
+%===========================================================
+% PROBLEM 1
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 1.} Let $U$ be the subset of $\Poly_3(\R)$ given by
+  $$U = \left\{ p \in \Poly_3(\R) \; : \; p(0)=p(1) \right\}.$$
+  Define the function
+  \begin{align*}
+    & \alpha: U \times U \rightarrow \R \\
+    & \alpha(p,q) = \int_0^1 p(x) q'(x)\, dx
+  \end{align*}
+  \begin{enumerate}
+  \item Prove that $\alpha$ is an alternating bilinear form.
+  \item Find the matrix $\Mat(\alpha,\Bas)$ for $\alpha$ with respect to the following basis
+    $$\Bas = \left\{ x^3 - x, \, x^2 - x, \, 1 \right\}$$
+  \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+
+
+
+\begin{proof}
+First I will show that $\alpha$ (as defined above) is a bilinear form. 
+
+First fix some $p \in U$ then for any $q_1,q_2 \in U$ and $\lambda \in \R$ we have 
+
+\begin{align*}
+    \alpha(p,\lambda q_1 +q_2)&=\int _0 ^1 p(x)(\lambda q_1 +q_2)^\prime(x) dx\\
+    &= \int_0^1 p(x)\lambda q_1^\prime(x)+p(x)q_2^\prime(x)dx\\
+    &= \lambda \int_0^1 p(x)q_1^\prime(x)dx + \int_0^1 p(x)q_2^\prime(x)dx\\
+    &= \lambda \alpha(p,q_1) + \alpha(p,q_2)
+\end{align*}
+
+Now fix some $q \in U$ then for any $p_1,p_2 \in U$ and $\lambda \in \R$ we have
+\[
+    \alpha (\lambda p_1 +p_2,q)= \int _0 ^1 (\lambda p_1 +p_2)(x)q^\prime(x)dx
+\]
+Using the same logic as above we get $\alpha (\lambda p_1 +p_2,q)=\lambda \alpha (p_1,q)+\alpha(p_2,q)$. 
+Hence we have that $\alpha$ is a bilinear form.
+
+Now let $p\in U$ then we have 
+\begin{align*}
+\alpha(p,p)& = \int_0^1 p(x)p^\prime(x)dx\\
+&= \frac{1}{2}p(x)^2 \Big|_0^1\\
+&= \frac{1}{2}\big (p(1)^2 - p(0)^2\big )\\   
+&= 0 
+\end{align*}
+
+Hence we get that it is an alternating bilinear form.
+
+
+
+\end{proof}
+
+
+
+%===========================================================
+% SOLUTION 1
+%===========================================================
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 2
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 2.} If $V$ and $W$ are $\K$-vector spaces, observe that the Cartesian $V \times W$ is a $\K$-vector space with the following addition and scalar multiplication operations:
+  $$(\mathbf{v_1},\mathbf{w_1})+(\mathbf{v_2},\mathbf{w_2}) = (\mathbf{v_1}+\mathbf{v_2},\mathbf{w_1}+\mathbf{w_2}) \qquad \text{ and } \qquad k(\mathbf{v},\mathbf{w}) = (k \mathbf{v}, k \mathbf{w}).$$
+  Show that, in general, a bilinear form $\beta \in V^{(2)}$ is \underline{not} a linear functional, $\Lin(V \times V, \K)$.
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 2
+%===========================================================
+
+
+\newpage
+
+
+%===========================================================
+% PROBLEM 3
+%===========================================================
+\begin{tcolorbox}
+  \textbf{Problem 3.} The notion of a bilinear form can be extended to a \textbf{bilinear map} in the following way: Let $U,V,W$ be $\K$-vector spaces. The function $\Gamma: V \times W \rightarrow U$ is a bilinear map if it satisfies the following: for all scalars $k$ and vectors $\mathbf{v}, \mathbf{w}$:
+  $$\Gamma(\mathbf{v_1}+\mathbf{v_2},\mathbf{w}) = \Gamma(\mathbf{v_1},\mathbf{w}) + \Gamma(\mathbf{v_2},\mathbf{w}) \qquad \text{ and } \qquad \Gamma(k \mathbf{v},\mathbf{w}) = k \Gamma(\mathbf{v},\mathbf{w}),$$
+  $$\Gamma(\mathbf{v},\mathbf{w_1}+\mathbf{w_2}) = \Gamma(\mathbf{v},\mathbf{w_1}) + \Gamma(\mathbf{v},\mathbf{w_2}) \qquad \text{ and } \qquad \Gamma(\mathbf{v},k \mathbf{w}) = k \Gamma(\mathbf{v},\mathbf{w}).$$
+  \begin{enumerate}
+  \item Go find your old multivariable calculus textbook and look up the definition of the cross product on $\R^3$.
+  \item Prove that $\Gamma: \R^3 \times \R^3 \rightarrow \R^3$ given by
+    $$\Gamma(\mathbf{v},\mathbf{w}) = \underbrace{\mathbf{v} \times \mathbf{w}}_{\text{cross product}}$$
+    is a bilinear map.
+  \item A bilinear map $\Gamma: V \times V \rightarrow U$ is said to be \textbf{alternating} if $\Gamma(\mathbf{v},\mathbf{v}) = \mathbf{0}$ for all $\mathbf{v}$. Prove that the cross product map above is alternating.
+  \end{enumerate}
+\end{tcolorbox}
+\vskip1em
+
+%===========================================================
+% SOLUTION 3
+%===========================================================
+
+
+\end{document}

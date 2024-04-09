@@ -24,7 +24,7 @@ arith:
 								//z=zero extend
 								//wl=word into long
 	movl	%eax, -12(%rbp)		//create local variable t3
-	movl	-8(%rbp), %eax
+	movl	-8(%rbp), %eax		//
 	imull	-12(%rbp), %eax
 	movl	%eax, -16(%rbp)
 	movl	-16(%rbp), %eax
