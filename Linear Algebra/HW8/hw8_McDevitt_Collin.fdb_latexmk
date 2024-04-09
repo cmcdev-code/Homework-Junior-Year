@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712693861 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW8/hw8_McDevitt_Collin.tex" "hw8_McDevitt_Collin.pdf" "hw8_McDevitt_Collin" 1712693861 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW8/hw8_McDevitt_Collin.tex" 1712693860 5810 510427739568dbbf6fe00e3c9d5a2c6e ""
+["pdflatex"] 1712695782 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW8/hw8_McDevitt_Collin.tex" "hw8_McDevitt_Collin.pdf" "hw8_McDevitt_Collin" 1712695783 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW8/hw8_McDevitt_Collin.tex" 1712695782 6504 de7311076316b5a35d7ea4be1c538cf4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -34,6 +34,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1248133631 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -138,8 +139,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "hw8_McDevitt_Collin.aux" 1712693861 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "hw8_McDevitt_Collin.tex" 1712693860 5810 510427739568dbbf6fe00e3c9d5a2c6e ""
+  "hw8_McDevitt_Collin.aux" 1712695783 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "hw8_McDevitt_Collin.tex" 1712695782 6504 de7311076316b5a35d7ea4be1c538cf4 ""
   (generated)
   "hw8_McDevitt_Collin.aux"
   "hw8_McDevitt_Collin.log"

@@ -91,6 +91,23 @@ Hence we get that it is an alternating bilinear form.
 \end{proof}
 
 
+Now finding the matrix $\Mat (\alpha ,\Bas)$ I will say that $b_1=x^3-x,\;\; b_2 =x^2-x,\;\;b_3=1$. We have immediately that $\alpha(b_i,b_3)=0$ for $i\in \{1,2,3\}$ additionally as this is an alternating form we get $\alpha(b_i,b_i)=0$ and we also get $\alpha(b_i,b_j)=-\alpha(b_j,b_i)$ by Theorem 9.16. Hence we only need to examine the values of $\alpha(b_1,b_2)$
+
+\begin{align*}
+    \alpha(b_1,b_2)&= \int_0^1(x^3-x)(x^2-x)^\prime dx\\
+    &= \int_0^1(x^3-x)(2x-1)dx\\
+    &= \int_0^1 2x^4-x^3-2x^2+xdx\\
+    &= \frac{2}{5}x^5-\frac{1}{4}x^4-\frac{2}{3}x^3+\frac{1}{2}x^2\Big|_0^1\\
+    &= \frac{2}{5}-\frac{1}{4}-\frac{2}{3}+\frac{1}{2}\\
+    &= -\frac{1}{60}
+\end{align*}
+
+Hence we get the matrix \[\Mat(\alpha ,\Bas)=\begin{pmatrix}
+    0 & -\frac{1}{60} & 0\\
+    \frac{1}{60} & 0 & 0\\
+    0 & 0 & 0
+\end{pmatrix}\]
+
 
 %===========================================================
 % SOLUTION 1
@@ -108,11 +125,11 @@ Hence we get that it is an alternating bilinear form.
   $$(\mathbf{v_1},\mathbf{w_1})+(\mathbf{v_2},\mathbf{w_2}) = (\mathbf{v_1}+\mathbf{v_2},\mathbf{w_1}+\mathbf{w_2}) \qquad \text{ and } \qquad k(\mathbf{v},\mathbf{w}) = (k \mathbf{v}, k \mathbf{w}).$$
   Show that, in general, a bilinear form $\beta \in V^{(2)}$ is \underline{not} a linear functional, $\Lin(V \times V, \K)$.
 \end{tcolorbox}
-\vskip1em
 
-%===========================================================
-% SOLUTION 2
-%===========================================================
+
+
+
+\vskip1em
 
 
 \newpage
