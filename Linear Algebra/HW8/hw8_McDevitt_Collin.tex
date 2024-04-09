@@ -126,7 +126,19 @@ Hence we get the matrix \[\Mat(\alpha ,\Bas)=\begin{pmatrix}
   Show that, in general, a bilinear form $\beta \in V^{(2)}$ is \underline{not} a linear functional, $\Lin(V \times V, \K)$.
 \end{tcolorbox}
 
+Let $\beta\in V^{(2)}$ and $(a_1,b_1),(a_2,b_2)\in V\times V$ then if $\beta$ where linear we would have 
+\begin{align*}
+    \beta((a_1,b_1)+(a_2,b_2))&=\beta(a_1+a_2,b_1+b_2)\\
+    &=\beta(a_1+a_2,b_1)+\beta(a_1+a_2,b_2)\\
+    &=\beta(a_1,b_1)+\beta(a_2,b_1)+\beta(a_1,b_2)+\beta(a_2,b_2)
+\end{align*}
+We only get the equality $ \beta((a_1,b_1)+(a_2,b_2))=\beta((a_1,b_1))+\beta((a_2,b_2))$ if and only if $\beta(a_2,b_1)+\beta(a_1,b_2)=0$. 
 
+Now let $(a,b)\in V\times V$ and $\lambda \in \K$ then we have 
+\[
+    \beta(\lambda(a,b))=\beta(\lambda a,\lambda b)=\lambda \beta(a,\lambda b)=\lambda^2 \beta(a,b)
+\]
+Hence we only get the equality $\beta(\lambda(a,b))=\lambda \beta ((a,b))$ if and only if $\lambda = \lambda^2$ this doesn't hold for all the scalars hence it is not linear. 
 
 
 \vskip1em
