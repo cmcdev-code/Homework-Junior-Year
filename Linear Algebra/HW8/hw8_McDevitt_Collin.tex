@@ -164,9 +164,50 @@ Hence we only get the equality $\beta(\lambda(a,b))=\lambda \beta ((a,b))$ if an
 \end{tcolorbox}
 \vskip1em
 
-%===========================================================
-% SOLUTION 3
-%===========================================================
+(1) Stewart's Calculus book defines it as 
+\begin{tcolorbox}
+If $\mathbf{a}=\langle a_1, a_2,a_3\rangle$ and $\mathbf{b}=\langle b_1,b_2,b_3\rangle$, then the \textbf{cross product} of $\mathbf{a}$ and $\mathbf{b}$ is the vector 
+\[
+    \mathbf{a}\times \mathbf{b}=\langle a_2b_3 - a_3b_2,a_3 b_1 -a_1b_3 ,a_1b_2-a_2b_1 \rangle
+\]
+\end{tcolorbox}
+
+(2) Let $a=(a_1,a_2,a_3),b=(b_1,b_2,b_3),c=(c_1,c_2,c_3)\in \R^3$ and $\Gamma$ be the cross product map. Then we have 
+
+   \[ \Gamma((a_1,a_2,a_3)+(b_1,b_2,b_3),(c_1,c_2,c_3))=\]
+
+   \[ ((a_2+b_2)c_3-(a_3+b_3)c_2,(a_3+b_3)c_1-(a_1+b_1)c_3,(a_1+b_1)c_2-(a_2+b_2)c_1)\]
+
+   distributing the $c_i$'s we get the equality
+   \[
+    (a_2c_3-a_3c_2,a_3c_1-a_1c_3,a_1c_2-a_2c_1)+(b_2c_3-b_3c_2,b_3c_1-b_1c_3,b_1c_2-b_2c_1)
+   \]
+    which is equal to $\Gamma(a,c)+\Gamma(b,c)$ hence we get the first condition.
+
+    Now 
+    \[
+        \Gamma((a_1,a_2,a_3),(b_1,b_2,b_3)+(c_1,c_2,c_3))=
+    \]
+    \[
+        (a_2(b_3+c_3)-a_3(b_2+c_2),a_3(b_1+c_1)-a_1(b_3+c_3),a_1(b_2+c_2)-a_2(b_1+c_1))
+    \]
+    distributing each $a_i$ we get the equality
+    \[
+        (a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1)+(a_2c_3-a_3c_2,a_3c_1-a_1c_3,a_1c_2-a_2c_1)
+    \]
+    which is equal to $\Gamma(a,b)+\Gamma(a,c)$ hence we have the second condition satisfied.
+    
+    Now let $k\in K$  then we have 
+    \begin{align}
+        \Gamma(k(a_1,a_2,a_3),(b_1,b_2,b_3))&=  (ka_2b_3-ka_3b_2,ka_3b_1-ka_1b_3,ka_1b_2-ka_2b_1)\\
+        &= k(a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1)\\
+        &= k\Gamma((a_1,a_2,a_3),(b_1,b_2,b_3))
+\end{align}
+Now as $\Gamma(a,kb)=(ka_2b_3-ka_3b_2,ka_3b_1-ka_1b_3,ka_1b_2-ka_2b_1)$ we get both $\Gamma(ka,b)=k\Gamma(a,b)=\Gamma(a,kb)$ hence we have completed all the conditions and so $\Gamma$ is a bilinear map.
+    
+
+    
+
 
 
 \end{document}
