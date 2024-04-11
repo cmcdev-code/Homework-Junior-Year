@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712872812 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" "McDevitt_Collin_Exam_2_Solutions.pdf" "McDevitt_Collin_Exam_2_Solutions" 1712872812 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" 1712872812 8237 30ccd0a8e965c7d8b73df8a841cad6db ""
+["pdflatex"] 1712873420 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" "McDevitt_Collin_Exam_2_Solutions.pdf" "McDevitt_Collin_Exam_2_Solutions" 1712873420 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" 1712873419 6464 7733714d329eac093c19951931dd28e8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -49,8 +49,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "McDevitt_Collin_Exam_2_Solutions.aux" 1712872812 670 a4c4221e4c61506eddad7d35d96b1efb "pdflatex"
-  "McDevitt_Collin_Exam_2_Solutions.tex" 1712872812 8237 30ccd0a8e965c7d8b73df8a841cad6db ""
+  "McDevitt_Collin_Exam_2_Solutions.aux" 1712873420 670 a4c4221e4c61506eddad7d35d96b1efb "pdflatex"
+  "McDevitt_Collin_Exam_2_Solutions.tex" 1712873419 6464 7733714d329eac093c19951931dd28e8 ""
   (generated)
   "McDevitt_Collin_Exam_2_Solutions.aux"
   "McDevitt_Collin_Exam_2_Solutions.log"

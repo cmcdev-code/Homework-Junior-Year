@@ -28,8 +28,10 @@
 \begin{document}
 
 
+Collin McDevitt 
+
 \noindent
-\subsection*{1.} Suppose that $X$ is a compact topological space and $f:X\to \mathbb R$ is a function, not necessarily continuous, with the following property: for each $x\in X$, there is an open neighborhood $U_x$ of $x$ and a constant $M_x$ such that, for all $z\in U_x,\: |f(z)|\leq M_x$. Show that there is a constant $M$ such that, for all $y\in X,\: |f(y)|\leq M$.
+\subsection*{1.} 
 
 \begin{proof}
     Suppose $X$ is a compact topological space and $f: X\to \mathbb R$ is as described. As $X$ is compact we have the open cover $\{U_x\}_{x\in X}$ where for each $U_x\in \{U_x\}_{x\in X}$ we have that there exists a constant $M_x$ such that for all $z\in U_x$ that $|f(z)|\leq M_x$. 
@@ -38,7 +40,6 @@
 \end{proof}
 
 \subsection*{2.}
-Suppose that $X$ is a topological space, that $C$ is a connected subset of $X$ and that, for each $\alpha$ in some index set $A$, $C_\alpha$ is a connected subset of $X$. Suppose also that, for every $\alpha \in A, C_\alpha \bigcap C\not = \emptyset$. Show that $C\bigcup\big(\bigcup_{\alpha \in A}C_\alpha \big)$ is connected.
 
 
 \begin{proof}
@@ -49,20 +50,19 @@ Suppose that $X$ is a topological space, that $C$ is a connected subset of $X$ a
     WLOG suppose $C\cup U$ then as $C\cap C_\alpha \not = \emptyset $ we get that $C_\alpha \subset U$. Hence we get $C\bigcup \big(\cup _{\alpha \in A}C_\alpha \big)\subset U$ and $\left(C\bigcup \big(U_{\alpha\in A} C_\alpha \big)\right) \bigcap V=\emptyset$ hence $V=\emptyset$ so this separation can not exist. So we have $C\bigcup \big( \cup _{\alpha \in A}C_\alpha \big)$ is connected. 
 \end{proof}
 
-\subsection*{3.} Give $\mathbb{R}$ its standard topology and give its subsets their subspace topologies.
+\subsection*{3.} 
 
 
 \begin{enumerate}[label=(\alph*)]
-    \item { Let $A$ be $\mathbb{R}$'s topological subspace $\{1/n: n\in \mathbb N\}$. Describe as explicitly as possible which subsets of $A$ are closed subsets of $A$.
+    \item {
         
 
 
-    We have that a set is closed if and only if it contains it's limit points. As any singleton in $\{1/n: n\in \mathbb{N}\}$ is ope. Which is shown as we have for any $1/n\in \{1/n:n\in \mathbb{N}\}$ we have that $(1/n-\epsilon, 1/n+\epsilon)$ for $\epsilon >0$ is open in $\mathbb{R}$ choosing a sufficiently small $\epsilon>0$ we get $(1/n-\epsilon,1/n+\epsilon)\cap \{1/n:n\in \mathbb{N}\}=\{1/n\}$. As the choice of $1/n$ was arbitrary we get that all singletons are open.
+    We have that a set is closed if and only if it contains it's limit points. As any singleton in $\{1/n: n\in \mathbb{N}\}$ is open. Which is shown as we have for any $1/n\in \{1/n:n\in \mathbb{N}\}$ we have that $(1/n-\epsilon, 1/n+\epsilon)$ for $\epsilon >0$ is open in $\mathbb{R}$ choosing a sufficiently small $\epsilon>0$ we get $(1/n-\epsilon,1/n+\epsilon)\cap \{1/n:n\in \mathbb{N}\}=\{1/n\}$. As the choice of $1/n$ was arbitrary we get that all singletons are open.
     
     Hence any $B\subset \{1/n: n\in \mathbb N\}$ we get that $B^\prime=\emptyset$ as for any $b\in \{1/n:n\in \mathbb N\}$ we have the neighborhood $\{b\}$ that doesn't intersect $B$ at any place other then possibly itself. Hence $B$ is closed as $B$ is arbitrary we have that all subsets are closed. 
     }
-    \item { Let $B$ be $\mathbb{R}$'s topological subspace $\{0\}\bigcup \{1/n: n\in \mathbb{N}\}$. Describe as explicitly as possible which infinite subsets of $B$ are closed subsets of $B$.
-        
+    \item { 
     
     
     We have that all singletons other then $\{0\}$ are open using the same reasoning as above. Hence $\{1/n: n\in \mathbb{N}\}$ is open so we get $\{1/n: n\in \mathbb{N}\}^c=\{0\}$ is closed. We have that all singletons are closed as any singleton other than $\{0\}$ don't have any limit points. As finite unions of closed sets are closed then all finite subsets are closed. 
@@ -73,7 +73,7 @@ Suppose that $X$ is a topological space, that $C$ is a connected subset of $X$ a
     }
 \end{enumerate}
 
-\subsection*{4.} Give the natural numbers $\mathbb{N}$ the topology in which the open sets are: the emptyset; all of $\mathbb N$; and, for each $k\in \mathbb N$, the set $U_k=\{n\in \mathbb{N}: n\leq k\}$. Using this topology on both the domain and range space of $f:\mathbb N\to \mathbb N$, show that $f$ is continuous if and only if, for all $m,n\in \mathbb{N}$ with $m<n,\; f(m)\leq f(n)$
+\subsection*{4.} 
 \begin{proof}
 
 
@@ -90,20 +90,15 @@ Suppose that $X$ is a topological space, that $C$ is a connected subset of $X$ a
 
 
 \subsection*{5.}
-Let $X$ be a first countable topological space, let $A$ be a subset of $X$, and let $c$ be in $A$'s closure. SHow that there exists a sequence $(a_n)$ of elements of $A$ that converge to $c$.
 
 
 \begin{proof}
     
     Let $X$ be a first countable topological space. Let $A\subset X$ and $c\in \overline A$. If $c\in A$ a constant sequence works hence assume that $c\in A^\prime$ but $c\not \in A$. We have the collection of neighborhoods $\{U_{c_i}\}_{i\in \mathbb{N}}$ of $c$ where any neighborhood $V$ of $c$ that for some $i\in \mathbb{N}$ that $U_{c_i}\subset V$.
 
-    Create the sequence where the n'th element is taken from $A\bigcap \big(\cap_{i=1}^n U_{c_i} \big)$. First to show that $A\bigcap \big(\cap_{i=1}^n U_{c_i} \big)\not = \emptyset$ for any $n\in \mathbb{N}$. As $\bigcap_{i=1}^nU_{c_i}$ is a finite intersection of nonempty open sets  ($c$ is in each) we have it is nonempty and open. As $c\in A^\prime$  then it intersects $A$ at some place other then itself. Hence not empty. 
+    Create the sequence $(a_n)$ where $a_n \in A\bigcap \big( \cap _{i=1}^n U_{c_i}\big)$. First to show that $A\bigcap \big(\cap_{i=1}^n U_{c_i} \big)\not = \emptyset$ for any $n\in \mathbb{N}$. As $\bigcap_{i=1}^nU_{c_i}$ is a finite intersection of nonempty open sets  ($c$ is in each) we have it is nonempty and open. As $c\in A^\prime$  then it intersects $A$ at some place other then itself. Hence not empty. 
 
-    Create the sequence $(a_n)$ where $a_n \in A\bigcap \big( \cap _{i=1}^n U_{c_i}\big)$. 
-
-    Now to show that $a_n\to c$. 
-
-    Let $U_c$ be an arbitrary neighborhood of $c$ then for some $i\in \mathbb{N}$ we have $U_{c_i}\subset U$ from the definition of $(a_n)$ we get that for all $j\geq i$ where $j\in \mathbb{N}$ that $a_j\in U_{c_i}\subset U$ which follows from the intersection in the construction of $(a_n)$. Hence $a_n\to c$.
+    Now to show that $a_n\to c$. Let $U_c$ be an arbitrary neighborhood of $c$ then for some $i\in \mathbb{N}$ we have $U_{c_i}\subset U$ from the definition of $(a_n)$ we get that for all $j\geq i$ where $j\in \mathbb{N}$ that $a_j\in U_{c_i}\subset U$ which follows from the intersection in the construction of $(a_n)$. Hence $a_n\to c$.
 \end{proof}
 
 
