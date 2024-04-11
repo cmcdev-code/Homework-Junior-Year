@@ -57,9 +57,25 @@
     
     Lastly any infinite set containing $0$ is closed. This is shown as let $B\subset \{0\}\cup \{1/n:n\in \mathbb{N}\}$ be an infinite set containing $0$. Then we have $B^c$ is a union of singletons each of which are open hence $B^c$ is open so $B$ is closed. 
     
-    Any infinite set not containing $0$ is not closed as $0$ is a limit point of this set. 
+    Any infinite set not containing $0$ is not closed as $0$ is a limit point of said set. 
     }
 \end{enumerate}
+
+\subsection*{4.}
+\begin{proof}
+
+
+    $\\ (\rightarrow)$
+
+
+    Assume that $f$ is continuous and that there exists a $m,n\in \mathbb{N}$ with $m<n$ where $f(m)> f(n)$. Choose the neighborhood $U_{f(n)}=\{1,...,f(n)\}$ of $f(n)$. Then we have that there exists a neighborhood $U_n$ of $n$ where $f(U_n)\subset U_{f(n)}$. From the definition of the open sets we get that $m\in U_n$ but as $f(m)> f(n)$ we have $f(m)\in f(U_n)$ but $f(m)\not \in U_{f(n)}$. This is a contradiction on $f$ being continuous hence $f(m)\leq f(n)$
+
+    $(\leftarrow)$
+
+
+    Let $n\in \mathbb{N}$ then take an arbitrary neighborhood $U_{f(n)}$ of $f(n)$. Then we have $U_{n}=\{1,...,n\}$ that $f(U_n)\subset U_{f(n)}$ this follows as $f(n)\in f(U_n)$ and $f(n)\in U_{f(n)}$ and for any $m\in U_n$ with $m<n$ we have that $f(m)\leq f(n)$ hence $f(m)\in U_{f(n)}$. This is one of the equivalent definitions of continuity. Hence $f$ is continuous.
+
+\end{proof}
 
 
 
