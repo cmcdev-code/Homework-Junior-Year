@@ -1,6 +1,9 @@
 \documentclass{amsart}
 \usepackage{amsmath, amssymb, amscd}
 
+\usepackage{enumitem}
+
+
 \setlength{\textwidth}{6.5in}
 \setlength{\textheight}{9in}
 \setlength{\topmargin}{-.25in}
@@ -43,6 +46,20 @@
     
     WLOG suppose $C\cup U$ then as $C\cap C_\alpha \not = \emptyset $ we get that $C_\alpha \subset U$. Hence we get $C\bigcup \big(\cup _{\alpha \in A}C_\alpha \big)\subset U$ and $\left(C\bigcup \big(U_{\alpha\in A} C_\alpha \big)\right) \bigcap V=\emptyset$ hence $V=\emptyset$ so this separation can not exist. So we have $C\bigcup \big( \cup _{\alpha \in A}C_\alpha \big)$ is connected. 
 \end{proof}
+
+\subsection*{3.}
+\begin{enumerate}[label=(\alph*)]
+    \item {We have that a set is closed if and only if it contains it's limit points. As any singleton in $\{1/n: n\in \mathbb{N}\}$ is ope. Which is shown as we have for any $1/n\in \{1/n:n\in \mathbb{N}\}$ we have that $(1/n-\epsilon, 1/n+\epsilon)$ for $\epsilon >0$ is open in $\mathbb{R}$ choosing a sufficiently small $\epsilon>0$ we get $(1/n-\epsilon,1/n+\epsilon)\cap \{1/n:n\in \mathbb{N}\}=\{1/n\}$. As the choice of $1/n$ was arbitrary we get that all singletons are open.
+    
+    Hence any $B\subset \{1/n: n\in \mathbb N\}$ we get that $B^\prime=\emptyset$ as for any $b\in \{1/n:n\in \mathbb N\}$ we have the neighborhood $\{b\}$ that doesn't intersect $B$ at any place other then possibly itself. Hence $B$ is closed as $B$ is arbitrary we have that all subsets are closed. 
+    }
+    \item {We have that all singletons other then $\{0\}$ are open using the same reasoning as above. Hence $\{1/n: n\in \mathbb{N}\}$ is open so we get $\{1/n: n\in \mathbb{N}\}^c=\{0\}$ is closed. We have that all singletons are closed as any singleton other than $\{0\}$ don't have any limit points. As finite unions of closed sets are closed then all finite subsets are closed. 
+    
+    Lastly any infinite set containing $0$ is closed. This is shown as let $B\subset \{0\}\cup \{1/n:n\in \mathbb{N}\}$ be an infinite set containing $0$. Then we have $B^c$ is a union of singletons each of which are open hence $B^c$ is open so $B$ is closed. 
+    
+    Any infinite set not containing $0$ is not closed as $0$ is a limit point of this set. 
+    }
+\end{enumerate}
 
 
 

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712868072 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" "McDevitt_Collin_Exam_2_Solutions.pdf" "McDevitt_Collin_Exam_2_Solutions" 1712868072 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" 1712868072 2670 68877efa9f3634d23373b27a532c6c94 ""
+["pdflatex"] 1712869245 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" "McDevitt_Collin_Exam_2_Solutions.pdf" "McDevitt_Collin_Exam_2_Solutions" 1712869246 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/Exam2/McDevitt_Collin_Exam_2_Solutions.tex" 1712869245 4312 ea8a15d6f1ce6dd84c35df5ba2e4d209 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -42,13 +42,14 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty" 1654720880 88393 1adf6fa3f245270d06e3d4f8910f7fc5 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty" 1654720880 4474 f04cd1cc7bd76eb033e6fb12eb6a0d77 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty" 1654720880 2444 70065bddd85997dc1fd0bb7ae634e5fa ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1673989714 30429 213676d4c7327a21d91ddaed900e7b81 ""
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "McDevitt_Collin_Exam_2_Solutions.aux" 1712868072 373 30751b290cd789f54ce0cde55ecc561c "pdflatex"
-  "McDevitt_Collin_Exam_2_Solutions.tex" 1712868072 2670 68877efa9f3634d23373b27a532c6c94 ""
+  "McDevitt_Collin_Exam_2_Solutions.aux" 1712869246 472 f6c280a6375e394057354b9aefddd252 "pdflatex"
+  "McDevitt_Collin_Exam_2_Solutions.tex" 1712869245 4312 ea8a15d6f1ce6dd84c35df5ba2e4d209 ""
   (generated)
   "McDevitt_Collin_Exam_2_Solutions.aux"
   "McDevitt_Collin_Exam_2_Solutions.log"
