@@ -74,9 +74,23 @@
 
 
     Let $n\in \mathbb{N}$ then take an arbitrary neighborhood $U_{f(n)}$ of $f(n)$. Then we have $U_{n}=\{1,...,n\}$ that $f(U_n)\subset U_{f(n)}$ this follows as $f(n)\in f(U_n)$ and $f(n)\in U_{f(n)}$ and for any $m\in U_n$ with $m<n$ we have that $f(m)\leq f(n)$ hence $f(m)\in U_{f(n)}$. This is one of the equivalent definitions of continuity. Hence $f$ is continuous.
-
 \end{proof}
 
+
+\subsection*{5.}
+
+\begin{proof}
+    
+    Let $X$ be a first countable topological space. Let $A\subset X$ and $c\in \overline A$. If $c\in A$ a constant sequence works hence assume that $c\in A^\prime$ but $c\not \in A$. We have the collection of neighborhoods $\{U_{c_i}\}_{i\in \mathbb{N}}$ of $c$ where any neighborhood $V$ of $c$ that for some $i\in \mathbb{N}$ that $U_{c_i}\subset V$.
+
+    Create the sequence where the n'th element is taken from $A\bigcap \big(\cap_{i=1}^n U_{c_i} \big)$. First to show that $A\bigcap \big(\cap_{i=1}^n U_{c_i} \big)\not = \emptyset$ for any $n\in \mathbb{N}$. As $\bigcap_{i=1}^nU_{c_i}$ is a finite intersection of nonempty open sets  ($c$ is in each) we have it is nonempty and open. As $c\in A^\prime$  then it intersects $A$ at some place other then itself. Hence not empty. 
+
+    Create the sequence $(a_n)$ where $a_n \in A\bigcap \big( \cap _{i=1}^n U_{c_i}\big)$. 
+
+    Now to show that $a_n\to c$. 
+
+    Let $U_c$ be an arbitrary neighborhood of $c$ then for some $i\in \mathbb{N}$ we have $U_{c_i}\subset U$ from the definition of $(a_n)$ we get that for all $j\geq i$ where $j\in \mathbb{N}$ that $a_j\in U_{c_i}\subset U$ which follows from the intersection in the construction of $(a_n)$. Hence $a_n\to c$.
+\end{proof}
 
 
 \end{document}
