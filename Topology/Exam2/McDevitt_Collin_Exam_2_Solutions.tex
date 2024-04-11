@@ -29,7 +29,7 @@
 
 
 \noindent
-\subsection*{1.}
+\subsection*{1.} Suppose that $X$ is a compact topological space and $f:X\to \mathbb R$ is a function, not necessarily continuous, with the following property: for each $x\in X$, there is an open neighborhood $U_x$ of $x$ and a constant $M_x$ such that, for all $z\in U_x,\: |f(z)|\leq M_x$. Show that there is a constant $M$ such that, for all $y\in X,\: |f(y)|\leq M$.
 
 \begin{proof}
     Suppose $X$ is a compact topological space and $f: X\to \mathbb R$ is as described. As $X$ is compact we have the open cover $\{U_x\}_{x\in X}$ where for each $U_x\in \{U_x\}_{x\in X}$ we have that there exists a constant $M_x$ such that for all $z\in U_x$ that $|f(z)|\leq M_x$. 
@@ -38,6 +38,8 @@
 \end{proof}
 
 \subsection*{2.}
+Suppose that $X$ is a topological space, that $C$ is a connected subset of $X$ and that, for each $\alpha$ in some index set $A$, $C_\alpha$ is a connected subset of $X$. Suppose also that, for every $\alpha \in A, C_\alpha \bigcap C\not = \emptyset$. Show that $C\bigcup\big(\bigcup_{\alpha \in A}C_\alpha \big)$ is connected.
+
 
 \begin{proof}
     Suppose that $X$ is a topological space $C$ is a connected subset of $X$ and $C_{\alpha}$ is a connected subset of $X$. With for all $\alpha A$ that $C_\alpha \bigcap C\not = \emptyset$. Suppose that $C\bigcup \big ( \cup _{\alpha \in A} C_\alpha \big)$ is not connected. Then there exists a separation $U\cup V$ of $C\bigcup \big(\cup _{\alpha \in A} C_\alpha \big)$. 
@@ -47,13 +49,23 @@
     WLOG suppose $C\cup U$ then as $C\cap C_\alpha \not = \emptyset $ we get that $C_\alpha \subset U$. Hence we get $C\bigcup \big(\cup _{\alpha \in A}C_\alpha \big)\subset U$ and $\left(C\bigcup \big(U_{\alpha\in A} C_\alpha \big)\right) \bigcap V=\emptyset$ hence $V=\emptyset$ so this separation can not exist. So we have $C\bigcup \big( \cup _{\alpha \in A}C_\alpha \big)$ is connected. 
 \end{proof}
 
-\subsection*{3.}
+\subsection*{3.} Give $\mathbb{R}$ its standard topology and give its subsets their subspace topologies.
+
+
 \begin{enumerate}[label=(\alph*)]
-    \item {We have that a set is closed if and only if it contains it's limit points. As any singleton in $\{1/n: n\in \mathbb{N}\}$ is ope. Which is shown as we have for any $1/n\in \{1/n:n\in \mathbb{N}\}$ we have that $(1/n-\epsilon, 1/n+\epsilon)$ for $\epsilon >0$ is open in $\mathbb{R}$ choosing a sufficiently small $\epsilon>0$ we get $(1/n-\epsilon,1/n+\epsilon)\cap \{1/n:n\in \mathbb{N}\}=\{1/n\}$. As the choice of $1/n$ was arbitrary we get that all singletons are open.
+    \item { Let $A$ be $\mathbb{R}$'s topological subspace $\{1/n: n\in \mathbb N\}$. Describe as explicitly as possible which subsets of $A$ are closed subsets of $A$.
+        
+
+
+    We have that a set is closed if and only if it contains it's limit points. As any singleton in $\{1/n: n\in \mathbb{N}\}$ is ope. Which is shown as we have for any $1/n\in \{1/n:n\in \mathbb{N}\}$ we have that $(1/n-\epsilon, 1/n+\epsilon)$ for $\epsilon >0$ is open in $\mathbb{R}$ choosing a sufficiently small $\epsilon>0$ we get $(1/n-\epsilon,1/n+\epsilon)\cap \{1/n:n\in \mathbb{N}\}=\{1/n\}$. As the choice of $1/n$ was arbitrary we get that all singletons are open.
     
     Hence any $B\subset \{1/n: n\in \mathbb N\}$ we get that $B^\prime=\emptyset$ as for any $b\in \{1/n:n\in \mathbb N\}$ we have the neighborhood $\{b\}$ that doesn't intersect $B$ at any place other then possibly itself. Hence $B$ is closed as $B$ is arbitrary we have that all subsets are closed. 
     }
-    \item {We have that all singletons other then $\{0\}$ are open using the same reasoning as above. Hence $\{1/n: n\in \mathbb{N}\}$ is open so we get $\{1/n: n\in \mathbb{N}\}^c=\{0\}$ is closed. We have that all singletons are closed as any singleton other than $\{0\}$ don't have any limit points. As finite unions of closed sets are closed then all finite subsets are closed. 
+    \item { Let $B$ be $\mathbb{R}$'s topological subspace $\{0\}\bigcup \{1/n: n\in \mathbb{N}\}$. Describe as explicitly as possible which infinite subsets of $B$ are closed subsets of $B$.
+        
+    
+    
+    We have that all singletons other then $\{0\}$ are open using the same reasoning as above. Hence $\{1/n: n\in \mathbb{N}\}$ is open so we get $\{1/n: n\in \mathbb{N}\}^c=\{0\}$ is closed. We have that all singletons are closed as any singleton other than $\{0\}$ don't have any limit points. As finite unions of closed sets are closed then all finite subsets are closed. 
     
     Lastly any infinite set containing $0$ is closed. This is shown as let $B\subset \{0\}\cup \{1/n:n\in \mathbb{N}\}$ be an infinite set containing $0$. Then we have $B^c$ is a union of singletons each of which are open hence $B^c$ is open so $B$ is closed. 
     
@@ -61,7 +73,7 @@
     }
 \end{enumerate}
 
-\subsection*{4.}
+\subsection*{4.} Give the natural numbers $\mathbb{N}$ the topology in which the open sets are: the emptyset; all of $\mathbb N$; and, for each $k\in \mathbb N$, the set $U_k=\{n\in \mathbb{N}: n\leq k\}$. Using this topology on both the domain and range space of $f:\mathbb N\to \mathbb N$, show that $f$ is continuous if and only if, for all $m,n\in \mathbb{N}$ with $m<n,\; f(m)\leq f(n)$
 \begin{proof}
 
 
@@ -78,6 +90,8 @@
 
 
 \subsection*{5.}
+Let $X$ be a first countable topological space, let $A$ be a subset of $X$, and let $c$ be in $A$'s closure. SHow that there exists a sequence $(a_n)$ of elements of $A$ that converge to $c$.
+
 
 \begin{proof}
     
