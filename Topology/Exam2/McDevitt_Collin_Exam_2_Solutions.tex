@@ -1,0 +1,49 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+
+\noindent
+\subsection*{1.}
+
+\begin{proof}
+    Suppose $X$ is a compact topological space and $f: X\to \mathbb R$ is as described. As $X$ is compact we have the open cover $\{U_x\}_{x\in X}$ where for each $U_x\in \{U_x\}_{x\in X}$ we have that there exists a constant $M_x$ such that for all $z\in U_x$ that $|f(z)|\leq M_x$. 
+    
+    Then as $X$ is compact we have that the collection has a finite subcover $\{U_{x_1},...,U_{x_n}\}$. Each of these in the finite subcover has a corresponding constant $\{M_{x_1},...,M_{x_n}\}$ with the property that for all $z\in U_{x_i}$ that $|f(z)|\leq M_{x_i}$ where $i=1,...,n$. Let $M=\max\{M_{x_1},...,M_{x_n}\}$ then for any $z\in X$ we have that $z\in U_{x_i}$ for some $i=1,...,n$. Hence $|f(z)|\leq M_{x_i}\leq M$ so this choice of $M$ works for all $z\in X$.
+\end{proof}
+
+\subsection*{2.}
+
+\begin{proof}
+    Suppose that $X$ is a topological space $C$ is a connected subset of $X$ and $C_{\alpha}$ is a connected subset of $X$. With for all $\alpha A$ that $C_\alpha \bigcap C\not = \emptyset$. Suppose that $C\bigcup \big ( \cup _{\alpha \in A} C_\alpha \big)$ is not connected. Then there exists a separation $U\cup V$ of $C\bigcup \big(\cup _{\alpha \in A} C_\alpha \big)$. 
+    
+    Then as $C$ is connected we have either $C\subset U$ with $C\cap V=\emptyset$ or $C\subset V$ with $C\cap U=\emptyset$. If $C$ wasn't fully contained in only one then $(C\cap U)$, $(C\cap V)$ would be a separation of $C$ but $C$ is connected. For each $\alpha \in A$ we get that $C_\alpha$ is contained in exactly one $U$ or $V$.
+    
+    WLOG suppose $C\cup U$ then as $C\cap C_\alpha \not = \emptyset $ we get that $C_\alpha \subset U$. Hence we get $C\bigcup \big(\cup _{\alpha \in A}C_\alpha \big)\subset U$ and $\left(C\bigcup \big(U_{\alpha\in A} C_\alpha \big)\right) \bigcap V=\emptyset$ hence $V=\emptyset$ so this separation can not exist. So we have $C\bigcup \big( \cup _{\alpha \in A}C_\alpha \big)$ is connected. 
+\end{proof}
+
+
+
+\end{document}
