@@ -6,6 +6,8 @@
 \usepackage{color}
 \usepackage{graphics}
 \usepackage{xspace}
+\usepackage{pdfpages}
+
 
 % Commands for special characters
 \newcommand{\mybackslash}{\char'134}
@@ -333,6 +335,14 @@ Please draw it neatly!
 }
 
 \solution
+
+This was constructed by first creating two $\epsilon-$NFA the first one located at the top recognizes $(ba)^\star$ this is seen as it accepts the empty string and if it does receive a string in order for it to accept it must take the path $q_1\longrightarrow q_2 \longrightarrow q_3 \longrightarrow q_1$ which can only be traversed by the string $ba\epsilon$. The epsilon ensures that $(ba)^\star$ will be recognized.
+
+The second $\epsilon-$NFA is located at the bottom and recognizes $(abb)(abb)^\star$ this is seen as it first must traverse $q_4\longrightarrow q_5 \longrightarrow q_6 \longrightarrow q_7$ to reach an accepting state. This can only be done by the string $abb$ after it is in state $q_7$ there is an epsilon transition back to $q_4$ which ensures that $(abb)(abb)^\star$ will also be recognized. Both these $\epsilon-$NFA are combined with the initial state $q_0$ and a $\epsilon$ transition to their initial states.
+
+
+\includepdf[pages=-]{2st.pdf}
+
 
 % PUT YOUR SOLUTION HERE
 
