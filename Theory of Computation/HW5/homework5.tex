@@ -336,9 +336,9 @@ Please draw it neatly!
 
 \solution
 
-This was constructed by first creating two $\epsilon-$NFA the first one located at the top recognizes $(ba)^\star$ this is seen as it accepts the empty string and if it does receive a string in order for it to accept it must take the path $q_1\longrightarrow q_2 \longrightarrow q_3 \longrightarrow q_1$ which can only be traversed by the string $ba\epsilon$. The epsilon ensures that $(ba)^\star$ will be recognized.
+This was constructed by first creating two $\emptystring-$NFA the first one located at the top recognizes $(ba)^\star$ this is seen as it accepts the empty string and if it does receive a string in order for it to accept it must take the path $q_1\longrightarrow q_2 \longrightarrow q_3 \longrightarrow q_1$ which can only be traversed by the string $ba\emptystring$. The epsilon ensures that $(ba)^\star$ will be recognized.
 
-The second $\epsilon-$NFA is located at the bottom and recognizes $(abb)(abb)^\star$ this is seen as it first must traverse $q_4\longrightarrow q_5 \longrightarrow q_6 \longrightarrow q_7$ to reach an accepting state. This can only be done by the string $abb$ after it is in state $q_7$ there is an epsilon transition back to $q_4$ which ensures that $(abb)(abb)^\star$ will also be recognized. Both these $\epsilon-$NFA are combined with the initial state $q_0$ and a $\epsilon$ transition to their initial states.
+The second $\emptystring-$NFA is located at the bottom and recognizes $(abb)(abb)^\star$ this is seen as it first must traverse $q_4\longrightarrow q_5 \longrightarrow q_6 \longrightarrow q_7$ to reach an accepting state. This can only be done by the string $abb$ after it is in state $q_7$ there is an epsilon transition back to $q_4$ which ensures that $(abb)(abb)^\star$ will also be recognized. Both these $\emptystring-$NFA are combined with the initial state $q_0$ and a $\emptystring$ transition to their initial states.
 
 
 \includepdf[pages=-]{2st.pdf}
@@ -378,13 +378,13 @@ q_0 \stackrel{b}{\longrightarrow} q_1\stackrel{b}{\longrightarrow} q_2
 \\\hline cb & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{c}{\longrightarrow} q_1 \stackrel{b}{\longrightarrow}q_2 \\ \hline \emptystring & q_0 \stackrel{\emptystring}{\longrightarrow} q_2 \\ \hline 
 c & q_0 \stackrel{c}{\longrightarrow } q_2 \\ \hline 
 b & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{b}{\longrightarrow} q_2 \\ \hline
-ab & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\epsilon}{\longrightarrow}q_1 \stackrel{b}{\longrightarrow}q_2 \\ \hline
-cc & q_0 \stackrel{\epsilon}{\longrightarrow} q_1 \stackrel{c}{\longrightarrow} q_0 \stackrel{c}{\longrightarrow} q_2 \\ \hline
-ac & q_0 \stackrel{\epsilon}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{c}{\longrightarrow} q_2 \\ \hline
+ab & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\emptystring}{\longrightarrow}q_1 \stackrel{b}{\longrightarrow}q_2 \\ \hline
+cc & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{c}{\longrightarrow} q_0 \stackrel{c}{\longrightarrow} q_2 \\ \hline
+ac & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{c}{\longrightarrow} q_2 \\ \hline
 
-ca & q_0 \stackrel{\epsilon}{\longrightarrow} q_1 \stackrel{c}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\epsilon}{\longrightarrow} q_2 \\ \hline
-ba & q_0 \stackrel{b}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\epsilon}{\longrightarrow} q_2 \\ \hline
-a & q_0 \stackrel{\epsilon}{\longrightarrow}q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\epsilon}{\longrightarrow}q_2 \\ \hline
+ca & q_0 \stackrel{\emptystring}{\longrightarrow} q_1 \stackrel{c}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\emptystring}{\longrightarrow} q_2 \\ \hline
+ba & q_0 \stackrel{b}{\longrightarrow} q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\emptystring}{\longrightarrow} q_2 \\ \hline
+a & q_0 \stackrel{\emptystring}{\longrightarrow}q_1 \stackrel{a}{\longrightarrow} q_0 \stackrel{\emptystring}{\longrightarrow}q_2 \\ \hline
 
 \end{array}
 \end{displaymath}
