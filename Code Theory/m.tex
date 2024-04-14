@@ -85,16 +85,6 @@ The answer should be a characterization of types of graphs, similar to the chara
 
 \section{9/28/23}
 
-\includegraphics[width=0.95\textwidth]{images/IMG-5190.png}
-
-\includegraphics[width=0.95\textwidth]{images/IMG-5193.png}
-
-\includegraphics[width=0.95\textwidth]{images/IMG-5195.png}
-
-\includegraphics[width=0.95\textwidth]{images/IMG-5198.png}
-
-\includegraphics[width=0.95\textwidth]{images/IMG-5200.png}
-
 
 \section*{10/4/2023}
 
@@ -105,7 +95,7 @@ When is a standard absorbing set still an absorbing set? What if our update rule
 Prove that absorbing sets with the $u \geq s$ update rule are still absorbing sets with the $u \geq s + 1$ update rule.
 
 \begin{definition}
-    An $(a \mid b)$ absorbing set is a set of variable nodes that, under the $a \geq b$ update rule, the set of variable nodes is not eventually correct.
+    A $(a \mid b)$ absorbing set is a set of variable nodes that, under the $a \geq b$ update rule, the set of variable nodes is not eventually correct.
 \end{definition}
 
 
@@ -114,13 +104,19 @@ Prove that absorbing sets with the $u \geq s$ update rule are still absorbing se
 \end{thm}
 
 
+
+% \begin{proof}
+
+%     Assume that $(u \mid s)$ is an arbitrary absorbing set. Then, for all $v \in S$, the inequality $D_e(v) > D_o(v)$ holds. Initializing all variable nodes with $1$, we have $s = D_e(v)$ and $u = D_o(v)$. As $u < s < s + 1$ we get the inequality $u \geq s + 1$ is never satisfied.
+% \end{proof}
+
+
+
 \begin{proof}
-
-
-    Assume that $(u \mid s)$ is an arbitrary absorbing set. Then, for all $v \in S$, the inequality $D_e(v) > D_o(v)$ holds. Initializing all variable nodes with $1$, we have $s = D_e(v)$ and $u = D_o(v)$. Under the update rule $u \geq s + 1$, this would be an absorbing set, as $u < s < s + 1$ would imply that the inequality $u \geq s + 1$ is never satisfied.
+    Let $V$ denote the set of variable nodes. Assume $(u\mid s)$ is an arbitrary absorbing set, meaning for all $v\in V$, $D_e(v)>D_o(v)$ holds. Initializing all variable nodes with $1$, we have $D_e(v)+1>D_o(v)$ for all $v\in V$. Therefore, $u\geq s+1$ is never satisfied, implying that $(u\mid s)$ is also a $(u\mid s+1)$-absorbing set.
 \end{proof}
-
-
+    
+    
 
 
 \begin{thm}
@@ -139,6 +135,10 @@ If $(u \mid s)$ implies $(u \mid s + k)$, does that mean that $(u \mid s - k)$ i
 \begin{co}
     If $(u\mid s)$ is an absorbing set then $(u\mid s+k)$ is an absorbing set where $k\in \mathbb{N}_0$
 \end{co}
+
+\begin{proof}
+Assume that $(u\mid s)$ is an absorbing set and that there exists some $k \in \mathbb{N}$ such that $(u\mid s+k)$ is not an absorbing set. Then, by the well-ordering principle, there exists the smallest $k \in \mathbb{N}$ such that $(u\mid s+k)$ is not an absorbing set. As $(u\mid s+k)$ is the smallest $k$ that is not an absorbing set, then $(u\mid s+k-1)$ is an absorbing set. By Theorem 1.2, $(u\mid s+k)$ is also an absorbing set, a contradiction. Therefore, $(u\mid s+k)$ is an absorbing set.
+\end{proof}
 
 \begin{proof}
     Assume that $(u\mid s)$ is an absorbing set. Then set $k=0$ as therefore $(u\mid s+0)$ is also an absorbing set. Now assume that $\exists k \in \mathbb{N}$ s.t. $(u \mid s +k)$ is an absorbing set. Then by Theorem 1.2 $(u\mid s+k+1)$ is also an absorbing set.
