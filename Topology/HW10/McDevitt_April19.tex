@@ -1,0 +1,102 @@
+\documentclass{amsart}
+\usepackage{amsmath, amssymb, amscd}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.25in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\begin{document}
+
+\section*{Math 4324\  Winding Number and Degree } 
+
+\subsection*{Hand in Friday, April 19.} 
+
+\vspace{.15in}
+\subsection*{Definition.}  Let $f : S \to C$ be a continuous map from a circle in the plane to a circle in the plane. Define the {\bf degree} of $f$ to be the winding number of this map around the point $\vec{c}$ at the center of $C$. If you prefer to think of winding numbers in terms of continuous maps from intervals, give the name $\theta$ to a variable running through the interval $[0,2\pi ]$, let $\gamma : [0,2\pi ] \to S$ parametrize $S$ by $\gamma (\theta ) = (x_0 + r\cos \theta , y_0 + r\sin \theta )$ for appropriate $x_0$, $y_0$, and $r$, and define the degree of $f$ to be the winding number of $f\circ \gamma$ around $\vec{c}$. [from the textbook by Fulton]
+
+\vspace{.15in}
+\noindent
+\subsection*{1.}  Show that, for an $f$ as in the above definition, if $f$ is not surjective, then the degree of $f$ equals zero. 
+
+
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{2.} Calculate the degree of each of the following maps from the unit circle centered at the origin to the unit circle centered at the origin. 
+
+
+
+\vspace{.1in}
+{\bfseries a.}  $f(x,y) = (x,y)$
+{
+Using the parametrization $\gamma(\theta)=(\cos \theta,\sin \theta)$ for $\theta \in [0,2\pi]$. 
+
+
+I will be using the four sectors $$U_0=\{(x,y): 0 < \text{angle in polar }(x,y)<\pi \}$$ $$U_1=\{(x,y): \pi/2< \text{angle in polar}(x,y)<3\pi/2\}$$  
+$$
+U_2=\{(x,y): \pi < \text{angle in polar}(x,y)<2\pi\}
+$$
+$$
+U_3=\{(x,y): 3\pi/2 < \text{angle in polar}(x,y)< 5\pi/2\}
+$$
+
+}
+
+With the following four subdivisions $t_0= 0,t_1=\pi/2,t_2=\pi,t_3=2\pi$. 
+
+Each angle function $\theta_i$ just gives the angle in polar coordinates.
+
+Then 
+\[
+    W(f,(0,0))=\frac{1}{2\pi}\big(\theta_0((1,0)) \big)
+\]
+
+\vspace{.1in}
+{\bfseries b.} $g(x,y) = (-x,-y)$
+
+\vspace{.1in}
+{\bfseries c.} $h(x,y) = (x,-y)$
+
+\vspace{.1in}
+{\bfseries d.} $k(\cos (\theta ), \sin (\theta )) = (\cos (n\theta ), \sin (n\theta ))$, where $n$ is an arbitrary integer
+
+
+\vspace{.15in}
+\subsection*{Definition.}  If $Y$ is a topological subspace of a topological space $X$, a {\bf retraction} from $X$ to $Y$ is a continuous map $r : X \to Y$ that satisfies, for all $y\in Y$, $r(y) = y$. When such a retraction exists, we call $Y$ a {\bf retract} of $X$. [from the textbook by Fulton]
+
+\vspace{.15in}
+\noindent
+\subsection*{3.} Show that, if $Y$ is a retract of $X$ and if every continuous map from $X$ to $X$ has a fixed point, then every continuous map from $Y$ to $Y$ has a fixed point. {\bf Hint.} Start with an arbitrary continuous map $f : Y\to Y$. How can you make a continuous map $g : X\to X$ whose behavior has the needed implications for $f$'s behavior?
+ 
+
+
+\vspace{.15in}
+\noindent
+\subsection*{4.} Let $B$ be the open unit disk in $\mathbb R ^2$ and let $D$ be the closed unit disk in $\mathbb R ^2$. Show that, for any $\vec{p} \in B$, the unit circle $C$ in $\mathbb R ^2$ is a retract of $D\setminus \{ \vec{p}\}$. {\bf Hint.} When $\vec{p}$ is the origin, the map $\vec{x} \mapsto \frac{\vec{x}}{|\vec{x}|}$ is the retraction. When $\vec{p}$ is more general, consider solving $|\vec{p} + t(\vec{x}-\vec{p})| = 1$ for $t$. 
+
+
+
+\vspace{.15in}
+\noindent
+\subsection*{5.} Let $S$ and $C$ be circles in the plane, and let $f : S\to C$ be a continuous map. Show that, for every $\vec{p}$ in the open disk bounded by $C$, the winding number of $f$ around $\vec{p}$ equals the degree of $f$. (In particular the winding number is the same, regardless of which $\vec{p}$ in the open disk is used.) 
+ 
+\end{document}
