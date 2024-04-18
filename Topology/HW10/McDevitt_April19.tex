@@ -38,6 +38,18 @@
 \begin{proof}
     Using the parametrization $\gamma:[0,2\pi]\to S$ by $\gamma(\theta)=(x_0+r\cos \theta, y_0 +r\sin \theta )$ where $(x_0,y_0)$ is the center of $S$ and $r$ is the radius of $S$. Then we have that $f$ is a closed curve as $$f\circ \gamma(0)=f(x_0+r\cos 0, y_0 +r\sin 0)=f(x_0+r\cos 2\pi , y_0 +r\sin 2\pi)=f\circ \gamma(2\pi)$$
     
+    Now let $\vec p_1\in C$ be a point that is not in the image of $f$. Then we have a point $\vec p_2\in C$ that is colinear with the line intersecting $(x_0,y_0)$ and $\vec p_1$. 
+
+    We have the constant curve $g: S \to C$ given by the equation $g(\vec x) = \vec p_2$ for all $\vec x\in S$. 
+    
+    
+    Then we create the homotopy $H:[0,2\pi]\times [0,1]$ given by $H(\theta,s)=f(\gamma (\theta))(1-s)+s\cdot \vec p_2$ for all $\theta \in [0,2\pi]$ and $s\in [0,1]$. 
+
+    We have $H(\theta,0)=f(\gamma (\theta))+0\cdot \vec p_2=f(\gamma(\theta))$, and $H(\theta,1)=f(\gamma(\theta ))\cdot 0 + 1\cdot \vec p_2=g(\gamma (\theta))$. 
+
+    Lastly to show that $H$ is continuous.
+
+
 \end{proof}
 
 
