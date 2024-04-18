@@ -164,6 +164,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT McDevitt_April19.pdf
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT McDevitt_April19.aux
@@ -176,4 +177,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

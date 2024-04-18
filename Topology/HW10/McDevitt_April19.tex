@@ -35,6 +35,11 @@
 \noindent
 \subsection*{1.}  Show that, for an $f$ as in the above definition, if $f$ is not surjective, then the degree of $f$ equals zero. 
 
+\begin{proof}
+    Using the parametrization $\gamma:[0,2\pi]\to S$ by $\gamma(\theta)=(x_0+r\cos \theta, y_0 +r\sin \theta )$ where $(x_0,y_0)$ is the center of $S$ and $r$ is the radius of $S$. Then we have that $f$ is a closed curve as $$f\circ \gamma(0)=f(x_0+r\cos 0, y_0 +r\sin 0)=f(x_0+r\cos 2\pi , y_0 +r\sin 2\pi)=f\circ \gamma(2\pi)$$
+    
+\end{proof}
+
 
 
 
@@ -79,7 +84,15 @@ After canceling terms in the equation we get $W(f,\vec 0)=\frac{1}{2\pi}\big(2\p
 {\bfseries b.} $g(x,y) = (-x,-y)$
 
 { 
-    Using the same parametrization, sectors, intervals, and angle functions as in \bfseries a. As the angle functions agree at the intersection of the sectors we have that all in the equation will cancel with each other hence we get 
+    Using the same parametrization as before. With the sectors $$U_1=\{(x,y): 0< \text{angle in polar}(x,y)<3\pi/2\}$$  
+    $$
+    U_2=\{(x,y): \pi/2 < \text{angle in polar}(x,y)<2\pi\}
+    $$
+    $$
+    U_3=\{(x,y): \pi < \text{angle in polar}(x,y)< 5\pi/2\}
+    $$
+
+
     \[
     W(g,\vec 0)=\frac{1}{2\pi}\big(\theta_3(g(\gamma (t_3))-\theta_1(g(\gamma(t_0))))\big)
     \]
