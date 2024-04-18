@@ -75,16 +75,36 @@ $$U_2=\{(x,y):x,y\in \mathbb{R} \text{ with }y>0\}$$
 $$U_3=\{(x,y):x,y\in \mathbb{R} \text{ with } x<0\}$$
 $$U_4=\{(x,y):x,y\in \mathbb{R} \text{ with } y<0\}$$
 
-Then we have the the six subdivisions $t_0=0,t_1=\pi/4,t_2=3\pi/4,t_3=5\pi/4,t_4=7\pi/4,t_5=2\pi$. With the angle function just being the angle of the point in polar coordinates.
+Then we have the the six subdivisions $t_0=0,t_1=\pi/4,t_2=3\pi/4,t_3=5\pi/4,t_4=7\pi/4,t_5=2\pi$. With the angle function being for $\theta_1$ being its angle in the range $(-\pi/2,\pi/2)$ for $\theta_2$ being its angle in the range $(0,\pi)$ and for $\theta_3$ being its angle in the range $(\pi/2,3\pi/2)$ and $\theta_4$ being its angle in the range $(\pi,2\pi)$. 
+
+Then 
+
+$W(f\circ \gamma ,\vec 0)=\frac{1}{2\pi}\big(\theta_1(f(\gamma(t_1)))-\theta_1(f(\gamma(t_1)))+\theta_2(f(\gamma(t_2)))-\theta_2(f(\gamma(t_1)))+\theta_3(f(\gamma(t_3)))-\theta_3(f(\gamma(t_2)))+\theta_4(f(\gamma(t_4)))-\theta_4(f(\gamma(t_3)))+\theta_1(f(\gamma(t_5)))-\theta_1(f(\gamma(t_4)))\big)$. 
+
+Then $W(f\circ \gamma ,\vec 0)=\frac{1}{2\pi}\big( \frac{\pi}{4}-0 + \frac{3\pi}{4}-\frac{\pi}{4}+\frac{5\pi}{4}-\frac{3\pi}{4}+\frac{7\pi}{4}-\frac{5\pi}{4}+0 -\frac{\pi}{4} \big)=\frac{1}{2\pi}\big(\frac{7\pi}{4}+\frac{\pi}{4}\big)=1$
+
+
+
 }
 
 \vspace{.1in}
 {\bfseries b.} $g(x,y) = (-x,-y)$
 
 { 
-    
+    Using the same parametrization with $\gamma$ as in {\bfseries a.} With the four sectors 
+    $$U_1=\{(x,y): x,y\in \mathbb{R} \text{ with } x<0\}$$
 
+    $$U_2=\{(x,y): x,y\in \mathbb{R} \text{ with } y<0\}$$
 
+    $$U_3=\{(x,y): x,y\in \mathbb{R} \text{ with } x>0\}$$
+
+    $$U_4=\{(x,y):x,y\in \mathbb{R} \text{ with } y>0\}$$
+
+    With the same subdivisions as in {\bfseries a.} and the angle functions $\theta_1$ being its angle in the range $(\frac{\pi}{2},\frac{3\pi}{2})$ for $\theta_2$ being its angle in the range $(\pi,2\pi)$ and for $\theta_3$ being its angle in the range $(\frac{3\pi}{2},\frac{5\pi}{2})$ and $\theta_4$ being its angle in the range $(2\pi,3\pi)$. 
+
+    Then $W(g\circ \gamma, \vec 0)=\frac{1}{2\pi}\big(\theta_1(g (\gamma (t_1)))-\theta_1(g(\gamma (t_0)))+\theta_2(g(\gamma(t_2)))-\theta_2(g(\gamma(t_3)))+\theta_3(g(\gamma(t_3)))-\theta_3(g(\gamma(t_2))) +\theta_4(g(\gamma(t_4)))-\theta_4(g(\gamma(t_3)))+\theta_1 (g(\gamma(t_5)))-\theta_1(g(\gamma(t_4))) \big)$
+
+    Then $W(g\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( \frac{5\pi}{4} - \pi+ \frac{7\pi}{4}-\frac{5\pi}{4}+\frac{9\pi}{4}-\frac{7\pi}{4} + 3\pi - \frac{9\pi}{4}  \big)=\frac{1}{2\pi}\big( 3\pi - \pi \big)=1$
 }
 
 \vspace{.1in}
