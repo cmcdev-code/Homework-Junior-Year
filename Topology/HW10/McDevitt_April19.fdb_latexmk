@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1713477338 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW10/McDevitt_April19.tex" "McDevitt_April19.pdf" "McDevitt_April19" 1713477339 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW10/McDevitt_April19.tex" 1713477338 6259 a73514133902c927033c91aa78bd7368 ""
+["pdflatex"] 1713477609 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW10/McDevitt_April19.tex" "McDevitt_April19.pdf" "McDevitt_April19" 1713477609 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW10/McDevitt_April19.tex" 1713477609 6552 290424e3d88a9ffde5d57edbad313d29 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -47,8 +47,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "McDevitt_April19.aux" 1713477339 1136 c9650fa11292a01275883c1ed918d2ef "pdflatex"
-  "McDevitt_April19.tex" 1713477338 6259 a73514133902c927033c91aa78bd7368 ""
+  "McDevitt_April19.aux" 1713477609 1136 c9650fa11292a01275883c1ed918d2ef "pdflatex"
+  "McDevitt_April19.tex" 1713477609 6552 290424e3d88a9ffde5d57edbad313d29 ""
   (generated)
   "McDevitt_April19.aux"
   "McDevitt_April19.log"
