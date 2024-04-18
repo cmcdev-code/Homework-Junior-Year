@@ -43,12 +43,15 @@
     We have the constant curve $g: S \to C$ given by the equation $g(\vec x) = \vec p_2$ for all $\vec x\in S$. 
     
     
-    Then we create the homotopy $H:[0,2\pi]\times [0,1]$ given by $H(\theta,s)=f(\gamma (\theta))(1-s)+s\cdot \vec p_2$ for all $\theta \in [0,2\pi]$ and $s\in [0,1]$. 
+    Then we create the homotopy $H:[0,2\pi]\times [0,1]\to \mathbb{R}^2\setminus \{(x_0,y_0)\}$ given by $$H(\theta,s)=f(\gamma (\theta))(1-s)+s\cdot \vec p_2$$ for all $\theta \in [0,2\pi]$ and $s\in [0,1]$. 
 
     We have $H(\theta,0)=f(\gamma (\theta))+0\cdot \vec p_2=f(\gamma(\theta))$, and $H(\theta,1)=f(\gamma(\theta ))\cdot 0 + 1\cdot \vec p_2=g(\gamma (\theta))$. 
 
-    Lastly to show that $H$ is continuous.
+    We have that $H$ is continuous as it is the sum of two weighted continuous functions. 
+    
+    Additionally we have that the image of $H$ is contained in $\mathbb{R}^2\setminus \{(x_0,y_0)\}$ as for any $\theta\in [0,2\pi]$ we have for all $s\in[0,1]$ that $H(\theta,s)\neq (x_0,y_0)$ as the only point colinear with 
 
+    
 
 \end{proof}
 
