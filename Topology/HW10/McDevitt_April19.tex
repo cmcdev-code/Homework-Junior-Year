@@ -161,6 +161,13 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
 \noindent
 \subsection*{4.} Let $B$ be the open unit disk in $\mathbb R ^2$ and let $D$ be the closed unit disk in $\mathbb R ^2$. Show that, for any $\vec{p} \in B$, the unit circle $C$ in $\mathbb R ^2$ is a retract of $D\setminus \{ \vec{p}\}$. {\bf Hint.} When $\vec{p}$ is the origin, the map $\vec{x} \mapsto \frac{\vec{x}}{|\vec{x}|}$ is the retraction. When $\vec{p}$ is more general, consider solving $|\vec{p} + t(\vec{x}-\vec{p})| = 1$ for $t$. 
 
+\begin{proof}
+    Consider the function $r: D\setminus \{p\}\to C$ defined by the equation $r(\vec{x})=\vec{p}+t(\vec x - \vec p)$ such that $t$ is the positive solution to $|\vec p + t(\vec x - \vec p)|=1$ such a solution is guaranteed to exist as the line parametrized by $\vec p + t(\vec x - \vec p)$ will have a point intersecting the unit circle based on the fact that $\vec p \in B$. 
+
+    Now suppose that $\vec{x}\in C$ then we have that the line parametrized by $\vec{p}+t(\vec x - \vec p)$ only intersects the unit circle with $t>0$ when $t=1$ hence $\vec{p}+\vec x- \vec p= \vec x$. Then we have that $r(\vec x)=\vec x$ and hence $r$ is a retraction.
+
+
+\end{proof}
 
 
 \vspace{.15in}
