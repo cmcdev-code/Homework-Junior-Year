@@ -128,7 +128,18 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
 
 
 \vspace{.1in}
-{\bfseries d.} $k(\cos (\theta ), \sin (\theta )) = (\cos (n\theta ), \sin (n\theta ))$, where $n$ is an arbitrary integer
+{\bfseries d.} $k(\cos (\theta ), \sin (\theta )) = (\cos (n\theta ), \sin (n\theta ))$, where $n$ is an arbitrary integer.
+{
+    Using the same parametrization with $\gamma$. With the four sectors $$U_1=\{(x,y):x,y\in \mathbb{R}\text{ with }x>0\}$$
+    $$U_2=\{(x,y):x,y\in \mathbb{R}\text{ with }y>0\}$$
+    $$U_3=\{(x,y):x,y\in \mathbb{R}\text{ with }x<0\}$$
+    $$U_4=\{(x,y):x,y\in \mathbb{R}\text{ with }y<0\}$$
+
+    With the subdivisions being $t_0=0,t_{n}=2\pi,t_i=$ and for each $i\in \{1,...,n-1\}$ 
+
+
+
+}
 
 
 \vspace{.15in}
@@ -137,6 +148,12 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
 \vspace{.15in}
 \noindent
 \subsection*{3.} Show that, if $Y$ is a retract of $X$ and if every continuous map from $X$ to $X$ has a fixed point, then every continuous map from $Y$ to $Y$ has a fixed point. {\bf Hint.} Start with an arbitrary continuous map $f : Y\to Y$. How can you make a continuous map $g : X\to X$ whose behavior has the needed implications for $f$'s behavior?
+
+\begin{proof}
+    Let $Y$ be a retraction of $X$ given by the map $r:X\to Y$ and $f:Y\to Y$ be an arbitrary continuous map. Then consider the function $g:X\to X$ where $g=j\circ f\circ r$ where $j$ is the inclusion map given by (Munkres Theorem 18.2 ). We have as $g$ is a continuous and $g:X \to X$ that there exists a fixed point in $x_0 \in X$. Then we have that $r(x_0)=y_0$ for some $y_0\in Y$ and hence we get $g(x_0)=j(f(r(x_0)))=j(f(y_0))=f(y_0)=x_0$ as $j$ is the inclusion map this implies that $r \circ g(x_0)=y_0$ but hence we get $r(j(f(y_0)))=y_0$ which implies that $f(y_0)=y_0$ as the codomain of $f$ is $Y$ and $r$ is a retraction and $j$ is the inclusion map.
+
+    
+\end{proof}
  
 
 
@@ -150,4 +167,15 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
 \noindent
 \subsection*{5.} Let $S$ and $C$ be circles in the plane, and let $f : S\to C$ be a continuous map. Show that, for every $\vec{p}$ in the open disk bounded by $C$, the winding number of $f$ around $\vec{p}$ equals the degree of $f$. (In particular the winding number is the same, regardless of which $\vec{p}$ in the open disk is used.) 
  
+\begin{proof}
+    
+    $\newline \newline$
+    Let $S,C$ be circles in the plane and $f:S\to C$ be a continuous map. Let $\gamma:[0,2\pi]\to S$ be a parametrization of $S$ by $\gamma(\theta)=(x_0+r\cos \theta, y_0+r\sin \theta)$ for appropriate $x_0,y_0,r$. 
+
+    Let $U_1,...,U_n$ be the sectors used in calculating the degree of $f$ and $\theta_1,...,\theta_n$ be the corresponding angle functions. 
+    
+    Now let $\vec{p}$ be a point in the open disk bounded by $C$. Then consider the sectors given by $U_1+\vec{p}=\{\vec{x}+\vec{p}: \vec{x}\in U_1\},...,U_n+\vec{p}$ and the corresponding angle functions 
+\end{proof}
+
+
 \end{document}
