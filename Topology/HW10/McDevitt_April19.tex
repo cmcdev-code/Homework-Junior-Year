@@ -81,7 +81,9 @@ Then
 
 $W(f\circ \gamma ,\vec 0)=\frac{1}{2\pi}\big(\theta_1(f(\gamma(t_1)))-\theta_1(f(\gamma(t_1)))+\theta_2(f(\gamma(t_2)))-\theta_2(f(\gamma(t_1)))+\theta_3(f(\gamma(t_3)))-\theta_3(f(\gamma(t_2)))+\theta_4(f(\gamma(t_4)))-\theta_4(f(\gamma(t_3)))+\theta_1(f(\gamma(t_5)))-\theta_1(f(\gamma(t_4)))\big)$. 
 
-Then $W(f\circ \gamma ,\vec 0)=\frac{1}{2\pi}\big( \frac{\pi}{4}-0 + \frac{3\pi}{4}-\frac{\pi}{4}+\frac{5\pi}{4}-\frac{3\pi}{4}+\frac{7\pi}{4}-\frac{5\pi}{4}+0 -\frac{\pi}{4} \big)=\frac{1}{2\pi}\big(\frac{7\pi}{4}+\frac{\pi}{4}\big)=1$
+Then $W(f\circ \gamma ,\vec 0)=\frac{1}{2\pi}\big( \frac{\pi}{4}-0 + \frac{3\pi}{4}-\frac{\pi}{4}+\frac{5\pi}{4}-\frac{3\pi}{4}+\frac{7\pi}{4}-\frac{5\pi}{4}+0 +\frac{\pi}{4} \big)=\frac{1}{2\pi}\big(\frac{7\pi}{4}+\frac{\pi}{4}\big)=1$. 
+
+
 
 
 
@@ -138,8 +140,9 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
     
     With the subdivisions being $t_0=0,t_{4n+1}=2\pi$ and $t_i=(\frac{(i-1)\pi}{2}+\frac{\pi}{4})$, for $i\in \{1,...,4n\}$. With the angle functions being $\theta_1$ being its angle in the range $(-\pi/2,\pi/2)$ and $\theta_2$ being its angle in the range $(0,\pi)$ and $\theta_3$ being its angle in the range $(\pi/2,3\pi/2)$ and $\theta_4$ being its angle in the range $(\pi,2\pi)$. 
 
-    
 
+    Then on each trip around the circle we have that all but terms cancel but $\frac{7\pi}{4}+\frac{\pi}{4}=1$
+    as this happens $n$ times we have that the winding number is $n$.
 
 }
 
@@ -172,18 +175,7 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
 \end{proof}
 
 
-\vspace{.15in}
-\noindent
-\subsection*{5.} Let $S$ and $C$ be circles in the plane, and let $f : S\to C$ be a continuous map. Show that, for every $\vec{p}$ in the open disk bounded by $C$, the winding number of $f$ around $\vec{p}$ equals the degree of $f$. (In particular the winding number is the same, regardless of which $\vec{p}$ in the open disk is used.) 
- 
-\begin{proof}
-    
-    $\newline \newline$
-    Let $S,C$ be circles in the plane and $f:S\to C$ be a continuous map. Let $\gamma:[0,2\pi]\to S$ be a parametrization of $S$ by $\gamma(\theta)=(x_0+r\cos \theta, y_0+r\sin \theta)$ for appropriate $x_0,y_0,r$. 
 
-    Let $\vec p$ be in the open disk. 
-    
-\end{proof}
 
 
 \end{document}
