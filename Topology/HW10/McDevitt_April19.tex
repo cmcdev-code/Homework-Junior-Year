@@ -130,13 +130,15 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
 \vspace{.1in}
 {\bfseries d.} $k(\cos (\theta ), \sin (\theta )) = (\cos (n\theta ), \sin (n\theta ))$, where $n$ is an arbitrary integer.
 {
-    Using the same parametrization with $\gamma$. With the four sectors $$U_1=\{(x,y):x,y\in \mathbb{R}\text{ with }x>0\}$$
-    $$U_2=\{(x,y):x,y\in \mathbb{R}\text{ with }y>0\}$$
-    $$U_3=\{(x,y):x,y\in \mathbb{R}\text{ with }x<0\}$$
-    $$U_4=\{(x,y):x,y\in \mathbb{R}\text{ with }y<0\}$$
+    Breaking into cases. 
 
-    With the subdivisions being $t_0=0,t_{n}=2\pi,t_i=$ and for each $i\in \{1,...,n-1\}$ 
+    If $n=0$ then $k$ would just be a constant curve hence it would have winding number $0$.
 
+    Now if $n>0$ then consider the sectors $$U_1=\{(x,y):x,y\in \mathbb R \text{ with } x>0\}$$ $$U_2=\{(x,y):x,y\in \mathbb R \text{ with } y>0\}$$ $$U_3=\{(x,y):x,y\in \mathbb R \text{ with } x<0\}$$ $$U_4=\{(x,y):x,y\in \mathbb R \text{ with } y<0\}$$
+    
+    With the subdivisions being $t_0=0,t_{4n+1}=2\pi$ and $t_i=(\frac{(i-1)\pi}{2}+\frac{\pi}{4})$, for $i\in \{1,...,4n\}$. With the angle functions being $\theta_1$ being its angle in the range $(-\pi/2,\pi/2)$ and $\theta_2$ being its angle in the range $(0,\pi)$ and $\theta_3$ being its angle in the range $(\pi/2,3\pi/2)$ and $\theta_4$ being its angle in the range $(\pi,2\pi)$. 
+
+    
 
 
 }
@@ -179,9 +181,8 @@ Then $W(h\circ \gamma,\vec 0)=\frac{1}{2\pi}\big( -\frac{\pi}{4} - 0+ -\frac{3\p
     $\newline \newline$
     Let $S,C$ be circles in the plane and $f:S\to C$ be a continuous map. Let $\gamma:[0,2\pi]\to S$ be a parametrization of $S$ by $\gamma(\theta)=(x_0+r\cos \theta, y_0+r\sin \theta)$ for appropriate $x_0,y_0,r$. 
 
-    Let $U_1,...,U_n$ be the sectors used in calculating the degree of $f$ and $\theta_1,...,\theta_n$ be the corresponding angle functions. 
+    Let $\vec p$ be in the open disk. 
     
-    Now let $\vec{p}$ be a point in the open disk bounded by $C$. Then consider the sectors given by $U_1+\vec{p}=\{\vec{x}+\vec{p}: \vec{x}\in U_1\},...,U_n+\vec{p}$ and the corresponding angle functions 
 \end{proof}
 
 
