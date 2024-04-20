@@ -1,0 +1,70 @@
+#include "comic.h"
+#include <string.h>
+#include <stdlib.h>
+
+
+struct Comic_List init_comic_list(){
+
+    struct Comic_List comic_list;
+    comic_list.size = 10;
+    comic_list.count = 0;
+    comic_list.list = (struct Comic *)malloc(comic_list.size * sizeof(struct Comic));
+    return comic_list;
+}
+
+void add_comic(struct Comic_List* comic_list, struct Comic comic){
+    //Check if the list is full
+    if(comic_list->count == comic_list->size){
+        //If the list is full, double the size of the list
+        comic_list->size *= 2;
+        comic_list->list = realloc(comic_list->list, comic_list->size * sizeof(struct Comic));
+    }
+    //Add the comic to the list 
+    comic_list->list[comic_list->count] = comic;
+    comic_list->count++;   
+}
+
+struct Comic creat_comic(char* date, char* code, char* publisher, char* title, char* cost){
+    struct Comic comic;
+    comic.date = date;
+    comic.code = code;
+    comic.publisher = publisher;
+    comic.title = title;
+    comic.cost = cost;
+    return comic;
+}
+
+struct Comic parse_csv_data(FILE * ptr){
+//Sample Solution buffer sizes 
+//100 , 100 , 100 ,1000, 10
+// 03/08/23,JAN231097,ABLAZE PUBLISHING,Children Of The Black Sun #3 (Cover A Letizia Cadonici),$3.99 
+char date_buffer[100];
+char code_buffer[100];
+char publisher_buffer[100];
+char title_buffer[1000];
+char cost_buffer[10];
+
+
+fscanf(ptr, "%[^,],%[^,],%[^,],%[^,],%s\n", date_buffer, code_buffer, publisher_buffer, title_buffer, cost_buffer);
+
+
+
+char* date= (char *)calloc((strlen(date_buffer)+1),sizeof(char));
+
+date = strncpy(date, date_buffer, strlen(date_buffer));
+
+char * code = (char *)calloc((strlen(code_buffer)+1),sizeof(char));
+code = strncpy(code, code_buffer, strlen(code_buffer));
+
+char * publisher = (char *)calloc((strlen(publisher_buffer)+1),sizeof(char));
+publisher = strncpy(publisher, publisher_buffer, strlen(publisher_buffer));
+
+char * title = (char *)calloc((strlen(title_buffer)+1),sizeof(char));
+title = strncpy(title, title_buffer, strlen(title_buffer));
+
+char * cost = (char *)calloc((strlen(cost_buffer)+1),sizeof(char));
+cost = strncpy(cost, cost_buffer, strlen(cost_buffer));
+
+return creat_comic(date, code, publisher, title, cost);
+
+}
