@@ -34,7 +34,8 @@ void add_comic(struct Comic_List* comic_list, struct Comic comic){
 }
 
 struct Comic create_comic(char* date, char* code, char* publisher, char* title, char* cost){
-    struct Comic comic;
+    struct Comic comic;    
+    //Deep copy the strings
     comic.date = strdup(date);
     comic.code = strdup(code);
     comic.publisher = strdup(publisher);
@@ -45,20 +46,18 @@ struct Comic create_comic(char* date, char* code, char* publisher, char* title, 
 }
 
 struct Comic parse_csv_data(FILE * ptr){
-//Sample Solution buffer sizes 
-//100 , 100 , 100 ,1000, 10
-// 03/08/23,JAN231097,ABLAZE PUBLISHING,Children Of The Black Sun #3 (Cover A Letizia Cadonici),$3.99 
-char date_buffer[100];
-char code_buffer[100];
-char publisher_buffer[100];
-char title_buffer[1000];
-char cost_buffer[10];
+
+    char date_buffer[100];
+    char code_buffer[100];
+    char publisher_buffer[100];
+    char title_buffer[1000];
+    char cost_buffer[10];
 
 
-fscanf(ptr, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", date_buffer, code_buffer, publisher_buffer, title_buffer, cost_buffer);
+    fscanf(ptr, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", date_buffer, code_buffer, publisher_buffer, title_buffer, cost_buffer);
+//reads in the data from the file and stores it in the buffers
 
-
-
+//Allocate memory for the strings dynamically and copy the data from the buffer
 char* date= (char *)calloc((strlen(date_buffer)+1),sizeof(char));
 
 date = strncpy(date, date_buffer, strlen(date_buffer));
@@ -76,6 +75,8 @@ char * cost = (char *)calloc((strlen(cost_buffer)+1),sizeof(char));
 cost = strncpy(cost, cost_buffer, strlen(cost_buffer));
 
 struct Comic comic = create_comic(date, code, publisher, title, cost);
+
+//Free the memory allocated for the strings
 free(date);
 free(code);
 free(publisher);
