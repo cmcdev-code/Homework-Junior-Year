@@ -12,6 +12,14 @@ struct Comic_List init_comic_list(){
     return comic_list;
 }
 
+void clean_comic_data(struct Comic * comic){
+    free(comic->code);
+    free(comic->date);
+    free(comic->publisher);
+    free(comic->title);
+    free(comic->cost);
+}   
+
 void add_comic(struct Comic_List* comic_list, struct Comic comic){
     //Check if the list is full
     if(comic_list->count == comic_list->size){
@@ -19,18 +27,20 @@ void add_comic(struct Comic_List* comic_list, struct Comic comic){
         comic_list->size *= 2;
         comic_list->list = realloc(comic_list->list, comic_list->size * sizeof(struct Comic));
     }
-    //Add the comic to the list 
+    //Have to do a deep copy and free the memory allocated for the comic
+
     comic_list->list[comic_list->count] = comic;
     comic_list->count++;   
 }
 
-struct Comic creat_comic(char* date, char* code, char* publisher, char* title, char* cost){
+struct Comic create_comic(char* date, char* code, char* publisher, char* title, char* cost){
     struct Comic comic;
-    comic.date = date;
-    comic.code = code;
-    comic.publisher = publisher;
-    comic.title = title;
-    comic.cost = cost;
+    comic.date = strdup(date);
+    comic.code = strdup(code);
+    comic.publisher = strdup(publisher);
+    comic.title = strdup(title);
+    comic.cost = strdup(cost);
+
     return comic;
 }
 
@@ -65,6 +75,13 @@ title = strncpy(title, title_buffer, strlen(title_buffer));
 char * cost = (char *)calloc((strlen(cost_buffer)+1),sizeof(char));
 cost = strncpy(cost, cost_buffer, strlen(cost_buffer));
 
-return creat_comic(date, code, publisher, title, cost);
+struct Comic comic = create_comic(date, code, publisher, title, cost);
+free(date);
+free(code);
+free(publisher);
+free(title);
+free(cost);
+
+return comic;
 
 }
