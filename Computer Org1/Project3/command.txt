@@ -1,0 +1,6 @@
+load file_name
+display
+clear
+find num
+remove num
+checkout

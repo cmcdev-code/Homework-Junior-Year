@@ -1,63 +1,62 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "comic.h"
+
 
 #define TAX 0.05
 
-struct Comic_List load(char* filename){
+void load(char* filename, struct Comic_List* comics, FILE * cmd_ptr){
     FILE * ptr = fopen(filename, "r");
     //Burn the  first line
 
     char buffer[200];
     fgets(buffer, 200, ptr);
-    struct Comic_List comics= init_comic_list();
+    
     while(!feof(ptr)){
         struct Comic comic = parse_csv_data(ptr);
-        add_comic(&comics, comic);
+        add_comic(comics, comic);
     }
     fclose(ptr);
 
-    printf("Command: load %s\n\tNumber of comics:%d\n", filename, comics.count); 
-    return comics;
+    fprintf(cmd_ptr,"Command: load %s\n\tNumber of comics:%d\n", filename, comics->count); 
 }
 
-void buy_comic(struct Comic_List list_of_comics, int index, struct Comic_List * shopping_cart){
+void buy_comic(struct Comic_List list_of_comics, int index, struct Comic_List * shopping_cart, FILE * ptr){
     
-    struct Comic comic = create_comic(list_of_comics.list[index-1].code, 
-                                      list_of_comics.list[index-1].date, 
-                                      list_of_comics.list[index-1].publisher, 
-                                      list_of_comics.list[index-1].title, 
-                                      list_of_comics.list[index-1].cost);
+    struct Comic comic = create_comic(list_of_comics.list[index].date,
+                                      list_of_comics.list[index].code,                                        
+                                      list_of_comics.list[index].publisher, 
+                                      list_of_comics.list[index].title, 
+                                      list_of_comics.list[index].cost);
     add_comic(shopping_cart, comic);
 
-    printf("Command: buy %d\nComic #%d added to purchase list\n", index,index);
+    fprintf(ptr,"Command: buy %d\nComic #%d added to purchase list\n", index,index);
 }
 //Flag 1 means used in display command
 //Flag 0 means used in checkout command
-void display(struct Comic_List list_of_comics, int flag){
+void display(struct Comic_List list_of_comics, int flag, FILE * ptr){
     if(flag==1){
-        printf("Command: display\n");
+        fprintf(ptr,"Command: display\n");
     }
-    else{
-        printf("Comics in Purchase List\n");
-    }
+    
     if(list_of_comics.count == 0){
-        printf("List is currently empty.\n");
+        fprintf(ptr,"List is currently empty.\n");
         return;
     }
     for(int i = 0; i < list_of_comics.count; i++){
-        printf("Comic Number: %d\n", i+1);
-        printf("\tDate: %s\n", list_of_comics.list[i].date);
-        printf("\tCode: %s\n", list_of_comics.list[i].code);
-        printf("\tPublisher: %s\n", list_of_comics.list[i].publisher);
-        printf("\tTitle: %s\n", list_of_comics.list[i].title);
-        printf("\tCost: %s\n", list_of_comics.list[i].cost);
+        fprintf(ptr,"Comic Number: %d\n", i+1);
+        fprintf(ptr,"\tDate: %s\n", list_of_comics.list[i].date);
+        fprintf(ptr,"\tCode: %s\n", list_of_comics.list[i].code);
+        fprintf(ptr,"\tPublisher: %s\n", list_of_comics.list[i].publisher);
+        fprintf(ptr,"\tTitle: %s\n", list_of_comics.list[i].title);
+        fprintf(ptr,"\tCost: %s\n", list_of_comics.list[i].cost);
     }
 }
 
-void checkout(struct Comic_List shopping_cart){
-    printf("Command: checkout\nComics in Purchase List\n");
-    display(shopping_cart,0);
+void checkout(struct Comic_List shopping_cart, FILE * ptr){
+    fprintf(ptr,"Command: checkout\nComics in Purchase List\n");
+    display(shopping_cart,0,ptr);
     float total = 0.0f;
     for(int i = 0; i < shopping_cart.count; i++){
         if(shopping_cart.list[i].cost[0] == '$'){
@@ -70,21 +69,21 @@ void checkout(struct Comic_List shopping_cart){
             total += atof(cost);
         }
     }
-    printf(" Subtotal: $%.2f\n      Tax: $%.2f \n    Total: $%.2f\n", total, total*TAX, total*(1.0+TAX));
+    fprintf(ptr," Subtotal: $%.2f\n      Tax: $%.2f \n    Total: $%.2f\n", total, total*TAX, total*(1.0+TAX));
 
 }
 
-void save(struct Comic_List list_of_comics, char* filename){
+void save(struct Comic_List list_of_comics, char* filename, FILE * cmd_ptr){
     FILE * ptr = fopen(filename, "w");
     fprintf(ptr, "Date,Code,Publisher,Title,Cost\n");
     for(int i = 0; i < list_of_comics.count; i++){
         fprintf(ptr, "%s,%s,%s,%s,%s\n", list_of_comics.list[i].date, list_of_comics.list[i].code, list_of_comics.list[i].publisher, list_of_comics.list[i].title, list_of_comics.list[i].cost);
     }
     fclose(ptr);
-    printf("Command: save %s\n\tNumber of comics:%d\n", filename, list_of_comics.count); 
+    fprintf(cmd_ptr,"Command: save %s\n\tNumber of comics:%d\n", filename, list_of_comics.count); 
 }
 
-void clear(struct Comic_List * list_of_comics){
+void clear(struct Comic_List * list_of_comics, FILE * ptr){
     
     //Free the memory allocated for each comic in the list
     for(int i = 0; i < list_of_comics->count; i++){
@@ -96,38 +95,36 @@ void clear(struct Comic_List * list_of_comics){
     //Reinitialize the list
     *list_of_comics   = init_comic_list();
 
-    printf("Command: clear\n");
+    fprintf(ptr,"Command: clear\n");
 }
 
 
-void find(struct Comic_List list_of_comics,int index){
-    printf("Command: find %d\n", index);
+void find(struct Comic_List list_of_comics,int index, FILE * ptr){
+    fprintf(ptr,"Command: find %d\n", index);
     if(index  > list_of_comics.count){
-        printf("There is no comic at index #%d in the list.\n", index);
+        fprintf(ptr,"There is no comic at index #%d in the list.\n", index);
         return;
     }
-    printf("\tDate: %s\n", list_of_comics.list[index-1].date);
-    printf("\tCode: %s\n", list_of_comics.list[index-1].code);
-    printf("\tPublisher: %s\n", list_of_comics.list[index-1].publisher);
-    printf("\tTitle: %s\n", list_of_comics.list[index-1].title);
-    printf("\tCost: %s\n", list_of_comics.list[index-1].cost);
+    fprintf(ptr,"\tDate: %s\n", list_of_comics.list[index].date);
+    fprintf(ptr,"\tCode: %s\n", list_of_comics.list[index].code);
+    fprintf(ptr,"\tPublisher: %s\n", list_of_comics.list[index].publisher);
+    fprintf(ptr,"\tTitle: %s\n", list_of_comics.list[index].title);
+    fprintf(ptr,"\tCost: %s\n", list_of_comics.list[index].cost);
 }
 
-void remove_comic(struct Comic_List * list_of_comics, int index){
-    printf("Command: remove %d\n", index);
-    if(index -1 > list_of_comics->count){
-        printf("Comic at index %d was not removed\n", index);
+void remove_comic(struct Comic_List * list_of_comics, int index, FILE * ptr){
+    fprintf(ptr,"Command: remove %d\n", index);
+    if(index  > list_of_comics->count){
+        fprintf(ptr,"Comic at index %d was not removed\n", index);
         return;
     }
-    free(list_of_comics->list[index-1].code);
-    free(list_of_comics->list[index-1].date);
-    free(list_of_comics->list[index-1].publisher);
-    free(list_of_comics->list[index-1].title);
-    free(list_of_comics->list[index-1].cost);
-    for(int i = index-1; i < list_of_comics->count-1; i++){
+
+    clean_comic_data(&list_of_comics->list[index]);
+    for(int i = index; i < list_of_comics->count-1; i++){
         list_of_comics->list[i] = list_of_comics->list[i+1];
     }
     list_of_comics->count--;
+    fprintf(ptr,"Comic at index %d successfully removed\n", index);
 }
 
 int main(int argc, char* argv[]){
@@ -135,22 +132,57 @@ int main(int argc, char* argv[]){
         printf("Usage: %s <command> <filename>\n", argv[0]);
         return 1;
     }
-    
-    
-    struct Comic_List comics = load(argv[2]);
-    struct Comic_List bought_comics = init_comic_list();
-    buy_comic(comics, 1, &bought_comics);
-    buy_comic(comics, 2, &bought_comics);
-    buy_comic(comics, 3, &bought_comics);
- 
+    struct Comic_List list_of_comics = init_comic_list();
+    struct Comic_List shopping_cart = init_comic_list();
 
+    FILE * ptr = fopen(argv[1], "r");
+    FILE * cmd_ptr = fopen(argv[2], "w");
 
-    clear(&comics);
- 
-    checkout(bought_comics);
+    char buffer[200];
 
-    save(bought_comics, "bought_comics.csv");
+    while(!feof(ptr)){
+        fscanf(ptr, "%[^\n]\n", buffer);
+        char* cmd = strtok(buffer, " ");
+        if(strcmp(cmd, "load") == 0){
+            load(strtok(NULL, " "), &list_of_comics,cmd_ptr);
+        }
+        else if(strcmp(cmd, "buy") == 0){
+            buy_comic(list_of_comics, atoi(strtok(NULL, " ")), &shopping_cart, cmd_ptr);
+        }
+        else if(strcmp(cmd, "display") == 0){
+            display(list_of_comics, 1, cmd_ptr);
+        }
+        else if(strcmp(cmd, "checkout") == 0){
+            checkout(shopping_cart, cmd_ptr);
+        }
+        else if(strcmp(cmd, "save") == 0){
+            save(list_of_comics, strtok(NULL, " "), cmd_ptr);
+        }
+        else if(strcmp(cmd, "clear") == 0){
+            clear(&list_of_comics, cmd_ptr);
+        }
+        else if(strcmp(cmd, "find") == 0){
+            find(list_of_comics, atoi(strtok(NULL, " ")), cmd_ptr);
+        }
+        else if(strcmp(cmd, "remove") == 0){
+            remove_comic(&list_of_comics, atoi(strtok(NULL, " ")), cmd_ptr);
+        }
+        
+    }
     
+    fclose(ptr);
+    fclose(cmd_ptr);
+    //Need to free the memory allocated for each comic in the list
+    for(int i = 0; i < list_of_comics.count; i++){
+        clean_comic_data(&list_of_comics.list[i]);
+    }
+    //Free the memory allocated for the list itself
+    free(list_of_comics.list);
+
+    for(int i = 0; i < shopping_cart.count; i++){
+        clean_comic_data(&shopping_cart.list[i]);
+    }
+    free(shopping_cart.list);
 
 
     return 0;

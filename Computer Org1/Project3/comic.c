@@ -55,7 +55,7 @@ char title_buffer[1000];
 char cost_buffer[10];
 
 
-fscanf(ptr, "%[^,],%[^,],%[^,],%[^,],%s\n", date_buffer, code_buffer, publisher_buffer, title_buffer, cost_buffer);
+fscanf(ptr, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", date_buffer, code_buffer, publisher_buffer, title_buffer, cost_buffer);
 
 
 
