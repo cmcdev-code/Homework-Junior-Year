@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1713729320 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW9/McDevitt_Solve_HW9.tex" "McDevitt_Solve_HW9.pdf" "McDevitt_Solve_HW9" 1713729320 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW9/McDevitt_Solve_HW9.tex" 1713729319 7034 9159efdae6dc8fb6a8752f01f2333d8c ""
+["pdflatex"] 1713729498 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW9/McDevitt_Solve_HW9.tex" "McDevitt_Solve_HW9.pdf" "McDevitt_Solve_HW9" 1713729499 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Linear Algebra/HW9/McDevitt_Solve_HW9.tex" 1713729498 6980 bf6261856218de4784a3a759076ad717 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -53,7 +53,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -154,8 +153,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "McDevitt_Solve_HW9.aux" 1713729320 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "McDevitt_Solve_HW9.tex" 1713729319 7034 9159efdae6dc8fb6a8752f01f2333d8c ""
+  "McDevitt_Solve_HW9.aux" 1713729499 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "McDevitt_Solve_HW9.tex" 1713729498 6980 bf6261856218de4784a3a759076ad717 ""
   (generated)
   "McDevitt_Solve_HW9.aux"
   "McDevitt_Solve_HW9.log"
