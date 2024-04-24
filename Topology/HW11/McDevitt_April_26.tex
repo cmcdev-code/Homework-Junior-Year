@@ -86,6 +86,9 @@ As $f(\cos \theta,\sin \theta )=f(\cos \theta+\pi,\sin \theta+\pi)$ we get both 
 
 If $f$ and $g$ are continuous real-valued functions on a sphere $S$ such that that $f(P^\star)=-f(P)$ and $g(P^\star)=-g(P)$ for all $P$, show that $f$ and $g$ must have a common zero on the sphere. 
 
+\begin{proof}
+    Create the function $h:S\to \mathbb{R}^2$ where $h(\vec x)=(f(\vec x),g(\vec x))$ this is continuous by Munkres Theorem 18.4. Then we have by Borsuk-Ulam theorem that there exists a point such that $h(\vec x)=h(\vec x^\star)$ this implies $(f(\vec x),g(\vec x))=(-f(\vec x),-g(\vec x))$ hence we get $f(\vec x)= 0$ and $g(\vec x)=0$.
+\end{proof}
 
  
 \end{document}
