@@ -69,14 +69,22 @@ If $f:D^2\to \mathbb{R}^2$ is continuous and $f(P)\cdot P\not = 0$ for all $P$ i
 
 \vspace{.15in}
 \noindent
-\subsection*{4.} Fulton textbook, page 55, exercise 4.24.
+\subsection*{4.} Show that if $f:C\to C^\prime$ is a map between circles such that $f(P^\star)=f(P)$ for all $P$, then the degree of $f$ is even.
 
+\begin{proof}
+We have $C,C^\prime$ are both homeomorphic to $S^1$. So let $f:S^1\to S^1$ such that $f(P^\star)=f(P)$ for all $P$. 
+
+Let $\gamma_1(\theta)=f(\cos \theta ,\sin \theta )$ for $0\leq \theta \leq \pi $ and $\gamma_2(\theta)=f(\cos \theta +\pi , \sin \theta+\pi)$ for $\pi \leq \theta \leq 2\pi$. 
+
+As $f(\cos \theta,\sin \theta )=f(\cos \theta+\pi,\sin \theta+\pi)$ we get both $\gamma_1,\gamma_2$ are closed path hence $W(\gamma_1,\vec 0),W(\gamma_2,\vec 0)$ both have integer winding numbers. As $\gamma_1=\gamma_2$ we get $W(\gamma_1,\vec 0)=W(\gamma_2,\vec 0)=n$ for some $n\in \mathbb Z$. Hence we have $W(f,\vec 0)=W(\gamma_1,\vec 0)+W(\gamma_2,\vec 0)=2n$. Hence the degree of $f$ is even.
+
+\end{proof}
 
 \vspace{.15in}
 \noindent
 \subsection*{5.} Fulton textbook, page 55, exercise 4.27.
 
-
+If $f$ and $g$ are continuous real-valued functions on a sphere $S$ such that that $f(P^\star)=-f(P)$ and $g(P^\star)=-g(P)$ for all $P$, show that $f$ and $g$ must have a common zero on the sphere. 
 
 
  
