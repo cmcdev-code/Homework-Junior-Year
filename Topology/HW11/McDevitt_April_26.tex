@@ -36,7 +36,9 @@
 \subsection*{1.} Let $D$ be  a disk with boundary circle $C$, and let $f: D\to \mathbb{R}^2$ be a continuous map. Suppose $P$ is a point in $\mathbb{R}^2$ with $P\not \in f(C)$, and the winding number of the restriction $f|_C$ of $f$ to $C$ around $P$ is not zero. Show that there is some point $Q$ in $D$ such that $f(Q) = P$.
 
 \begin{proof}
-    Suppose that $P\not \in f(C)$ and that there is some $Q\in D$ such that $f(Q)=P$. Create the function $g: D\to \mathbb{R}^2 $ defined by the equation $g(Q)=f(Q)-Q$ this is continuous as it is adding two continuous functions. 
+
+    Suppose that $f:D\to \mathbb{R}^2$ where $D$ has boundary circle $C$. Suppose that $P\in \mathbb{R}^2$ with $P\not \in f(D)$. Choose any point $Q\in C$ and and create the function $g:C\times [0,1]\to D$ by the equation $g(\vec v, t)=\vec v(1-t)+t \vec c$ this is a continuous function as it is a weighted sum of continuous functions. Now we have that $h:C\times [0,1]\to \mathbb{R}^2$ defined by the equation $h(\vec v,t)=f(g(\vec v,t))$ is a homotopy between $f|_C$ and the constant curve at $\vec c$. This is shown to be a homotopy as $h(\vec v,0)=f(g(\vec v,0))= f(\vec v)$ and $h(\vec v,1)=f(g(\vec v,1))=f(\vec c)$. We have that $h$ is continuous as it is the composition of two continuous functions. As the constant curve at $\vec c$ has winding number $0$ we get that $W(f|_C,P)=0$. This proves the contrapositive of the statement.
+    
 \end{proof}
 
 \vspace{.15in}
@@ -46,7 +48,7 @@
 If $f:C\to C$  is a continuous mapping with no fixed point, show that degree of $f$ must be $1$. In particular, if $f$ has no fixed point, show that $f$ must be surjective. 
 
 \begin{proof}
-    It suffices to assume that $C$ is centered at the origin as we could create a homeomorphism that shifts it. Now assume that $f:C\to C$ is a continuous map with no fixed points. Then consider the homeomorphism $h:[0,1]\times C\to C$ defined by the equation $h(t,\vec c)=(1-t)f(\vec c)+t(-\vec c)$ this is continuous as it is two weighted continuous functions. As no point is fixed we get the line that intersects $f(\vec c)$ and $g(\vec c)=-\vec c$ does not intersect $\vec 0$. Lastly as $h(0,\vec c)=f(\vec c)$ and $h(1,\vec c)=-\vec c$ we get that $h$ is a homotopy. 
+    It suffices to assume that $C$ is centered at the origin as we could create a homeomorphism that shifts it. Now assume that $f:C\to C$ is a continuous map with no fixed points. Then consider the homotopy $h:[0,1]\times C\to C$ defined by the equation $h(t,\vec c)=(1-t)f(\vec c)+t(-\vec c)$ this is continuous as it is two weighted continuous functions. As no point is fixed we get the line that intersects $f(\vec c)$ and $g(\vec c)=-\vec c$ does not intersect $\vec 0$. Lastly as $h(0,\vec c)=f(\vec c)$ and $h(1,\vec c)=-\vec c$ we get that $h$ is a homotopy. 
     
     On problem 2b on last weeks homework we showed that $\gamma(x,y)=(-x,-y)$ on the unit circle to the unit circle has degree 1. We have that $g$ is homotopic to $\gamma$ (changing radius of circle) so we get that $g$ has degree 1. As $f$ is homotopic to $g$ we get that $f$ has degree 1.
 
