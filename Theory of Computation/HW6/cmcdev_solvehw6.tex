@@ -432,6 +432,7 @@ Now to show that this function can be computed in polynomial time. We can enumer
 
 Now there are two cases if $(G,K)\in{\normalfont{\textsc{VERTEX-COVER}}} $ then there exists a vertex cover of size $K$. Find one such vertex cover of size $K$ (this can be done in nondeterministic polynomial time) and look at of the edges in the vertex cover. For each edge in the vertex cover choose a single vertex from the edge and add it to the set $R$. We have that $|R|=K$ and by the construction of $U$ we have that $R$ is a representative set of $U$. Hence we have that $f(G,K)\in{\normalfont{\textsc{DFR}}}$.
 
+Now if $(G,K)\not \in {\normalfont{\textsc{VERTEX-COVER}}}$ then there does not exist a vertex cover of size $K$. By the construction of $U$ we have that there does not exist a representative $|R|<K$. Hence we have that $f(G,K)\not \in {\normalfont{\textsc{DFR}}}$. This shows that $f$ is a polynomial time reduction from ${\normalfont{\textsc{VERTEX-COVER}}}$ to ${\normalfont{\textsc{DFR}}}$. Hence we have that ${\normalfont{\textsc{DFR}}}$ is $\NP$-complete.
 \problembreak
 
 \end{document}

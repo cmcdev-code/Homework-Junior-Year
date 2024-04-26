@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1714148509 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW6/cmcdev_solvehw6.tex" "cmcdev_solvehw6.pdf" "cmcdev_solvehw6" 1714148510 0
-  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW6/cmcdev_solvehw6.tex" 1714148509 13774 132519a99c8e59cfcc47257296ec02f3 ""
+["pdflatex"] 1714149837 "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW6/cmcdev_solvehw6.tex" "cmcdev_solvehw6.pdf" "cmcdev_solvehw6" 1714149838 0
+  "/Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Theory of Computation/HW6/cmcdev_solvehw6.tex" 1714149837 14237 aec39609b5fc6d83086fb0fd49ae561a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -78,8 +78,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "cmcdev_solvehw6.aux" 1714148510 477 67193811666e2e92af929726d94eda4d "pdflatex"
-  "cmcdev_solvehw6.tex" 1714148509 13774 132519a99c8e59cfcc47257296ec02f3 ""
+  "cmcdev_solvehw6.aux" 1714149838 477 67193811666e2e92af929726d94eda4d "pdflatex"
+  "cmcdev_solvehw6.tex" 1714149837 14237 aec39609b5fc6d83086fb0fd49ae561a ""
   (generated)
   "cmcdev_solvehw6.aux"
   "cmcdev_solvehw6.log"
