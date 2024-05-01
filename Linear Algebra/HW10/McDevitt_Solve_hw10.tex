@@ -6,7 +6,7 @@
 \usepackage{amsfonts,amssymb,amsmath,amsthm,bm,enumitem,mathrsfs,colortbl,fancyhdr,tcolorbox,enumitem}
 \def\honorcode{\textit{In accordance with the Hokie Honor Code, I affirm that I have neither given nor received unauthorized assistance on this assignment.}}
 \fancyhead{}
-\fancyhead[L]{NAME: } %Replace "NAME: " WITH YOUR NAME
+\fancyhead[L]{Collin McDevitt} %Replace "NAME: " WITH YOUR NAME
 \fancyhead[C]{MATH 3144 HOMEWORK 10}
 \fancyhead[R]{PAGE \thepage}
 \fancyfoot{}
@@ -186,5 +186,16 @@ $$=((2+\lambda)\lambda+2)((1-\lambda)^2+1)$$
 $$=(\lambda^2+2\lambda+2)(\lambda^2-2\lambda+2)$$
 So $\lambda=1\pm i,-1\pm i$. The eigenvectors are $(1,i,i,1),(1,-i,-i,1),(1-i,2,0,0),(1+i,2,0,0)$. Then taking the basis to be $$\mathcal B=\{b_1=(1,0,0,1),b_2(0,1,1,0),b_3=(1,2,0,0),b_4=(1,0,0,0)\}$$.
 
+We have $$T(1,0,0,1)=(1,-1,-1,1)=b_1-b_2,$$
+$$T(0,1,1,0)=(1,1,1,1)=b_1+b_2$$
+$$T(1,2,0,0)=(0,-2,0,0)=-b_3+b_4$$
+$$T(1,0,0,0)=(-2,-2,0,0)=-b_3-b_4$$
+
+From that we get the matrix $$\Mat(T,\mathcal B)=\begin{pmatrix}
+    1 & -1 &0 & 0 \\
+    1 & 1& 0& 0\\
+    0 & 0 & -1 & 1\\
+    0 & 0 & -1 & -1
+\end{pmatrix}$$
 
 \end{document}
