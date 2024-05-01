@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1714588331 "/Users/collinmcdevitt/Homework-Junior-Year/Linear Algebra/HW10/McDevitt_Solve_hw10.tex" "McDevitt_Solve_hw10.pdf" "McDevitt_Solve_hw10" 1714588332 0
-  "/Users/collinmcdevitt/Homework-Junior-Year/Linear Algebra/HW10/McDevitt_Solve_hw10.tex" 1714588326 4369 caae38ec2f33b3d37f0613efd231a15e ""
+["pdflatex"] 1714594227 "/Users/collinmcdevitt/Homework-Junior-Year/Linear Algebra/HW10/McDevitt_Solve_hw10.tex" "McDevitt_Solve_hw10.pdf" "McDevitt_Solve_hw10" 1714594227 0
+  "/Users/collinmcdevitt/Homework-Junior-Year/Linear Algebra/HW10/McDevitt_Solve_hw10.tex" 1714594226 6745 e3d8c00ab916f4cd8685a2c7ee4de7b8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -159,8 +159,8 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706732326 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706732316 7883462 ab1ab07e3d246d7ff699b559fdfa8d4b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "McDevitt_Solve_hw10.aux" 1714588332 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "McDevitt_Solve_hw10.tex" 1714588326 4369 caae38ec2f33b3d37f0613efd231a15e ""
+  "McDevitt_Solve_hw10.aux" 1714594227 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "McDevitt_Solve_hw10.tex" 1714594226 6745 e3d8c00ab916f4cd8685a2c7ee4de7b8 ""
   (generated)
   "McDevitt_Solve_hw10.aux"
   "McDevitt_Solve_hw10.log"
