@@ -150,7 +150,7 @@ void remove_comic(struct Comic_List *list_of_comics, int index, FILE *ptr) {
   fprintf(ptr, "Comic at index %d successfully removed\n", index);
 }
 
-// The main loop
+// The main loop`
 int main(int argc, char *argv[]) {
   // Have to do something with argc or compiler will complain
   if (argc != 3) {
@@ -162,6 +162,8 @@ int main(int argc, char *argv[]) {
   struct Comic_List list_of_comics = init_comic_list();
   struct Comic_List shopping_cart = init_comic_list();
 
+
+  
   // Open the file ptr is list of commands and cmd_ptr is the output file
   // detailing the commands that were executed
   FILE *ptr = fopen(argv[1], "r");

@@ -1,8 +1,8 @@
-PWD /Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW7
+PWD /Users/collinmcdevitt/Homework-Junior-Year/Topology/HW7
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/collinmcdevitt/Code/testing/HomeWork Junior Year/Homework-Junior-Year/Topology/HW7/McDevitt March22.tex
+INPUT /Users/collinmcdevitt/Homework-Junior-Year/Topology/HW7/McDevitt March22.tex
 OUTPUT McDevitt March22.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsart.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsart.cls

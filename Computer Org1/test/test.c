@@ -3,8 +3,9 @@
 int main()
 {
 
-
-char * str ="1";
+int stuff[2]={1234, 1};
+long *x=(long *) stuff;
+printf("%ld",*x);
 
 
 
